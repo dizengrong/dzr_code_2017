@@ -1,0 +1,3585 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Lef",
+				"LeftList2"
+			],
+			[
+				"Acc",
+				"Acc2"
+			],
+			[
+				"get",
+				"get_all"
+			],
+			[
+				"atom_to",
+				"atom_to_list	(merl.erl)"
+			],
+			[
+				"alin",
+				"text-align"
+			],
+			[
+				"for",
+				"util_format_table"
+			],
+			[
+				"dat",
+				"date_to_string	(gen_release.erl)"
+			],
+			[
+				"uti",
+				"util_time	(gen_release.erl)"
+			],
+			[
+				"util",
+				"util_time	(util_time.erl)"
+			],
+			[
+				"local",
+				"local_time	(filewatcher_handler.erl)"
+			],
+			[
+				"rsy",
+				"rsync_to_server"
+			],
+			[
+				"mod",
+				"module	create_module"
+			],
+			[
+				"Wat",
+				"watch_dirs"
+			],
+			[
+				"wat",
+				"watch_dirs"
+			],
+			[
+				"wa",
+				"watch_dirs"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"tom",
+				"to_html	(controller_logon.erl)"
+			],
+			[
+				"listen",
+				"listeners"
+			],
+			[
+				"dir",
+				"dirty_del"
+			],
+			[
+				"Fetc",
+				"FetchNeed"
+			],
+			[
+				"GM_ACT_rac",
+				"GM_ACT_RECHARGE_RANK_1"
+			],
+			[
+				"GM_ACT",
+				"GM_ACT_ACC_COST"
+			],
+			[
+				"Usr",
+				"UsrActivityRec"
+			],
+			[
+				"gm_a",
+				"gm_activity_usr"
+			],
+			[
+				"gm_ac",
+				"gm_activity"
+			],
+			[
+				"REWARD_S",
+				"REWARD_STATE_FETCHED"
+			],
+			[
+				"REWARD",
+				"REWARD_STATE_NOT_REACHED"
+			],
+			[
+				"REWAS",
+				"REWARD_STATE_CAN_FETCH"
+			],
+			[
+				"dia",
+				"diamond_score"
+			],
+			[
+				"coin",
+				"coin_score"
+			],
+			[
+				"Rechar",
+				"RechargeDiamond"
+			],
+			[
+				"guild",
+				"guild_name"
+			],
+			[
+				"Ac",
+				"ActivityRec2"
+			],
+			[
+				"H",
+				"Hour"
+			],
+			[
+				"fungem",
+				"fun_agent_mng"
+			],
+			[
+				"ut",
+				"util"
+			],
+			[
+				"term",
+				"term_to_string"
+			],
+			[
+				"strin",
+				"string_to_term"
+			],
+			[
+				"string",
+				"string_to_term	(fun_gm_activity.erl)"
+			],
+			[
+				"Rew",
+				"RewardItems"
+			],
+			[
+				"keyr",
+				"keystore"
+			],
+			[
+				"Re",
+				"RewardItems"
+			],
+			[
+				"Rewar",
+				"RewardDatas"
+			],
+			[
+				"rewads",
+				"reward_datas"
+			],
+			[
+				"Rewa",
+				"RewardId"
+			],
+			[
+				"Us",
+				"UsrActivityRec"
+			],
+			[
+				"send_in",
+				"send_info_to_client"
+			],
+			[
+				"module",
+				"MODULE"
+			],
+			[
+				"REcha",
+				"RechargeDiamond"
+			],
+			[
+				"Rechad",
+				"RechargeDiamond"
+			],
+			[
+				"Nedd",
+				"NeedDiamond"
+			],
+			[
+				"fe",
+				"fetch_data"
+			],
+			[
+				"task",
+				"task_count"
+			],
+			[
+				"End",
+				"EndTime"
+			],
+			[
+				"end",
+				"end_time"
+			],
+			[
+				"starttim",
+				"start_time"
+			],
+			[
+				"Acre",
+				"ActivityRec"
+			],
+			[
+				"K",
+				"KVList"
+			],
+			[
+				"#st",
+				"#st_item_type"
+			],
+			[
+				"Spen",
+				"SpendItems3"
+			],
+			[
+				"Mai",
+				"MailID"
+			],
+			[
+				"Addti",
+				"AddItems"
+			],
+			[
+				"itemid",
+				"item_id"
+			],
+			[
+				"fun_ob",
+				"fun_scene_obj"
+			],
+			[
+				"undef",
+				"undefined"
+			],
+			[
+				"checkadd",
+				"check_and_add_items"
+			],
+			[
+				"Item",
+				"ItemID1"
+			],
+			[
+				"Add",
+				"AddItems	(fun_gm_code.erl)"
+			],
+			[
+				"und",
+				"undefined	(fun_gm_code.erl)"
+			],
+			[
+				"reqs",
+				"req_sweep2"
+			],
+			[
+				"diamo",
+				"diamond	(cq_db-2017-3-20.sql)"
+			],
+			[
+				"Des",
+				"Description	(sm.erl)"
+			],
+			[
+				"un",
+				"undefined	(fun_gm_code.erl)"
+			],
+			[
+				"Id",
+				"IdList"
+			],
+			[
+				"err",
+				"error_report"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
+				"handto",
+				"handle_to_agentmng	(fun_gm_code.erl)"
+			],
+			[
+				"cha",
+				"channel	(record.hrl)"
+			],
+			[
+				"typ",
+				"type1"
+			],
+			[
+				"Itme",
+				"Items"
+			],
+			[
+				"Rec",
+				"Rec"
+			],
+			[
+				"Val",
+				"Value	(fun_gm_code.erl)"
+			],
+			[
+				"Gui",
+				"GuildID"
+			],
+			[
+				"FromUs",
+				"FromUsrId	(ai_att_city_robot.erl)"
+			],
+			[
+				"Sor",
+				"Sort1"
+			],
+			[
+				"get_item",
+				"get_item_weight"
+			],
+			[
+				"fun",
+				"fun_item"
+			],
+			[
+				"fun_agnet",
+				"fun_agent_property"
+			],
+			[
+				"equip",
+				"equip_shine	(fun_login.erl)"
+			],
+			[
+				"is_itime",
+				"is_item_times_limited"
+			],
+			[
+				"cur",
+				"cur_mp"
+			],
+			[
+				"nor",
+				"normal_property_set"
+			],
+			[
+				"fun_scene",
+				"fun_scene_property"
+			],
+			[
+				"fun_agetn",
+				"fun_agent_property"
+			],
+			[
+				"handletoa",
+				"handle_to_agent	(fun_storehouse_guild.erl)"
+			],
+			[
+				"eras",
+				"erase/1	erase"
+			],
+			[
+				"unx",
+				"unixtime"
+			],
+			[
+				"Scene",
+				"SceneHid	(fun_agent.erl)"
+			],
+			[
+				"is_in",
+				"is_integer/1	is_integer"
+			],
+			[
+				"exo",
+				"export_all	(data_dressConfig.erl)"
+			],
+			[
+				"fun_scne",
+				"fun_scene_obj"
+			],
+			[
+				"key",
+				"keystore	(fun_equip_suit.erl)"
+			],
+			[
+				"Pro",
+				"ProList	(fun_item.erl)"
+			],
+			[
+				"exp",
+				"export	(fun_login.erl)"
+			],
+			[
+				"Spend",
+				"SpendItems	(fun_item.erl)"
+			],
+			[
+				"filter",
+				"filter_items"
+			],
+			[
+				"mem",
+				"member"
+			],
+			[
+				"ask",
+				"ask_list"
+			],
+			[
+				"com",
+				"compile	-compile"
+			],
+			[
+				"Timei",
+				"TimeID1"
+			],
+			[
+				"REt",
+				"Return"
+			],
+			[
+				"Ret",
+				"Return"
+			],
+			[
+				"Cha",
+				"ChaseObjID"
+			],
+			[
+				"Teama",
+				"Team_name"
+			],
+			[
+				"sendall",
+				"send_to_all_team"
+			],
+			[
+				"is_record",
+				"is_record/3	is_record"
+			],
+			[
+				"funscneo",
+				"fun_scene_obj:get_obj(159),19	(my_debug.erl)"
+			],
+			[
+				"handtoagen",
+				"handle_to_agent	(fun_tower_of_sky.erl)"
+			],
+			[
+				"Pol",
+				"PointList2"
+			],
+			[
+				"leng",
+				"length/1	length"
+			],
+			[
+				"drop",
+				"drop_sort	(record.hrl)"
+			],
+			[
+				"normalpor",
+				"normal_property_set	(fun_item.erl)"
+			],
+			[
+				"Mod",
+				"Module"
+			],
+			[
+				"handleto",
+				"handle_to_agent	(fun_tower_of_sky.erl)"
+			],
+			[
+				"HAN",
+				"handle_to_scene"
+			],
+			[
+				"lis",
+				"listskeyfind	lists-keyfind"
+			],
+			[
+				"inter",
+				"integer_to_list/1	integer_to_list"
+			],
+			[
+				"atomtob",
+				"atom_to_binary/2	atom_to_binary"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Emakefile",
+			"settings":
+			{
+				"buffer_size": 619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/common.hrl",
+			"settings":
+			{
+				"buffer_size": 327,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "project.command",
+			"settings":
+			{
+				"buffer_size": 576,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "rsync_service/deps/erlydtl/src/erlydtl_beam_compiler.erl",
+			"settings":
+			{
+				"buffer_size": 79488,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1913 files for \"MERL_NO_TRANSFORM\" (case sensitive, whole word)\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\doc\\overview.edoc:\n   47  guards may contain any expressions, not just Erlang guard expressions.\n   48  \n   49: If the macro `MERL_NO_TRANSFORM' is defined before the `merl.hrl' header\n   50  file is included, the parse transform used by Merl will be disabled, and in\n   51  that case, the match expressions `?Q(...) = ...', case switches using\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\include\\merl.hrl:\n   22  \n   23  \n   24: -ifndef(MERL_NO_TRANSFORM).\n   25  -compile({parse_transform, merl_transform}).\n   26  -endif.\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\src\\merl_tests.erl:\n   18  -module(merl_tests).\n   19  \n   20: %-define(MERL_NO_TRANSFORM, true).\n   21  -include(\"../include/merl.hrl\").\n   22  \n   ..\n  347      ].\n  348  \n  349: -ifndef(MERL_NO_TRANSFORM).\n  350  \n  351  inline_meta_test_() ->\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\src\\merl_transform.erl:\n   19  %%\n   20  %% Using `-include_lib(\"merl/include/merl.hrl\").' enables the transform,\n   21: %% unless the macro `MERL_NO_TRANSFORM' is defined first.\n   22  \n   23  -module(merl_transform).\n\n5 matches across 4 files\n\n\nSearching 1913 files for \"MERL_NO_TRANSFORM\" (case sensitive)\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\Makefile:\n   20  ebin/merl_transform.beam: ebin/merl.beam priv/merl_transform.beam\n   21  priv/merl_transform.beam: src/merl_transform.erl $(HEADERS) Makefile\n   22: 	erlc -DMERL_NO_TRANSFORM $(ERLC_FLAGS) -o priv/ $<\n   23  \n   24  .PHONY: clean\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\doc\\overview.edoc:\n   47  guards may contain any expressions, not just Erlang guard expressions.\n   48  \n   49: If the macro `MERL_NO_TRANSFORM' is defined before the `merl.hrl' header\n   50  file is included, the parse transform used by Merl will be disabled, and in\n   51  that case, the match expressions `?Q(...) = ...', case switches using\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\include\\merl.hrl:\n   22  \n   23  \n   24: -ifndef(MERL_NO_TRANSFORM).\n   25  -compile({parse_transform, merl_transform}).\n   26  -endif.\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\src\\merl_tests.erl:\n   18  -module(merl_tests).\n   19  \n   20: %-define(MERL_NO_TRANSFORM, true).\n   21  -include(\"../include/merl.hrl\").\n   22  \n   ..\n  347      ].\n  348  \n  349: -ifndef(MERL_NO_TRANSFORM).\n  350  \n  351  inline_meta_test_() ->\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\merl\\src\\merl_transform.erl:\n   19  %%\n   20  %% Using `-include_lib(\"merl/include/merl.hrl\").' enables the transform,\n   21: %% unless the macro `MERL_NO_TRANSFORM' is defined first.\n   22  \n   23  -module(merl_transform).\n\n6 matches across 5 files\n\n\nSearching 1913 files for \"http_headers\" (case sensitive, whole word)\n\nE:\\dzr\\dzr_code_2017\\erlang\\rsync_service\\deps\\cowboy\\CHANGELOG.md:\n  279   *  Move various types to the cowboy module\n  280     *  cowboy_http:version() to cowboy:http_version()\n  281:    *  cowboy_http:headers() to cowboy:http_headers()\n  282     *  cowboy_http:status() to cowboy:http_status()\n  283     *  cowboy_protocol:onrequest_fun() to cowboy:onrequest_fun()\n\nE:\\dzr\\dzr_code_2017\\erlang\\rsync_service\\deps\\cowboy\\doc\\src\\manual\\cowboy.ezdoc:\n    6  :: Types\n    7  \n    8: : http_headers() = [{binary(), iodata()}]\n    9  \n   10  HTTP headers as a list of key/values.\n   ..\n   29  is executed.\n   30  \n   31: : onresponse_fun() = fun((http_status(), http_headers(),\n   32  	iodata(), cowboy_req:req()) -> cowboy_req:req())\n   33  \n\nE:\\dzr\\dzr_code_2017\\erlang\\rsync_service\\deps\\cowboy\\doc\\src\\manual\\cowboy_req.ezdoc:\n  122  Types:\n  123  \n  124: * Headers = cowboy:http_headers()\n  125  \n  126  Return all headers.\n  ...\n  526  \n  527  * StatusCode = cowboy:http_status()\n  528: * Headers = cowboy:http_headers()\n  529  \n  530  Send a response using chunked transfer-encoding.\n  ...\n  597  \n  598  * StatusCode = cowboy:http_status()\n  599: * Headers = cowboy:http_headers()\n  600  * Body = iodata()\n  601  \n\nE:\\dzr\\dzr_code_2017\\erlang\\rsync_service\\deps\\cowboy\\src\\cowboy.erl:\n   21  -export([set_env/3]).\n   22  \n   23: -type http_headers() :: [{binary(), iodata()}].\n   24: -export_type([http_headers/0]).\n   25  \n   26  -type http_status() :: non_neg_integer() | binary().\n   ..\n   34  \n   35  -type onresponse_fun() ::\n   36: 	fun((http_status(), http_headers(), iodata(), Req) -> Req).\n   37  -export_type([onresponse_fun/0]).\n   38  \n\nE:\\dzr\\dzr_code_2017\\erlang\\rsync_service\\deps\\cowboy\\src\\cowboy_req.erl:\n  132  	qs_vals = undefined :: undefined | list({binary(), binary() | true}),\n  133  	bindings = undefined :: undefined | cowboy_router:bindings(),\n  134: 	headers = [] :: cowboy:http_headers(),\n  135  	p_headers = [] :: [any()],\n  136  	cookies = undefined :: undefined | [{binary(), binary()}],\n  ...\n  147  	resp_state = waiting :: locked | waiting | waiting_stream\n  148  		| chunks | stream | done,\n  149: 	resp_headers = [] :: cowboy:http_headers(),\n  150  	resp_body = <<>> :: iodata() | resp_body_fun()\n  151  		| {non_neg_integer(), resp_body_fun()}\n  ...\n  165  	undefined | {inet:ip_address(), inet:port_number()},\n  166  	binary(), binary(), binary(),\n  167: 	cowboy:http_version(), cowboy:http_headers(), binary(),\n  168  	inet:port_number() | undefined, binary(), boolean(), boolean(),\n  169  	undefined | cowboy:onresponse_fun())\n  ...\n  319  	end.\n  320  \n  321: -spec headers(Req) -> {cowboy:http_headers(), Req} when Req::req().\n  322  headers(Req) ->\n  323  	{Req#http_req.headers, Req}.\n  ...\n  806  	reply(Status, [], Body, Req).\n  807  \n  808: -spec reply(cowboy:http_status(), cowboy:http_headers(), Req)\n  809  	-> {ok, Req} when Req::req().\n  810  reply(Status, Headers, Req=#http_req{resp_body=Body}) ->\n  811  	reply(Status, Headers, Body, Req).\n  812  \n  813: -spec reply(cowboy:http_status(), cowboy:http_headers(),\n  814  	iodata() | {non_neg_integer() | resp_body_fun()}, Req)\n  815  	-> {ok, Req} when Req::req().\n  ...\n  944  	chunked_reply(Status, [], Req).\n  945  \n  946: -spec chunked_reply(cowboy:http_status(), cowboy:http_headers(), Req)\n  947  	-> {ok, Req} when Req::req().\n  948  chunked_reply(Status, Headers, Req) ->\n  ...\n  973  	Req#http_req{resp_state=done}.\n  974  \n  975: -spec upgrade_reply(cowboy:http_status(), cowboy:http_headers(), Req)\n  976  	-> {ok, Req} when Req::req().\n  977  upgrade_reply(Status, Headers, Req=#http_req{transport=Transport,\n  ...\n 1120  %% Internal.\n 1121  \n 1122: -spec chunked_response(cowboy:http_status(), cowboy:http_headers(), Req) ->\n 1123  	{normal | hook, Req} when Req::req().\n 1124  chunked_response(Status, Headers, Req=#http_req{\n ....\n 1163  			resp_headers=[], resp_body= <<>>}}.\n 1164  \n 1165: -spec response(cowboy:http_status(), cowboy:http_headers(),\n 1166: 	cowboy:http_headers(), cowboy:http_headers(), stream | iodata(), Req)\n 1167  	-> {normal | hook, Req} when Req::req().\n 1168  response(Status, Headers, RespHeaders, DefaultHeaders, Body, Req=#http_req{\n ....\n 1211  	{ReplyType, Req2}.\n 1212  \n 1213: -spec response_connection(cowboy:http_headers(), keepalive | close)\n 1214  	-> keepalive | close.\n 1215  response_connection([], Connection) ->\n ....\n 1224  	end.\n 1225  \n 1226: -spec response_merge_headers(cowboy:http_headers(), cowboy:http_headers(),\n 1227: 	cowboy:http_headers()) -> cowboy:http_headers().\n 1228  response_merge_headers(Headers, RespHeaders, DefaultHeaders) ->\n 1229  	Headers2 = [{Key, Value} || {Key, Value} <- Headers],\n ....\n 1232  		DefaultHeaders).\n 1233  \n 1234: -spec merge_headers(cowboy:http_headers(), cowboy:http_headers())\n 1235: 	-> cowboy:http_headers().\n 1236  \n 1237  %% Merge headers by prepending the tuples in the second list to the\n\nE:\\dzr\\dzr_code_2017\\erlang\\rsync_service\\deps\\cowboy\\src\\cowboy_spdy.erl:\n  443  %% Reply functions used by cowboy_req.\n  444  \n  445: -spec reply(socket(), binary(), cowboy:http_headers(), iodata()) -> ok.\n  446  reply(Socket = {Pid, _}, Status, Headers, Body) ->\n  447  	_ = case iolist_size(Body) of\n  ...\n  451  	ok.\n  452  \n  453: -spec stream_reply(socket(), binary(), cowboy:http_headers()) -> ok.\n  454  stream_reply(Socket = {Pid, _}, Status, Headers) ->\n  455  	_ = Pid ! {stream_reply, Socket, Status, Headers},\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\cowboy\\CHANGELOG.md:\n  279   *  Move various types to the cowboy module\n  280     *  cowboy_http:version() to cowboy:http_version()\n  281:    *  cowboy_http:headers() to cowboy:http_headers()\n  282     *  cowboy_http:status() to cowboy:http_status()\n  283     *  cowboy_protocol:onrequest_fun() to cowboy:onrequest_fun()\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\cowboy\\doc\\src\\manual\\cowboy.ezdoc:\n    6  :: Types\n    7  \n    8: : http_headers() = [{binary(), iodata()}]\n    9  \n   10  HTTP headers as a list of key/values.\n   ..\n   29  is executed.\n   30  \n   31: : onresponse_fun() = fun((http_status(), http_headers(),\n   32  	iodata(), cowboy_req:req()) -> cowboy_req:req())\n   33  \n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\cowboy\\doc\\src\\manual\\cowboy_req.ezdoc:\n  122  Types:\n  123  \n  124: * Headers = cowboy:http_headers()\n  125  \n  126  Return all headers.\n  ...\n  526  \n  527  * StatusCode = cowboy:http_status()\n  528: * Headers = cowboy:http_headers()\n  529  \n  530  Send a response using chunked transfer-encoding.\n  ...\n  597  \n  598  * StatusCode = cowboy:http_status()\n  599: * Headers = cowboy:http_headers()\n  600  * Body = iodata()\n  601  \n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\cowboy\\src\\cowboy.erl:\n   21  -export([set_env/3]).\n   22  \n   23: -type http_headers() :: [{binary(), iodata()}].\n   24: -export_type([http_headers/0]).\n   25  \n   26  -type http_status() :: non_neg_integer() | binary().\n   ..\n   34  \n   35  -type onresponse_fun() ::\n   36: 	fun((http_status(), http_headers(), iodata(), Req) -> Req).\n   37  -export_type([onresponse_fun/0]).\n   38  \n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\cowboy\\src\\cowboy_req.erl:\n  132  	qs_vals = undefined :: undefined | list({binary(), binary() | true}),\n  133  	bindings = undefined :: undefined | cowboy_router:bindings(),\n  134: 	headers = [] :: cowboy:http_headers(),\n  135  	p_headers = [] :: [any()],\n  136  	cookies = undefined :: undefined | [{binary(), binary()}],\n  ...\n  147  	resp_state = waiting :: locked | waiting | waiting_stream\n  148  		| chunks | stream | done,\n  149: 	resp_headers = [] :: cowboy:http_headers(),\n  150  	resp_body = <<>> :: iodata() | resp_body_fun()\n  151  		| {non_neg_integer(), resp_body_fun()}\n  ...\n  165  	undefined | {inet:ip_address(), inet:port_number()},\n  166  	binary(), binary(), binary(),\n  167: 	cowboy:http_version(), cowboy:http_headers(), binary(),\n  168  	inet:port_number() | undefined, binary(), boolean(), boolean(),\n  169  	undefined | cowboy:onresponse_fun())\n  ...\n  319  	end.\n  320  \n  321: -spec headers(Req) -> {cowboy:http_headers(), Req} when Req::req().\n  322  headers(Req) ->\n  323  	{Req#http_req.headers, Req}.\n  ...\n  806  	reply(Status, [], Body, Req).\n  807  \n  808: -spec reply(cowboy:http_status(), cowboy:http_headers(), Req)\n  809  	-> {ok, Req} when Req::req().\n  810  reply(Status, Headers, Req=#http_req{resp_body=Body}) ->\n  811  	reply(Status, Headers, Body, Req).\n  812  \n  813: -spec reply(cowboy:http_status(), cowboy:http_headers(),\n  814  	iodata() | {non_neg_integer() | resp_body_fun()}, Req)\n  815  	-> {ok, Req} when Req::req().\n  ...\n  944  	chunked_reply(Status, [], Req).\n  945  \n  946: -spec chunked_reply(cowboy:http_status(), cowboy:http_headers(), Req)\n  947  	-> {ok, Req} when Req::req().\n  948  chunked_reply(Status, Headers, Req) ->\n  ...\n  973  	Req#http_req{resp_state=done}.\n  974  \n  975: -spec upgrade_reply(cowboy:http_status(), cowboy:http_headers(), Req)\n  976  	-> {ok, Req} when Req::req().\n  977  upgrade_reply(Status, Headers, Req=#http_req{transport=Transport,\n  ...\n 1120  %% Internal.\n 1121  \n 1122: -spec chunked_response(cowboy:http_status(), cowboy:http_headers(), Req) ->\n 1123  	{normal | hook, Req} when Req::req().\n 1124  chunked_response(Status, Headers, Req=#http_req{\n ....\n 1163  			resp_headers=[], resp_body= <<>>}}.\n 1164  \n 1165: -spec response(cowboy:http_status(), cowboy:http_headers(),\n 1166: 	cowboy:http_headers(), cowboy:http_headers(), stream | iodata(), Req)\n 1167  	-> {normal | hook, Req} when Req::req().\n 1168  response(Status, Headers, RespHeaders, DefaultHeaders, Body, Req=#http_req{\n ....\n 1211  	{ReplyType, Req2}.\n 1212  \n 1213: -spec response_connection(cowboy:http_headers(), keepalive | close)\n 1214  	-> keepalive | close.\n 1215  response_connection([], Connection) ->\n ....\n 1224  	end.\n 1225  \n 1226: -spec response_merge_headers(cowboy:http_headers(), cowboy:http_headers(),\n 1227: 	cowboy:http_headers()) -> cowboy:http_headers().\n 1228  response_merge_headers(Headers, RespHeaders, DefaultHeaders) ->\n 1229  	Headers2 = [{Key, Value} || {Key, Value} <- Headers],\n ....\n 1232  		DefaultHeaders).\n 1233  \n 1234: -spec merge_headers(cowboy:http_headers(), cowboy:http_headers())\n 1235: 	-> cowboy:http_headers().\n 1236  \n 1237  %% Merge headers by prepending the tuples in the second list to the\n\nE:\\dzr\\dzr_code_2017\\erlang\\work_helper\\deps\\cowboy\\src\\cowboy_spdy.erl:\n  443  %% Reply functions used by cowboy_req.\n  444  \n  445: -spec reply(socket(), binary(), cowboy:http_headers(), iodata()) -> ok.\n  446  reply(Socket = {Pid, _}, Status, Headers, Body) ->\n  447  	_ = case iolist_size(Body) of\n  ...\n  451  	ok.\n  452  \n  453: -spec stream_reply(socket(), binary(), cowboy:http_headers()) -> ok.\n  454  stream_reply(Socket = {Pid, _}, Status, Headers) ->\n  455  	_ = Pid ! {stream_reply, Socket, Status, Headers},\n\n62 matches across 12 files\n",
+			"settings":
+			{
+				"buffer_size": 13745,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "work_helper/deps/merl/Makefile",
+			"settings":
+			{
+				"buffer_size": 1150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/deps/merl/include/merl.hrl",
+			"settings":
+			{
+				"buffer_size": 951,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/deps/erlydtl/erlydtl.d",
+			"settings":
+			{
+				"buffer_size": 492,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/tpl/item_type_list.tpl",
+			"settings":
+			{
+				"buffer_size": 1539,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_helper/tpl/item_table.tpl",
+			"settings":
+			{
+				"buffer_size": 285,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_helper/src/work_helper_app.erl",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/dzr/dzr_code_2017/help_doc/usage-erlang.mk.help",
+			"settings":
+			{
+				"buffer_size": 224,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_helper/src/helper_handler.erl",
+			"settings":
+			{
+				"buffer_size": 5808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "util/util_format_table.erl",
+			"settings":
+			{
+				"buffer_size": 1586,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "rsync_service/deps/cowboy/src/cowboy_req.erl",
+			"settings":
+			{
+				"buffer_size": 48695,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rsync_service/deps/cowboy/src/cowboy.erl",
+			"settings":
+			{
+				"buffer_size": 2901,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/deps/erlydtl/test/erlydtl_test_defs.erl",
+			"settings":
+			{
+				"buffer_size": 101347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/deps/cowboy/test/http_SUITE.erl",
+			"settings":
+			{
+				"buffer_size": 38337,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/deps/erlydtl/test/erlydtl_test_extension.erl",
+			"settings":
+			{
+				"buffer_size": 1433,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "%% @doc 属性表\n-module (property_code_list).\n-include(\"common.hrl\").\n-compile([export_all]).\n\nall() ->\n	[\n		{?PROPERTY_attackUpper, \"攻击上限\"},\n		{?PROPERTY_attackLower, \"攻击下限\"},\n		{?PROPERTY_magicUpper, \"魔法上限\"},\n		{?PROPERTY_magicLower, \"魔法下限\"},\n		{?PROPERTY_divineUpper, \"道术上限\"},\n		{?PROPERTY_divineLower, \"道术下限\"},\n		{?PROPERTY_physicalDefenseUpper, \"防御上限\"},\n		{?PROPERTY_physicalDefenseLower, \"防御下限\"},\n		{?PROPERTY_magicDefenseUpper, \"魔防上限\"},\n		{?PROPERTY_magicDefenseLower, \"魔防下限\"},\n		{?PROPERTY_physicalDodge, \"敏捷\"},\n		{?PROPERTY_magicDodge, \"魔法躲避\"},\n		{?PROPERTY_hit, \"命中\"},\n		{?PROPERTY_damageBonus, \"伤害加成\"},\n		{?PROPERTY_damageReduction, \"伤害减免\"},\n		{?PROPERTY_godPowerBonus, \"秒杀加成\"},\n		{?PROPERTY_godPowerRate, \"秒杀几率\"},\n		{?PROPERTY_bloodSuckingAddition, \"吸血加成\"},\n		{?PROPERTY_attackSpeed, \"攻击速度\"},\n		{?PROPERTY_moveSpeed, \"移动速度\"},\n		{?PROPERTY_hpLimit, \"血量上限\"},\n		{?PROPERTY_mpLimit, \"篮量上限\"},\n		{?PROPERTY_hpPer5s, \"每5秒回血值\"},\n		{?PROPERTY_mpPer5s, \"每5秒回篮值\"},\n		{?PROPERTY_luck, \"幸运值\"},\n		{?PROPERTY_paralysisLev, \"麻痹等级\"},\n		{?PROPERTY_immune_paralysisLev, \"破麻痹等级\"},\n		{?PROPERTY_mpProtection, \"护身等级\"},\n		{?PROPERTY_immuneMpProtection, \"破护身等级\"},\n		{?PROPERTY_resurrectionLevel, \"复活等级\"},\n		{?PROPERTY_immuneResurrectionLevel, \"破复活等级\"},\n		{?PROPERTY_teleportLvel, \"传送等级\"},\n		{?PROPERTY_angerLimit, \"怒气上限\"},\n		{?PROPERTY_returnTrip, \"回城时间\"},\n		{?PROPERTY_liquidationUpper, \"清算累计伤害上限\"},\n		{?PROPERTY_damageMultiple, \"伤害倍数\"},\n		{?PROPERTY_physicalDefenseMultiple, \"物理防御倍数\"},\n		{?PROPERTY_magicDefenseMultiple, \"魔法防御倍数\"},\n		{?PROPERTY_hPMultiple, \"血量倍数\"},\n		{?PROPERTY_mPMultiple, \"篮量倍数\"},\n		{?PROPERTY_killingReward, \"杀戮值\"},\n		{?PROPERTY_ResurrectionValue, \"复活值\"},\n		{?PROPERTY_expAddition, \"经验加成\"},\n		{?PROPERTY_mpSuckingAddition, \"吸蓝加成\"},\n		{?PROPERTY_mpProtectionValue, \"护身值\"},\n		{?PROPERTY_WeightLimitValue, \"负重上限\"},\n		{?PROPERTY_GodPowerLev, \"秒杀等级\"},\n		{?PROPERTY_HPPoint, \"体力\"},\n		{?PROPERTY_MPPoint, \"魔力\"}\n	].\n",
+			"file": "/E/dzr/dzr_code_2017/temp/property_code_list.erl",
+			"file_size": 2371,
+			"file_write_time": 131413858722580002,
+			"settings":
+			{
+				"buffer_size": 1914,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "util/util_list.erl",
+			"settings":
+			{
+				"buffer_size": 979,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "-module(data_skillmain).\n-include(\"common.hrl\").\n-compile([export_all]).\n-export([get_all/0]).\n-export([get_skillmain/1]).\n\nget_skillmain(100) ->#st_skillmain_config{skillId=100,skillName=\"[b]普通攻击[-]\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=1,unlockLvl=1,baseRune=1000,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(101) ->#st_skillmain_config{skillId=101,skillName=\"[b]基本剑法[-]\",skillMode=\"NORMALSKILL\",prof=3,levelLimit=20,unlockLvl=1,baseRune=1010,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(102) ->#st_skillmain_config{skillId=102,skillName=\"[b]攻杀剑法[-]\",skillMode=\"NORMALSKILL\",prof=3,levelLimit=20,unlockLvl=1,baseRune=1020,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(103) ->#st_skillmain_config{skillId=103,skillName=\"[b]刺杀剑法[-]\",skillMode=\"NORMALSKILL\",prof=3,levelLimit=20,unlockLvl=4,baseRune=1030,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(104) ->#st_skillmain_config{skillId=104,skillName=\"[b]半月弯刀[-]\",skillMode=\"NORMALSKILL\",prof=3,levelLimit=20,unlockLvl=8,baseRune=1040,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(121) ->#st_skillmain_config{skillId=121,skillName=\"[b]开天斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=1,baseRune=1210,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(122) ->#st_skillmain_config{skillId=122,skillName=\"[b]辟地斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=4,baseRune=1220,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(123) ->#st_skillmain_config{skillId=123,skillName=\"[b]逐日斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=8,baseRune=1230,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(124) ->#st_skillmain_config{skillId=124,skillName=\"[b]追星斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=12,baseRune=1240,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(141) ->#st_skillmain_config{skillId=141,skillName=\"[b]圆月斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=1,baseRune=1410,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(142) ->#st_skillmain_config{skillId=142,skillName=\"[b]十方斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=4,baseRune=1420,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(143) ->#st_skillmain_config{skillId=143,skillName=\"[b]彻地钉[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=8,baseRune=1430,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(144) ->#st_skillmain_config{skillId=144,skillName=\"[b]无敌斩[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=12,baseRune=1440,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(161) ->#st_skillmain_config{skillId=161,skillName=\"[b]烈火剑[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=1,baseRune=1610,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(162) ->#st_skillmain_config{skillId=162,skillName=\"[b]莲月剑[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=4,baseRune=1620,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(163) ->#st_skillmain_config{skillId=163,skillName=\"[b]雷霆剑[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=8,baseRune=1630,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(164) ->#st_skillmain_config{skillId=164,skillName=\"[b]独孤剑[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=12,baseRune=1640,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(165) ->#st_skillmain_config{skillId=165,skillName=\"[b]烈火剑效果[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=0,baseRune=1650,proRune=[0,0,0,0,0],skillSeries=0};\nget_skillmain(166) ->#st_skillmain_config{skillId=166,skillName=\"[b]莲月剑效果[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=0,baseRune=1660,proRune=[0,0,0,0,0],skillSeries=0};\nget_skillmain(167) ->#st_skillmain_config{skillId=167,skillName=\"[b]雷霆剑效果[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=0,baseRune=1670,proRune=[0,0,0,0,0],skillSeries=0};\nget_skillmain(181) ->#st_skillmain_config{skillId=181,skillName=\"[b]野蛮冲撞[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=15,baseRune=1810,proRune=[0,0,0,0,0],skillSeries=5};\nget_skillmain(182) ->#st_skillmain_config{skillId=182,skillName=\"[b]冲锋[-]\",skillMode=\"CLIENTSKILL\",prof=3,levelLimit=20,unlockLvl=35,baseRune=1820,proRune=[0,0,0,0,0],skillSeries=5};\nget_skillmain(199) ->#st_skillmain_config{skillId=199,skillName=\"无\",skillMode=\"CLIENTSKILL\",prof=0,levelLimit=20,unlockLvl=15,baseRune=0,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(200) ->#st_skillmain_config{skillId=200,skillName=\"无\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=1,unlockLvl=1,baseRune=2000,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(201) ->#st_skillmain_config{skillId=201,skillName=\"[b]灵魂火符[-]\",skillMode=\"NORMALSKILL\",prof=6,levelLimit=20,unlockLvl=1,baseRune=2010,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(202) ->#st_skillmain_config{skillId=202,skillName=\"[b]血咒[-]\",skillMode=\"NORMALSKILL\",prof=6,levelLimit=20,unlockLvl=1,baseRune=2020,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(203) ->#st_skillmain_config{skillId=203,skillName=\"[b]飓风破[-]\",skillMode=\"NORMALSKILL\",prof=6,levelLimit=20,unlockLvl=4,baseRune=2030,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(204) ->#st_skillmain_config{skillId=204,skillName=\"[b]虹吸[-]\",skillMode=\"NORMALSKILL\",prof=6,levelLimit=20,unlockLvl=8,baseRune=2040,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(221) ->#st_skillmain_config{skillId=221,skillName=\"[b]回春术[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=1,baseRune=2210,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(222) ->#st_skillmain_config{skillId=222,skillName=\"[b]群体回春术[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=4,baseRune=2220,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(223) ->#st_skillmain_config{skillId=223,skillName=\"[b]神圣盾甲术[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=8,baseRune=2230,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(224) ->#st_skillmain_config{skillId=224,skillName=\"[b]精神力战法[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=12,baseRune=2240,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(241) ->#st_skillmain_config{skillId=241,skillName=\"[b]召唤守卫[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=1,baseRune=2410,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(242) ->#st_skillmain_config{skillId=242,skillName=\"[b]召唤神兽[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=4,baseRune=2420,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(243) ->#st_skillmain_config{skillId=243,skillName=\"[b]召唤月灵[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=8,baseRune=2430,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(244) ->#st_skillmain_config{skillId=244,skillName=\"[b]召唤白虎[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=12,baseRune=2440,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(261) ->#st_skillmain_config{skillId=261,skillName=\"[b]诅咒术[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=1,baseRune=2610,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(262) ->#st_skillmain_config{skillId=262,skillName=\"[b]气功波[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=4,baseRune=2620,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(263) ->#st_skillmain_config{skillId=263,skillName=\"[b]无极真气[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=8,baseRune=2630,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(264) ->#st_skillmain_config{skillId=264,skillName=\"[b]困魔咒[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=12,baseRune=2640,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(281) ->#st_skillmain_config{skillId=281,skillName=\"[b]施毒术[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=15,baseRune=2810,proRune=[0,0,0,0,0],skillSeries=5};\nget_skillmain(282) ->#st_skillmain_config{skillId=282,skillName=\"[b]隐身术[-]\",skillMode=\"CLIENTSKILL\",prof=6,levelLimit=20,unlockLvl=35,baseRune=2820,proRune=[0,0,0,0,0],skillSeries=5};\nget_skillmain(299) ->#st_skillmain_config{skillId=299,skillName=\"无\",skillMode=\"CLIENTSKILL\",prof=0,levelLimit=20,unlockLvl=15,baseRune=0,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(300) ->#st_skillmain_config{skillId=300,skillName=\"[b]无符文[-]\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=1,unlockLvl=1,baseRune=3000,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(301) ->#st_skillmain_config{skillId=301,skillName=\"[b]火球术[-]\",skillMode=\"NORMALSKILL\",prof=9,levelLimit=20,unlockLvl=1,baseRune=3010,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(302) ->#st_skillmain_config{skillId=302,skillName=\"[b]灭天火[-]\",skillMode=\"NORMALSKILL\",prof=9,levelLimit=20,unlockLvl=1,baseRune=3020,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(303) ->#st_skillmain_config{skillId=303,skillName=\"[b]地狱火[-]\",skillMode=\"NORMALSKILL\",prof=9,levelLimit=20,unlockLvl=4,baseRune=3030,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(304) ->#st_skillmain_config{skillId=304,skillName=\"[b]爆裂火焰[-]\",skillMode=\"NORMALSKILL\",prof=9,levelLimit=20,unlockLvl=8,baseRune=3040,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(321) ->#st_skillmain_config{skillId=321,skillName=\"[b]雷电术[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=1,baseRune=3210,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(322) ->#st_skillmain_config{skillId=322,skillName=\"[b]疾光电影[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=4,baseRune=3220,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(323) ->#st_skillmain_config{skillId=323,skillName=\"[b]诱惑之光[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=8,baseRune=3230,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(324) ->#st_skillmain_config{skillId=324,skillName=\"[b]圣言术[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=12,baseRune=3240,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(342) ->#st_skillmain_config{skillId=342,skillName=\"[b]地狱雷光[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=1,baseRune=3420,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(341) ->#st_skillmain_config{skillId=341,skillName=\"[b]火墙术[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=4,baseRune=3410,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(343) ->#st_skillmain_config{skillId=343,skillName=\"[b]冰咆哮[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=8,baseRune=3430,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(344) ->#st_skillmain_config{skillId=344,skillName=\"[b]五雷轰顶[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=12,baseRune=3440,proRune=[0,0,0,0,0],skillSeries=3};\nget_skillmain(361) ->#st_skillmain_config{skillId=361,skillName=\"[b]抗拒火环[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=1,baseRune=3610,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(362) ->#st_skillmain_config{skillId=362,skillName=\"[b]魔法盾[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=4,baseRune=3620,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(363) ->#st_skillmain_config{skillId=363,skillName=\"[b]龙卷风[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=8,baseRune=3630,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(364) ->#st_skillmain_config{skillId=364,skillName=\"[b]分身术[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=12,baseRune=3640,proRune=[0,0,0,0,0],skillSeries=4};\nget_skillmain(381) ->#st_skillmain_config{skillId=381,skillName=\"[b]闪现[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=15,baseRune=3810,proRune=[0,0,0,0,0],skillSeries=5};\nget_skillmain(382) ->#st_skillmain_config{skillId=382,skillName=\"[b]寒冰屏障[-]\",skillMode=\"CLIENTSKILL\",prof=9,levelLimit=20,unlockLvl=35,baseRune=3820,proRune=[0,0,0,0,0],skillSeries=5};\nget_skillmain(399) ->#st_skillmain_config{skillId=399,skillName=\"无\",skillMode=\"CLIENTSKILL\",prof=0,levelLimit=20,unlockLvl=15,baseRune=0,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(19) ->#st_skillmain_config{skillId=19,skillName=\"[b]怪物普攻[-]\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=1,unlockLvl=1,baseRune=19,proRune=[0,0,0,0,0],skillSeries=2};\nget_skillmain(401) ->#st_skillmain_config{skillId=401,skillName=\"[b]月灵技能[-]\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=20,unlockLvl=1,baseRune=4010,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(402) ->#st_skillmain_config{skillId=402,skillName=\"[b]神兽火[-]\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=20,unlockLvl=4,baseRune=4020,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(403) ->#st_skillmain_config{skillId=403,skillName=\"[b]疾光电影[-]\",skillMode=\"CLIENTSKILL\",prof=0,levelLimit=20,unlockLvl=4,baseRune=4030,proRune=[0,0,0,0,0],skillSeries=1};\nget_skillmain(99999) ->#st_skillmain_config{skillId=99999,skillName=\"[b]空技能的符文[-]\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=0,unlockLvl=0,baseRune=9999,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(899998) ->#st_skillmain_config{skillId=899998,skillName=\"[b]BUFF用空技能[-]\",skillMode=\"CLIENTSKILL\",prof=0,levelLimit=1,unlockLvl=1,baseRune=899998,proRune=[0,0,0,0,0],skillSeries=100};\nget_skillmain(5000) ->#st_skillmain_config{skillId=5000,skillName=\"赤月恶魔地钉\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=0,unlockLvl=0,baseRune=500001,proRune=[0,0,0,0,0],skillSeries=0};\nget_skillmain(5001) ->#st_skillmain_config{skillId=5001,skillName=\"触龙神扇形毒\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=0,unlockLvl=0,baseRune=500101,proRune=[0,0,0,0,0],skillSeries=0};\nget_skillmain(5002) ->#st_skillmain_config{skillId=5002,skillName=\"火龙神全屏攻击\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=0,unlockLvl=0,baseRune=500201,proRune=[0,0,0,0,0],skillSeries=0};\nget_skillmain(6001) ->#st_skillmain_config{skillId=6001,skillName=\"弓箭守卫用箭\",skillMode=\"NORMALSKILL\",prof=0,levelLimit=20,unlockLvl=1,baseRune=6001,proRune=[0,0,0,0,0],skillSeries=6001};\nget_skillmain(6002) ->#st_skillmain_config{skillId=6002,skillName=\"大刀无敌斩\",skillMode=\"CLIENTSKILL\",prof=0,levelLimit=20,unlockLvl=1,baseRune=6002,proRune=[0,0,0,0,0],skillSeries=6002};\nget_skillmain(_) ->{}.\n\nget_all()->[100,101,102,103,104,121,122,123,124,141,142,143,144,161,162,163,164,165,166,167,181,182,199,200,201,202,203,204,221,222,223,224,241,242,243,244,261,262,263,264,281,282,299,300,301,302,303,304,321,322,323,324,342,341,343,344,361,362,363,364,381,382,399,19,401,402,403,99999,899998,5000,5001,5002,6001,6002].",
+			"file": "/E/dzr/dzr_code_2017/temp/data_skillmain.erl",
+			"file_size": 14569,
+			"file_write_time": 131413829062260002,
+			"settings":
+			{
+				"buffer_size": 14043,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/tpl/scene_type_list.tpl",
+			"settings":
+			{
+				"buffer_size": 1391,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_helper/tpl/skill_type_list.tpl",
+			"settings":
+			{
+				"buffer_size": 1428,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/cq_svr_project/cq_svr/src/fun/server_ex/gm/gm_code_list.erl",
+			"settings":
+			{
+				"buffer_size": 1036,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_helper/deps/merl/src/merl.erl",
+			"settings":
+			{
+				"buffer_size": 33838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "work_helper/tpl/gm_list.tpl",
+			"settings":
+			{
+				"buffer_size": 3721,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/dzr/linux/hello_erlang/deps/cowboy/Makefile",
+			"settings":
+			{
+				"buffer_size": 1310,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					""
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Build with dependencies"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (common_test)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test Current Module (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Generate Documentation"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Update Dependencies"
+				]
+			],
+			[
+				"Packages/Erlang/rebar.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "sse",
+		"selected_items":
+		[
+			[
+				"sse",
+				"Set Syntax: Erlang"
+			],
+			[
+				"SSBAT",
+				"Set Syntax: Batch File"
+			],
+			[
+				"sss",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ss",
+				"SublimeREPL: Shell"
+			],
+			[
+				"ssq",
+				"Set Syntax: SQL (Rails)"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"pakcin",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"browse",
+				"Browse Mode: Left Sidebar"
+			],
+			[
+				"fileb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pack",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"Snippet: ",
+				"Snippet: nodes"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"pakcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"pps",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pai",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pp",
+				"Package Control: Disable Package"
+			],
+			[
+				"se",
+				"Set Syntax: Erlang"
+			],
+			[
+				"ppc",
+				"Package Control: Install Package"
+			],
+			[
+				"ppi",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"fc",
+				"File: Close All"
+			],
+			[
+				"sssh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Snippet: gen_s",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"Snippet: gen",
+				"Snippet: gen_event Callbacks"
+			],
+			[
+				"todore",
+				"TodoReview: Project Files"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Repository"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"reviewmys",
+				"ReviewMyself: Folders in Project"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inse",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"rmove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ge",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 272.0,
+		"history":
+		[
+			"os.path.exists(\"D:/programs/erl5.10.1/bin\")",
+			"os.path.exists(\"D:/programs/erl5.10.1/bin/erl\")",
+			"import os",
+			"build/all.py",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/dzr/dzr_code_2017/erlang",
+		"/E/dzr/dzr_code_2017/erlang/ebin",
+		"/E/dzr/dzr_code_2017/erlang/include",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/src",
+		"/E/dzr/dzr_code_2017/erlang/util",
+		"/E/dzr/dzr_code_2017/erlang/work_helper",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/cowboy",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/cowboy/test",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/erlydtl",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/erlydtl/test",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/src",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/tpl"
+	],
+	"file_history":
+	[
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/deps/cowboy/doc/src/manual/cowboy.ezdoc",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/sync_notify.erl",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/erlydtl/Makefile",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/erlydtl/rebar.config",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/deps/erlydtl/README_I18N",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/.erlang.mk/rebar/src/rebar_edoc.erl",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/deps/cowboy/makefile",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/deps/cowboy/src/cowboy_req.erl",
+		"/E/dzr/dzr_code_2017/temp/gm_code_list.erl",
+		"/E/dzr/dzr_code_2017/erlang/work_helper/Makefile",
+		"/E/dzr/dzr_code_2017/temp/hello_handler.erl",
+		"/E/dzr/dzr_code_2017/temp/gm_list.tpl",
+		"/E/dzr/linux/hello_erlang/Makefile",
+		"/E/dzr/linux/hello_erlang/src/hello_erlang_sup.erl",
+		"/E/dzr/linux/hello_erlang/src/gm_cmd.erl",
+		"/E/dzr/linux/hello_erlang/src/hello_erlang_app.erl",
+		"/E/dzr/linux/hello_erlang/src/loop_handler.erl",
+		"/E/dzr/linux/hello_erlang/src/hello_handler.erl",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/deps/cowboy/rebar.config",
+		"/E/dzr/dzr_code_2017/erlang/rsync_service/deps/cowboy/cowboy.d",
+		"/E/dzr/dzr_code_2017/erlang/erlang.sublime-workspace",
+		"/E/dzr_code_2017/help_doc/usage-erlang.mk.help",
+		"/E/dzr_code_2017/erlang/port_example/use_port.erl",
+		"/D/programs/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/E/dzr/dzr_code_2017/fs_watcher/log/test.logg",
+		"/D/programs/fs_watcher_release/config/base.config",
+		"/E/dzr/dzr_code_2017/fs_watcher/log/console.log",
+		"/E/dzr/dzr_code_2017/fs_watcher/script/sync_from_server.cmd",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/main.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/ebin/lager.app",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/fs_watcher_app.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/log/error.log",
+		"/E/dzr/dzr_code_2017/fs_watcher/log/crash.log",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/fs_watcher_sup.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/filewatcher_inotify.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/setting.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/script/project.script",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/filewatcher_handler.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/README.md",
+		"/E/dzr/dzr_code_2017/fs_watcher/src/rsync_handler.erl",
+		"/E/dzr/dzr_code_2017/fs_watcher/script/sync_to_server.cmd",
+		"/E/dzr/dzr_code_2017/fs_watcher/config/base.config",
+		"/D/programs/cwRsync/cwrsync.cmd",
+		"/E/BaiduNetdiskDownload/fs_watcher/log/console.log",
+		"/E/BaiduNetdiskDownload/fs_watcher/config/config",
+		"/E/BaiduNetdiskDownload/fs_watcher/src/project.script",
+		"/E/BaiduNetdiskDownload/fs_watcher/src/config",
+		"/E/BaiduNetdiskDownload/fs_watcher/Emakefile",
+		"/E/BaiduNetdiskDownload/fs_watcher/script/sync_path1.cmd",
+		"/E/BaiduNetdiskDownload/fs_watcher/rebar.config",
+		"/E/BaiduNetdiskDownload/fs_watcher/src/fs_watcher_sup.erl",
+		"/E/BaiduNetdiskDownload/fs_watcher/src/filewatcher_inotify.erl",
+		"/E/BaiduNetdiskDownload/fs_watcher/src/filewatcher_handler.erl",
+		"/C/Users/dell/Documents/Identity.pub",
+		"/D/programs/cwRsync/Identity.pub",
+		"/D/programs/cwRsync/Identity",
+		"/C/Users/dell/Documents/Identity",
+		"/E/dzr/filewatcher/_build/default/lib/filewatcher/ebin/filewatcher.app",
+		"/E/dzr/filewatcher/_build/default/lib/filewatcher/.rebar3/erlcinfo",
+		"/E/dzr/filewatcher/rebar.config",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/src/filewatcher/z_code_reloader.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/src/filewatcher/z_filewatcher_mtime.erl",
+		"/E/dzr/linux/linux.sublime-project",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/priv/sites/zotonic_status/modules/mod_zotonic_status_vcs/mod_zotonic_status_vcs.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/diffy/src/diffy.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/diffy/README.md",
+		"/E/dzr/linux/zotonic/priv/log/crash.log",
+		"/E/dzr/linux/zotonic/priv/log/console.log",
+		"/E/dzr/linux/zotonic/priv/log/error.log",
+		"/E/dzr/linux/zotonic/src/zotonic.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/src/cowboy_req.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/cowboy/src/cowboy_req.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/src/cowboy_router.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/src/cowboy_handler.erl",
+		"/E/dzr/linux/hello_erlang/hello_erlang.d",
+		"/E/dzr/linux/nitrogen/rebar.config",
+		"/E/dzr/linux/nitrogen/support/embed/add_rebar_deps.escript",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/config",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/dzrsite.erl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/controllers/controller_default_contact.erl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/controllers/controller_test.erl",
+		"/E/dzr/linux/zotonic/include/zotonic.hrl",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/src/support/z_context.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/src/models/m_media.erl",
+		"/E/dzr/linux/zotonic/modules/mod_development/controllers/controller_hello_world.erl",
+		"/E/dzr/linux/zotonic/include/controller_html_helper.hrl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/dispatch/dispatch",
+		"/E/dzr/linux/zotonic/doc/ref/controllers/controller_page.rst",
+		"/E/dzr/linux/zotonic/modules/mod_base/controllers/controller_page.erl",
+		"/E/dzr/linux/zotonic/src/support/z_context.erl",
+		"/E/dzr/linux/zotonic/modules/mod_authentication/controllers/controller_logon.erl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/templates/home.tpl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/templates/base.tpl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/templates/_article_summary.tpl",
+		"/E/dzr/linux/zotonic/user/sites/dzrsite/templates/test_page.tpl",
+		"/E/dzr/linux/zotonic/src/support/z_template.erl",
+		"/E/dzr/linux/zotonic/modules/mod_base/mod_base.erl",
+		"/E/dzr/linux/zotonic/src/scripts/zotonic-debug",
+		"/E/dzr/linux/zotonic/zotonic.pid",
+		"/E/dzr/linux/zotonic/src/filewatcher/z_filewatcher_inotify.erl",
+		"/E/dzr/linux/zotonic/src/support/z_utils.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/src/zotonic_app.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/cowmachine/src/cowmachine_controller.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/cowmachine/src/cowmachine_decision_core.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/cowmachine/src/cowmachine.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/cowboy/src/cowboy_stream_h.erl",
+		"/E/dzr/linux/zotonic/src/support/z_sites_manager.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/zotonic/src/zotonic.erl",
+		"/E/dzr/linux/zotonic/src/support/z.erl",
+		"/E/dzr/linux/zotonic/src/zotonic_compile.erl",
+		"/E/dzr/linux/zotonic/docker/erlang.config.sed",
+		"/E/dzr/linux/zotonic/bin/zotonic",
+		"/E/dzr/linux/zotonic/src/scripts/helpers/zotonic_setup",
+		"/E/dzr/linux/hello_erlang/priv/static/assets/shell_help",
+		"/E/dzr/linux/zotonic/src/tests/pgsql_perf_db_tests.erl",
+		"/E/dzr/linux/zotonic/_build/default/lib/epgsql/src/epgsql.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/test/http2_SUITE.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/test/compress_SUITE.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/websocket/src/websocket_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/upload/src/upload_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/rest_stream_response/src/rest_stream_response_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/rest_pastebin/src/rest_pastebin_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/rest_hello_world/src/rest_hello_world_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/rest_basic_auth/src/rest_basic_auth_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/markdown_middleware/src/markdown_middleware_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/file_server/src/file_server_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/eventsource/src/eventsource_app.erl",
+		"/E/dzr/linux/hello_erlang/deps/cowboy/examples/error_hook/src/error_hook_app.erl"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			"",
+			"src/*.erl, *.hrl",
+			"*.erl, *.hrl, -E:/dzr/linux/zotonic/src/*",
+			"*.erl, *.hrl,-E:/dzr/linux/zotonic/src/*",
+			"*.erl, *.hrl,-E:\\dzr\\linux\\zotonic/src/*",
+			"*.erl, *.hrl",
+			"*.erl, *.hrl,-zotonic/src/*",
+			"*.erl, *.hrl",
+			"*.erl, *.hrl,-scene_config_script_*.erl,-scene_*.erl,*.py",
+			"",
+			"*.erl, *.hrl,-scene_config_script_*.erl,-scene_*.erl,*.py",
+			"*.erl, *.hrl,-scene_config_script_*.erl,-data_*.erl,-scene_*.erl,*.py",
+			"*.erl, *.hrl,-scene_config_script_*.erl,-data_*.erl,-scene_*.erl",
+			"*.erl, *.hrl,-scene_config_script_*.erl,-data_*.erl",
+			"*.erl, *.hrl,-scene_config_script_*.erl",
+			"*.erl, *.hrl",
+			"*.sql",
+			"*.erl,*.hrl,*.sql,-scene_config_script*.erl",
+			"*.erl,*.hrl,*.sql",
+			"*.erl,*.hrl",
+			"*.erl",
+			"",
+			"-pt_*.erl",
+			"",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\tsuit\\src",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\config",
+			"E:\\F1_WORK\\server\\otp_src_17.5",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\recon-master",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\tsuit, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\tsuit",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\tsuit",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\tsuit, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\tsuit\\src, *",
+			"E:\\F1_WORK\\server\\tsuit\\src",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\tsung, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\tsung, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"E:\\F1_WORK\\server\\trunk, ",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk,",
+			"E:\\F1_WORK\\server\\trunk, *.sh",
+			"E:\\F1_WORK\\server\\trunk",
+			"D:\\tsung-1.6.0\\tsung-1.6.0",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0\\examples, *",
+			"E:\\F1_WORK\\server\\trunk",
+			"D:\\tsung-1.6.0\\tsung-1.6.0, *.erl",
+			"D:\\tsung-1.6.0\\tsung-1.6.0\\examples",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *",
+			"E:\\F1_WORK\\server\\trunk, *.php",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.php",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\script",
+			"E:\\F1_WORK\\server\\",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.php",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.php",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk, *.hrl",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk\\app, *.erl",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\tsung, *.erl",
+			"E:\\F1_WORK\\tsung",
+			"E:\\F1_WORK\\tsung, *.erl",
+			"H:\\tsung-1.5.1\\tsung-1.5.1",
+			"H:\\tsung-1.5.1\\tsung-1.5.1, *.erl",
+			"H:\\tsung-1.5.1\\tsung-1.5.1\\src, *.erl",
+			"E:\\F1_WORK\\server\\trunk\\app",
+			"E:\\F1_WORK\\server\\trunk\\app, *.cs",
+			"E:\\F1_WORK\\server\\trunk, *.cs",
+			"E:\\F1_WORK\\server\\trunk",
+			"E:\\F1_WORK\\server\\trunk, *.erl",
+			"E:\\F1_WORK\\server\\trunk"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"encode",
+			"http_headers",
+			"MERL_NO_TRANSFORM",
+			"ffff66",
+			"'",
+			"color:{{color}}",
+			"backgroundColor",
+			"=",
+			"1",
+			"Id",
+			"Cmd",
+			"include",
+			"场景",
+			"scene",
+			"data_scene_config",
+			"monster_type_list",
+			"scene_type_list",
+			"data_scene",
+			"InZ",
+			"InX",
+			"item_type_list",
+			"1",
+			"List2",
+			"arg",
+			"B1",
+			">>",
+			"<<",
+			"url",
+			"req_action",
+			"rsync_service",
+			"\\",
+			"rmemo",
+			"proto",
+			"start_ssh",
+			"\\",
+			"line",
+			"H",
+			"Time",
+			"time",
+			"lager:info",
+			"Identity_home",
+			"rsync_root_dir",
+			"lager",
+			"Identity_work",
+			"SrcDir0",
+			"DestDir2",
+			"SrcDir2",
+			"server_dir",
+			"normalize_ssh_path",
+			"server_dir",
+			"makesure_dir",
+			"handle_file",
+			"@",
+			"DestDir",
+			"Filename",
+			"watch_dirs",
+			"transfer_dir",
+			"\\",
+			"_build/default",
+			"cmd",
+			"io",
+			"watcher_inotify",
+			"filewatcher_inotify",
+			"enotify_inotifywait_win32",
+			"enotify_inotifywait",
+			"z_filewatcher_sup",
+			"z_filewatcher_inotify",
+			"rebar_agent",
+			"enotify",
+			"inotifywait",
+			"\\",
+			"inotifywait",
+			"z_filewatcher_inotify",
+			"start_inotify",
+			"inotifywait",
+			"z_filewatcher_inotify",
+			"spawn_executable",
+			"cd",
+			"os:cmd",
+			"write",
+			"lager_error_logger_h",
+			"module_loaded",
+			"reloader",
+			"DEV_POLL_INTERVAL",
+			"Recompile",
+			"props",
+			"bindings",
+			",",
+			"num",
+			"=>",
+			"lager:info",
+			"to_html",
+			"atom",
+			"controller_call",
+			"content_types_provided",
+			"v3b13",
+			"},",
+			"=>",
+			"content_types_provided",
+			"to_html",
+			"menu",
+			"os_escape",
+			"timeout",
+			"start_inotify",
+			"filewatcher",
+			"inotify",
+			" ",
+			"ebin",
+			"smp",
+			"hello_erlang",
+			"cowboy_router:compile",
+			"compile",
+			"! Pid",
+			"cowboy_http_handler",
+			":=",
+			"type",
+			"-type",
+			"type",
+			":=",
+			"cowboy",
+			"PACKAGES",
+			"debug_print_send_packet",
+			"do_monster_recover2",
+			"do_monster_recover",
+			"get_create_need_time",
+			"usr_enter_scene",
+			"add_mercenaries",
+			"fun_scene_recover"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"report_addr",
+			"scene_robot_ex",
+			"fun_recharge_active",
+			"fun_damage_rank",
+			"BattleDelegate.Instance.",
+			"?IS_MEMBER",
+			"?IS_EXPENDABLE",
+			"?IS_WEAPON",
+			"?IS_BULLET",
+			"?WEAPON_ID",
+			"?BULLET_ID",
+			"?IF",
+			"?SEND_TO_ROLE",
+			"loadtest",
+			"#p_goods",
+			"p_goods",
+			"LOBBY_NODE",
+			"?UNICAST_TOC",
+			"_Log",
+			"ERR_DOLLAR_NOT_ENOUGH",
+			"NeedDollar",
+			"dollar",
+			"after_fps_server_init",
+			"after_fps_server_stop",
+			"after_midway_join_succ",
+			"fps_agent",
+			"fpx_agent",
+			"mnesia:",
+			"os:timestamp",
+			"NODE_HOST",
+			"proto_packet",
+			"mod_stall_handler:is_stalling",
+			"DealFail = fun(ErrCode, Reason) ->",
+			"?_common_error{error_code = ",
+			"\"极品武器\"",
+			"172.22.254.195",
+			"竞技场",
+			"send_mirrors_to_client(RoleID, BarrierID, ",
+			"send_mirrors_to_client(RoleID, BarrierID",
+			"FightType",
+			"_FightType",
+			"rounds",
+			"FightType",
+			"rounds",
+			"FightType",
+			"rounds",
+			"HangingInfo",
+			"#p_battle.",
+			"#p_battle{",
+			"#r_battle",
+			"",
+			"getOfficialWebsite()",
+			"tough",
+			"{$",
+			"get_just_role_vip_level",
+			"mod_cs_server",
+			"mod_cs_data",
+			"172.22.254.195",
+			"猎人执照",
+			"护送商队",
+			"商队",
+			"cfg_ybc_person:ybc_faction_last_time()",
+			"cfg_ybc_person:last_time()",
+			"",
+			"check_refresh_color",
+			"蓝钻",
+			"战袍",
+			"mgeeg_packet_monitor",
+			"商会会长",
+			"mod_shop_help:",
+			"赎罪丸",
+			"common_lang:format_silver",
+			"恐龙猎人",
+			"mod_super_vip:get_role_super_vip_level(RoleID),",
+			"恐龙猎人",
+			"爆炸珠",
+			"藏宝图守护者",
+			"兽潮来袭",
+			"Stacktrace=~999999p",
+			"mod_hero_fb:get_jingjie_lv",
+			"}",
+			"恐龙",
+			",\n",
+			"绿钻",
+			"皇家竞技场",
+			"龙魂殿",
+			"勇者无惧",
+			"龙魂殿",
+			"晶矿",
+			"晶矿获得",
+			"悬赏信",
+			"竞技场",
+			"战神之魂",
+			"遗迹探险",
+			"勇者无惧",
+			"金矿之战",
+			"极限试炼",
+			"恐龙跑跑",
+			"龙宠",
+			"国家",
+			"技能",
+			"龙魂技",
+			"国王",
+			"水元符文",
+			"地灵符文",
+			"处女元素",
+			"狮子元素",
+			"双子元素",
+			"金牛元素",
+			"牧羊元素",
+			"双鱼元素",
+			"水瓶元素",
+			"驯龙王",
+			"御龙师",
+			"控龙师",
+			"驱龙师",
+			"驯龙师",
+			"唤龙师",
+			"御龙使",
+			"控龙使",
+			"驱龙使",
+			"驯龙使",
+			"唤龙使",
+			"御龙士",
+			"控龙士",
+			"驱龙士",
+			"驯龙士",
+			"唤龙士"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 14,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Emakefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Erlang/Erlang Expression.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "include/common.hrl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 327,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "project.command",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								352
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 48.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "rsync_service/deps/erlydtl/src/erlydtl_beam_compiler.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 79488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8153,
+								8153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3695.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13745,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										251,
+										268
+									],
+									[
+										570,
+										587
+									],
+									[
+										780,
+										797
+									],
+									[
+										897,
+										914
+									],
+									[
+										1148,
+										1165
+									],
+									[
+										1540,
+										1557
+									],
+									[
+										1790,
+										1807
+									],
+									[
+										2109,
+										2126
+									],
+									[
+										2319,
+										2336
+									],
+									[
+										2436,
+										2453
+									],
+									[
+										2687,
+										2704
+									],
+									[
+										3086,
+										3098
+									],
+									[
+										3347,
+										3359
+									],
+									[
+										3522,
+										3534
+									],
+									[
+										3739,
+										3751
+									],
+									[
+										3872,
+										3884
+									],
+									[
+										4034,
+										4046
+									],
+									[
+										4203,
+										4215
+									],
+									[
+										4266,
+										4278
+									],
+									[
+										4427,
+										4439
+									],
+									[
+										4770,
+										4782
+									],
+									[
+										5031,
+										5043
+									],
+									[
+										5293,
+										5305
+									],
+									[
+										5500,
+										5512
+									],
+									[
+										5698,
+										5710
+									],
+									[
+										5920,
+										5932
+									],
+									[
+										6147,
+										6159
+									],
+									[
+										6361,
+										6373
+									],
+									[
+										6586,
+										6598
+									],
+									[
+										6823,
+										6835
+									],
+									[
+										6854,
+										6866
+									],
+									[
+										6877,
+										6889
+									],
+									[
+										7130,
+										7142
+									],
+									[
+										7311,
+										7323
+									],
+									[
+										7334,
+										7346
+									],
+									[
+										7365,
+										7377
+									],
+									[
+										7391,
+										7403
+									],
+									[
+										7614,
+										7626
+									],
+									[
+										7637,
+										7649
+									],
+									[
+										7671,
+										7683
+									],
+									[
+										7946,
+										7958
+									],
+									[
+										8154,
+										8166
+									],
+									[
+										8518,
+										8530
+									],
+									[
+										8777,
+										8789
+									],
+									[
+										8952,
+										8964
+									],
+									[
+										9167,
+										9179
+									],
+									[
+										9300,
+										9312
+									],
+									[
+										9462,
+										9474
+									],
+									[
+										9629,
+										9641
+									],
+									[
+										9692,
+										9704
+									],
+									[
+										9853,
+										9865
+									],
+									[
+										10194,
+										10206
+									],
+									[
+										10455,
+										10467
+									],
+									[
+										10717,
+										10729
+									],
+									[
+										10924,
+										10936
+									],
+									[
+										11122,
+										11134
+									],
+									[
+										11344,
+										11356
+									],
+									[
+										11571,
+										11583
+									],
+									[
+										11785,
+										11797
+									],
+									[
+										12010,
+										12022
+									],
+									[
+										12247,
+										12259
+									],
+									[
+										12278,
+										12290
+									],
+									[
+										12301,
+										12313
+									],
+									[
+										12554,
+										12566
+									],
+									[
+										12735,
+										12747
+									],
+									[
+										12758,
+										12770
+									],
+									[
+										12789,
+										12801
+									],
+									[
+										12815,
+										12827
+									],
+									[
+										13038,
+										13050
+									],
+									[
+										13061,
+										13073
+									],
+									[
+										13095,
+										13107
+									],
+									[
+										13368,
+										13380
+									],
+									[
+										13576,
+										13588
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								3524,
+								3524
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1870.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "work_helper/deps/merl/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								460,
+								460
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "work_helper/deps/merl/include/merl.hrl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 951,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								704,
+								704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "work_helper/deps/erlydtl/erlydtl.d",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/D/D.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "work_helper/tpl/item_type_list.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 660.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "work_helper/tpl/item_table.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "work_helper/src/work_helper_app.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								183,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/E/dzr/dzr_code_2017/help_doc/usage-erlang.mk.help",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "work_helper/src/helper_handler.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2437,
+								2437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1376.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "util/util_format_table.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								737,
+								737
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "rsync_service/deps/cowboy/src/cowboy_req.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34374,
+								34374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 22488.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "rsync_service/deps/cowboy/src/cowboy.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1001,
+								1013
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "work_helper/deps/erlydtl/test/erlydtl_test_defs.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 101347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16841,
+								16841
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7467.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "work_helper/deps/cowboy/test/http_SUITE.erl",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 38337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16239,
+								16239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 10032.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "work_helper/deps/erlydtl/test/erlydtl_test_extension.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/E/dzr/dzr_code_2017/temp/property_code_list.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "util/util_list.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/E/dzr/dzr_code_2017/temp/data_skillmain.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "work_helper/tpl/scene_type_list.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1302,
+								1305
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "work_helper/tpl/skill_type_list.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1411,
+								1411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 734.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/E/cq_svr_project/cq_svr/src/fun/server_ex/gm/gm_code_list.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1036,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								742,
+								742
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 120.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "work_helper/deps/merl/src/merl.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "work_helper/tpl/gm_list.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2160.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/E/dzr/linux/hello_erlang/deps/cowboy/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 122.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 122.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.exec":
+	{
+		"height": 151.0
+	},
+	"output.find_results":
+	{
+		"height": 178.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "Packages/User/Emake.sublime-build",
+	"project": "erlang.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cowboy_req",
+				"rsync_service\\deps\\cowboy\\src\\cowboy_req.erl"
+			],
+			[
+				"",
+				"work_helper\\deps\\erlydtl\\test\\erlydtl_test_defs.erl"
+			],
+			[
+				"u",
+				"util\\util_format_table.erl"
+			],
+			[
+				"erlydtl_beam_compiler.erl",
+				"rsync_service\\deps\\erlydtl\\src\\erlydtl_beam_compiler.erl"
+			],
+			[
+				"item_table",
+				"work_helper\\tpl\\item_table.tpl"
+			],
+			[
+				"re",
+				"rsync_service\\.erlang.mk\\rebar\\src\\rebar_edoc.erl"
+			],
+			[
+				"gm_list",
+				"work_helper\\tpl\\gm_list.tpl"
+			],
+			[
+				"merl",
+				"work_helper\\deps\\merl\\src\\merl.erl"
+			],
+			[
+				"helper_handler",
+				"work_helper\\src\\helper_handler.erl"
+			],
+			[
+				"cowboy_req.erl",
+				"rsync_service\\deps\\cowboy\\src\\cowboy_req.erl"
+			],
+			[
+				"lager.erl",
+				"src\\lib\\lager\\src\\lager.erl"
+			],
+			[
+				"rsync_handler",
+				"src\\rsync_handler.erl"
+			],
+			[
+				"filewatcher_inotify",
+				"src\\filewatcher_inotify.erl"
+			],
+			[
+				"filewatcher_handler",
+				"src\\filewatcher_handler.erl"
+			],
+			[
+				"config",
+				"config\\config"
+			],
+			[
+				"filewatcher_handler.erl",
+				"src\\filewatcher_handler.erl"
+			],
+			[
+				"zotonic_compile",
+				"zotonic\\src\\zotonic_compile.erl"
+			],
+			[
+				"enotify_inotifywait",
+				"zotonic\\_build\\default\\plugins\\enotify\\src\\enotify_inotifywait_win32.erl"
+			],
+			[
+				"enot",
+				"zotonic\\_build\\default\\plugins\\enotify\\src\\enotify_inotifywait.erl"
+			],
+			[
+				"z_filewatcher_inotify",
+				"zotonic\\_build\\default\\lib\\zotonic\\src\\filewatcher\\z_filewatcher_inotify.erl"
+			],
+			[
+				"z_code_reloader",
+				"zotonic\\_build\\default\\lib\\zotonic\\src\\filewatcher\\z_code_reloader.erl"
+			],
+			[
+				"z_filewatcher_mtime",
+				"zotonic\\_build\\default\\lib\\zotonic\\src\\filewatcher\\z_filewatcher_mtime.erl"
+			],
+			[
+				"diffy",
+				"zotonic\\_build\\default\\lib\\diffy\\src\\diffy.erl"
+			],
+			[
+				"zotonic.erl",
+				"zotonic\\_build\\default\\lib\\zotonic\\src\\zotonic.erl"
+			],
+			[
+				"reloader",
+				"zotonic\\_build\\default\\lib\\mochiweb\\src\\reloader.erl"
+			],
+			[
+				"controller_test",
+				"zotonic\\user\\sites\\dzrsite\\controllers\\controller_test.erl"
+			],
+			[
+				"zotonic.er",
+				"zotonic\\src\\zotonic.erl"
+			],
+			[
+				"z.erl",
+				"zotonic\\src\\support\\z.erl"
+			],
+			[
+				"cowboy_router",
+				"hello_erlang\\deps\\cowboy\\src\\cowboy_router.erl"
+			],
+			[
+				"cowmachine_controller",
+				"zotonic\\_build\\default\\lib\\cowmachine\\src\\cowmachine_controller.erl"
+			],
+			[
+				"controltest",
+				"zotonic\\user\\sites\\dzrsite\\controllers\\controller_test.erl"
+			],
+			[
+				"cowmachine.erl",
+				"zotonic\\_build\\default\\lib\\cowmachine\\src\\cowmachine_controller.erl"
+			],
+			[
+				"controller_page",
+				"zotonic\\modules\\mod_base\\controllers\\controller_page.erl"
+			],
+			[
+				"cowmachine_decision_core",
+				"zotonic\\_build\\default\\lib\\cowmachine\\src\\cowmachine_decision_core.erl"
+			],
+			[
+				"cowmachine",
+				"zotonic\\_build\\default\\lib\\cowmachine\\src\\cowmachine.erl"
+			],
+			[
+				"cowboy_stream_h",
+				"zotonic\\_build\\default\\lib\\cowboy\\src\\cowboy_stream_h.erl"
+			],
+			[
+				"z_context",
+				"zotonic\\src\\support\\z_context.erl"
+			],
+			[
+				"_article_summary",
+				"zotonic\\user\\sites\\dzrsite\\templates\\_article_summary.tpl"
+			],
+			[
+				"_body_media.tpl",
+				"zotonic\\modules\\mod_base\\templates\\_body_media.tpl"
+			],
+			[
+				"controller_.erl",
+				"zotonic\\modules\\mod_authentication\\controllers\\controller_logon.erl"
+			],
+			[
+				"z_template",
+				"zotonic\\src\\support\\z_template.erl"
+			],
+			[
+				"mod_base",
+				"zotonic\\modules\\mod_base\\mod_base.erl"
+			],
+			[
+				"zotonic_setup",
+				"zotonic\\src\\scripts\\helpers\\zotonic_setup"
+			],
+			[
+				"zotonic",
+				"zotonic\\bin\\zotonic"
+			],
+			[
+				"z_sites_manager",
+				"zotonic\\src\\support\\z_sites_manager.erl"
+			],
+			[
+				"z_utils",
+				"zotonic\\src\\support\\z_utils.erl"
+			],
+			[
+				"erlang.config",
+				"zotonic\\docker\\erlang.config.sed"
+			],
+			[
+				"zotonic-debug",
+				"zotonic\\src\\scripts\\zotonic-debug"
+			],
+			[
+				"zotonic.config",
+				"zotonic\\priv\\zotonic.config.in"
+			],
+			[
+				"lager_",
+				"zotonic\\_build\\default\\lib\\lager\\src\\lager_app.erl"
+			],
+			[
+				"shel",
+				"hello_erlang\\priv\\static\\assets\\shell_help"
+			],
+			[
+				"epgsql",
+				"zotonic\\_build\\default\\lib\\epgsql\\src\\epgsql.erl"
+			],
+			[
+				"shell",
+				"hello_erlang\\priv\\static\\assets\\shell_help"
+			],
+			[
+				"psql",
+				"zotonic\\src\\tests\\pgsql_perf_db_tests.erl"
+			],
+			[
+				"hello_handler",
+				"hello_erlang\\src\\hello_handler.erl"
+			],
+			[
+				"hello_erlang_sup",
+				"hello_erlang\\src\\hello_erlang_sup.erl"
+			],
+			[
+				"cowboy_handler",
+				"hello_erlang\\deps\\cowboy\\src\\cowboy_handler.erl"
+			],
+			[
+				"erlang.mk",
+				"hello_erlang\\erlang.mk"
+			],
+			[
+				"cow_cookie",
+				"hello_erlang\\deps\\cowlib\\src\\cow_cookie.erl"
+			],
+			[
+				"cow_sse.erl",
+				"hello_erlang\\deps\\cowlib\\src\\cow_sse.erl"
+			],
+			[
+				"cow_uri.erl",
+				"hello_erlang\\deps\\cowlib\\src\\cow_uri.erl"
+			],
+			[
+				"myde",
+				"cq_svr_project\\cq_svr\\src\\my_debug.erl"
+			],
+			[
+				"fun_scene_obj",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene_ex\\fun_scene_obj.erl"
+			],
+			[
+				"fun_scenev",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene\\fun_scene_event.erl"
+			],
+			[
+				"funscenob",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene_ex\\fun_scene_obj.erl"
+			],
+			[
+				"funscenerecover",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene\\fun_scene_recover.erl"
+			],
+			[
+				"data_mons",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_monster.erl"
+			],
+			[
+				"data_erro",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_error_info.erl"
+			],
+			[
+				"fun_re",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\revive\\fun_revive.erl"
+			],
+			[
+				"fun_property_des",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\property\\fun_property_des.erl"
+			],
+			[
+				"my",
+				"cq_svr_project\\cq_svr\\src\\my_debug.erl"
+			],
+			[
+				"data",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_item.erl"
+			],
+			[
+				"fun_item",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\item\\fun_item.erl"
+			],
+			[
+				"fun_revive",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\revive\\fun_revive.erl"
+			],
+			[
+				"fun_agent_property",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\property\\fun_agent_property.erl"
+			],
+			[
+				"fun_scenep",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\property\\fun_scene_property.erl"
+			],
+			[
+				"fun_scesk",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene_ex\\fun_scene_skill_ex.erl"
+			],
+			[
+				"fun_revi",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\revive\\fun_revive.erl"
+			],
+			[
+				"funitemsu",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\item\\fun_item_use.erl"
+			],
+			[
+				"fungma",
+				"cq_svr_project\\cq_svr\\src\\fun\\sdk\\fun_gm_activity.erl"
+			],
+			[
+				"httpd",
+				"cq_svr_project\\cq_svr\\include\\httpd.hrl"
+			],
+			[
+				"cnf",
+				"cq_run\\cnf.config"
+			],
+			[
+				"fun_rechaac",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\recharge\\fun_recharge_active.erl"
+			],
+			[
+				"td.hrl",
+				"cq_svr_project\\cq_svr\\include\\td.hrl"
+			],
+			[
+				"sm.erl",
+				"cq_svr_project\\cq_svr\\src\\server\\sermng\\sm.erl"
+			],
+			[
+				"ke",
+				"cq_svr_project\\app_set\\sql\\key_val.sql"
+			],
+			[
+				"funda",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_dataCount_update.erl"
+			],
+			[
+				"ptc_pu",
+				"cq_protocol_tools\\src\\pt\\common\\ptc_public_class.erl"
+			],
+			[
+				"key",
+				"cq_svr_project\\app_set\\sql\\key_val.sql"
+			],
+			[
+				"fun_da",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_dataCount_update.erl"
+			],
+			[
+				"funagenm",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\world\\fun_agent_mng.erl"
+			],
+			[
+				"funhttpcre",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_httpc_request.erl"
+			],
+			[
+				"gm_a",
+				"cq_svr_project\\app_set\\sql\\gm_activity.sql"
+			],
+			[
+				"c",
+				"cq_run\\cnf.config"
+			],
+			[
+				"datai",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_item.erl"
+			],
+			[
+				"datacharge",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_charge_config.erl"
+			],
+			[
+				"fun_recharge",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\recharge\\fun_recharge_active.erl"
+			],
+			[
+				"funsdk",
+				"cq_svr_project\\cq_svr\\src\\fun\\sdk\\fun_sdk_server.erl"
+			],
+			[
+				"db",
+				"cq_svr_project\\cq_svr\\src\\lib\\db.erl"
+			],
+			[
+				"funhttpac",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_http_action.erl"
+			],
+			[
+				"funshop",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\shop\\fun_shop.erl"
+			],
+			[
+				"fun_gm_code",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\gm\\fun_gm_code.erl"
+			],
+			[
+				"fundata",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_dataCount_update.erl"
+			],
+			[
+				"pt_acc_cost_f111",
+				"cq_protocol_tools\\ebin\\erl\\pt_acc_cost_f111.erl"
+			],
+			[
+				"ptc_acc_cost",
+				"cq_protocol_tools\\ebin\\c\\pt_acc_cost_f111.cs"
+			],
+			[
+				"pt_acc_cost",
+				"cq_protocol_tools\\src\\pt\\ptc_acc_cost.erl"
+			],
+			[
+				"fungmac",
+				"cq_svr_project\\cq_svr\\src\\fun\\sdk\\fun_gm_activity.erl"
+			],
+			[
+				"fun_recharac",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\recharge\\fun_recharge_active.erl"
+			],
+			[
+				"syslog_svr",
+				"cq_svr_project\\cq_svr\\src\\lib\\syslog\\syslog_svr.erl"
+			],
+			[
+				"fundaa",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_dataCount_update.erl"
+			],
+			[
+				"pt_pub",
+				"cq_protocol_tools\\ebin\\c\\pt_public_class.cs"
+			],
+			[
+				"pt_publi",
+				"cq_protocol_tools\\ebin\\erl\\pt_public_class.erl"
+			],
+			[
+				"ptc_pub",
+				"cq_protocol_tools\\src\\pt\\common\\ptc_public_class.erl"
+			],
+			[
+				"fun_gm_ac",
+				"cq_svr_project\\cq_svr\\src\\fun\\sdk\\fun_gm_activity.erl"
+			],
+			[
+				"fun_data",
+				"cq_svr_project\\cq_svr\\src\\fun\\dataCountService\\fun_dataCount_update.erl"
+			],
+			[
+				"myd",
+				"cq_svr_project\\cq_svr\\src\\my_debug.erl"
+			],
+			[
+				"fun_reflush_monster",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene\\fun_reflush_monster.erl"
+			],
+			[
+				"funsceneve",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\scene\\fun_scene_event.erl"
+			],
+			[
+				"mydebug",
+				"cq_svr_project\\cq_svr\\src\\my_debug.erl"
+			],
+			[
+				"datmonster",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_monster.erl"
+			],
+			[
+				"datitme",
+				"cq_svr_project\\cq_res\\src\\RES\\data_ex\\data_item.erl"
+			],
+			[
+				"funworldtowe",
+				"cq_svr_project\\cq_svr\\src\\fun\\server_ex\\tower_of_sky\\fun_world_tower.erl"
+			],
+			[
+				"fun_js",
+				"cq_svr_project\\cq_svr\\src\\fun\\sdk\\fun_json_config.erl"
+			],
+			[
+				"funjs",
+				"cq_svr_project\\cq_svr\\src\\fun\\sdk\\fun_json_config.erl"
+			],
+			[
+				"pt_public_class",
+				"cq_protocol_tools\\ebin\\erl\\pt_public_class.erl"
+			],
+			[
+				"ptc_p",
+				"cq_protocol_tools\\src\\pt\\common\\ptc_public_class.erl"
+			],
+			[
+				"allp",
+				"cq_protocol_tools\\src\\pt\\common\\all_ptc.erl"
+			],
+			[
+				"pt_recharge_rank",
+				"cq_protocol_tools\\src\\pt\\ptc_recharge_rank.erl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\cq.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 368.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cfg_task",
+				"Record: cfg_task"
+			],
+			[
+				"GM_CHARGE",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"GM_CHARGET",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"common_trace",
+				"Macro: COMMON_STACKTRACE_LOG"
+			],
+			[
+				"p_role_",
+				"Record: p_role_info"
+			],
+			[
+				"m_gm_",
+				"Record: m_gm_test_tos"
+			],
+			[
+				"cfg_ac",
+				"Record: cfg_activity"
+			],
+			[
+				"cfg_",
+				"Function: cfg_error"
+			],
+			[
+				"r_daily_interest",
+				"Record: r_daily_interest"
+			],
+			[
+				"r_dail",
+				"Record: r_daily_count"
+			],
+			[
+				"r_dai",
+				"Record: r_daily_count"
+			],
+			[
+				"r_daily_count",
+				"Record: r_daily_count"
+			],
+			[
+				"m_shop_buy_tos",
+				"Record: m_shop_buy_tos"
+			],
+			[
+				"quit_channel",
+				"Function: quit_chat_channel"
+			],
+			[
+				"m_chat_quit_channel_tos",
+				"Record: m_chat_quit_channel_tos"
+			],
+			[
+				"m_chat_public_tos",
+				"Record: m_chat_public_tos"
+			],
+			[
+				"m_character_skill_learn_tos",
+				"Record: m_character_skill_learn_tos"
+			],
+			[
+				"m_match_start_tos",
+				"Record: m_match_start_tos"
+			],
+			[
+				"cfg_item",
+				"Record: cfg_item"
+			],
+			[
+				"ITEMTYPES_WEAPON",
+				"Macro: ITEMTYPES_WEAPON_RIFLE"
+			],
+			[
+				"m_sys",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"m_heartb",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"Debuf",
+				"Macro: DebugF"
+			],
+			[
+				"get_next",
+				"Function: get_next_session"
+			],
+			[
+				"p_ski",
+				"Record: p_skill"
+			],
+			[
+				"p_ch",
+				"Record: p_character"
+			],
+			[
+				"match_da",
+				"Record: match_data"
+			],
+			[
+				"p_role_in",
+				"Record: p_role_info"
+			],
+			[
+				"get_buff",
+				"Function: get_buff_value"
+			],
+			[
+				"r_role_buff",
+				"Record: r_role_buff"
+			],
+			[
+				"r_role_activity",
+				"Record: r_role_activity"
+			],
+			[
+				"utf8",
+				"Function: utf8_len"
+			],
+			[
+				"r_role",
+				"Record: r_role_activity"
+			],
+			[
+				"p_bu",
+				"Record: p_buff"
+			],
+			[
+				"p_role",
+				"Record: p_role_info"
+			],
+			[
+				"auto_eq",
+				"Function: auto_equip_armor"
+			],
+			[
+				"ts_u",
+				"Module: ts_ulink"
+			],
+			[
+				"lib_u",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"hand",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handlecre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle_cre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"debugf",
+				"Macro: DebugF"
+			],
+			[
+				"parse_bidi",
+				"Function: parse_bidi"
+			],
+			[
+				"handli",
+				"Function: handle_incoming_data"
+			],
+			[
+				"ts_ulni",
+				"Module: ts_ulink"
+			],
+			[
+				"ts_cli",
+				"Module: ts_client"
+			],
+			[
+				"handle_ne",
+				"Function: handle_next_request"
+			],
+			[
+				"next_",
+				"Function: handle_next_request"
+			],
+			[
+				"next_req",
+				"Function: handle_next_request"
+			],
+			[
+				"handle_in",
+				"Function: handle_incoming_data"
+			],
+			[
+				"get_app",
+				"Function: get_app_rpc"
+			],
+			[
+				"handle_incom",
+				"Function: handle_incoming_data"
+			],
+			[
+				"connect_rpc",
+				"Function: get_ulink_connect_rpc"
+			],
+			[
+				"TYPE_USEr",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"p_role_info",
+				"Record: p_role_info"
+			],
+			[
+				"type_",
+				"Macro: TYPE_RIFLE"
+			],
+			[
+				"handle_info",
+				"Function: handle_info"
+			],
+			[
+				"termia",
+				"Function: terminate"
+			],
+			[
+				"",
+				"ACTIVITY_TASK_FAMILY_YBC"
+			]
+		],
+		"width": 880.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

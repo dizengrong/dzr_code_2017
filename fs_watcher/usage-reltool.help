@@ -1,0 +1,6 @@
+{ok, Server} = reltool:start_server([{config, "fs_watcher.rel.config"}]).
+{ok, Spec} = reltool:get_target_spec(Server).
+RelDir = "target_dir".
+file:make_dir(RelDir).
+ok = reltool:eval_target_spec(Spec, code:root_dir(), RelDir).
+zip:zip(RelDir ++ ".zip", [RelDir]). % 创建zip包

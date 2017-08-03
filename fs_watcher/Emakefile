@@ -1,0 +1,15 @@
+{
+[
+	% 'src/lib/lager/src/lager_transform.erl',
+	'src/lib/lager/src/*',
+	'src/lib/goldrush/src/*',
+	'src/*'
+],
+[
+	% {parse_transform, lager_transform},
+	debug_info,
+	{i, "include"},
+	% {i, "src/lib/lager/include"},
+	{outdir, "ebin"}
+]
+}.

@@ -1,0 +1,12 @@
+（图形工具：PostgresSQL Maestro）
+1.连接：
+	sudo -u postgres psql
+2.增加user：
+	CREATE USER zotonic WITH PASSWORD 'zotonic';
+3.授权：
+	ALTER USER zotonic CREATEDB;
+4.创建数据库：
+	CREATE DATABASE zotonic WITH OWNER = zotonic ENCODING = 'UTF8';
+	GRANT ALL ON DATABASE zotonic TO zotonic;
+	\c zotonic
+	CREATE LANGUAGE "plpgsql";

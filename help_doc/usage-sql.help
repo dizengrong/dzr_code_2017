@@ -1,0 +1,11 @@
+1.增加mysql可以远程访问：
+	update user set host = '%' where user = 'root';
+	FLUSH PRIVILEGES;
+2.
+	alter table test rename test1; --修改表名
+	alter table test add  column name varchar(10); --添加表列 
+	alter table test drop  column name; --删除表列 
+	alter table test modify address char(10) --修改表列类型 	
+3.导出数据库
+	仅结构：mysqldump -uroot -pdbpasswd -d dbname > db.sql;
+	含数据：mysqldump -uroot -pdbpasswd dbname >db.sql;

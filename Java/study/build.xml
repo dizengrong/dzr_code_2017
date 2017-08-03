@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+
+<!--include a xml file ,it can be common propery ,can be also a target   -->  
+<!DOCTYPE project [  
+<!ENTITY share-variable SYSTEM "../build_include.xml">  
+]>
+
+<project name="HelloWorld" default="run" basedir=".">  
+
+&share-variable;
+
+<property name="server_ip" value="192.168.1.105"/>  
+<property name="port" value="9090"/>  
+<property name="src" value="."/>  
+<!-- <property name="dest" value="bin"/>   -->
+<property name="study_jar" value="../study.jar"/>  
+<target name="init">  
+   <mkdir dir="${dest}"/>  
+</target>  
+<target name="compile" depends="init">  
+   <javac srcdir="${src}" destdir="${dest}">
+   	<compilerarg line="-encoding UTF-8 "/>
+   </javac>  
+</target>  
+<target name="build" depends="compile">  
+	<!--打成jar包-->  
+   <jar jarfile="${study_jar}" basedir="${dest}">
+   	<manifest>  
+        <!-- <attribute name="Built-By" value="${project.user}"/>   -->
+        <attribute name="Main-Class" value="dzr_study.GreetingServer"/>  
+    </manifest>  
+   </jar>  
+</target>  
+
+
+<target name="run" depends="build">  
+   <java classname="dzr_study.HelloWorld" classpath="${study_jar}"/>  
+</target>  
+<target name="run_load" depends="build">  
+   <java classname="dzr_study.FunOverload" classpath="${study_jar}"/>  
+</target>  
+<target name="run_ScannerDemo" depends="build">  
+   <java classname="dzr_study.ScannerDemo" classpath="${study_jar}"/>  
+</target>
+<target name="run_GreetingServer" depends="build">  
+   <java classname="dzr_study.GreetingServer" classpath="${study_jar}">  
+   	<arg value="${port}"/>
+   </java>  
+</target> 
+<target name="run_GreetingClient" depends="build">  
+   <java classname="dzr_study.GreetingClient" classpath="${study_jar}">
+   	<arg value="${server_ip}"/>
+   	<arg value="${port}"/>
+   </java>  
+</target> 
+
+<target name="clean">  
+   <delete dir="${dest}" />  
+   <delete file="${study_jar}" />  
+</target>  
+<target name="rerun" depends="clean,run">  
+   <ant target="clean" />  
+   <ant target="run" />  
+</target>  
+</project>  

@@ -1,0 +1,2198 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pu",
+				"public"
+			],
+			[
+				"P",
+				"Payments"
+			],
+			[
+				"cur",
+				"current_colour"
+			],
+			[
+				"rol",
+				"role"
+			],
+			[
+				"comm",
+				"common_misc"
+			],
+			[
+				"Re",
+				"Rec2"
+			],
+			[
+				"refer",
+				"refresh_a_equip"
+			],
+			[
+				"cfg_",
+				"cfg_equip_build"
+			],
+			[
+				"Rec",
+				"Rec#r_equip_build"
+			],
+			[
+				"c",
+				"common_equip"
+			],
+			[
+				"Ga",
+				"GradeLv"
+			],
+			[
+				"cfg",
+				"cfg_equip_build"
+			],
+			[
+				"no",
+				"normal_times"
+			],
+			[
+				"get",
+				"get_equip_build_rec"
+			],
+			[
+				"REc",
+				"Rec"
+			],
+			[
+				"re",
+				"reinforce_result"
+			],
+			[
+				"Acce",
+				"AccNewEquips2"
+			],
+			[
+				"Acc",
+				"AccScore2"
+			],
+			[
+				"common",
+				"common_tool"
+			],
+			[
+				"pro",
+				"progress"
+			],
+			[
+				"send",
+				"send_info_to_client"
+			],
+			[
+				"set_",
+				"set_gold_act_history"
+			],
+			[
+				"Item",
+				"ItemTypeId"
+			],
+			[
+				"CALL",
+				"CALL_OP_ADVANCE"
+			],
+			[
+				"Role",
+				"RoleAttr"
+			],
+			[
+				"Co",
+				"Color"
+			],
+			[
+				"godl",
+				"gold_act"
+			],
+			[
+				"Type",
+				"TypeId"
+			],
+			[
+				"mod_map_",
+				"mod_map_actor"
+			],
+			[
+				"Pet",
+				"PetInfo#p_pet"
+			],
+			[
+				"get_",
+				"get_bag_info"
+			],
+			[
+				"Bag",
+				"PetBagInfo"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"max",
+				"max_hp"
+			],
+			[
+				"acc",
+				"account_name"
+			],
+			[
+				"to",
+				"total_exp"
+			],
+			[
+				"To",
+				"ToTypeId"
+			],
+			[
+				"New",
+				"NewPetInfo"
+			],
+			[
+				"R",
+				"RoleID"
+			],
+			[
+				"send_",
+				"send_pet_info_to_client"
+			],
+			[
+				"key",
+				"keyfind"
+			],
+			[
+				"typ",
+				"type_1_times"
+			],
+			[
+				"A",
+				"Amount"
+			],
+			[
+				"T",
+				"PetTypeID"
+			],
+			[
+				"lvel",
+				"level"
+			],
+			[
+				"com",
+				"common_misc"
+			],
+			[
+				"PEt",
+				"PetInfo"
+			],
+			[
+				"Pe",
+				"PetID"
+			],
+			[
+				"Petb",
+				"PetBagInfo"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"e",
+				"error"
+			],
+			[
+				"F",
+				"FromEquip"
+			],
+			[
+				"Fr",
+				"FromEquipId"
+			],
+			[
+				"dA",
+				"Data"
+			],
+			[
+				"un",
+				"unregister"
+			],
+			[
+				"Map",
+				"MapInfo"
+			],
+			[
+				"set",
+				"set_role_hero_fb_info"
+			],
+			[
+				"map",
+				"map_role_id"
+			],
+			[
+				"roleid",
+				"role_id"
+			],
+			[
+				"is",
+				"is_finished"
+			],
+			[
+				"Ma",
+				"MapInfo"
+			],
+			[
+				"Mapi",
+				"MapInfo"
+			],
+			[
+				"min_",
+				"min_level"
+			],
+			[
+				"su",
+				"summoned_pet_id"
+			],
+			[
+				"De",
+				"DetailRec"
+			],
+			[
+				"si",
+				"silver_bind"
+			],
+			[
+				"Pa",
+				"Payment2"
+			],
+			[
+				"Left",
+				"LeftItems2"
+			],
+			[
+				"#",
+				"#p_body_foster_detail"
+			],
+			[
+				"sned",
+				"send_info_to_client"
+			],
+			[
+				"pet",
+				"pet_id"
+			],
+			[
+				"S",
+				"SummonPetInfo#p_pet"
+			],
+			[
+				"erro",
+				"error_tips"
+			],
+			[
+				"errro",
+				"error_str"
+			],
+			[
+				"mod_role",
+				"mod_role_attr"
+			],
+			[
+				"luck",
+				"luck_point"
+			],
+			[
+				"mod",
+				"mod_equip_reinforce"
+			],
+			[
+				"Times",
+				"Times3"
+			],
+			[
+				"Old",
+				"OldMapName"
+			],
+			[
+				"mapp",
+				"map_pid"
+			],
+			[
+				"get_am",
+				"get_mapname"
+			],
+			[
+				"mod_ma",
+				"mod_map_manager"
+			],
+			[
+				"AllR",
+				"AllRecords"
+			],
+			[
+				"Li",
+				"List2"
+			],
+			[
+				"MSg",
+				"Msg2"
+			],
+			[
+				"role",
+				"role_name"
+			],
+			[
+				"ToT",
+				"TopThree"
+			],
+			[
+				"end",
+				"end_time"
+			],
+			[
+				"sen",
+				"send_info_to_client"
+			],
+			[
+				"DA",
+				"Data2"
+			],
+			[
+				"Rol",
+				"RoleID"
+			],
+			[
+				"db",
+				"db_round_pvp"
+			],
+			[
+				"开启",
+				"开启皇家竞技场淘汰赛"
+			],
+			[
+				"Data",
+				"Datas"
+			],
+			[
+				"Titlr",
+				"TitleToRemove"
+			],
+			[
+				"modu",
+				"MODULE"
+			],
+			[
+				"han",
+				"handle_pk_result"
+			],
+			[
+				"model",
+				"model_pvp_waiting_hall"
+			],
+			[
+				"get_rol",
+				"get_role_level"
+			],
+			[
+				"mod_",
+				"mod_common_fb"
+			],
+			[
+				"acc_",
+				"acc_race"
+			],
+			[
+				"D",
+				"Dict3"
+			],
+			[
+				"in",
+				"in_times"
+			],
+			[
+				"moud",
+				"MODULE"
+			],
+			[
+				"RE",
+				"Rec2#pvp_rank"
+			],
+			[
+				"all",
+				"AllRoles"
+			],
+			[
+				"sort",
+				"sort_fun"
+			],
+			[
+				"mu",
+				"MODULE"
+			],
+			[
+				"p_re",
+				"p_reward_prop"
+			],
+			[
+				"int",
+				"int32"
+			],
+			[
+				"mod_rol",
+				"mod_role_attr"
+			],
+			[
+				"figh",
+				"fight_silver_reward_param"
+			],
+			[
+				"mou",
+				"MODULE"
+			],
+			[
+				"send_to",
+				"_send_to_role"
+			],
+			[
+				"Ro",
+				"RoleID"
+			],
+			[
+				"buff_",
+				"BUFF_TARGET_ENEMY"
+			],
+			[
+				"do",
+				"do_update"
+			],
+			[
+				"ski",
+				"skills"
+			],
+			[
+				"Need",
+				"NeedItemTypeID"
+			],
+			[
+				"get_n",
+				"get_next_npc"
+			],
+			[
+				"nex",
+				"next_npc"
+			],
+			[
+				"Rob",
+				"Robots"
+			],
+			[
+				"FSM",
+				"FSM_WALK"
+			],
+			[
+				"loop",
+				"MAP_LOOP_MS_INTERVAL"
+			],
+			[
+				"fsm",
+				"FSM_STAY"
+			],
+			[
+				"und",
+				"undefined"
+			],
+			[
+				"ERR_HEROFB_swee",
+				"ERR_HEROFB_ENTER_NO_SWEEP_CARD"
+			],
+			[
+				"Err",
+				"ErrCode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "study/HelloWorld.java",
+			"settings":
+			{
+				"buffer_size": 224,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "study/ScannerDemo.java",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Windows",
+				"name": "package dzr_study;"
+			}
+		},
+		{
+			"file": "study/Box.java",
+			"settings":
+			{
+				"buffer_size": 444,
+				"line_ending": "Windows",
+				"name": "public class MaximumTest"
+			}
+		},
+		{
+			"file": "study/Puppy.java",
+			"settings":
+			{
+				"buffer_size": 600,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "study/SerializeDemo.java",
+			"settings":
+			{
+				"buffer_size": 1635,
+				"line_ending": "Windows",
+				"name": "import java.io.*;"
+			}
+		},
+		{
+			"file": "study/GreetingClient.java",
+			"settings":
+			{
+				"buffer_size": 1070,
+				"line_ending": "Windows",
+				"name": "import java.net.*;"
+			}
+		},
+		{
+			"file": "study/GreetingServer.java",
+			"settings":
+			{
+				"buffer_size": 1534,
+				"line_ending": "Windows",
+				"name": "import java.net.*;"
+			}
+		},
+		{
+			"file": "study/GenericTest.java",
+			"settings":
+			{
+				"buffer_size": 467,
+				"line_ending": "Windows",
+				"name": "package dzr_study;"
+			}
+		},
+		{
+			"file": "study/FunOverload.java",
+			"settings":
+			{
+				"buffer_size": 417,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "study/ReadConsole.java",
+			"settings":
+			{
+				"buffer_size": 372,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "study/build.xml",
+			"settings":
+			{
+				"buffer_size": 2031,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/BaiduNetdiskDownload/shell_help.sh",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "build_include.xml",
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "doc/usage-ant.help",
+			"settings":
+			{
+				"buffer_size": 10603,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "study/employee.ser",
+			"settings":
+			{
+				"buffer_size": 337,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Java/JavaC.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"CoolFormat",
+				"CoolFormat: Quick Format"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"tableee",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML"
+			],
+			[
+				"packc",
+				"Package Control: Install Package"
+			],
+			[
+				"build",
+				"Build With: Ant"
+			],
+			[
+				"ssj",
+				"Set Syntax: Java"
+			],
+			[
+				"SSE",
+				"Set Syntax: Erlang"
+			],
+			[
+				"sse",
+				"Set Syntax: Erlang"
+			],
+			[
+				"ssse",
+				"Set Syntax: Java Server Page (JSP)"
+			],
+			[
+				"Snippet: ",
+				"Snippet: main()"
+			],
+			[
+				"Snippet: gen",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"ssb",
+				"Set Syntax: Batch File"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			],
+			[
+				"ssc",
+				"Set Syntax: C++"
+			],
+			[
+				"insert",
+				"InsertDate: Custom"
+			],
+			[
+				"date",
+				"InsertDate: Custom"
+			],
+			[
+				"Snippet: ge",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"Pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa",
+				"Package Control: Enable Package"
+			],
+			[
+				"gens",
+				"Snippet: gen_server Callbacks"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 236.0,
+		"history":
+		[
+			"a",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/dzr_code_2017/Java",
+		"/E/dzr_code_2017/Java/study"
+	],
+	"file_history":
+	[
+		"/E/GitHub/Java/study/GreetingServer.class",
+		"/D/programs/Sublime Text 3/Data/Installed Packages/Build Ant Target.sublime-package",
+		"/D/programs/Sublime Text 3/Data/Packages/Status Bar Time/StatusBarTime.sublime-settings",
+		"/E/GitHub/Java/study/FileStreamTest.java",
+		"/E/GitHub/Java/study/Puppy.java",
+		"/D/programs/Sublime Text 3/Data/Packages/CoolFormat/CoolFormatLib/CoolFormatConfig.cfconfig",
+		"/D/programs/Sublime Text 3/Data/Packages/CoolFormat/README.md",
+		"/D/programs/Sublime Text 3/Data/Packages/Table Editor/README.md",
+		"/D/programs/Sublime Text 3/Data/Packages/Table Editor/Default (Windows).sublime-keymap",
+		"/E/GitHub/Java/study/META-INF/MANIFEST.MF",
+		"/E/GitHub/Java/Build Ant Target/Default (Windows).sublime-keymap",
+		"/E/GitHub/Java/Build Ant Target/Main.sublime-menu",
+		"/E/GitHub/Java/study/FunOverload.java",
+		"/E/GitHub/Java/study/ReadConsole.java",
+		"/E/GitHub/Java/doc/usage-ant.help",
+		"/D/programs/Sublime Text 3/Data/Packages/Javatar/Javatar.sublime-settings",
+		"/D/programs/Java/apache-ant-1.10.1/bin/ant.cmd",
+		"/D/programs/Java/apache-ant-1.10.1/bin/antenv.cmd",
+		"/D/programs/Java/apache-ant-1.10.1/bin/ant.bat",
+		"/D/programs/Sublime Text 3/Data/Packages/User/Preferences.sublime-settings",
+		"/D/programs/Sublime Text 3/Data/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/programs/Sublime Text 3/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/E/GitHub/Java/study/		System.out.println(\"int max",
+		"/D/programs/Sublime Text 3/Packages/JavaC.sublime-build",
+		"/D/programs/Sublime Text 3/Packages/Java.sublime-package",
+		"/D/programs/Sublime Text 3/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/Main.sublime-menu",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/config/Erlang/Default.sublime-commands",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/config/Erlang/Main.sublime-menu",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/config/Main.sublime-menu.template",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/package-metadata.json",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/messages.json",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/Default (Windows).sublime-keymap",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/Default.sublime-commands",
+		"/D/programs/Sublime Text 3/Data/Packages/SublimeREPL/Context.sublime-menu",
+		"/D/programs/Sublime Text 3/Data/Packages/User/SublimeREPL.sublime-settings",
+		"/E/BaiduNetdiskDownload/shell_help.sh",
+		"/E/GitHub/Java/java.sublime-project",
+		"/E/GitHub/Java/study/HelloWorld.java",
+		"/D/programs/Sublime Text 3/Data/Packages/Javatar/Default (Windows).sublime-keymap",
+		"/D/programs/Sublime Text 3/Data/Packages/User/Javatar.sublime-settings",
+		"/D/programs/Sublime Text 3/Data/Installed Packages/Javatar.sublime-package",
+		"/E/GitHub/iD/README.md",
+		"/D/Dropbox/moin-1.9.8/README",
+		"/E/Job/jooyou/s1/s1_server/my_helper.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fight/mof_fight_handler.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/qq/mod_qq_api.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_mirror_rnkm.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_wild_fb.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_buff.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mgeem.erl",
+		"/E/Job/jooyou/s1/s1_server/hrl/mnesia.hrl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_role_cd.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/common/src/common_config.erl",
+		"/E/Job/jooyou/s1/s1_server/setting/common.config",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_rank_match.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_qq.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/qq/mod_qq_cache.erl",
+		"/E/Job/jooyou/s1/s1_server/hrl/mnesia_tables.xml",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_activity.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/common_mirror.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/world/src/mod/mod_friend_server.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fight/mof_last_skill.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mgeer_data.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_hero_fb_barrier.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fight/mof_common.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_skill_range.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/common/src/mm_parser.erl",
+		"/E/Job/jooyou/s1/s1_server/app/web/game.www/admin/library/smarty/internals/core.display_debug_console.php",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_pvp_waiting_hall.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_pvp_pk.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_agent.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_event.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_map_change.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_actor.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mgeem_map.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/hook/hook_map.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_role.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_role2.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_exp.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_level_up_jingjie.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_round_pvp.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/mod_common_fb.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_manager.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_fb_default.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_default.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/chat/src/mod/mod_chat_gm.erl",
+		"/E/Job/jooyou/s1/s1_server/app/web/game.www/test/test_gm.php",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_equip.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_scene_fb.erl",
+		"/E/Job/jooyou/s1/s1_server/hrl/common.hrl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_mirror_ai.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_caishen_firecoin.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_role_energy.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_energy.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_version_notice.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/common/src/common_global.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_map_pet.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/pet/mod_pet_base.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_role_relive.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/pet/mod_pet_bag.erl",
+		"/E/Job/jooyou/s1/s1_server/工作日志.txt",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_pet_level.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_pet_bag.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mgeer_handler.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/pet/mod_pet_training.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/fb_model.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_tianfenta_1.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mgeer_role.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/equip/mod_equip_reinforce.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/common/src/common_equip.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/equip/mod_equip_build.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/gateway/src/mgeeg_router.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_mirror.erl",
+		"/E/Job/jooyou/s1/s1_server/app/web/game.www/config/config_server_list.php",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_caishen_silver.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/common/src/common_bag2.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/family/mod_family_welfare.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/fb/model_tianfenta_4.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_xfire.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_shop.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/map/src/mod/mod_bag.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/mod/mod_role_attr.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/common/src/mt_cehua.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_item_expire.erl",
+		"/E/Job/jooyou/s1/s1_server/config/src/cfg_item.erl",
+		"/E/Job/jooyou/s1/s1_server/app/game/role/src/hook/hook_role.erl"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"*.erl",
+			"*",
+			"*.erl",
+			"cfg_*.erl",
+			"cfg_*.erl, *.hrl, *.sql, *.config",
+			"*.erl, *.hrl, *.sql, *.config",
+			"mof_*.erl, *.hrl, *.sql, *.config",
+			"*.erl, *.hrl, *.sql, *.config",
+			"update_*.erl, *.hrl, *.sql, *.config",
+			"*.erl, *.hrl, *.sql, *.config",
+			"*.erl, *.hrl, *.sql",
+			"",
+			"*.erl",
+			"mof_*.erl",
+			"*.erl",
+			"*.php",
+			"*.erl",
+			"",
+			"*.hrl",
+			"",
+			"*.erl, *.hrl",
+			"*.erl, rebar.config",
+			"*.erl",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"default",
+			"GreetingServer",
+			"ScannerDemo",
+			"serialize_employee",
+			"deserialize_employee",
+			"serialize_employee",
+			"unserialize_employee",
+			"/tmp/",
+			"Integer",
+			"insert",
+			"default",
+			"run",
+			"hello_jar",
+			"ant",
+			"double",
+			"javac",
+			"encoding",
+			"sourcepath",
+			"classpath",
+			"full_class_path",
+			"\\",
+			"action_do_call_monster",
+			"mod_monster_ai",
+			"init_bonus_time",
+			"async_notify_rewards",
+			"db_org_activity",
+			"get_org_detail",
+			"check_fetch_condition",
+			"mgeew_org_activity",
+			"if_actor_resist",
+			"dizzy",
+			"fb_model:",
+			"common_fb",
+			"begin_next_round",
+			"create_waiting_hall_process",
+			"room_type_to_map_id",
+			"mod_common_fb:do_enter",
+			"mod_common_fb",
+			"mod_role_relive",
+			"mod_map_event",
+			"get_offline_callback",
+			"fb_model",
+			"mod_map_event",
+			"mod_map_agent",
+			"is_all_round_over",
+			"通天塔",
+			"role_exp_full",
+			"t_add_exp",
+			"gold_act_history",
+			"save_gold_act_history",
+			"history",
+			"histroy",
+			"type_1_cd",
+			"do_random",
+			"normal_call",
+			"check_normal_call",
+			"normal_call",
+			"do_call_deal",
+			"has_better_pet",
+			"do_guarantee",
+			"do_random",
+			"item_to_pet_type_id",
+			"advance_call",
+			"SECRET_FB",
+			"p_secret_fb",
+			"send_info_to_client",
+			"init_pet_info",
+			"pet",
+			"_pet",
+			"init_pet_info",
+			"total_exp",
+			"mod_pet_base:add_exp",
+			"next_level_exp",
+			"level_up_exp_param",
+			"after_get_new_pet",
+			"last_recover_time",
+			"send_gold_act_history",
+			"pet_employ",
+			"RNKM_SCORE_DEAL",
+			"m_rnkm_heros_toc",
+			"RNKM_HEROS",
+			"after_deal_succ",
+			"dealed_list",
+			"after_deal_succ",
+			"check_deal",
+			"score_deal",
+			"score_reward",
+			"mod_role_c",
+			"尚未开放",
+			"equip",
+			"#r_item_create_info",
+			"caishen",
+			"时间",
+			"mod_family_welfare",
+			"聚会",
+			"议",
+			"会议",
+			"家族会议",
+			"< 0",
+			"-",
+			"random_get_a_equip",
+			"send_bonus",
+			"get_api_server",
+			"api_server_test",
+			"DB_ROLE_SKILL",
+			"round_reward_base",
+			"get_rank_data",
+			"acc_race",
+			"kick_roles_and_close_fb",
+			"pk_result",
+			"acc_race",
+			"t2_super_",
+			"common_tool:random_from_tuple_weights",
+			"common_tool:random_from_weights",
+			"random_get_a_equip",
+			"pk_result",
+			"begin_next_round",
+			"round_over",
+			"model_pvp_waiting_hall",
+			"round_over",
+			"DBG",
+			"rebuild",
+			"advance_build_equips",
+			"random_get_a_equip",
+			"refresh_a_equip",
+			"random_get_a_equip",
+			"do_build",
+			"random_get_a_equip"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"os:timestamp()",
+			"os:now()"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "study/HelloWorld.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								199
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "study/ScannerDemo.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								211
+							]
+						],
+						"settings":
+						{
+							"auto_name": "package dzr_study;",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "study/Box.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"auto_name": "public class MaximumTest",
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "study/Puppy.java",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "study/SerializeDemo.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1635,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import java.io.*;",
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "study/GreetingClient.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								891,
+								891
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import java.net.*;",
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "study/GreetingServer.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"auto_name": "import java.net.*;",
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "study/GenericTest.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								413,
+								413
+							]
+						],
+						"settings":
+						{
+							"auto_name": "package dzr_study;",
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "study/FunOverload.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								46
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "study/ReadConsole.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36,
+								36
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "study/build.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1160,
+								1160
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/E/BaiduNetdiskDownload/shell_help.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "build_include.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "doc/usage-ant.help",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1761,
+								1771
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1340.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "study/employee.ser",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_init_dirty_state": false,
+							"origin_encoding": "Hexadecimal",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 194.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 130.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "java.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"modcoomfb",
+				"app\\game\\map\\src\\fb\\mod_common_fb.erl"
+			],
+			[
+				"modmonsterai",
+				"app\\game\\map\\src\\mod\\mod_monster_ai.erl"
+			],
+			[
+				"mof_attack",
+				"app\\game\\map\\src\\fight\\mof_under_attack.erl"
+			],
+			[
+				"mofattackr",
+				"app\\game\\map\\src\\fight\\mof_attack_rule.erl"
+			],
+			[
+				"mof_fig",
+				"app\\game\\map\\src\\fight\\mof_fight_handler.erl"
+			],
+			[
+				"modmirr",
+				"app\\game\\map\\src\\mod\\mod_mirror_rnkm.erl"
+			],
+			[
+				"mgeeworg",
+				"app\\game\\world\\src\\mgeew_org_activity.erl"
+			],
+			[
+				"mgeew_org_activity.erl",
+				"app\\game\\world\\src\\mgeew_org_activity.erl"
+			],
+			[
+				"mnes",
+				"hrl\\mnesia_tables.xml"
+			],
+			[
+				"commonmisc",
+				"app\\game\\common\\src\\common_misc.erl"
+			],
+			[
+				"mofee",
+				"app\\game\\map\\src\\fight\\mof_effect.erl"
+			],
+			[
+				"c",
+				"proto\\common.proto"
+			],
+			[
+				"mofattlue",
+				"app\\game\\map\\src\\fight\\mof_attack_rule.erl"
+			],
+			[
+				"mofeffe",
+				"app\\game\\map\\src\\fight\\mof_effect.erl"
+			],
+			[
+				"model_",
+				"app\\game\\map\\src\\fb\\model_wild_fb.erl"
+			],
+			[
+				"mt_ceh",
+				"app\\game\\common\\src\\mt_cehua.erl"
+			],
+			[
+				"mod_role_",
+				"app\\game\\role\\src\\mod\\mod_role_attr.erl"
+			],
+			[
+				"mod_rolequi",
+				"app\\game\\role\\src\\equip\\mod_role_equip.erl"
+			],
+			[
+				"mod_role_attr",
+				"app\\game\\role\\src\\mod\\mod_role_attr.erl"
+			],
+			[
+				"mod_",
+				"app\\game\\map\\src\\mod\\mod_shenqi.erl"
+			],
+			[
+				"modpetbase",
+				"app\\game\\role\\src\\pet\\mod_pet_base.erl"
+			],
+			[
+				"mod_she",
+				"app\\game\\map\\src\\mod\\mod_shenqi.erl"
+			],
+			[
+				"modcommfb",
+				"app\\game\\map\\src\\fb\\mod_common_fb.erl"
+			],
+			[
+				"",
+				"app\\game\\map\\src\\fb\\model_pvp_waiting_hall.erl"
+			],
+			[
+				"g",
+				"proto\\game.proto"
+			],
+			[
+				"ser",
+				"hrl\\server_map.xml"
+			],
+			[
+				"model_tianfenta_1",
+				"app\\game\\map\\src\\fb\\model_tianfenta_1.erl"
+			],
+			[
+				"fbmode",
+				"app\\game\\map\\src\\fb\\fb_model.erl"
+			],
+			[
+				"mod_map_default",
+				"app\\game\\map\\src\\mod\\mod_map_default.erl"
+			],
+			[
+				"mod_commfb",
+				"app\\game\\map\\src\\fb\\mod_common_fb.erl"
+			],
+			[
+				"mod_map_manager",
+				"app\\game\\map\\src\\mod\\mod_map_manager.erl"
+			],
+			[
+				"model_fb_default",
+				"app\\game\\map\\src\\fb\\model_fb_default.erl"
+			],
+			[
+				"mod_common_fb",
+				"app\\game\\map\\src\\fb\\mod_common_fb.erl"
+			],
+			[
+				"mod_map_agent",
+				"app\\game\\map\\src\\mod\\mod_map_agent.erl"
+			],
+			[
+				"fb_model.erl",
+				"app\\game\\map\\src\\fb\\fb_model.erl"
+			],
+			[
+				"modcommonfb",
+				"app\\game\\map\\src\\fb\\mod_common_fb.erl"
+			],
+			[
+				"modmapen",
+				"app\\game\\map\\src\\mod\\mod_map_event.erl"
+			],
+			[
+				"hookmap",
+				"app\\game\\map\\src\\hook\\hook_map.erl"
+			],
+			[
+				"modmapan",
+				"app\\game\\map\\src\\mod\\mod_map_agent.erl"
+			],
+			[
+				"modmirrrn",
+				"app\\game\\map\\src\\mod\\mod_mirror_rnkm.erl"
+			],
+			[
+				"modtower",
+				"app\\game\\map\\src\\mod\\mod_tower_fb.erl"
+			],
+			[
+				"modrole2",
+				"app\\game\\map\\src\\mod\\mod_role2.erl"
+			],
+			[
+				"mod_map_role.erl",
+				"app\\game\\map\\src\\mod\\mod_map_role.erl"
+			],
+			[
+				"cfg_level_up_jingjie",
+				"config\\src\\cfg_level_up_jingjie.erl"
+			],
+			[
+				"mod_exp",
+				"app\\game\\map\\src\\mod\\mod_exp.erl"
+			],
+			[
+				"modmaprole",
+				"app\\game\\map\\src\\mod\\mod_map_role.erl"
+			],
+			[
+				"model_p",
+				"E:\\Job\\jooyou\\s1\\s1_server\\app\\game\\map\\src\\fb\\model_pvp_waiting_hall.erl"
+			],
+			[
+				"mod_roleattr",
+				"E:\\Job\\jooyou\\s1\\s1_server\\app\\game\\role\\src\\mod\\mod_role_attr.erl"
+			],
+			[
+				"common_misc",
+				"app\\game\\common\\src\\common_misc.erl"
+			],
+			[
+				"modpebar",
+				"app\\game\\role\\src\\pet\\mod_pet_bar.erl"
+			],
+			[
+				"mod_role_free_cd",
+				"app\\game\\role\\src\\mod\\mod_role_free_cd.erl"
+			],
+			[
+				"cfg_pet_bar",
+				"config\\src\\cfg_pet_bar.erl"
+			],
+			[
+				"mod_petbar",
+				"app\\game\\role\\src\\pet\\mod_pet_bar.erl"
+			],
+			[
+				"modpetba",
+				"app\\game\\role\\src\\pet\\mod_pet_bar.erl"
+			],
+			[
+				"cfgcd",
+				"config\\src\\cfg_cd.erl"
+			],
+			[
+				"modpetbar",
+				"app\\game\\role\\src\\pet\\mod_pet_bar.erl"
+			],
+			[
+				"cfgpetbar",
+				"config\\src\\cfg_pet_bar.erl"
+			],
+			[
+				"modsec",
+				"app\\game\\map\\src\\fb\\model_secret_fb.erl"
+			],
+			[
+				"update",
+				"update\\backup\\update_mnesia_0_0_2.erl"
+			],
+			[
+				"cfg_pet",
+				"config\\src\\cfg_pet_level.erl"
+			],
+			[
+				"mod_petba",
+				"app\\game\\role\\src\\pet\\mod_pet_bag.erl"
+			],
+			[
+				"mod_petbag",
+				"app\\game\\role\\src\\pet\\mod_pet_bag.erl"
+			],
+			[
+				"cfg_petle",
+				"config\\src\\cfg_pet_level.erl"
+			],
+			[
+				"cfg_petl",
+				"config\\src\\cfg_pet_level.erl"
+			],
+			[
+				"modpetbag",
+				"app\\game\\role\\src\\pet\\mod_pet_bag.erl"
+			],
+			[
+				"cfg_en",
+				"config\\src\\cfg_energy.erl"
+			],
+			[
+				"mod_energy",
+				"app\\game\\role\\src\\mod\\mod_role_energy.erl"
+			],
+			[
+				"modelwilf",
+				"E:\\Job\\jooyou\\s1\\s1_server\\app\\game\\map\\src\\fb\\model_wild_fb.erl"
+			],
+			[
+				"wildfb",
+				"app\\game\\map\\src\\fb\\model_wild_fb.erl"
+			],
+			[
+				"mod_mirro",
+				"app\\game\\map\\src\\mod\\mod_mirror_rnkm.erl"
+			],
+			[
+				"mod_mirr",
+				"app\\game\\map\\src\\mod\\mod_mirror.erl"
+			],
+			[
+				"s",
+				"hrl\\server_map.xml"
+			],
+			[
+				"cfg_rnakm",
+				"config\\src\\cfg_rank_match.erl"
+			],
+			[
+				"mod_mirrornk",
+				"app\\game\\map\\src\\mod\\mod_mirror_rnkm.erl"
+			],
+			[
+				"mod_mirrrornk",
+				"app\\game\\map\\src\\mod\\mod_mirror_rnkm.erl"
+			],
+			[
+				"config_ser",
+				"app\\web\\game.www\\config\\config_server_list.php"
+			],
+			[
+				"cfg_fight_suppress",
+				"config\\src\\cfg_fight_suppress.erl"
+			],
+			[
+				"mofattacda",
+				"app\\game\\map\\src\\fight\\mof_attack_damage.erl"
+			],
+			[
+				"mofsuper",
+				"app\\game\\map\\src\\fight\\mof_supress.erl"
+			],
+			[
+				"mod_signin",
+				"app\\game\\role\\src\\mod\\mod_signin.erl"
+			],
+			[
+				"mod_rolemisc",
+				"app\\game\\role\\src\\mod\\mod_role_misc.erl"
+			],
+			[
+				"cfg_equip.erl",
+				"config\\src\\cfg_equip.erl"
+			],
+			[
+				"cfg_equip",
+				"config\\src\\cfg_equip_build.erl"
+			],
+			[
+				"mod_timeac",
+				"app\\game\\role\\src\\mod\\mod_time_activity.erl"
+			],
+			[
+				"cfg_timeac",
+				"config\\src\\cfg_time_activity.erl"
+			],
+			[
+				"mod_role_equip",
+				"app\\game\\role\\src\\equip\\mod_role_equip.erl"
+			],
+			[
+				"cfg_i",
+				"config\\src\\cfg_item.erl"
+			],
+			[
+				"common_bag2",
+				"app\\game\\common\\src\\common_bag2.erl"
+			],
+			[
+				"commonmirror",
+				"app\\game\\map\\src\\fb\\common_mirror.erl"
+			],
+			[
+				"cfg_ac",
+				"config\\src\\cfg_activity.erl"
+			],
+			[
+				"cfg_bufff",
+				"config\\src\\cfg_buff_func.erl"
+			],
+			[
+				"mofskill",
+				"app\\game\\map\\src\\fight\\mof_skill_attack.erl"
+			],
+			[
+				"buff.erl",
+				"app\\game\\map\\src\\mod\\mod_monster_buff.erl"
+			],
+			[
+				"mod_rolebuff",
+				"app\\game\\role\\src\\mod\\mod_role_buff.erl"
+			],
+			[
+				"mod_roleskill",
+				"app\\game\\role\\src\\mod\\mod_role_skill.erl"
+			],
+			[
+				"mof_under",
+				"app\\game\\map\\src\\fight\\mof_under_attack.erl"
+			],
+			[
+				"mof_skill",
+				"app\\game\\map\\src\\fight\\mof_skill_attack.erl"
+			],
+			[
+				"my_debug",
+				"app\\web\\game.www\\admin\\library\\smarty\\internals\\core.display_debug_console.php"
+			],
+			[
+				"mm_parser",
+				"app\\game\\common\\src\\mm_parser.erl"
+			],
+			[
+				"mod_equibuild",
+				"app\\game\\role\\src\\equip\\mod_equip_build.erl"
+			],
+			[
+				"myh",
+				"my_helper.erl"
+			],
+			[
+				"model_pvp_waiting_hall",
+				"app\\game\\map\\src\\fb\\model_pvp_waiting_hall.erl"
+			],
+			[
+				"common",
+				"setting\\common.config"
+			],
+			[
+				"commonconfi",
+				"app\\game\\common\\src\\common_config.erl"
+			],
+			[
+				"mod_mirrrnk",
+				"app\\game\\map\\src\\mod\\mod_mirror_rnkm.erl"
+			],
+			[
+				"mod_qqapi",
+				"app\\game\\role\\src\\qq\\mod_qq_api.erl"
+			],
+			[
+				"cfg_figh",
+				"config\\src\\cfg_fight.erl"
+			],
+			[
+				"mgeerda",
+				"app\\game\\role\\src\\mgeer_data.erl"
+			],
+			[
+				"mof_las",
+				"app\\game\\map\\src\\fight\\mof_last_skill.erl"
+			],
+			[
+				"te",
+				"app\\web\\game.www\\test\\test_gm.php"
+			],
+			[
+				"mod_chag",
+				"app\\game\\chat\\src\\mod\\mod_chat_gm.erl"
+			],
+			[
+				"mod_equipbuil",
+				"app\\game\\role\\src\\equip\\mod_equip_build.erl"
+			],
+			[
+				"modelpvp",
+				"app\\game\\map\\src\\fb\\model_pvp_waiting_hall.erl"
+			],
+			[
+				"mod_equip_build",
+				"app\\game\\role\\src\\equip\\mod_equip_build.erl"
+			],
+			[
+				"cfg_equip_build",
+				"config\\src\\cfg_equip_build.erl"
+			],
+			[
+				"cfgac",
+				"config\\src\\cfg_activity.erl"
+			],
+			[
+				"model_pvphall",
+				"app\\game\\map\\src\\fb\\model_pvp_waiting_hall.erl"
+			],
+			[
+				"common_equip",
+				"app\\game\\common\\src\\common_equip.erl"
+			],
+			[
+				"mod_bag",
+				"app\\game\\map\\src\\mod\\mod_bag.erl"
+			],
+			[
+				"cfgbuild",
+				"config\\src\\cfg_equip_build.erl"
+			],
+			[
+				"modeqbuil",
+				"app\\game\\role\\src\\equip\\mod_equip_build.erl"
+			],
+			[
+				"modeqrein",
+				"app\\game\\role\\src\\equip\\mod_equip_reinforce.erl"
+			],
+			[
+				"modbag",
+				"app\\game\\map\\src\\mod\\mod_bag.erl"
+			],
+			[
+				"commonde",
+				"app\\game\\common\\src\\common_deal.erl"
+			],
+			[
+				"mod_equiprein",
+				"app\\game\\role\\src\\equip\\mod_equip_reinforce.erl"
+			],
+			[
+				"mod_eqbui",
+				"app\\game\\role\\src\\equip\\mod_equip_build.erl"
+			],
+			[
+				"mod_chagm",
+				"app\\game\\chat\\src\\mod\\mod_chat_gm.erl"
+			],
+			[
+				"mod_pvp",
+				"app\\game\\map\\src\\fb\\model_pvp_waiting_hall.erl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"apply_item_effect",
+				"Function: apply_item_effect"
+			]
+		],
+		"width": 616.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

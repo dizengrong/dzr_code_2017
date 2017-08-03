@@ -1,0 +1,14 @@
+使用erlang.mk创建自己的项目:
+1:获取erlang.mk
+	wget https://erlang.mk/erlang.mk
+（要确保是一个空的目录，除了erlang.mk文件）
+2.创建自己的application
+	make -f erlang.mk bootstrap bootstrap-rel
+3.编译、发布并运行
+	make run
+4.代码静态检测
+	make check
+
+更多命令使用help
+	make help	
+

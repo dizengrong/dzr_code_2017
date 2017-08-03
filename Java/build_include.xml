@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!-- <property name="src" value="src"/>   -->
+<property name="dest" value="../bin"/>
+
+<target name="test" >  
+	<ant target="run" />  
+</target>  

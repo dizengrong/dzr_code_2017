@@ -1,0 +1,24 @@
+{
+	[
+		'util/*',
+		'port_example/*',
+		'rsync_service/src/*',
+		'work_helper/src/*',
+		'../temp/*'
+		% '/media/sf_E_DRIVE/cq_svr_project/cq_svr/src/fun/server_ex/gm/gm_code_list.erl',
+		% '/media/sf_E_DRIVE/cq_svr_project/cq_res/src/RES/data_ex/data_item.erl'
+		% 'rsync_service/deps/cowboy/src/*',
+		% 'rsync_service/deps/cowlib/src/*',
+		% 'rsync_service/deps/erlydtl/src/*',
+		% 'rsync_service/deps/ranch/src/*'
+	],
+	
+	[
+		debug_info,
+		{i, "include"},
+		% {i, "rsync_service/deps/cowlib/include"},
+		% {i, "rsync_service/deps/erlydtl/include"},
+		{outdir, "ebin"}
+	]
+}.
+% E:\cq_svr_project\cq_res\include\config.hrl

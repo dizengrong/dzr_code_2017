@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="dzr.java_demo.Fund" table="fund">
+        <id name="id" type="int">
+            <column name="id" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="sort" type="int">
+            <column name="sort" />
+        </property>
+        <property name="uid" type="int">
+            <column name="uid" />
+        </property>
+        <property name="fetched_list" type="string">
+            <column name="fetched_list" length="256"/>
+        </property>
+    </class>
+</hibernate-mapping>

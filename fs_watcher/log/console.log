@@ -1,0 +1,50 @@
+2017-05-24 21:58:07.892 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 21:58:08.152 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 21:58:08.152 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:09:15.955 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:09:16.245 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:09:16.245 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:18:30.118 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:18:30.324 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:18:30.324 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:18:58.790 [info] <0.67.0>@rsync_handler:rsync_from_server:63 
+2017-05-24 22:18:58.791 [critical] <0.67.0>@rsync_handler:rsync_from_server:67 rsync_from_server exception, E: error, R: function_clause, stack:[{lists,last,[[]],[{file,"lists.erl"},{line,226}]},{rsync_handler,is_success,1,[{file,"src/rsync_handler.erl"},{line,74}]},{rsync_handler,rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,64}]},{rsync_handler,init_rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,24}]},{rsync_handler,init,0,[{file,"src/rsync_handler.erl"},{line,9}]},{fs_watcher_app,start,2,[{file,"src/fs_watcher_app.erl"},{line,20}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,272}]}]
+2017-05-24 22:18:58.791 [error] <0.67.0>@rsync_handler:init:18 init rsync_from_server failed, stop starting!
+2017-05-24 22:18:58.791 [error] <0.66.0> CRASH REPORT Process <0.66.0> with 0 neighbours exited with reason: bad return value ok from fs_watcher_app:start(normal, []) in application_master:init/4 line 133
+2017-05-24 22:19:02.307 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:19:02.574 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:19:02.574 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:19:11.694 [info] <0.67.0>@rsync_handler:rsync_from_server:63 
+2017-05-24 22:19:11.694 [critical] <0.67.0>@rsync_handler:rsync_from_server:67 rsync_from_server exception, E: error, R: function_clause, stack:[{lists,last,[[]],[{file,"lists.erl"},{line,226}]},{rsync_handler,is_success,1,[{file,"src/rsync_handler.erl"},{line,74}]},{rsync_handler,rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,64}]},{rsync_handler,init_rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,24}]},{rsync_handler,init,0,[{file,"src/rsync_handler.erl"},{line,9}]},{fs_watcher_app,start,2,[{file,"src/fs_watcher_app.erl"},{line,20}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,272}]}]
+2017-05-24 22:19:11.694 [error] <0.67.0>@rsync_handler:init:18 init rsync_from_server failed, stop starting!
+2017-05-24 22:19:11.694 [error] <0.66.0> CRASH REPORT Process <0.66.0> with 0 neighbours exited with reason: bad return value ok from fs_watcher_app:start(normal, []) in application_master:init/4 line 133
+2017-05-24 22:19:37.153 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:19:37.372 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:19:37.372 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:19:56.644 [info] <0.67.0>@rsync_handler:rsync_from_server:63 
+2017-05-24 22:19:56.644 [critical] <0.67.0>@rsync_handler:rsync_from_server:67 rsync_from_server exception, E: error, R: function_clause, stack:[{lists,last,[[]],[{file,"lists.erl"},{line,226}]},{rsync_handler,is_success,1,[{file,"src/rsync_handler.erl"},{line,74}]},{rsync_handler,rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,64}]},{rsync_handler,init_rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,24}]},{rsync_handler,init,0,[{file,"src/rsync_handler.erl"},{line,9}]},{fs_watcher_app,start,2,[{file,"src/fs_watcher_app.erl"},{line,20}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,272}]}]
+2017-05-24 22:19:56.644 [error] <0.67.0>@rsync_handler:init:18 init rsync_from_server failed, stop starting!
+2017-05-24 22:19:56.645 [error] <0.66.0> CRASH REPORT Process <0.66.0> with 0 neighbours exited with reason: bad return value ok from fs_watcher_app:start(normal, []) in application_master:init/4 line 133
+2017-05-24 22:20:31.670 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:20:31.902 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:20:31.902 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:21:05.194 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:21:05.464 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:21:05.464 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:21:21.242 [info] <0.67.0>@rsync_handler:rsync_from_server:63 
+2017-05-24 22:21:21.243 [critical] <0.67.0>@rsync_handler:rsync_from_server:67 rsync_from_server exception, E: error, R: function_clause, stack:[{lists,last,[[]],[{file,"lists.erl"},{line,226}]},{rsync_handler,is_success,1,[{file,"src/rsync_handler.erl"},{line,74}]},{rsync_handler,rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,64}]},{rsync_handler,init_rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,24}]},{rsync_handler,init,0,[{file,"src/rsync_handler.erl"},{line,9}]},{fs_watcher_app,start,2,[{file,"src/fs_watcher_app.erl"},{line,20}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,272}]}]
+2017-05-24 22:21:21.243 [error] <0.67.0>@rsync_handler:init:18 init rsync_from_server failed, stop starting!
+2017-05-24 22:21:21.244 [error] <0.66.0> CRASH REPORT Process <0.66.0> with 0 neighbours exited with reason: bad return value ok from fs_watcher_app:start(normal, []) in application_master:init/4 line 133
+2017-05-24 22:21:43.319 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:21:43.589 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:21:43.589 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:22:59.400 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-05-24 22:22:59.480 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-05-24 22:22:59.480 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it
+2017-05-24 22:23:14.852 [info] <0.67.0>@rsync_handler:rsync_from_server:63 
+2017-05-24 22:23:14.853 [critical] <0.67.0>@rsync_handler:rsync_from_server:67 rsync_from_server exception, E: error, R: function_clause, stack:[{lists,last,[[]],[{file,"lists.erl"},{line,226}]},{rsync_handler,is_success,1,[{file,"src/rsync_handler.erl"},{line,74}]},{rsync_handler,rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,64}]},{rsync_handler,init_rsync_from_server,1,[{file,"src/rsync_handler.erl"},{line,24}]},{rsync_handler,init,0,[{file,"src/rsync_handler.erl"},{line,9}]},{fs_watcher_app,start,2,[{file,"src/fs_watcher_app.erl"},{line,20}]},{application_master,start_it_old,4,[{file,"application_master.erl"},{line,272}]}]
+2017-05-24 22:23:14.853 [error] <0.67.0>@rsync_handler:init:18 init rsync_from_server failed, stop starting!
+2017-05-24 22:23:14.854 [error] <0.66.0> CRASH REPORT Process <0.66.0> with 0 neighbours exited with reason: bad return value ok from fs_watcher_app:start(normal, []) in application_master:init/4 line 133
+2017-06-09 21:16:12.362 [info] <0.7.0> Application lager started on node nonode@nohost
+2017-06-09 21:16:12.407 [error] <0.51.0>@lager_handler_watcher:123 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: old_shell
+2017-06-09 21:16:12.407 [warning] <0.46.0>@lager_console_backend:66 Lager's console backend is incompatible with the 'old' shell, not enabling it

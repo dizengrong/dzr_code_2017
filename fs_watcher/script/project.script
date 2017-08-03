@@ -1,0 +1,28 @@
+compile:
+erl -pa ebin -make
+clean:
+del  .\ebin\*.beam
+run:
+erl -pa ebin/ -s main start -s reloader
+release:
+erl -pa ebin/ -s gen_release make_win_release
+
+rsync -avz -d  -r -h -pgo -e "ssh  -i config/Identity" --itemize-changes --chmod 0777 "/cygdrive/e/BaiduNetdiskDownload/fs_watcher/src/main.erl" root@192.168.1.105:/root/sync_dir/e_fs_watcher/src/
+
+rsync -avz -d -r -h -pgo -e "ssh  -i config/Identity" --itemize-changes --chmod 0777 "/cygdrive/e/BaiduNetdiskDownload/fs_watcher/src/" root@192.168.1.105:/root/sync_dir/e_fs_watcher/
+
+rsync -avz -d -r -h -pgo -e "ssh  -i config/Identity" --itemize-changes --chmod 0777 "/cygdrive/e/BaiduNetdiskDownload/fs_watcher/src/" root@192.168.1.105:/root/data/
+
+同步服务器的文件到本地
+rsync -avz -e "ssh  -i config/Identity"  root@192.168.1.105:/root/sync_dir/e__BaiduNetdiskDownload_fs_watcher/ /cygdrive/e/BaiduNetdiskDownload/test/
+
+
+同步本地到服务器
+.\script\sync_to_server.cmd "config/Identity_work" "/cygdrive/e/dzr/dzr_code_2017/" "dzr" "39.108.106.207" "/home/dzr/rsync_dir/"
+同步服务器到本地
+.\script\sync_from_server.cmd "config/Identity_work" "/home/dzr/rsync_dir/dizengrong/" "/cygdrive/e/dzr/BaiduNetdiskDownload/fs_watcher/" 
+
+% inotifywait -mr --timefmt '%d/%m/%y/%H:%M' --format '%T %w %f %e' ./
+% inotifywait -mr --timefmt '%d/%m/%y/%H:%M' --format '%T %w %f %e' e:\ d:\
+
+% inotifywait -e modify create delete move -m -r e:/BaiduNetdiskDownload/fs_watcher
