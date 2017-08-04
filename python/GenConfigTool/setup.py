@@ -21,11 +21,11 @@ includes=["encodings","encodings.*"]
 setup(
 options = {"py2exe": {"compressed": 1,
 					  "optimize": 2,
-					  # "ascii": 0,
+					  "ascii": 0,
 					  "includes":includes,
 					  "excludes": excludes, # COM stuff we don't want
 					  "dll_excludes": ["MSVCP90.dll"],
-					  # "bundle_files": 1 #所有文件打包成一个exe文件
+					  "bundle_files": 1 #所有文件打包成一个exe文件
 					  }
 		  },
 name = "GenConfigTool",  
@@ -33,7 +33,8 @@ zipfile = None,
 windows = [{"script":"main.py"}],
 data_files = [
 			("config", ["config/cfg.xml", "config/cfg_stone.erl.tpl"]),
-			(".", ["wxpdemo.ico"])
+			(".", ["wxpdemo.ico"]),
+			(".", ["ReadMe.txt"])
     	     ]
 )
 

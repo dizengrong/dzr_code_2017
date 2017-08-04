@@ -10,7 +10,7 @@ from tenjin.helpers import *
 from tenjin.escaped import *
 
 ## create engine object
-engine    = tenjin.SafeEngine()
+engine    = tenjin.SafeEngine(path=[os.path.join(os.getcwd(), 'config')])
 
 def get_attrvalue(node, attrname):
 	return node.getAttribute(attrname) if node else ''
@@ -30,14 +30,22 @@ def format(value):
         return as_escaped(value)
     else:
     	try:
-    		return as_escaped(value)
+    		return int(value)
     	except Exception, e:
-    		return value
+    		return as_escaped(value)
+
+VERSION = u"配置导出工具-v.03    设计者：dzR"
+
+GRID_CONTEXT_MENU = [
+	(wx.NewId(), u"导出该行的所有文件", "OnExportAll")
+]
 
 class MyFrame1 ( wx.Frame ):
 	
 	def __init__( self, parent ):
-		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"配置导出工具", pos = wx.DefaultPosition, size = wx.Size( 551,415 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"配置导出工具", 
+							pos = wx.DefaultPosition, size = wx.Size( 551,415 ), 
+							style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 		
 		self.init_other()
 
@@ -53,7 +61,8 @@ class MyFrame1 ( wx.Frame ):
 		self.init_grid()
 		bSizer1.Add( self.m_grid1, 1, wx.ALIGN_CENTER|wx.EXPAND, 5 )
 		
-		self.m_staticText1 = wx.StaticText( self, wx.ID_ANY, u"配置导出工具-v.02    设计者：dzR", wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
+		self.m_staticText1 = wx.StaticText( self, wx.ID_ANY, VERSION, 
+											wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE )
 		self.m_staticText1.Wrap( -1 )
 		self.m_staticText1.SetForegroundColour( wx.Colour( 204, 50, 50 ) )
 		self.m_staticText1.SetBackgroundColour( wx.Colour( 255, 255, 255 ) )
@@ -62,12 +71,15 @@ class MyFrame1 ( wx.Frame ):
 		
 		self.SetSizer( bSizer1 )
 		self.Layout()
+		self.Fit()
 		
 		self.Centre( wx.BOTH )
 
 		self.m_searchCtrl1.Bind( wx.EVT_TEXT, self.OnSearch )
 
 	def init_other(self):
+		self.cwd = os.path.abspath('.')
+		self.excle_src_path = os.path.abspath('..')
 		self.last_search_str = None
 
 	def init_grid(self):
@@ -79,6 +91,7 @@ class MyFrame1 ( wx.Frame ):
 		self.m_grid1 = wx.grid.Grid( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_grid1.CreateGrid(1 + len(self.export_files), max_columns + 1)
 		self.m_grid1.Bind( wx.grid.EVT_GRID_CELL_LEFT_DCLICK, self.OnCellDoubleClick )
+		self.m_grid1.Bind( wx.grid.EVT_GRID_CELL_RIGHT_CLICK, self.OnCellRightClick )
 		self.m_grid1.EnableEditing( False )
 		self.m_grid1.EnableGridLines( True )
 		self.m_grid1.SetMargins( 0, 0 )
@@ -87,9 +100,9 @@ class MyFrame1 ( wx.Frame ):
 		self.m_grid1.SetRowLabelAlignment( wx.ALIGN_CENTRE, wx.ALIGN_CENTRE )
 		self.m_grid1.SetDefaultCellAlignment( wx.ALIGN_LEFT, wx.ALIGN_TOP )
 
-		self.m_grid1.SetColLabelValue(0, u'Excel文件(双击导出所有)')
+		self.m_grid1.SetColLabelValue(0, u'Excel文件(双击打开)')
 		for row in xrange(1, max_columns + 1):
-			self.m_grid1.SetColLabelValue(row, u'配置' + str(row) + u'(双击导出单个)')
+			self.m_grid1.SetColLabelValue(row, u'配置' + str(row) + u'(双击导出)')
 
 		self.fill_grid(self.export_files, True)
 
@@ -153,7 +166,7 @@ class MyFrame1 ( wx.Frame ):
 
 	def OnSearch( self, event ):
 		print ("on search %s" % (self.m_searchCtrl1.GetValue()))
-		wx.FutureCall(200, self.show_search, None, None)
+		wx.CallLater(200, self.show_search, None, None)
 
 	def show_search(self, *args, **kwargs):
 		searchstr = self.m_searchCtrl1.GetValue()
@@ -172,14 +185,34 @@ class MyFrame1 ( wx.Frame ):
 			self.fill_grid(self.export_files)
 		self.Layout()
 
+	def OnCellRightClick(self, event):
+		menu = wx.Menu()
+		for id, title, action in GRID_CONTEXT_MENU:
+			it = wx.MenuItem(menu, id, title)
+			menu.Append(it)
+			self.Bind(wx.EVT_MENU, getattr(self, action), it)
+		self.sell_tab_clicked_row = event.GetRow()
+		self.PopupMenu(menu)
+		
+		menu.Destroy()
+		self.sell_tab_clicked_row = None
+
+	def OnExportAll(self, event):
+		if self.sell_tab_clicked_row != None:
+			row = self.sell_tab_clicked_row
+			val = self.m_grid1.GetCellValue(row, 0)
+			tpls = [self.export_list[x] for x in self.export_files[val]]
+			print tpls 
+			self.OnExport(tpls)
+
 	def OnCellDoubleClick(self, event):
 		row = event.GetRow()
 		col = event.GetCol()
 		val = self.m_grid1.GetCellValue(row, col)
 		if col == 0:
-			tpls = [self.export_list[x] for x in self.export_files[val]]
-			print tpls 
-			self.OnExport(tpls)
+			excle_filename = os.path.join(self.excle_src_path, val.encode("GBK"))
+			os.startfile(excle_filename)
+			
 		else:
 			tpl = val[3:] + ".tpl"
 			print tpl
@@ -193,12 +226,18 @@ class MyFrame1 ( wx.Frame ):
 		if dlg.ShowModal() == wx.ID_OK:
 			path = dlg.GetPath()
 			exported = ""
-			for tpl_dict in tpl_dicts:
-				cfg_file = self.DoExport(tpl_dict, path)
-				exported = exported + cfg_file + "\n"
-			wx.MessageBox(exported + u'导出成功', caption = u'提示', style = wx.OK|wx.CENTRE) 
+			try:
+				for tpl_dict in tpl_dicts:
+					
+					cfg_file = self.DoExport(tpl_dict, path)
+					exported = exported + cfg_file + "\n"
+				wx.MessageBox(exported + u'导出成功', caption = u'提示', style = wx.OK|wx.CENTRE) 
+			except Exception, e:
+				wx.MessageBox(exported + u'导出失败！有问题请联系程序！', caption = u'错误', style = wx.OK|wx.CENTRE) 
+				raise e
+			finally:
+				dlg.Destroy()
 
-		dlg.Destroy()
 
 	def DoExport(self, tpl_dict, dest_dir):
 		print tpl_dict
