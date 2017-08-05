@@ -2,8 +2,10 @@
 
 import wx, os, tenjin
 import wx.grid
+import wx.lib.dialogs
 import gettext
 import fuzzyfinder
+import traceback
 import xdrlib, sys, xlrd, datetime
 from xml.dom import minidom
 from tenjin.helpers import *
@@ -23,16 +25,16 @@ def get_xmlnode(node, name):
 
 
 def format(value):
-    if isinstance(value, float):
-        if int(value) == value: return int(value)
-        else: return value
-    elif isinstance(value, str):
-        return as_escaped(value)
-    else:
-    	try:
-    		return int(value)
-    	except Exception, e:
-    		return as_escaped(value)
+	if isinstance(value, float):
+		if int(value) == value: return int(value)
+		else: return value
+	elif isinstance(value, str):
+		return as_escaped(value)
+	else:
+		try:
+			return int(value)
+		except Exception, e:
+			return as_escaped(value)
 
 VERSION = u"配置导出工具-v.03    设计者：dzR"
 
@@ -48,6 +50,7 @@ class MyFrame1 ( wx.Frame ):
 							style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 		
 		self.init_other()
+		self.init_menubar()
 
 		self.icon = wx.Icon('wxpdemo.ico', wx.BITMAP_TYPE_ICO)
 		self.SetIcon(self.icon)  
@@ -81,6 +84,26 @@ class MyFrame1 ( wx.Frame ):
 		self.cwd = os.path.abspath('.')
 		self.excle_src_path = os.path.abspath('..')
 		self.last_search_str = None
+
+	def init_menubar(self):
+		self.menu_action = {
+			101: self.OnExportAll2
+		}
+		menuBar = wx.MenuBar()
+
+		menu1 = wx.Menu()
+		menu1.Append(101, u"一键导出所有配置")
+
+		menuBar.Append(menu1, u"工具")
+		self.SetMenuBar(menuBar)
+
+		self.Bind(wx.EVT_MENU, self.OnMenuEvent, id=101)
+
+	def OnMenuEvent(self, event):
+		id = event.GetId()
+		print('Event id: %d\n' % (id))
+		self.menu_action.get(id)()
+
 
 	def init_grid(self):
 		colum_size = self.LoadConfigXML()
@@ -197,12 +220,16 @@ class MyFrame1 ( wx.Frame ):
 		menu.Destroy()
 		self.sell_tab_clicked_row = None
 
+	def OnExportAll2(self):
+		# print self.export_list.values() 
+		self.OnExport(self.export_list.values())
+
 	def OnExportAll(self, event):
 		if self.sell_tab_clicked_row != None:
 			row = self.sell_tab_clicked_row
 			val = self.m_grid1.GetCellValue(row, 0)
 			tpls = [self.export_list[x] for x in self.export_files[val]]
-			print tpls 
+			# print tpls 
 			self.OnExport(tpls)
 
 	def OnCellDoubleClick(self, event):
@@ -220,23 +247,26 @@ class MyFrame1 ( wx.Frame ):
 				self.OnExport([self.export_list[tpl]])
 
 	def OnExport(self, tpl_dicts):
-		# tpl = tpl_dict['tpl']
-		# cfg, ext = os.path.splitext(tpl)
 		dlg = wx.DirDialog(None, message = u"选择导出" + u"目录", style = wx.DD_DEFAULT_STYLE | wx.DD_DIR_MUST_EXIST | wx.DD_CHANGE_DIR)
 		if dlg.ShowModal() == wx.ID_OK:
 			path = dlg.GetPath()
-			exported = ""
-			try:
-				for tpl_dict in tpl_dicts:
-					
-					cfg_file = self.DoExport(tpl_dict, path)
-					exported = exported + cfg_file + "\n"
-				wx.MessageBox(exported + u'导出成功', caption = u'提示', style = wx.OK|wx.CENTRE) 
-			except Exception, e:
-				wx.MessageBox(exported + u'导出失败！有问题请联系程序！', caption = u'错误', style = wx.OK|wx.CENTRE) 
-				raise e
-			finally:
-				dlg.Destroy()
+			succ_files = ""
+			for tpl_dict in tpl_dicts:
+				cfg_file, ext = os.path.splitext(tpl_dict['tpl'])
+				cfg_file = os.path.join(path, cfg_file)
+				try:
+					self.DoExport(tpl_dict, path)
+					succ_files = succ_files + cfg_file + "\n\t"
+				except Exception, e:
+					msg = u"已成功导出的文件:\n" + succ_files + "\n" \
+						  + u"导出失败的文件:\n\t" + cfg_file + "\n" \
+						  + u"错误信息:\n" + traceback.format_exc()
+					msg_dlg = wx.lib.dialogs.ScrolledMessageDialog(self, msg, u"导出失败")
+					msg_dlg.ShowModal()
+					return
+			msg = u"成功导出的文件列表:\n" + succ_files + "\n"
+			msg_dlg = wx.lib.dialogs.ScrolledMessageDialog(self, msg, u"导出成功")
+			msg_dlg.ShowModal()
 
 
 	def DoExport(self, tpl_dict, dest_dir):
