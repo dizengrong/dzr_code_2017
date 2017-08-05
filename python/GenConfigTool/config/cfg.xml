@@ -9,14 +9,16 @@
 </file>
  -->
 <root>
-<file excle_file='S2_【宝石】数据.xlsm'>
+<file excle_file='S2_【宝石】数据.xlsx'>
 	<export tpl='cfg_stone.erl.tpl' type='1'>
 		<dict data_key='all_stone' sheet='all_stone' begin_row='9' col_start='1' col_end='18'></dict>
 	</export>
-	<!-- <export tpl='PetCongfig.lua.tpl', type='2'>
-	</export> -->
 </file>
-
+<file excle_file='场景配置.xlsx'>
+	<export tpl='cfg_scene.erl.tpl' type='1'>
+		<dict data_key='all_scene' sheet='all_scene' begin_row='9' col_start='1' col_end='18'></dict>
+	</export>
+</file>
 </root>
 
 

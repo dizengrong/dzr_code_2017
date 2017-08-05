@@ -237,8 +237,11 @@ class MyFrame1 ( wx.Frame ):
 		col = event.GetCol()
 		val = self.m_grid1.GetCellValue(row, col)
 		if col == 0:
-			excle_filename = os.path.join(self.excle_src_path, val.encode("GBK"))
-			os.startfile(excle_filename)
+			excle_filename = os.path.join(self.excle_src_path, val)
+			if os.path.isfile(excle_filename):
+				os.startfile(excle_filename)
+			else:
+				wx.MessageBox(u'找不到文件：' + excle_filename, caption = u'错误', style = wx.OK|wx.CENTRE) 
 			
 		else:
 			tpl = val[3:] + ".tpl"
@@ -256,15 +259,15 @@ class MyFrame1 ( wx.Frame ):
 				cfg_file = os.path.join(path, cfg_file)
 				try:
 					self.DoExport(tpl_dict, path)
-					succ_files = succ_files + cfg_file + "\n\t"
+					succ_files = succ_files + cfg_file + "\n    "
 				except Exception, e:
-					msg = u"已成功导出的文件:\n" + succ_files + "\n" \
-						  + u"导出失败的文件:\n\t" + cfg_file + "\n" \
+					msg = u"已成功导出的文件:\n    " + succ_files + "\n" \
+						  + u"导出失败的文件:\n    " + cfg_file + "\n" \
 						  + u"错误信息:\n" + traceback.format_exc()
 					msg_dlg = wx.lib.dialogs.ScrolledMessageDialog(self, msg, u"导出失败")
 					msg_dlg.ShowModal()
 					return
-			msg = u"成功导出的文件列表:\n" + succ_files + "\n"
+			msg = u"成功导出的文件列表:\n    " + succ_files + "\n"
 			msg_dlg = wx.lib.dialogs.ScrolledMessageDialog(self, msg, u"导出成功")
 			msg_dlg.ShowModal()
 
