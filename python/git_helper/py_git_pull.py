@@ -90,10 +90,13 @@ def do_pull(repo_conf):
 	print("\n")
 
 
-
-for r in repo_list:
-	fix_dulwich_problem(do_pull, r)
-
-print(u"更新完毕.")
-print("Press any key to exit.\n")
-msvcrt.getch()
+try:
+	for r in repo_list:
+		fix_dulwich_problem(do_pull, r)
+	print(u"更新完毕.")
+except Exception, e:
+	traceback.format_exc()
+	print(u"更新失败，请检查配置是否正确.")
+finally:
+	print("Press any key to exit.\n")
+	msvcrt.getch()
