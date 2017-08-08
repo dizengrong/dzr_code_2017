@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有需要生成配置文件的配置 -->
+<!-- 注意dict元素的data_key属性值不能一样 -->
+<!-- 
+<file excle_file=数据来源Excel>
+	<export tpl=服务端配置模板名称 type=1为后端文件2为前端文件>
+		<dict data_key=数据key sheet=数量来源sheet页 begin_row=从哪一行开始读数据 col_start=取数据的开始列 col_end=结束列 sort_col=对那一列进行排序></dict>
+	</export>
+</file>
+ -->
+<root>
+<file excle_file='S2_【宝石】数据.xlsx'>
+	<export tpl='cfg_stone.erl.tpl' type='1'>
+		<dict data_key='all_stone' sheet='all_stone' begin_row='9' col_start='1' col_end='18'></dict>
+	</export>
+</file>
+<file excle_file='场景配置.xlsx'>
+	<export tpl='cfg_scene.erl.tpl' type='1'>
+		<dict data_key='all_scene' sheet='all_scene' begin_row='9' col_start='1' col_end='18'></dict>
+	</export>
+</file>
+</root>
+
+
