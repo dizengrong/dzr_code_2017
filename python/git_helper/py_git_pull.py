@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 
-import msvcrt, os
+import msvcrt, os, traceback
 import paramiko, time
 import dulwich.client
 from gittle import Gittle
@@ -15,7 +15,6 @@ for sect in config.sections():
 	url         = config.get(sect, 'url')
 	key_file    = config.get(sect, 'key_file')
 	repo_list.append((branch_name, path, url, key_file))
-
 
 max_len = 0
 for branch_name, repo_path, repo_url, key_file in repo_list:
@@ -79,9 +78,6 @@ def do_pull(repo_conf):
 		except Exception, e:
 			# 因为切换时会删除老分支的文件，可能会存在重复删除文件的情况，因此这个错误可以忽略
 			pass
-		# os.system("git checkout %s -f" % branch_name)
-		# os.system("git reset --hard" % branch_name)
-
 
 	repo.pull(branch_name=branch_name)
 	ret = repo.last_commit
@@ -95,7 +91,7 @@ try:
 		fix_dulwich_problem(do_pull, r)
 	print(u"更新完毕.")
 except Exception, e:
-	traceback.format_exc()
+	print traceback.format_exc()
 	print(u"更新失败，请检查配置是否正确.")
 finally:
 	print("Press any key to exit.\n")
