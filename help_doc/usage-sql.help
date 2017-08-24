@@ -9,3 +9,5 @@
 3.导出数据库
 	仅结构：mysqldump -uroot -pdbpasswd -d dbname > db.sql;
 	含数据：mysqldump -uroot -pdbpasswd dbname >db.sql;
+4.判断列是否存在
+	SELECT * FROM information_schema.columns WHERE table_schema='db_guaji' AND table_name = 'usr' AND column_name = 'id';
