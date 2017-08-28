@@ -5,6 +5,7 @@ import os
 import traceback
 import paramiko
 import time
+import subprocess
 import dulwich.client
 from gittle import Gittle
 from ConfigParser import ConfigParser
@@ -81,6 +82,11 @@ def do_pull(repo_conf):
         except Exception:
             # 因为切换时会删除老分支的文件，可能会存在重复删除文件的情况，因此这个错误可以忽略
             pass
+
+    old_path = os.getcwd()
+    os.chdir(repo_path)
+    os.system("git reset --hard")
+    os.chdir(old_path)
 
     repo.pull(branch_name=branch_name)
     ret = repo.last_commit
