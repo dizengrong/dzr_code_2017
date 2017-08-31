@@ -252,7 +252,7 @@ class MyFrame1 (wx.Frame):
             val = self.m_grid1.GetCellValue(row, col)
             if col == 0:
                 excle_filename = os.path.join(self.excle_src_path, val)
-                os.system('explorer /select,' + excle_filename)
+                os.system('explorer /select,' + excle_filename.encode("GBK"))
             else:
                 tpl_filename = os.path.join(self.cwd, 'config', val[3:] + '.tpl')
                 os.system('explorer /select,' + tpl_filename)
@@ -267,10 +267,10 @@ class MyFrame1 (wx.Frame):
         else:
             tpl = val[3:] + ".tpl"
             print tpl
-            if tpl in export_list:
+            if tpl in self.export_list:
                 self.OnExport([self.export_list[tpl]])
 
-    def OpenFile(filename):
+    def OpenFile(self, filename):
         if os.path.isfile(filename):
             os.startfile(filename)
         else:
