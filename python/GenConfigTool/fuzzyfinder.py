@@ -18,8 +18,10 @@ def get_match_weight(regex, items):
 
 def fuzzyfinder(user_input, collection):
     suggestions = []
-    pattern = '.*?'.join(user_input)    # Converts 'djm' to 'd.*?j.*?m'
-    regex = re.compile(pattern)         # Compiles a regex.
+    # pattern = '.*?'.join(user_input)    # Converts 'djm' to 'd.*?j.*?m'
+    # 这里还是搞成精确匹配
+    pattern = ''.join(user_input)    # Converts 'djm' to 'd.*?j.*?m'
+    regex = re.compile(pattern, re.IGNORECASE)         # Compiles a regex.
     for item in collection:
         # Checks if the current item matches the regex.
         (w1, w2) = get_match_weight(regex, [item] + collection[item])
