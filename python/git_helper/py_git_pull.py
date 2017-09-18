@@ -5,7 +5,6 @@ import os
 import traceback
 import paramiko
 import time
-import subprocess
 import dulwich.client
 from gittle import Gittle
 from ConfigParser import ConfigParser
@@ -18,10 +17,13 @@ for sect in config.sections():
     path = config.get(sect, 'path')
     url = config.get(sect, 'url')
     key_file = config.get(sect, 'key_file')
-    repo_list.append((branch_name, path, url, key_file))
+    no_reset = False
+    if config.has_option(sect, 'no_reset'):
+        no_reset = eval(config.get(sect, 'no_reset'))
+    repo_list.append((branch_name, path, url, key_file, no_reset))
 
 max_len = 0
-for branch_name, repo_path, repo_url, key_file in repo_list:
+for branch_name, repo_path, repo_url, key_file, _ in repo_list:
     max_len = max(max_len, len(repo_path))
 
 max_len = max_len + 20
@@ -52,8 +54,22 @@ def fix_dulwich_problem(func, repo_conf):
     dulwich.client.get_ssh_vendor = old_get_ssh_vendor
 
 
+def do_pull_help(repo, branch_name):
+    try:
+        repo.pull(branch_name=branch_name)
+    except Exception as e:
+        print(u"更新出错：\n%s" % traceback.format_exc())
+        answer = ''
+        while not (answer == 'y' or answer == 'n'):
+            promt = u"是否继续？(y/n):"
+            answer = raw_input(promt.encode("GBK"))
+
+        if answer == 'n':
+            raise e
+
+
 def do_pull(repo_conf):
-    branch_name, repo_path, repo_url, key_file = repo_conf
+    branch_name, repo_path, repo_url, key_file, no_reset = repo_conf
     len1 = (max_len - len(repo_path)) / 2
     len2 = max_len - len(repo_path) - len1
     s1 = '-' * len1
@@ -72,10 +88,11 @@ def do_pull(repo_conf):
     else:
         repo = Gittle(repo_path, origin_uri=repo_url)
 
-    if not (branch_name in repo.branches):
-        print("branch_name %s not exist! checkout failed!\n" % (branch_name))
-        return
-    elif branch_name != repo.active_branch:
+    # branches中有中文时下面的判断会出错
+    # if not (branch_name in repo.branches):
+    #     print("branch_name %s not exist! checkout failed!\n" % (branch_name))
+    #     return
+    if branch_name != repo.active_branch:
         print("need switch branch")
         try:
             repo.switch_branch(branch_name)
@@ -83,12 +100,14 @@ def do_pull(repo_conf):
             # 因为切换时会删除老分支的文件，可能会存在重复删除文件的情况，因此这个错误可以忽略
             pass
 
-    old_path = os.getcwd()
-    os.chdir(repo_path)
-    os.system("git reset --hard")
-    os.chdir(old_path)
+    if not no_reset:
+        old_path = os.getcwd()
+        os.chdir(repo_path)
+        os.system("git reset --hard")
+        os.chdir(old_path)
 
-    repo.pull(branch_name=branch_name)
+    do_pull_help(repo, branch_name)
+
     ret = repo.last_commit
     print("update to: %s %s" %
           (ret.sha().hexdigest(), ret.message.decode("UTF-8").strip()))
