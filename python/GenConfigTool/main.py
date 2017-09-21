@@ -54,8 +54,9 @@ GRID_CONTEXT_MENU = [
 class MyFrame1 (wx.Frame):
 
     def __init__(self, parent):
+        displaySize = wx.DisplaySize()
         wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=u"配置导出工具",
-                          pos=wx.DefaultPosition, size=wx.Size(551, 415),
+                          pos=wx.DefaultPosition,
                           style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
 
         self.init_other()
@@ -86,9 +87,11 @@ class MyFrame1 (wx.Frame):
         self.Layout()
         self.Fit()
 
-        self.Centre(wx.BOTH)
-
         self.m_searchCtrl1.Bind(wx.EVT_TEXT, self.OnSearch)
+
+        frame_size = self.GetSize()
+        self.SetSize(frame_size.GetWidth() + 17, displaySize[1] * 3 / 4)
+        self.Centre(wx.BOTH)
 
     def init_other(self):
         self.cwd = os.path.abspath('.')
@@ -254,7 +257,8 @@ class MyFrame1 (wx.Frame):
                 excle_filename = os.path.join(self.excle_src_path, val)
                 os.system('explorer /select,' + excle_filename.encode("GBK"))
             else:
-                tpl_filename = os.path.join(self.cwd, 'config', val[3:] + '.tpl')
+                tpl_filename = os.path.join(
+                    self.cwd, 'config', val[3:] + '.tpl')
                 os.system('explorer /select,' + tpl_filename)
 
     def OnCellDoubleClick(self, event):
@@ -274,7 +278,8 @@ class MyFrame1 (wx.Frame):
         if os.path.isfile(filename):
             os.startfile(filename)
         else:
-            wx.MessageBox(u'找不到文件：' + filename, caption=u'错误', style=wx.OK | wx.CENTRE)
+            wx.MessageBox(u'找不到文件：' + filename, caption=u'错误',
+                          style=wx.OK | wx.CENTRE)
 
     def OnExport(self, tpl_dicts):
         dlg = wx.DirDialog(None, message=u"选择导出" + u"目录",

@@ -1,22 +1,309 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 所有需要生成配置文件的配置 -->
+<!-- excle配置文件与工具目录在同一个目录 -->
 <!-- 注意dict元素的data_key属性值不能一样 -->
 <!-- 
 <file excle_file=数据来源Excel>
 	<export tpl=服务端配置模板名称 type=1为后端文件2为前端文件>
-		<dict data_key=数据key sheet=数量来源sheet页 begin_row=从哪一行开始读数据 col_start=取数据的开始列 col_end=结束列 sort_col=对那一列进行排序></dict>
+		<dict data_key=数据key sheet=数量来源sheet页 begin_row=从哪一行开始读数据(从0开始) col_start=取数据的开始列 col_end=结束列 sort_col=对哪一列进行倒叙排序></dict>
 	</export>
 </file>
  -->
 <root>
-<file excle_file='pet_adpro.xlsx'>
-	<export tpl='cfg_stone.erl.tpl' type='1'>
-		<dict data_key='all_stone' sheet='all_stone' begin_row='9' col_start='1' col_end='18'></dict>
+<file excle_file='活跃度activites.xlsm'>
+	<export tpl='data_liveness.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='activities' begin_row='1' col_start='1' col_end='11'></dict>
 	</export>
 </file>
-<file excle_file='add_x.xlsx'>
-	<export tpl='cfg_scene.erl.tpl' type='1'>
-		<dict data_key='all_scene' sheet='all_scene' begin_row='9' col_start='1' col_end='18'></dict>
+<file excle_file='活跃奖励表actRewards.xlsm'>
+	<export tpl='data_liveness_reward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='actRewards' begin_row='1' col_start='1' col_end='4'></dict>
+	</export>
+</file>
+<file excle_file='章节表.xlsx'>
+	<export tpl='data_chapter.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Chapter' begin_row='1' col_start='1' col_end='5' sort_col='1'></dict>
+	</export>
+</file>
+<file excle_file='公会战利品.xlsx'>
+	<export tpl='data_cumulativedamage_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='CumulativeDamage' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+	<export tpl='data_eliminate_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Eliminate' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+	<export tpl='data_inspire_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Inspire' begin_row='1' col_start='1' col_end='4'></dict>
+	</export>
+</file>
+<file excle_file='邮件表mail.xlsm'>
+	<export tpl='data_mail.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='mail' begin_row='1' col_start='1' col_end='4'></dict>
+	</export>
+</file>
+<file excle_file='achievement成就.xlsm'>
+	<export tpl='data_achievement.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='achievement' begin_row='1' col_start='1' col_end='10'></dict>
+	</export>
+	<export tpl='data_achievelLevel.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='achieveLevel' begin_row='1' col_start='1' col_end='6'></dict>
+	</export>
+	<export tpl='data_achieveType.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='achieveType' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='商店Store.xlsm'>
+	<export tpl='data_store_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='storeConfig' begin_row='1' col_start='1' col_end='12'></dict>
+	</export>
+	<export tpl='data_store_cells.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='storeCells' begin_row='1' col_start='1' col_end='20'></dict>
+	</export>
+</file>
+<file excle_file='物品ItemConfig.xlsm'>
+	<export tpl='data_item.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='ItemConfig' begin_row='1' col_start='1' col_end='66'></dict>
+	</export>
+</file>
+<file excle_file='怪物Monster.xlsm'>
+	<export tpl='data_monster.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='MonsterConfig' begin_row='1' col_start='1' col_end='83'></dict>
+	</export>
+</file>
+<file excle_file='错误报告.xlsm'>
+	<export tpl='data_error_info.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='ErrorCodeConfig' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+</file>
+<file excle_file='场景Scene.xlsm'>
+	<export tpl='data_scene_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='SceneConfig' begin_row='1' col_start='1' col_end='74'></dict>
+	</export>
+</file>
+<file excle_file='副本Dungeon.xlsm'>
+	<export tpl='data_dungeons_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='dungenConfig' begin_row='1' col_start='1' col_end='42'></dict>
+	</export>
+</file>
+<file excle_file='强化.xlsm'>
+	<export tpl='data_improve_set.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='ImproveLevelConfig' begin_row='1' col_start='1' col_end='8'></dict>
+	</export>
+	<export tpl='data_equipstar_set.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='starLevelConfig' begin_row='1' col_start='1' col_end='6'></dict>
+	</export>
+</file>
+<file excle_file='随从Entourage.xlsm'>
+	<export tpl='data_entourage.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Entourage' begin_row='1' col_start='1' col_end='74'></dict>
+	</export>
+	<export tpl='data_entourage_update.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='EntourageExp' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+	<export tpl='data_soulLink.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='soulLinkConfig' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+	<export tpl='data_filiationLevel.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='filiationLevel' begin_row='1' col_start='1' col_end='9'></dict>
+	</export>
+	<export tpl='data_filiation.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='filiation' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+</file>
+<file excle_file='坐骑Mount.xlsm'>
+	<export tpl='data_ride_info.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='MOUNT' begin_row='1' col_start='1' col_end='28'></dict>
+	</export>
+	<export tpl='data_ride_skin.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Illusion' begin_row='1' col_start='1' col_end='14'></dict>
+	</export>
+	<export tpl='data_ride_equ_info.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='monutequipment' begin_row='1' col_start='1' col_end='19'></dict>
+	</export>
+</file>
+<file excle_file='常量配置表ParaConfig.xlsm'>
+	<export tpl='data_para.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='paraConfig' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+</file>
+<file excle_file='角色创建PlayerConfig.xlsm'>
+	<export tpl='data_update_lev.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='playerExpConfig' begin_row='1' col_start='1' col_end='7'></dict>
+	</export>
+	<export tpl='data_player_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='PlayerCharConfig' begin_row='1' col_start='1' col_end='77'></dict>
+	</export>
+</file>
+<file excle_file='equipMake_list.xlsm'>
+	<export tpl='data_equipMake_list.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='equipMake_list' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='宝箱表BoxConfig.xlsm'>
+	<export tpl='data_box_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='BoxConfig' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+	<export tpl='data_droplistconfig.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='DropListConfig' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+	<export tpl='data_dropcontentconfig.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='DropContentConfig' begin_row='1' col_start='1' col_end='6'></dict>
+	</export>
+</file>
+<file excle_file='技能配置SkillConfig.xlsm'>
+	<export tpl='data_skillleveldata.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='skillLevelDataConfig' begin_row='1' col_start='1' col_end='15'></dict>
+	</export>
+	<export tpl='data_skillmain.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='skillMainConfig' begin_row='1' col_start='1' col_end='11'></dict>
+	</export>
+	<export tpl='data_skillmainleveldata.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='skillMainLvlConfig' begin_row='1' col_start='1' col_end='11'></dict>
+	</export>
+	<export tpl='data_skillrune.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='skillRuneConfig' begin_row='1' col_start='1' col_end='12'></dict>
+	</export>
+	<export tpl='data_skillperformance.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='skillPerformanceConfig' begin_row='1' col_start='1' col_end='72'></dict>
+	</export>
+	<export tpl='data_buff.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='buffConfig' begin_row='1' col_start='1' col_end='40'></dict>
+	</export>
+</file>
+<file excle_file='charge充值.xlsm'>
+	<export tpl='data_charge_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='ChargeConfig' begin_row='1' col_start='1' col_end='19'></dict>
+		<dict data_key='first_charge_data' sheet='chargeFirstConfig' begin_row='1' col_start='1' col_end='16'></dict>
+	</export>
+	<export tpl='data_vip_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='VIPexp' begin_row='1' col_start='1' col_end='12'></dict>
+	</export>
+</file>
+<file excle_file='story故事表.xlsm'>
+	<export tpl='data_story.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='storyreward' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+</file>
+<file excle_file='位面parallel.xlsm'>
+	<export tpl='data_parallel.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='parallel' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='dress时装.xlsx'>
+	<export tpl='data_model_clothes.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='dressConfig' begin_row='1' col_start='1' col_end='8'></dict>
+	</export>
+</file>
+<file excle_file='reward奖励总表.xlsm'>
+	<!-- <export tpl='data_storyReward_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='storyReward' begin_row='1' col_start='1' col_end='3'></dict>
+	</export> -->
+	<export tpl='data_onlineReward_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='onlineReward' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+	<export tpl='data_buyGold_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='buyGold' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='宠物成长表petgrow.xlsm'>
+	<export tpl='data_pet_prop.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='petsProperty' begin_row='1' col_start='1' col_end='23'></dict>
+	</export>
+</file>
+<file excle_file='目标配置target.xlsm'>
+	<export tpl='data_day_target.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='targetconfig' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+	<export tpl='data_day_reward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='targetreward' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='equipMake_price.xlsm'>
+	<export tpl='data_equipMake_price.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='equipMake_price' begin_row='1' col_start='1' col_end='4'></dict>
+	</export>
+</file>
+<file excle_file='guildBossAward.xlsm'>
+	<export tpl='data_guildBossAward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='guildBossAward' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='randomProperty.xlsm'>
+	<export tpl='data_equ_config.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='randmPropertyConfig' begin_row='1' col_start='1' col_end='20'></dict>
+		<dict data_key='propo_data' sheet='属性装备位置对应' begin_row='1' col_start='1' col_end='14'></dict>
+	</export>
+</file>
+<file excle_file='公会guild.xlsm'>
+	<export tpl='data_guild_copy.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='raid' begin_row='1' col_start='1' col_end='5'></dict>
+	</export>
+</file>
+<file excle_file='神器表.xlsx'>
+	<export tpl='data_shenqi.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='emperorship' begin_row='1' col_start='1' col_end='10'></dict>
+		<dict data_key='lv_data' sheet='emperorshiptraining' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='签到Signs.xlsm'>
+	<export tpl='data_signs.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='signs' begin_row='1' col_start='1' col_end='5'></dict>
+		<dict data_key='acc_sign_data' sheet='signsrewards' begin_row='1' col_start='1' col_end='3'></dict>
+	</export>
+</file>
+<file excle_file='推送push.xlsx'>
+	<export tpl='data_push.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Sheet1' begin_row='1' col_start='1' col_end='4'></dict>
+	</export>
+</file>
+<file excle_file='outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+
+
+<file excle_file='1outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='2outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='3outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='4outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='5outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='6outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='7outLineReward离线奖励.xlsm'>
+	<export tpl='data_outLineReward.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
+		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
 	</export>
 </file>
 </root>
