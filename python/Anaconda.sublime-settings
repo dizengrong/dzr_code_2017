@@ -1,0 +1,12 @@
+{
+    "pep8_ignore":
+    [
+        "E309",
+        "E203",
+        "E221",
+        "W391",
+        "E402",
+        "E501",
+    ],
+    "anaconda_gutter_theme": "hard",
+}
