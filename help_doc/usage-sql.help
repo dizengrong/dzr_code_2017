@@ -11,3 +11,10 @@
 	含数据：mysqldump -uroot -pdbpasswd dbname >db.sql;
 4.判断列是否存在
 	SELECT * FROM information_schema.columns WHERE table_schema='db_guaji' AND table_name = 'usr' AND column_name = 'id';
+
+5.查看mysql数据库的配置：
+    show variables like 'max_connections';
+
+    show global status like '%connect%';
+
+    show global variables like '%timeout%';  
