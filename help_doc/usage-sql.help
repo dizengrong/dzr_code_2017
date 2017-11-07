@@ -18,3 +18,7 @@
     show global status like '%connect%';
 
     show global variables like '%timeout%';  
+
+6.批量修改某一列：
+	UPDATE usr_misc SET task_step='{1,1}';
+	UPDATE usr_misc SET task_step=REPLACE(task_step, '0', '{1,1}');
