@@ -149,7 +149,6 @@ class Player(wx.Frame):
             # Creation
             file = "https://nie.res.netease.com/comm/js/nie/util/video/img/player.swf?v=2017032302"
             # self.Media = self.Instance.media_new(file)
-            # self.Media.get_mrl()
             self.player.set_mrl(file)
             # self.player.set_media(self.Media)
             # Report the title of the file chosen
