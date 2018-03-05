@@ -263,49 +263,6 @@
 	</export>
 </file>
 
-
-<file excle_file='1outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
-<file excle_file='2outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
-<file excle_file='3outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
-<file excle_file='4outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
-<file excle_file='5outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
-<file excle_file='6outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
-<file excle_file='7outLineReward离线奖励.xlsm'>
-	<export tpl='data_outLineReward.erl.tpl' type='1'>
-		<dict data_key='all_data' sheet='OutLineReward' begin_row='1' col_start='1' col_end='3'></dict>
-		<dict data_key='all_time' sheet='time' begin_row='1' col_start='1' col_end='2'></dict>
-	</export>
-</file>
 </root>
 
 
