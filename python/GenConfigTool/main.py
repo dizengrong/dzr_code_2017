@@ -44,7 +44,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v.05    设计者：dzR    更新日期：2018-02-02"
+VERSION = u"配置导出工具-v1.06    设计者：dzR    更新日期：2018-02-02"
 
 GRID_CONTEXT_MENU = [
     (wx.NewId(), u"打开文件所在目录", "OnOpenFileInExplore"),
@@ -128,8 +128,7 @@ class MyFrame1 (wx.Frame):
         self.m_grid1 = MyGrid(
             self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0)
         self.m_grid1.CreateGrid(1 + len(self.export_files), max_columns + 1)
-        self.m_grid1.SetAllColBackgroudColour(wx.Colour(0x98, 0xFB, 0x98))
-        self.m_grid1.SetLabelTextColour(wx.Colour(30, 30, 255))
+        self.m_grid1.SetAllColBackgroudColour(wx.Colour(209, 238, 238))
         self.m_grid1.Bind(wx.grid.EVT_GRID_CELL_LEFT_DCLICK,
                           self.OnCellDoubleClick)
         self.m_grid1.Bind(wx.grid.EVT_GRID_CELL_RIGHT_CLICK,
