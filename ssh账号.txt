@@ -1,0 +1,4 @@
+公司外服ssh账号：thankserver 秘钥为ssh_thankserver文件
+游戏服：
+	guaji_120.92.232.87 6622
+	guaji_120.92.237.234 6622

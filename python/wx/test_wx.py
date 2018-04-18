@@ -50,7 +50,8 @@ Devil = PyEmbeddedImage(
 app = wx.App()
 frame = wx.Frame(None, size=(400, 300))
 panel = BackGroundImagePanel(frame, 'halo3.jpg')
-devil = Devil.GetBitmap()  # 32x32
+devil = Devil.GetBitmap()
+# devil = Devil.GetBitmap().ConvertToImage().ConvertToMono(255, 255, 255).ConvertToBitmap()
 btn = platebtn.PlateButton(
     panel, wx.ID_ANY, "PlateButton", devil, style=platebtn.PB_STYLE_GRADIENT | platebtn.PB_STYLE_NOBG)
 btn.Bind(wx.EVT_BUTTON, on_login_button_clicked)

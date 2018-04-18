@@ -8,6 +8,7 @@ import wx.lib.dialogs
 import fuzzyfinder
 import traceback
 import xlrd
+from my_grid import MyGrid
 from xml.dom import minidom
 from tenjin.helpers import *
 from tenjin.escaped import *
@@ -43,7 +44,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v.04    设计者：dzR    更新日期：2017-8-28"
+VERSION = u"配置导出工具-v1.06    设计者：dzR    更新日期：2018-02-02"
 
 GRID_CONTEXT_MENU = [
     (wx.NewId(), u"打开文件所在目录", "OnOpenFileInExplore"),
@@ -79,7 +80,8 @@ class MyFrame1 (wx.Frame):
                                            wx.DefaultPosition, wx.DefaultSize, wx.ALIGN_CENTRE)
         self.m_staticText1.Wrap(-1)
         self.m_staticText1.SetForegroundColour(wx.Colour(204, 50, 50))
-        self.m_staticText1.SetBackgroundColour(wx.Colour(255, 255, 255))
+        self.m_staticText1.SetBackgroundColour(wx.Colour(255, 228, 196))
+        # self.m_staticText1.SetBackgroundColour(wx.BLUE)
 
         bSizer1.Add(self.m_staticText1, 0, wx.ALIGN_CENTER | wx.EXPAND, 5)
 
@@ -123,9 +125,10 @@ class MyFrame1 (wx.Frame):
         for key in self.export_files.keys():
             max_columns = max(max_columns, len(self.export_files[key]))
 
-        self.m_grid1 = wx.grid.Grid(
+        self.m_grid1 = MyGrid(
             self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0)
         self.m_grid1.CreateGrid(1 + len(self.export_files), max_columns + 1)
+        self.m_grid1.SetAllColBackgroudColour(wx.Colour(209, 238, 238))
         self.m_grid1.Bind(wx.grid.EVT_GRID_CELL_LEFT_DCLICK,
                           self.OnCellDoubleClick)
         self.m_grid1.Bind(wx.grid.EVT_GRID_CELL_RIGHT_CLICK,
@@ -197,9 +200,15 @@ class MyFrame1 (wx.Frame):
                     tpl_name = u'前端:' + name
                 self.m_grid1.SetCellValue(row, col, tpl_name)
                 col += 1
+            if row % 2 == 1:
+                self.set_row_color(row, wx.SystemSettings.GetColour(wx.SYS_COLOUR_3DFACE))
             row += 1
         if auto_size:
             self.m_grid1.AutoSize()
+
+    def set_row_color(self, row, color):
+        for col in xrange(0, self.m_grid1.GetNumberCols()):
+            self.m_grid1.SetCellBackgroundColour(row, col, color)
 
     def OnSearch(self, event):
         print ("on search %s" % (self.m_searchCtrl1.GetValue()))
