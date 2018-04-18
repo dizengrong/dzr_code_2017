@@ -1,0 +1,16 @@
+<div id="box">测试文字</div>
+<button id="btn">动态添加样式</button>
+<script>
+function loadScript(str){
+    loadScript.mark = 'load';
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.text = str;
+    document.body.appendChild(script);
+}
+btn.onclick = function(){
+    if(loadScript.mark != 'load'){
+        loadScript("box.style.color = 'red'");        
+    }
+}
+</script>
