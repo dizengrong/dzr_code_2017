@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Demo project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css"></style>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app-7">
+          <ol>
+            <!--
+              现在我们为每个 todo-item 提供 todo 对象
+              todo 对象是变量，即其内容可以是动态的。
+              我们也需要为每个组件提供一个“key”，稍后再
+              作详细解释。
+            -->
+            <todo-item
+              v-for="item in groceryList"
+              v-bind:todo="item"
+              v-bind:key="item.id">
+            </todo-item>
+          </ol>
+        </div>
+
+        <div id="example">
+          <p>{{ a }}</p>
+          <input v-model="a">
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+    Vue.component('todo-item', {
+      props: ['todo'],
+      template: '<li>{{ todo.text }}</li>'
+    });
+
+    var app7 = new Vue({
+      el: '#app-7',
+      data: {
+        groceryList: [
+          { id: 0, text: '蔬菜' },
+          { id: 1, text: '奶酪' },
+          { id: 2, text: '随便其它什么人吃的东西' }
+        ]
+      }
+    });
+
+    var data = { a: 1 }
+    var vm = new Vue({
+      el: '#example',
+      data: data
+    })
+
+    vm.$data === data // => true
+    vm.$el === document.getElementById('example') // => true
+
+    // $watch 是一个实例方法
+    vm.$watch('a', function (newValue, oldValue) {
+      // 这个回调将在 `vm.a` 改变后调用
+      console.log("newValue:" + newValue + ", oldValue:" + oldValue)
+    });
+</script>

@@ -1,0 +1,1977 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Node",
+				"NodeKey"
+			],
+			[
+				"conn",
+				"connect_log_node"
+			],
+			[
+				"util",
+				"util_server\t(server_app.erl)"
+			],
+			[
+				"gen_",
+				"gen_makefile\t(server_tools.erl)"
+			],
+			[
+				"ser",
+				"server_tools"
+			],
+			[
+				"Serid",
+				"ServerId"
+			],
+			[
+				"und",
+				"undefined"
+			],
+			[
+				"long",
+				"longunixtime"
+			],
+			[
+				"utiltim",
+				"util_time\t(fun_scene_worldboss.erl)"
+			],
+			[
+				"Box",
+				"BoxId"
+			],
+			[
+				"uti",
+				"util_time\t(fun_gm_activity_ex.erl)"
+			],
+			[
+				"unde",
+				"undefined\t(fun_gm_activity_ex.erl)"
+			],
+			[
+				"p12_ser",
+				"p12_server_b"
+			],
+			[
+				"and",
+				"andalso"
+			],
+			[
+				"un",
+				"unixtime"
+			],
+			[
+				"fun_scene",
+				"fun_scene_skill"
+			],
+			[
+				"erase",
+				"erase/1\terase"
+			],
+			[
+				"en",
+				"entourage"
+			],
+			[
+				"las",
+				"last_rewards"
+			],
+			[
+				"chang",
+				"challengers"
+			],
+			[
+				"ski",
+				"skip"
+			],
+			[
+				"var",
+				"varchar(10\t(usage-sql.help)"
+			],
+			[
+				"REc",
+				"Rec"
+			],
+			[
+				"Rec",
+				"Rec#copy_times"
+			],
+			[
+				"fun_cop",
+				"fun_copy_common"
+			],
+			[
+				"get_pl",
+				"get_entourage_played_type"
+			],
+			[
+				"update",
+				"update_role_fight_if_need"
+			],
+			[
+				"di",
+				"dirty_all_keys"
+			],
+			[
+				"fun_age",
+				"fun_agent_worldboss"
+			],
+			[
+				"init",
+				"init_toplist"
+			],
+			[
+				"len",
+				"length/1\tlength"
+			],
+			[
+				"erl",
+				"erlang"
+			],
+			[
+				"get_ra",
+				"get_user_rank_num"
+			],
+			[
+				"get_num",
+				"get_rank_num_index"
+			],
+			[
+				"Item",
+				"ItemNum"
+			],
+			[
+				"hand",
+				"handle_to_agent"
+			],
+			[
+				"set",
+				"setelement"
+			],
+			[
+				"get_ind",
+				"get_uid_index"
+			],
+			[
+				"Rank",
+				"RankType"
+			],
+			[
+				"Ky",
+				"KeyIndex"
+			],
+			[
+				"char",
+				"characters_to_binary"
+			],
+			[
+				"fun_item",
+				"fun_item_api"
+			],
+			[
+				"get_data",
+				"get_data_para_num\t(fun_push_notify.erl)"
+			],
+			[
+				"get_para",
+				"get_data_para_num\t(fun_push_notify.erl)"
+			],
+			[
+				"max",
+				"max_hp"
+			],
+			[
+				"dirt",
+				"dirty_put"
+			],
+			[
+				"Ty",
+				"Type"
+			],
+			[
+				"fun_top",
+				"fun_toplist_new"
+			],
+			[
+				"ele",
+				"element/2\telement"
+			],
+			[
+				"Lis",
+				"List3"
+			],
+			[
+				"adn",
+				"andalso\t(fun_gm_activity_ex.erl)"
+			],
+			[
+				"handletoa",
+				"handle_to_agent\t(mod_msg.erl)"
+			],
+			[
+				"form",
+				"format\t(fun_gm_activity_ex.erl)"
+			],
+			[
+				"Ls",
+				"List2"
+			],
+			[
+				"ke",
+				"keymember\t(fun_gm_activity_ex.erl)"
+			],
+			[
+				"Usr",
+				"UsrObj"
+			],
+			[
+				"tob",
+				"to_binary\t(pt_req_load_scene_b104.erl)"
+			],
+			[
+				"fun_scene_o",
+				"fun_scene_obj:get_all\t(my_debug.erl)"
+			],
+			[
+				"Rec#",
+				"BossRec#worldboss_state"
+			],
+			[
+				"worl",
+				"world_boss"
+			],
+			[
+				"D",
+				"Difficulty"
+			],
+			[
+				"Difficulty#",
+				"Difficulty#st_dungeon_dificulty"
+			],
+			[
+				"server",
+				"serverid\t(fun_push_notify.erl)"
+			],
+			[
+				"agent",
+				"agentmng\t(fun_agent_mng.erl)"
+			],
+			[
+				"atom",
+				"atom_to_list\t(tools.hrl)"
+			],
+			[
+				"tru",
+				"truncate\t(db.erl)"
+			],
+			[
+				"int",
+				"integer_to_list"
+			],
+			[
+				"batt",
+				"battle_field_2_name"
+			],
+			[
+				"Se",
+				"SetLabel"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"Set",
+				"SetValue"
+			],
+			[
+				"New",
+				"NewObj\t(fun_scene_on_time.erl)"
+			],
+			[
+				"undef",
+				"undefined\t(fun_scene_on_time.erl)"
+			],
+			[
+				"ex",
+				"exchange"
+			],
+			[
+				"Gin",
+				"GainNum"
+			],
+			[
+				"Ga",
+				"GainItem"
+			],
+			[
+				"Need",
+				"NeedNum"
+			],
+			[
+				"gm",
+				"gm_act_treasure"
+			],
+			[
+				"fun_gm",
+				"fun_gm_activity_ex"
+			],
+			[
+				"get_usr",
+				"get_usr_activity_data"
+			],
+			[
+				"gm_",
+				"gm_act_daily_acc_recharge"
+			],
+			[
+				"gm_act_",
+				"gm_act_acc_recharge"
+			],
+			[
+				"get_da",
+				"get_data_para_num\t(fun_login.erl)"
+			],
+			[
+				"fungm",
+				"fun_gm_activity_ex"
+			],
+			[
+				"list",
+				"listskeyfind\tlists-keyfind"
+			],
+			[
+				"Agen",
+				"AgentHid"
+			],
+			[
+				"fun_task_c",
+				"fun_task_count\t(fun_draw.erl)"
+			],
+			[
+				"create",
+				"createtime\t(td.hrl)"
+			],
+			[
+				"loa",
+				"load_id"
+			],
+			[
+				"Eff",
+				"Effects1"
+			],
+			[
+				"uint",
+				"uint32"
+			],
+			[
+				"Scen",
+				"SceneId\t(fun_scene_on_time.erl)"
+			],
+			[
+				"funi",
+				"fun_item_api"
+			],
+			[
+				"Cb",
+				"CbInfo\t(fun_plat_interface_gms.erl)"
+			],
+			[
+				"get_m",
+				"get_misc_data"
+			],
+			[
+				"Trap",
+				"TrapId"
+			],
+			[
+				"Day",
+				"DayId"
+			],
+			[
+				"Cas",
+				"CastCondition"
+			],
+			[
+				"Max",
+				"MaxHp"
+			],
+			[
+				"释放",
+				"释放条件"
+			],
+			[
+				"Aci",
+				"ActivityId"
+			],
+			[
+				"diry",
+				"dirty_get"
+			],
+			[
+				"Acti",
+				"ActivityId"
+			],
+			[
+				"Sce",
+				"SceneLev"
+			],
+			[
+				"gem_",
+				"gem_lev"
+			],
+			[
+				"Atk",
+				"AtkOid"
+			],
+			[
+				"fetch",
+				"fetched_list\t(fun_offline_reward.erl)"
+			],
+			[
+				"Spen",
+				"SpendItems\t(fun_agent.erl)"
+			],
+			[
+				"not",
+				"notify"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"term",
+				"term_to_string\t(fun_recent_chat.erl)"
+			],
+			[
+				"handleto_",
+				"handle_to_agnetmng\t(fun_guild.erl)"
+			],
+			[
+				"pu",
+				"push_list"
+			],
+			[
+				"unx",
+				"unixtime\t(fun_guild.erl)"
+			],
+			[
+				"leng",
+				"length/1\tlength"
+			],
+			[
+				"Add",
+				"AddItems"
+			],
+			[
+				"Tar",
+				"TargetObj"
+			],
+			[
+				"skill",
+				"skill_list"
+			],
+			[
+				"Re",
+				"Rec"
+			],
+			[
+				"Ba",
+				"BarrierId"
+			],
+			[
+				"Boss",
+				"BossId"
+			],
+			[
+				"Rew",
+				"Reward_id"
+			],
+			[
+				"expo",
+				"export_all\t(data_para.erl)"
+			],
+			[
+				"dir",
+				"dirty_get"
+			],
+			[
+				"Monster",
+				"Monstertype\t(fun_scene.erl)"
+			],
+			[
+				"Sc",
+				"Scene\t(fun_scene.erl)"
+			],
+			[
+				"Dun",
+				"DungeonID\t(fun_scene.erl)"
+			],
+			[
+				"fun_gui",
+				"fun_guild_copy"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test_dyn_load_js.html",
+			"settings":
+			{
+				"buffer_size": 408,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>Demo</title>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n        <meta name=\"description\" content=\"Demo project\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <style type=\"text/css\"></style>\n    </head>\n    <body>\n        <p>Let the game begin!开始把</p>\n        <script type=\"text/javascript\"></script>\n    </body>\n\n</html>\n\n<script type=\"text/javascript\">\n    var Type = {};\nfor ( var i = 0, type; type = [ 'String', 'Array', 'Number' ][ i++ ]; ){ \n  (function( type ){\n    Type[ 'is' + type ] = function( obj ){\n      return Object.prototype.toString.call( obj ) === '[object '+ type +']';\n    }\n  })( type )\n};\nType.isArray( [] );    // 输出：true \nType.isString( \"str\" ); // 输出：true\n</script>",
+			"file": "test.html",
+			"file_size": 487,
+			"file_write_time": 131690131781872003,
+			"settings":
+			{
+				"buffer_size": 838,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					""
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Build with dependencies"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (common_test)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test Current Module (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Generate Documentation"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Update Dependencies"
+				]
+			],
+			[
+				"Packages/Erlang/rebar.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: HTML w/ jQuery"
+			],
+			[
+				"sin",
+				"Snippet: html"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"sse",
+				"Set Syntax: Erlang"
+			],
+			[
+				"sss",
+				"Set Syntax: SQL"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"Markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"MarkdownLivePreview",
+				"MarkdownLivePreview: Edit Custom CSS File"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"snippetgn",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"ss",
+				"Set Syntax: Batch File"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"pakckd",
+				"Package Control: Disable Package"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gitgutter",
+				"Preferences: GitGutter Settings - Default"
+			],
+			[
+				"pakcin",
+				"Package Control: Install Package"
+			],
+			[
+				"pakcre",
+				"Package Control: Remove Channel"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssq",
+				"Set Syntax: SQL (Rails)"
+			],
+			[
+				"formatcode",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"browse",
+				"Browse Mode: Left Sidebar"
+			],
+			[
+				"fileb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pakcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"pps",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pai",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pp",
+				"Package Control: Disable Package"
+			],
+			[
+				"se",
+				"Set Syntax: Erlang"
+			],
+			[
+				"ppc",
+				"Package Control: Install Package"
+			],
+			[
+				"ppi",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"fc",
+				"File: Close All"
+			],
+			[
+				"sssh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Snippet: gen_s",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"Snippet: gen",
+				"Snippet: gen_event Callbacks"
+			],
+			[
+				"todore",
+				"TodoReview: Project Files"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Repository"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"reviewmys",
+				"ReviewMyself: Folders in Project"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inse",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"rmove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ge",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 272.0,
+		"history":
+		[
+			"os.path.exists(\"D:/programs/erl5.10.1/bin\")",
+			"os.path.exists(\"D:/programs/erl5.10.1/bin/erl\")",
+			"import os",
+			"build/all.py",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Documents/GitHub/dzr_code_2017/web"
+	],
+	"file_history":
+	[
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/JsFormat/Default (Windows).sublime-keymap",
+		"/E/Job/120scheduler/scheduler_center/resource/map/show_map.html",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/d/programs/ERL510~1.1/lib/erts-5.10.1/src/init.erl",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Erl-AutoCompletion/Default.sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/F/new_server/server_code/src/logger/dragon_loglevel.erl",
+		"/F/new_server/server_code/log/log_servername_1_2018_04_19.log",
+		"/F/new_server/server_code/src/main.erl",
+		"/F/new_server/server_code/server_ctrl.bat",
+		"/F/new_server/server_code/ebin/log.app",
+		"/F/new_server/server_code/Makefile",
+		"/F/new_server/server_code/include.mk",
+		"/F/new_server/server_code/make_erl.bat",
+		"/F/new_server/server_code/clean.bat",
+		"/F/new_server/server_code/src/player/server_app.erl",
+		"/F/new_server/server_code/src/log/gen_handler.erl",
+		"/F/new_server/server_code/src/util/util_server.erl",
+		"/F/new_server/server_code/src/util/util_str.erl",
+		"/F/new_server/server_code/src/server_tools.erl",
+		"/F/new_server/server_code/src/log/dragon_loglevel.erl",
+		"/F/new_server/server_code/include/common.hrl",
+		"/F/new_server/server_code/include/logger.hrl",
+		"/F/new_server/server_code/src/log/sasl_report_file_h.erl",
+		"/F/new_server/server_code/src/log/log_app.erl",
+		"/F/new_server/server_code/include/server.hrl",
+		"/F/new_server/server_code/server.config",
+		"/F/new_server/server_code/src/server_config.erl",
+		"/D/programs/erl5.10.1/lib/stdlib-1.19.1/src/c.erl",
+		"/D/programs/erl5.10.1/lib/compiler-4.9.1/src/compile.erl",
+		"/F/new_server/server_code/server_config_gen.erl",
+		"/F/new_server/server_code/server.config.sample",
+		"/F/new_server/server_code/src/log/dragon_logger_h.erl",
+		"/f/NEW_SE~1/SERVER~1/src/player/server_app.erl",
+		"/F/new_server/server_code/log/log_servername_1.log",
+		"/F/new_server/server_code/ebin/server.app",
+		"/F/new_server/server_code/server_ctrl.sh",
+		"/D/programs/erl5.10.1/lib/compiler-4.9.1/src/cerl.erl",
+		"/D/programs/erl5.10.1/lib/kernel-2.16.1/src/code.erl",
+		"/E/Job/120scheduler/center_server/center_ctrl.sh",
+		"/E/dzr/gerl/gerl_project.sublime-project",
+		"/F/xy/error-20180331.log",
+		"/F/xy/error-20180401.log",
+		"/D/Documents/GitHub/dzr_code_2017/help_doc/usage-shell-hotkey.help",
+		"/D/Documents/GitHub/dzr_code_2017/help_doc/usage-shell.help",
+		"/F/yongheng/hefu/change_camp_2_to_3.sql",
+		"/F/guaji/hefu/db_p12-201803150950.sql",
+		"/F/guaji/hefu/db_p12-201803150800.sql",
+		"/F/guaji/server/p12_res/src/RES/data/data_activity.erl",
+		"/F/guaji/hefu/s3_backup.sql",
+		"/F/guaji/server/app_set/sql/modify_tab_mail_add_col_can_del.sql",
+		"/F/guaji/server/app_set/sql/modify_tab_usr_misc_add_col_first_recharge.sql",
+		"/F/guaji/server/p12_res/src/RES/data/data_item.erl",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_arena.erl",
+		"/E/Job/archives_manager/const.py",
+		"/E/Job/archives_manager/constant.py",
+		"/F/guaji/server/record_dev.erl",
+		"/F/guaji/server/p12_svr/include/mysql.hrl",
+		"/F/yongheng/jl_robot/start_robot.bat",
+		"/D/102 105 108 error-20180305_1.log",
+		"/E/Job/login.mp",
+		"/F/guaji/server/p12_svr/src/fun/mods/mod_msg.erl",
+		"/F/guaji/server/p12_svr/src/fun/global/fun_global_chat.erl",
+		"/F/guaji/run/start_all.bat",
+		"/F/guaji/run/start_global.bat",
+		"/F/guaji/run/start_mynet.bat",
+		"/F/guaji/server/app_set/sql/database_backup/master_4.2-2018-02-08.sql",
+		"/F/guaji/server/app_set/sql/repaire_item.sql",
+		"/F/guaji/server/app_set/sql/modify_tab_gm_activity_usr_add_col_act_time.sql",
+		"/F/guaji/server/app_set/sql/modify_tab_usr_misc_add_col_fast_artifact.sql",
+		"/F/guaji/server/app_set/sql/database_backup/master_4.3-2018-03-07.sql",
+		"/F/guaji/server/app_set/sql/master_4.2_to_4.3_repaire.sql",
+		"/F/guaji/server/app_set/sql/reset_tab_usr_misc.sql",
+		"/F/guaji/server/app_set/sql/modify_tab_home_building_col_data.sql",
+		"/F/guaji/repaire_sql/master_4.2_repaire_item.sql",
+		"/F/guaji/server/app_set/sql/master_4.3_repaire_item.sql",
+		"/F/guaji/repaire_sql/psy_guaji.sql",
+		"/F/guaji/server/p12_svr/src/server/global/global_net_sup.erl",
+		"/F/guaji/server/p12_svr/src/server/global/global_scene_sup.erl",
+		"/F/guaji/repaire_sql/repaire_item.sql",
+		"/F/guaji/server/p12_res/src/RES/data/data_military_skill.erl",
+		"/F/guaji/server/p12_svr/src/fun/dataCountService/fun_gm_activity_ex.erl",
+		"/F/guaji/server/p12_svr/src/my_debug.erl",
+		"/F/guaji/server_tools/p12_db_tools/src/mix_tool.erl",
+		"/F/guaji/server/app_set/sql/modify_tab_usr_misc_add_col_buy_times.sql",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_pet.erl",
+		"/F/guaji/server/p12_res/src/RES/data/data_pet_set.erl",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_seven_day_target.erl",
+		"/F/guaji/server/p12_res/src/RES/data/data_day_target.erl",
+		"/F/guaji/server/p12_res/src/RES/data/data_charge_config.erl",
+		"/F/guaji/server/p12_svr/src/lib/recon/recon.erl",
+		"/F/guaji/server/p12_svr/src/pt/pt_scene_move_c001.erl",
+		"/F/guaji/server_protocol/ebin/erl/pt_all_skill_d100.erl",
+		"/F/guaji/server/p12_svr/src/server/mynet/mynet_sup.erl",
+		"/F/guaji/server/p12_res/src/RES/data/data_Suit.erl",
+		"/F/guaji/server/p12_svr/src/server/mynet/mynet_svr.erl",
+		"/f/guaji/server/p12_res/src/RES/Scene_script/scene_config/scene_config_400501.erl",
+		"/F/guaji/server/p12_svr/src/server/mynet/mynet_app.erl",
+		"/D/Documents/GitHub/dzr_code_2017/help_doc/usage-sql.help",
+		"/F/guaji/server_protocol/ebin/erl/pt_download_reward_f013.erl",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_download_reward.erl",
+		"/F/guaji/server_protocol/src/pt/ptc_download_reward.erl",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_acc_misc.erl",
+		"/F/guaji/server/p12_res/src/RES/data/data_download_reward.erl",
+		"/F/guaji/server_protocol/ebin/erl/pt_req_load_scene_b104.erl",
+		"/F/guaji/server_protocol/ebin/c/pt_req_load_scene_b104.cs",
+		"/F/guaji/run/cnf.config",
+		"/F/guaji/server/p12_svr/include/httpd.hrl",
+		"/F/guaji/server/p12_svr/src/server/agent_ctr/agent_ctr_app.erl",
+		"/F/guaji/server/p12_svr/src/server/agent_ctr/agent_ctr_sup.erl",
+		"/F/guaji/server/p12_svr/src/server/agent_ctr/agent_ctr.erl",
+		"/F/guaji/run/start_agent.bat",
+		"/F/guaji/run/start_gateway.bat",
+		"/F/guaji/server/p12_svr/src/server/gateway/gateway_svr.erl",
+		"/F/guaji/server/p12_svr/src/server/gateway/gateway_sup.erl",
+		"/F/guaji/server/p12_svr/src/lib/db.erl",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_push_notify.erl",
+		"/F/guaji/server/pack_module.py",
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/data_skillperformance.erl.tpl",
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/data_shenqi.erl.tpl",
+		"/F/guaji/server/script/update_game_server.py",
+		"/F/guaji/server/script/remote_reload_script.py",
+		"/F/guaji/server/script/py_sudo.py",
+		"/F/guaji/server/p12_res/src/RES/battle/fun_battle_normal.erl",
+		"/F/guaji/server/p12_res/src/RES/battle/fun_battle_shenqi.erl",
+		"/F/guaji/server/p12_svr/src/fun/server/fun_ride.erl",
+		"/F/guaji/server/p12_res/src/RES/data/data_ride_info.erl"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 111.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test_dyn_load_js.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								838,
+								470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 122.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 122.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.exec":
+	{
+		"height": 233.0
+	},
+	"output.find_results":
+	{
+		"height": 178.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 477.0
+	},
+	"pinned_build_system": "Packages/User/erl_make.sublime-build",
+	"project": "web.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ser.hrl",
+				"include\\server.hrl"
+			],
+			[
+				"gen_handler",
+				"src\\log\\gen_handler.erl"
+			],
+			[
+				"loggleve",
+				"src\\log\\dragon_loglevel.erl"
+			],
+			[
+				"dragon_loglevel",
+				"src\\log\\dragon_loglevel.erl"
+			],
+			[
+				"mian",
+				"src\\main.erl"
+			],
+			[
+				"uti",
+				"src\\util\\util_server.erl"
+			],
+			[
+				"utilstr",
+				"src\\util\\util_str.erl"
+			],
+			[
+				"log_app",
+				"src\\log\\log_app.erl"
+			],
+			[
+				"server",
+				"src\\player\\server_app.erl"
+			],
+			[
+				"main",
+				"src\\main.erl"
+			],
+			[
+				"serapp",
+				"src\\player\\server_app.erl"
+			],
+			[
+				"logapp",
+				"src\\log\\log_app.erl"
+			],
+			[
+				"logger",
+				"include\\logger.hrl"
+			],
+			[
+				"common",
+				"include\\common.hrl"
+			],
+			[
+				"include",
+				"include.mk"
+			],
+			[
+				"myde",
+				"server\\p12_svr\\src\\my_debug.erl"
+			],
+			[
+				"ptc_daily_acc_cost",
+				"server_protocol\\src\\pt\\ptc_daily_acc_cost.erl"
+			],
+			[
+				"gm_act_daily_acc_cost",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_daily_acc_cost.erl"
+			],
+			[
+				"gm_act_acc_cost",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_acc_cost.erl"
+			],
+			[
+				"fungm_acex",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_gm_activity_ex.erl"
+			],
+			[
+				"fungmae",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_gm_activity_ex.erl"
+			],
+			[
+				"gmactran",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_rank_lv.erl"
+			],
+			[
+				"ptc_acc_cost",
+				"server_protocol\\src\\pt\\ptc_acc_cost.erl"
+			],
+			[
+				"td.hrl",
+				"server\\p12_svr\\include\\td.hrl"
+			],
+			[
+				"act",
+				"server\\p12_svr\\include\\activity.hrl"
+			],
+			[
+				"newcode",
+				"server\\p12_svr\\include\\new_codes.hrl"
+			],
+			[
+				"funagnemn",
+				"server\\p12_svr\\src\\fun\\server\\fun_agent_mng.erl"
+			],
+			[
+				"acti",
+				"server\\p12_svr\\include\\activity.hrl"
+			],
+			[
+				"fungmac",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_gm_activity_ex.erl"
+			],
+			[
+				"fun_gm_activity_ex",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_gm_activity_ex.erl"
+			],
+			[
+				"modmsg",
+				"server\\p12_svr\\src\\fun\\mods\\mod_msg.erl"
+			],
+			[
+				"funagen",
+				"server\\p12_svr\\src\\fun\\server\\fun_agent.erl"
+			],
+			[
+				"ptc_gm_act_lv_rank",
+				"server_protocol\\src\\pt\\ptc_gm_act_lv_rank.erl"
+			],
+			[
+				"pt_gm_act_lv_rank",
+				"server_protocol\\ebin\\erl\\pt_gm_act_lv_rank_f12c.erl"
+			],
+			[
+				"ptcpub",
+				"server_protocol\\src\\pt\\ptc_public_class.erl"
+			],
+			[
+				"datamail",
+				"server\\p12_res\\src\\RES\\data\\data_mail.erl"
+			],
+			[
+				"ptcpubc",
+				"server_protocol\\src\\pt\\ptc_public_class.erl"
+			],
+			[
+				"",
+				"server\\p12_svr\\src\\fun\\server\\fun_toplist.erl"
+			],
+			[
+				"ptc_pub",
+				"server_protocol\\src\\pt\\ptc_public_class.erl"
+			],
+			[
+				"code",
+				"server\\p12_svr\\include\\codes.hrl"
+			],
+			[
+				"funtopln",
+				"server\\p12_svr\\src\\fun\\server\\fun_toplist_new.erl"
+			],
+			[
+				"funtop",
+				"server\\p12_svr\\src\\fun\\server\\fun_toplist.erl"
+			],
+			[
+				"f121",
+				"server_protocol\\ebin\\erl\\pt_daily_acc_cost_f121.erl"
+			],
+			[
+				"ptc_gmactr",
+				"server_protocol\\src\\pt\\ptc_gm_act_lv_rank.erl"
+			],
+			[
+				"ptc_gm_act_treasure",
+				"server_protocol\\src\\pt\\ptc_gm_act_treasure.erl"
+			],
+			[
+				"pt_gm_act_lv_rank_f12c",
+				"server_protocol\\ebin\\erl\\pt_gm_act_lv_rank_f12c.erl"
+			],
+			[
+				"gm_act_rank",
+				"server_protocol\\src\\pt\\ptc_gm_act_lv_rank.erl"
+			],
+			[
+				"gm_act_rnak",
+				"server_protocol\\src\\pt\\ptc_gm_act_lv_rank.erl"
+			],
+			[
+				"gm_act_treasure",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_treasure.erl"
+			],
+			[
+				"gm_act_package",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_package.erl"
+			],
+			[
+				"fungmactex",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_gm_activity_ex.erl"
+			],
+			[
+				"ptcpu",
+				"server_protocol\\src\\pt\\ptc_public_class.erl"
+			],
+			[
+				"ptc_gm_act_",
+				"server_protocol\\src\\pt\\ptc_gm_act_treasure.erl"
+			],
+			[
+				"ptc_gm_act_week_task",
+				"server_protocol\\src\\pt\\ptc_gm_act_week_task.erl"
+			],
+			[
+				"ptc_gmalvra",
+				"server_protocol\\src\\pt\\ptc_gm_act_lv_rank.erl"
+			],
+			[
+				"ptc_gm_act_limit_summon",
+				"server_protocol\\src\\pt\\ptc_gm_act_limit_summon.erl"
+			],
+			[
+				"ptc_gm_act_double_recharge",
+				"server_protocol\\src\\pt\\ptc_gm_act_double_recharge.erl"
+			],
+			[
+				"ptc_gm_act_package",
+				"server_protocol\\src\\pt\\ptc_gm_act_package.erl"
+			],
+			[
+				"ptc_gm_act_double",
+				"server_protocol\\src\\pt\\ptc_gm_act_double.erl"
+			],
+			[
+				"ptc_gm_act_discount",
+				"server_protocol\\src\\pt\\ptc_gm_act_discount.erl"
+			],
+			[
+				"ptc_gm_act_sale",
+				"server_protocol\\src\\pt\\ptc_gm_act_sale.erl"
+			],
+			[
+				"ptc_gm_act_exchange",
+				"server_protocol\\src\\pt\\ptc_gm_act_exchange.erl"
+			],
+			[
+				"ptc_gm_act_drop",
+				"server_protocol\\src\\pt\\ptc_gm_act_drop.erl"
+			],
+			[
+				"ptc_worldboss_inspire",
+				"server_protocol\\src\\pt\\ptc_worldboss_inspire.erl"
+			],
+			[
+				"allptc",
+				"server_protocol\\src\\pt\\all_ptc.erl"
+			],
+			[
+				"activ",
+				"server\\p12_svr\\include\\activity.hrl"
+			],
+			[
+				"gmactc",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_acc_cost.erl"
+			],
+			[
+				"gmac",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_treasure.erl"
+			],
+			[
+				"fungmex",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_gm_activity_ex.erl"
+			],
+			[
+				"scene103",
+				"server\\p12_res\\src\\RES\\Scene_script\\scene_config_ex\\scene_config_103001.erl"
+			],
+			[
+				"onlin",
+				"server\\p12_svr\\src\\work_help\\online_users.erl"
+			],
+			[
+				"cnf",
+				"F:\\guaji\\run\\cnf.config"
+			],
+			[
+				"record",
+				"server\\p12_svr\\include\\record.hrl"
+			],
+			[
+				"rcord",
+				"server\\record_dev.erl"
+			],
+			[
+				"hotre",
+				"server\\hot_reload.py"
+			],
+			[
+				"data_draw_config",
+				"server\\p12_res\\src\\RES\\data\\data_draw_config.erl"
+			],
+			[
+				"fun_battle_buff",
+				"server\\p12_res\\src\\RES\\battle\\fun_battle_buff.erl"
+			],
+			[
+				"funsceenski",
+				"server\\p12_svr\\src\\fun\\server\\fun_scene_skill.erl"
+			],
+			[
+				"fundra",
+				"server\\p12_svr\\src\\fun\\server\\fun_draw.erl"
+			],
+			[
+				"tools",
+				"server\\p12_svr\\include\\tools.hrl"
+			],
+			[
+				"funaren",
+				"server\\p12_svr\\src\\fun\\server\\fun_arena.erl"
+			],
+			[
+				"ptc_show_fetched_reward",
+				"server_protocol\\src\\pt\\ptc_show_fetched_reward.erl"
+			],
+			[
+				"funitemapi",
+				"server\\p12_svr\\src\\fun\\server\\fun_item_api.erl"
+			],
+			[
+				"fun_item",
+				"server\\p12_svr\\src\\fun\\server\\fun_item.erl"
+			],
+			[
+				"funare",
+				"server\\p12_svr\\src\\fun\\server\\fun_arena.erl"
+			],
+			[
+				"utiltim",
+				"server\\p12_svr\\src\\lib\\util_time.erl"
+			],
+			[
+				"reload",
+				"server\\p12_svr\\src\\reloader.erl"
+			],
+			[
+				"funscenpk",
+				"server\\p12_svr\\src\\fun\\scene_sort\\fun_scene_pk.erl"
+			],
+			[
+				"funchat",
+				"server\\p12_svr\\src\\fun\\server\\fun_chat_server.erl"
+			],
+			[
+				"funrecen",
+				"server\\p12_svr\\src\\fun\\server\\fun_recent_chat.erl"
+			],
+			[
+				"funscene",
+				"server\\p12_svr\\src\\fun\\server\\fun_scene.erl"
+			],
+			[
+				"remote_reload_script",
+				"server\\script\\remote_reload_script.py"
+			],
+			[
+				"sm_tool",
+				"server\\p12_svr\\src\\server\\sermng\\sm_tool.erl"
+			],
+			[
+				"pack",
+				"server\\pack_module.py"
+			],
+			[
+				"funtopn",
+				"server\\p12_svr\\src\\fun\\server\\fun_toplist_new.erl"
+			],
+			[
+				"smtoo",
+				"server\\p12_svr\\src\\server\\sermng\\sm_tool.erl"
+			],
+			[
+				"funto",
+				"server\\p12_svr\\src\\fun\\server\\fun_toplist_new.erl"
+			],
+			[
+				"hot",
+				"server\\hot_reload.py"
+			],
+			[
+				"update",
+				"server\\script\\update_game_server.py"
+			],
+			[
+				"hotreloa",
+				"server\\hot_reload.py"
+			],
+			[
+				"funtopnew",
+				"server\\p12_svr\\src\\fun\\server\\fun_toplist_new.erl"
+			],
+			[
+				"td.h",
+				"server\\p12_svr\\include\\td.hrl"
+			],
+			[
+				"gmact",
+				"server\\p12_svr\\src\\fun\\dataCountService\\gm_act_treasure.erl"
+			],
+			[
+				"fun_mai",
+				"server\\p12_svr\\src\\fun\\server\\fun_mail.erl"
+			],
+			[
+				"fundata",
+				"server\\p12_svr\\src\\fun\\dataCountService\\fun_dataCount_update.erl"
+			],
+			[
+				"funwor",
+				"server\\p12_svr\\src\\fun\\server\\fun_worldboss.erl"
+			],
+			[
+				"funlgi",
+				"server\\p12_svr\\src\\fun\\server\\fun_login.erl"
+			],
+			[
+				"funworl",
+				"server\\p12_svr\\src\\fun\\server\\fun_worldboss.erl"
+			],
+			[
+				"funitem",
+				"server\\p12_svr\\src\\fun\\server\\fun_item_improve.erl"
+			],
+			[
+				"funagentpro",
+				"server\\p12_svr\\src\\fun\\server\\fun_agent_property.erl"
+			],
+			[
+				"funlgo",
+				"server\\p12_svr\\src\\fun\\server\\fun_login.erl"
+			],
+			[
+				"funlogin",
+				"server\\p12_svr\\src\\fun\\server\\fun_login.erl"
+			],
+			[
+				"dataskim",
+				"server\\p12_res\\src\\RES\\data\\data_skillperformance.erl"
+			],
+			[
+				"funscene.erl",
+				"server\\p12_svr\\src\\fun\\server\\fun_scene.erl"
+			],
+			[
+				"funscenesk",
+				"server\\p12_svr\\src\\fun\\server\\fun_scene_skill.erl"
+			],
+			[
+				"funagent.erl",
+				"server\\p12_svr\\src\\fun\\server\\fun_agent.erl"
+			],
+			[
+				"funagent",
+				"server\\p12_svr\\src\\fun\\server\\fun_agent_mng.erl"
+			],
+			[
+				"data_monster",
+				"server\\p12_res\\src\\RES\\data\\data_monster.erl"
+			],
+			[
+				"fun_worldboss",
+				"server\\p12_svr\\src\\fun\\server\\fun_worldboss.erl"
+			],
+			[
+				"scripscenewor",
+				"server\\p12_res\\src\\RES\\Scene_script\\scene_config_ex\\scene_config_world_boss.erl"
+			],
+			[
+				"data_ac",
+				"server\\p12_res\\src\\RES\\data\\data_activity.erl"
+			],
+			[
+				"funscee",
+				"server\\p12_svr\\src\\fun\\scene_sort\\fun_scene_worldboss.erl"
+			],
+			[
+				"fun_scene",
+				"server\\p12_svr\\src\\fun\\server\\fun_scene.erl"
+			],
+			[
+				"scene_config_world_boss",
+				"server\\p12_res\\src\\RES\\Scene_script\\scene_config_ex\\scene_config_world_boss.erl"
+			],
+			[
+				"fun_d",
+				"server\\p12_svr\\src\\fun\\server\\fun_draw.erl"
+			],
+			[
+				"dataac",
+				"server\\p12_res\\src\\RES\\data\\data_activity.erl"
+			],
+			[
+				"fungmcode",
+				"server\\p12_svr\\src\\fun\\server\\gm\\fun_gm_code.erl"
+			],
+			[
+				"funsceneski",
+				"server\\p12_svr\\src\\fun\\server\\fun_scene_skill.erl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"F:\\yongheng\\yh.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cfg_task",
+				"Record: cfg_task"
+			],
+			[
+				"GM_CHARGE",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"GM_CHARGET",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"common_trace",
+				"Macro: COMMON_STACKTRACE_LOG"
+			],
+			[
+				"p_role_",
+				"Record: p_role_info"
+			],
+			[
+				"m_gm_",
+				"Record: m_gm_test_tos"
+			],
+			[
+				"cfg_ac",
+				"Record: cfg_activity"
+			],
+			[
+				"cfg_",
+				"Function: cfg_error"
+			],
+			[
+				"r_daily_interest",
+				"Record: r_daily_interest"
+			],
+			[
+				"r_dail",
+				"Record: r_daily_count"
+			],
+			[
+				"r_dai",
+				"Record: r_daily_count"
+			],
+			[
+				"r_daily_count",
+				"Record: r_daily_count"
+			],
+			[
+				"m_shop_buy_tos",
+				"Record: m_shop_buy_tos"
+			],
+			[
+				"quit_channel",
+				"Function: quit_chat_channel"
+			],
+			[
+				"m_chat_quit_channel_tos",
+				"Record: m_chat_quit_channel_tos"
+			],
+			[
+				"m_chat_public_tos",
+				"Record: m_chat_public_tos"
+			],
+			[
+				"m_character_skill_learn_tos",
+				"Record: m_character_skill_learn_tos"
+			],
+			[
+				"m_match_start_tos",
+				"Record: m_match_start_tos"
+			],
+			[
+				"cfg_item",
+				"Record: cfg_item"
+			],
+			[
+				"ITEMTYPES_WEAPON",
+				"Macro: ITEMTYPES_WEAPON_RIFLE"
+			],
+			[
+				"m_sys",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"m_heartb",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"Debuf",
+				"Macro: DebugF"
+			],
+			[
+				"get_next",
+				"Function: get_next_session"
+			],
+			[
+				"p_ski",
+				"Record: p_skill"
+			],
+			[
+				"p_ch",
+				"Record: p_character"
+			],
+			[
+				"match_da",
+				"Record: match_data"
+			],
+			[
+				"p_role_in",
+				"Record: p_role_info"
+			],
+			[
+				"get_buff",
+				"Function: get_buff_value"
+			],
+			[
+				"r_role_buff",
+				"Record: r_role_buff"
+			],
+			[
+				"r_role_activity",
+				"Record: r_role_activity"
+			],
+			[
+				"utf8",
+				"Function: utf8_len"
+			],
+			[
+				"r_role",
+				"Record: r_role_activity"
+			],
+			[
+				"p_bu",
+				"Record: p_buff"
+			],
+			[
+				"p_role",
+				"Record: p_role_info"
+			],
+			[
+				"auto_eq",
+				"Function: auto_equip_armor"
+			],
+			[
+				"ts_u",
+				"Module: ts_ulink"
+			],
+			[
+				"lib_u",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"hand",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handlecre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle_cre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"debugf",
+				"Macro: DebugF"
+			],
+			[
+				"parse_bidi",
+				"Function: parse_bidi"
+			],
+			[
+				"handli",
+				"Function: handle_incoming_data"
+			],
+			[
+				"ts_ulni",
+				"Module: ts_ulink"
+			],
+			[
+				"ts_cli",
+				"Module: ts_client"
+			],
+			[
+				"handle_ne",
+				"Function: handle_next_request"
+			],
+			[
+				"next_",
+				"Function: handle_next_request"
+			],
+			[
+				"next_req",
+				"Function: handle_next_request"
+			],
+			[
+				"handle_in",
+				"Function: handle_incoming_data"
+			],
+			[
+				"get_app",
+				"Function: get_app_rpc"
+			],
+			[
+				"handle_incom",
+				"Function: handle_incoming_data"
+			],
+			[
+				"connect_rpc",
+				"Function: get_ulink_connect_rpc"
+			],
+			[
+				"TYPE_USEr",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"p_role_info",
+				"Record: p_role_info"
+			],
+			[
+				"type_",
+				"Macro: TYPE_RIFLE"
+			],
+			[
+				"handle_info",
+				"Function: handle_info"
+			],
+			[
+				"termia",
+				"Function: terminate"
+			],
+			[
+				"",
+				"ACTIVITY_TASK_FAMILY_YBC"
+			]
+		],
+		"width": 416.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 303.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}

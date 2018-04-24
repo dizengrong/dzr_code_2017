@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Demo project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="util_type.js"></script>
+    </head>
+    <body>
+        <p>Let the game begin!开始把</p>
+        <script type="text/javascript">
+            var currying = function(fn) {
+                var args = [];
+                //储存传到curring函数中的除了fn之外的其他参数，并储存到args函数中
+                args = args.concat([].slice.call(arguments, 1));
+                return function() {
+                    if (arguments.length === 0) {
+                        return fn.apply(this, args);
+                    } else {
+                        //将fn中的参数展开，然后再储存到args数组中
+                        [].push.apply(args, arguments);
+                        return arguments.callee;
+                    }
+                }
+            };
+            var cost = (function() {
+                var money = 0;
+                return function() {
+                    for (var i = 0, l = arguments.length; i < l; i++) {
+                        money += arguments[i];
+                    }
+                    return money;
+                }
+            })();
+            var cost = currying(cost, 100, 200); // 转化成 currying 函数
+            cost(100, 200); // 未真正求值 
+            cost(300); // 未真正求值
+            console.log((cost())); // 求值并输出：900
+        </script>
+    </body>
+</html>
