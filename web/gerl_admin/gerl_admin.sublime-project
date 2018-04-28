@@ -12,9 +12,6 @@
 	[
 		{
 			"path": "."
-		},
-		{
-			"path": "E:\\test\\my_flask\\Scripts\\microblog"
 		}
 	]
 }

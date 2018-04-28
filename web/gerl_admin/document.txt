@@ -1,0 +1,6 @@
+======================== 开发记录文档 ======================== 
+1.数据库迁移：
+    1) 创建迁移：alembic init my_migration
+    2) alembic revision --autogenerate -m 'this is comment'
+
+

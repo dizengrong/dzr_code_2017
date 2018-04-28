@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify
 from flask import render_template
+import json
 
 
 class Todo(object):
@@ -53,6 +54,7 @@ def show_user_profile(username = None):
         {"text": "text3"},
     ]
     # 包含vue代码的html页面里是无法直接绑定到todos的？
-    return render_template('hello.html', name=username, todos=todos)
+    print json.dumps(todos)
+    return render_template('hello.html', name=username, todos=json.dumps(todos))
 
 
