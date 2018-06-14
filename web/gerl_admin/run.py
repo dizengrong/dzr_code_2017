@@ -15,7 +15,7 @@ def create_app():
     app.bucket_name = app.config['BUCKET_NAME']
     app.debug = app.config['DEBUG']
 
-    from app_01 import api as api_01_blueprint
+    from api_01 import api as api_01_blueprint
     app.register_blueprint(api_01_blueprint, url_prefix='/api/v01')
 
     from api_02 import api as api_02_blueprint

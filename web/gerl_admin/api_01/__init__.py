@@ -1,12 +1,12 @@
 # *-* coding:utf-8 *-*
 from flask import Blueprint, current_app
-from flask_login import LoginManager
+# from flask_login import LoginManager
 
-api = Blueprint('api', __name__)
+api = Blueprint('api_01', __name__)
 
-login_manager = LoginManager()
-login_manager.init_app(current_app)
+# login_manager = LoginManager()
+# login_manager.init_app(current_app)
 
 
-from . import auto, decorator
+from . import auth, decorator
 
