@@ -1,0 +1,2833 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"GetLeftDays\tfunction"
+			],
+			[
+				"Fals",
+				"False\tinstance"
+			],
+			[
+				"W",
+				"wmi"
+			],
+			[
+				"encod",
+				"encode_license\tfunction"
+			],
+			[
+				"mac",
+				"machine_info"
+			],
+			[
+				"n",
+				"normpath\tfunction"
+			],
+			[
+				"from",
+				"format_exc\tfunction"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"save",
+				"save_path"
+			],
+			[
+				"proje",
+				"project_data\tstatement"
+			],
+			[
+				"m_tex",
+				"m_text_project\tstatement"
+			],
+			[
+				"spl",
+				"splitext\tfunction"
+			],
+			[
+				"MENU_UNTIS_i",
+				"MENU_UNTIS_SI"
+			],
+			[
+				"UNI",
+				"UNITS_SI\tstatement"
+			],
+			[
+				"prje",
+				"project_data\tstatement"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"current",
+				"current_size_index\tstatement"
+			],
+			[
+				"crrent",
+				"current_size_index\tstatement"
+			],
+			[
+				"pie",
+				"pie2"
+			],
+			[
+				"glbase",
+				"gl_base_canvas\tmodule"
+			],
+			[
+				"fo",
+				"format\tfunction"
+			],
+			[
+				"SetC",
+				"SetColour\tmodule"
+			],
+			[
+				"miangui",
+				"main_gui\tmodule"
+			],
+			[
+				"TASK",
+				"TASK_STATE_RETURNED"
+			],
+			[
+				"car",
+				"car_id\tstatement"
+			],
+			[
+				"dbm",
+				"db_ambulance\tmodule"
+			],
+			[
+				"patein",
+				"patient_name"
+			],
+			[
+				"Dele",
+				"DeleteItem\tfunction"
+			],
+			[
+				"GetSe",
+				"GetSelectedRows\tmodule"
+			],
+			[
+				"get_",
+				"get_selection_key\tfunction"
+			],
+			[
+				"SetF",
+				"SetFont\tmodule"
+			],
+			[
+				"mainto",
+				"main_top_panel\tmodule"
+			],
+			[
+				"ap",
+				"app_report_dlg\tmodule"
+			],
+			[
+				"sta",
+				"statistics\tmodule"
+			],
+			[
+				"Setsi",
+				"SetSizer\tmodule"
+			],
+			[
+				"db",
+				"db_ambulance\tmodule"
+			],
+			[
+				"hos",
+				"hospital_id"
+			],
+			[
+				"dis",
+				"distance_dict\tstatement"
+			],
+			[
+				"re",
+				"resource_image"
+			],
+			[
+				"m",
+				"m_slider\tstatement"
+			],
+			[
+				"ini",
+				"init_set_phone\tfunction"
+			],
+			[
+				"sou",
+				"sound_len\tstatement"
+			],
+			[
+				"rev",
+				"removeOverlay"
+			],
+			[
+				"rem",
+				"removeOverlay"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"LOG",
+				"LOGSEVERITY_INFO\tinstance"
+			],
+			[
+				"map",
+				"map_callback"
+			],
+			[
+				"prop",
+				"prop_data\tparam"
+			],
+			[
+				"propa",
+				"prop_name\tparam"
+			],
+			[
+				"Delteall",
+				"DeleteAllItems\tfunction"
+			],
+			[
+				"util",
+				"util_time"
+			],
+			[
+				"city",
+				"city_name"
+			],
+			[
+				"remov",
+				"remove_hospital_and_car\tfunction"
+			],
+			[
+				"cars",
+				"car_state"
+			],
+			[
+				"Get",
+				"GetId\tmodule"
+			],
+			[
+				"con",
+				"constants\tmodule"
+			],
+			[
+				"m_",
+				"m_st_hospital\tstatement"
+			],
+			[
+				"big",
+				"big_event"
+			],
+			[
+				"SetVal",
+				"SetValue\tmodule"
+			],
+			[
+				"reea",
+				"reason_type1"
+			],
+			[
+				"al",
+				"alarm_id"
+			],
+			[
+				"no",
+				"normal_time_str"
+			],
+			[
+				"m_pa",
+				"m_patient_sex\tstatement"
+			],
+			[
+				"GetVa",
+				"GetValue\tmodule"
+			],
+			[
+				"Setva",
+				"SetValue\tmodule"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"lab",
+				"label_color"
+			],
+			[
+				"GetV",
+				"GetValue\tmodule"
+			],
+			[
+				"alr",
+				"alarm_info\tstatement"
+			],
+			[
+				"reso",
+				"resource_str\tmodule"
+			],
+			[
+				"SetL",
+				"SetLabel\tmodule"
+			],
+			[
+				"res",
+				"resource_str\tmodule"
+			],
+			[
+				"ALI",
+				"ALIGN_CENTER\tinstance"
+			],
+			[
+				"GREY",
+				"LIGHT_GREY\tstatement"
+			],
+			[
+				"HIGHLIGHT",
+				"SYS_COLOUR_HIGHLIGHT\tinstance"
+			],
+			[
+				"Grey",
+				"LIGHT_GREY\tstatement"
+			],
+			[
+				"GetCell",
+				"GetCellValue\tmodule"
+			],
+			[
+				"test",
+				"tests\tmodule"
+			],
+			[
+				"comm",
+				"common_control\tmodule"
+			],
+			[
+				"Ref",
+				"Refresh\tmodule"
+			],
+			[
+				"lo",
+				"loop_count2\tstatement"
+			],
+			[
+				"seat",
+				"seat_id\tstatement"
+			],
+			[
+				"setting",
+				"setting_book\tparam"
+			],
+			[
+				"en",
+				"encode_password\tfunction"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"log",
+				"login_user\tstatement"
+			],
+			[
+				"seatn",
+				"seat_num"
+			],
+			[
+				"Getpa",
+				"GetPage\tfunction"
+			],
+			[
+				"Se",
+				"SeatSettingPanel\tclass"
+			],
+			[
+				"shwo",
+				"show_tab_setting"
+			],
+			[
+				"showtab",
+				"show_tab_query"
+			],
+			[
+				"showt",
+				"show_tab_phone"
+			],
+			[
+				"shotab",
+				"show_tab_ambulance"
+			],
+			[
+				"if",
+				"if\tIf Condition"
+			],
+			[
+				"Sets",
+				"SetSelection\tfunction"
+			],
+			[
+				"l",
+				"Layout\tmodule"
+			],
+			[
+				"conf",
+				"conf_dict\tstatement"
+			],
+			[
+				"wa",
+				"warning\tfunction"
+			],
+			[
+				"I",
+				"IGNORECASE\tstatement"
+			],
+			[
+				"sql_c",
+				"sql_cache"
+			],
+			[
+				"tr",
+				"try\tTry/Except/Finally"
+			],
+			[
+				"run",
+				"run_path\tstatement"
+			],
+			[
+				"insta",
+				"install_bat\tstatement"
+			],
+			[
+				"co",
+				"compile\tfunction"
+			],
+			[
+				"cn",
+				"cnf_path\tstatement"
+			],
+			[
+				"mod",
+				"modules\tparam"
+			],
+			[
+				"comp",
+				"compile_result\tstatement"
+			],
+			[
+				"sys",
+				"system\tfunction"
+			],
+			[
+				"T",
+				"Type"
+			],
+			[
+				"Robo",
+				"RobotData2"
+			],
+			[
+				"Scene",
+				"SceneType\t(fun_item_action.erl)"
+			],
+			[
+				"curr",
+				"current_action"
+			],
+			[
+				"cast",
+				"cast_skill"
+			],
+			[
+				"no_",
+				"no_random_name"
+			],
+			[
+				"fro",
+				"from_usr"
+			],
+			[
+				"fun_scen",
+				"fun_scene_obj"
+			],
+			[
+				"hand",
+				"handle_to_scene\t(fun_gm_code.erl)"
+			],
+			[
+				"ets",
+				"ets_server_robot"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"new",
+				"new_life"
+			],
+			[
+				"und",
+				"undefined\t(all_ptc.erl)"
+			],
+			[
+				"fun_a",
+				"fun_activity_hall"
+			],
+			[
+				"Use",
+				"UseNum"
+			],
+			[
+				"agentm",
+				"agentmng_msg\t(fun_scene_obj.erl)"
+			],
+			[
+				"handle_to_",
+				"handle_to_agentmng\t(fun_gm_code.erl)"
+			],
+			[
+				"data_mons",
+				"data_monster_attack_city"
+			],
+			[
+				"rand",
+				"random\t(util.erl)"
+			],
+			[
+				"addmon",
+				"add_monster\t(fun_reflush_monster.erl)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "simple_window.py",
+			"settings":
+			{
+				"buffer_size": 305,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "simple_icon.py",
+			"settings":
+			{
+				"buffer_size": 516,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tool_tips.py",
+			"settings":
+			{
+				"buffer_size": 766,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "signal_slot.py",
+			"settings":
+			{
+				"buffer_size": 669,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "message_box.py",
+			"settings":
+			{
+				"buffer_size": 804,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout_abs.py",
+			"settings":
+			{
+				"buffer_size": 692,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout_box.py",
+			"settings":
+			{
+				"buffer_size": 850,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout_grid.py",
+			"settings":
+			{
+				"buffer_size": 1016,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "layout_grid2.py",
+			"settings":
+			{
+				"buffer_size": 1124,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app_style.py",
+			"settings":
+			{
+				"buffer_size": 1248,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Python36/Lib/site-packages/PyQt5/uic/pyuic.py",
+			"settings":
+			{
+				"buffer_size": 3550,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Python36/Lib/site-packages/PyQt5/uic/test_ui.py",
+			"settings":
+			{
+				"buffer_size": 5495,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/GenConfigTool/main.py",
+			"settings":
+			{
+				"buffer_size": 13193,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/base_main_window.py",
+			"settings":
+			{
+				"buffer_size": 3202,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/main.py",
+			"settings":
+			{
+				"buffer_size": 11462,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/fuzzyfinder.py",
+			"settings":
+			{
+				"buffer_size": 1113,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "center_window.py",
+			"settings":
+			{
+				"buffer_size": 714,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "status_bar.py",
+			"settings":
+			{
+				"buffer_size": 524,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "menu.py",
+			"settings":
+			{
+				"buffer_size": 957,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tool_bar.py",
+			"settings":
+			{
+				"buffer_size": 826,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					""
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Build with dependencies"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (common_test)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test Current Module (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Generate Documentation"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Update Dependencies"
+				]
+			],
+			[
+				"Packages/Erlang/rebar.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Sublime-Erlang/Erlang.sublime-build",
+					""
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					""
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Build with dependencies"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Test (common_test)"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Test (eunit)"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Test Current Module (eunit)"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Generate Documentation"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Update Dependencies"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Sublime-Erlang/Erlang.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"packdi",
+				"Package Control: Disable Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"newfi",
+				"ANF: New File"
+			],
+			[
+				"sse",
+				"Set Syntax: Erlang"
+			],
+			[
+				"pakin",
+				"Package Control: Install Package"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"pakckd",
+				"Package Control: Disable Package"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gitgutter",
+				"Preferences: GitGutter Settings - Default"
+			],
+			[
+				"pakcin",
+				"Package Control: Install Package"
+			],
+			[
+				"pakcre",
+				"Package Control: Remove Channel"
+			],
+			[
+				"ssq",
+				"Set Syntax: SQL (Rails)"
+			],
+			[
+				"formatcode",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"sss",
+				"Set Syntax: SQL"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"browse",
+				"Browse Mode: Left Sidebar"
+			],
+			[
+				"fileb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pack",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"Snippet: ",
+				"Snippet: nodes"
+			],
+			[
+				"pakcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"pps",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pai",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pp",
+				"Package Control: Disable Package"
+			],
+			[
+				"se",
+				"Set Syntax: Erlang"
+			],
+			[
+				"ppc",
+				"Package Control: Install Package"
+			],
+			[
+				"ppi",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"fc",
+				"File: Close All"
+			],
+			[
+				"sssh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Snippet: gen_s",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"Snippet: gen",
+				"Snippet: gen_event Callbacks"
+			],
+			[
+				"todore",
+				"TodoReview: Project Files"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Repository"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"reviewmys",
+				"ReviewMyself: Folders in Project"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inse",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"rmove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ge",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 272.0,
+		"history":
+		[
+			"os.path.exists(\"D:/programs/erl5.10.1/bin\")",
+			"os.path.exists(\"D:/programs/erl5.10.1/bin/erl\")",
+			"import os",
+			"build/all.py",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Documents/GitHub/dzr_code_2017/python/qt/demo"
+	],
+	"file_history":
+	[
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/data_chapter.erl.dump",
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/data_chapter.erl",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Python3.sublime-build",
+		"/D/Documents/GitHub/dzr_code_2017/python/GenConfigTool/my_grid.py",
+		"/C/Python36/Lib/site-packages/pyqt5-tools/test_ui.py",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/E/Job/szyunzhe/摄像头/新建文件夹/videodb.sql",
+		"/C/xampp/htdocs/videoController/ajax/province.php",
+		"/E/Job/szyunzhe/video/index.html",
+		"/E/Job/szyunzhe/video/js/jquery.area.js",
+		"/C/xampp/htdocs/videoController/services/provinceService.php",
+		"/E/Job/szyunzhe/video/hello.php",
+		"/E/Job/szyunzhe/video/list.html",
+		"/E/Job/szyunzhe/摄像头/新建文件夹/videoController/ajax/province.php",
+		"/E/Job/szyunzhe/摄像头/新建文件夹/videoController/ajax/area.php",
+		"/E/Job/szyunzhe/摄像头/新建文件夹/videoController/index.html",
+		"/E/Job/yaosaizi/README.md",
+		"/D/Documents/GitHub/dzr_code/python/serial_tool3/main.py",
+		"/E/Job/szyunzhe/pss/license_control/main.py",
+		"/D/Documents/GitHub/dzr_code/python/serial_tool3/main2.py",
+		"/D/Documents/GitHub/dzr_code/python/serial_tool/wxTerm.py",
+		"/D/Documents/GitHub/dzr_code/python/serial_tool/serialRxEvent.py",
+		"/D/Documents/GitHub/dzr_code/python/my_terminal/Terminal.py",
+		"/D/Documents/GitHub/dzr_code/python/my_terminal/main.py",
+		"/D/Documents/GitHub/dzr_code/python/my_license_control/setup.py",
+		"/D/Documents/GitHub/dzr_code/python/computer_info/license.license",
+		"/D/Documents/GitHub/dzr_code/python/registerpython.py",
+		"/E/Job/szyunzhe/test.pss",
+		"/C/Users/ADMINI~1/AppData/Local/Temp/Rar$DRa0.381/python_open_module_new.py",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/C/Python27/Lib/site-packages/directpy11/Samples/SamplewxPython.py",
+		"/C/Python27/Lib/site-packages/directpy11/Samples/Tutorial2.py",
+		"/C/Python27/Lib/site-packages/directpy11/Tests/test_matrix.py",
+		"/E/Job/szyunzhe/pss/test.pdf.dump",
+		"/E/test/webgl/test_webgl.html",
+		"/D/program_lib/wxPython-demo-4.0.1/demo/GLCanvas.pyc",
+		"/D/program_lib/wxPython-demo-4.0.1/samples/glcanvas/GLCanvas.py",
+		"/D/program_lib/wxPython-demo-4.0.1/samples/simple/dialog.py",
+		"/E/test/test_opengl.py",
+		"/E/Job/uArm/pyuf/examples/fashion_api/test_io.py",
+		"/E/test/test_lushu.html",
+		"/E/test/LuShu.js",
+		"/E/Job/120scheduler/substation/resource/login/login.js",
+		"/E/Job/120scheduler/substation/main.py",
+		"/E/Job/120scheduler/substation/user/login_dialog.py",
+		"/E/Job/120scheduler/substation/resource/login/login.css",
+		"/E/Job/120scheduler/substation/main_setting.py",
+		"/E/Job/120scheduler/substation/task/task_dialog.py",
+		"/E/Job/120scheduler/substation/task/mod_task.py",
+		"/E/Job/120scheduler/substation/pyinstaller/pyinstaller.py",
+		"/E/Job/120scheduler/substation/pyinstaller/pyinstaller.spec",
+		"/E/Job/120scheduler/substation/pyinstaller/hook-cefpython3.py",
+		"/E/Job/120scheduler/substation/car/car_trace_dialog.py",
+		"/E/Job/120scheduler/substation/car/base_car_trace_dialog.py",
+		"/C/Users/Administrator/Desktop/my_debug.erl",
+		"/E/Job/120scheduler/substation/resource/login/login.html",
+		"/E/Job/120scheduler/substation/db/db_alarm_info.py",
+		"/E/Job/120scheduler/substation/task/task_info_panel.py",
+		"/E/Job/120scheduler/substation/task/task_accept_dialog.py",
+		"/E/Job/120scheduler/substation/db/db_pathogeny_type.py",
+		"/E/Job/120scheduler/substation/db/db_tables.py",
+		"/E/Job/120scheduler/substation/const.py",
+		"/E/Job/120scheduler/substation/util/util_wx.py",
+		"/E/Job/120scheduler/substation/wnd_style.py",
+		"/E/Job/120scheduler/substation/main_left_panel.py",
+		"/E/Job/120scheduler/substation/main_top_panel.py",
+		"/E/Job/120scheduler/substation/main_gui.py",
+		"/E/Job/120scheduler/substation/ambulance_panel.py",
+		"/E/Job/120scheduler/substation/db/db_ambulance.py",
+		"/E/Job/120scheduler/substation/resource_str.py",
+		"/E/Job/120scheduler/substation/query/task_query_panel.py",
+		"/E/Job/120scheduler/substation/report/big_event_report_panel.py",
+		"/E/Job/120scheduler/substation/report/report_frame.py",
+		"/E/Job/120scheduler/substation/util/util_time.py",
+		"/E/Job/120scheduler/substation/report/detail_report.py",
+		"/E/Job/120scheduler/substation/printer/detail_report.html.tpl",
+		"/E/Job/120scheduler/substation/printer/patient_report.html.tpl",
+		"/D/program_lib/wxPython-demo-4.0.0b2/demo/HTML2_WebView.py",
+		"/E/Job/120scheduler/substation/printer/big_event_report.html.tpl",
+		"/E/Job/120scheduler/scheduler_center/printer/st_by_hospital.html.tpl",
+		"/E/Job/120scheduler/substation/printer/myprinter.py",
+		"/E/Job/120scheduler/substation/report/base_big_event_report.py",
+		"/E/Job/120scheduler/substation/db/db_report.py",
+		"/E/Job/120scheduler/substation/db/db_user.py",
+		"/E/Job/120scheduler/substation/report/patient_report_panel.py",
+		"/E/Job/120scheduler/substation/car/car_setting_panel.py",
+		"/E/Job/120scheduler/substation/main_center_panel.py",
+		"/E/Job/120scheduler/substation/hospital/mod_hospital.py",
+		"/E/Job/120scheduler/center_server/util/util_conf.py",
+		"/E/Job/120scheduler/center_server/db/dbm.py",
+		"/E/Job/120scheduler/center_server/conf/init_database.yaml",
+		"/E/Job/120scheduler/substation/constant.py",
+		"/E/Job/120scheduler/substation/setting/font_setting.py",
+		"/E/Job/120scheduler/substation/resource_image.py",
+		"/E/Job/120scheduler/scheduler_center/cti/register_ocx.bat",
+		"/F/IPV6/cowboy-master/plugins.mk",
+		"/E/Job/120scheduler/center_server/conf/conf.yaml",
+		"/E/Job/120scheduler/center_server/my_ftp.py",
+		"/E/Job/120scheduler/substation/db/dbm.py",
+		"/E/Job/BeauPhone SQL版本/Driver/Driver.Win64/BfAnalogDevice.inf",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/E/Job/120scheduler/scheduler_center/const.py",
+		"/E/GitHub/dzr_code_2017/python/video/video_show.py",
+		"/E/GitHub/dzr_code_2017/python/video/video_sender.py",
+		"/E/GitHub/dzr_code_2017/python/opencv/show_camera.py",
+		"/D/programs/Python27/Lib/site-packages/cv2/__init__.py",
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/src/vidcapmodule.cpp",
+		"/D/programs/Python27/Lib/site-packages/PIL/__init__.py",
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/exa3_observer.py",
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/exa2_show-possibilities.py",
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/exa1_snapshot.py",
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/displayNameDev0.py",
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/demo.py",
+		"/D/programs/Python27/Lib/site-packages/PIL/version.py",
+		"/E/Job/120scheduler/scheduler_center/car/car_monitor_dialog.pyc",
+		"/E/Job/120scheduler/scheduler_center/common_control/transparent_control.py",
+		"/D/programs/Python27/lib/site-packages/MplayerCtrl.py",
+		"/E/Job/120scheduler/scheduler_center/setting/setting_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_sound.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_pyglet_audio.py",
+		"/E/Job/120scheduler/scheduler_center/main_left_panel.py",
+		"/E/Job/120scheduler/scheduler_center/v8function_handler.pyx",
+		"/E/Job/120scheduler/scheduler_center/db/mod_task.py",
+		"/E/Job/120scheduler/docs/conf.py",
+		"/C/Users/dzr/Desktop/dist/cefapp/conf/conf.yaml",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Windows/System32/drivers/etc/networks",
+		"/C/Windows/System32/drivers/etc/lmhosts.sam"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"self",
+			"3",
+			"m_grid1",
+			"gbk",
+			"xrange",
+			"excle_src_path",
+			"ctitical",
+			"OnExport",
+			"m_grid1",
+			"m_searchCtrl1",
+			"init_other",
+			"cwd",
+			"OnOpenFileInExplore",
+			"sell_tab_clicked_col",
+			"sell_tab_clicked_row",
+			"Alignment",
+			"alig",
+			"width",
+			"GRID_CONTEXT_MENU",
+			"print",
+			"SetCellValue",
+			"m_grid1",
+			"fill_grid",
+			"selectedItems",
+			"init_menu",
+			"OnExportAll",
+			"sys",
+			"on_cell_double_clicked",
+			"connect"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 15,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "simple_window.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "simple_icon.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tool_tips.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "signal_slot.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "message_box.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								646,
+								652
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 69.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "layout_abs.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "layout_box.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								56
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "layout_grid.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1016,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "layout_grid2.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app_style.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								963,
+								963
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/Python36/Lib/site-packages/PyQt5/uic/pyuic.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1320,
+								1326
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Python36/Lib/site-packages/PyQt5/uic/test_ui.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1548,
+								1559
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2070.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/GenConfigTool/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13193,
+								13193
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/base_main_window.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3202,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2563,
+								2573
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 737.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11421,
+								11421
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"complete_all_parameters": false,
+							"complete_parameters": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6656.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/fuzzyfinder.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1062,
+								1062
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "center_window.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 714,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "status_bar.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								246
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "menu.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 957,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								641,
+								648
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "tool_bar.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								799,
+								799
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 122.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 122.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.anaconda_documentation":
+	{
+		"height": 145.0
+	},
+	"output.exec":
+	{
+		"height": 453.0
+	},
+	"output.find_results":
+	{
+		"height": 178.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "Packages/User/Python3.sublime-build",
+	"project": "demo.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\GenConfigTool\\main.py"
+			],
+			[
+				"main",
+				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\GenConfigTool\\main.py"
+			],
+			[
+				"mian",
+				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\GenConfigTool\\main.py"
+			],
+			[
+				"tes",
+				"C:\\Python36\\Lib\\site-packages\\PyQt5\\uic\\test_ui.py"
+			],
+			[
+				"listh",
+				"video\\list.html"
+			],
+			[
+				"AdverService.php",
+				"videoController\\services\\AdverService.php"
+			],
+			[
+				"shopService.php",
+				"videoController\\services\\shopService.php"
+			],
+			[
+				"adver.php",
+				"videoController\\ajax\\adver.php"
+			],
+			[
+				"shop.php",
+				"videoController\\ajax\\shop.php"
+			],
+			[
+				"areaService.php",
+				"videoController\\services\\areaService.php"
+			],
+			[
+				"area.php",
+				"videoController\\ajax\\area.php"
+			],
+			[
+				"cityService.php",
+				"videoController\\services\\cityService.php"
+			],
+			[
+				"city.php",
+				"videoController\\ajax\\city.php"
+			],
+			[
+				"com",
+				"common.py"
+			],
+			[
+				"co",
+				"common.py"
+			],
+			[
+				"dbhos",
+				"db\\db_hospital.py"
+			],
+			[
+				"maingui",
+				"main_gui.py"
+			],
+			[
+				"shoma",
+				"resource\\map\\show_map.html"
+			],
+			[
+				"db_sub_user",
+				"db\\db_sub_user.py"
+			],
+			[
+				"moduse",
+				"user\\mod_user.py"
+			],
+			[
+				"uses",
+				"setting\\user_setting_panel.py"
+			],
+			[
+				"comon",
+				"common.py"
+			],
+			[
+				"cartra",
+				"car\\car_trace_dialog.py"
+			],
+			[
+				"utilwx",
+				"util\\util_wx.py"
+			],
+			[
+				"reset.css",
+				"resource\\login\\reset.css"
+			],
+			[
+				"login.css",
+				"resource\\login\\login.css"
+			],
+			[
+				"canvas-particle.js",
+				"resource\\login\\canvas-particle.js"
+			],
+			[
+				"logi",
+				"resource\\login\\login.html"
+			],
+			[
+				"login",
+				"resource\\login\\login.html"
+			],
+			[
+				"pyin",
+				"pyinstaller\\pyinstaller.py"
+			],
+			[
+				"hook",
+				"pyinstaller\\hook-cefpython3.py"
+			],
+			[
+				"task_ac",
+				"task\\task_accept_dialog.py"
+			],
+			[
+				"resima",
+				"resource_image.py"
+			],
+			[
+				"res",
+				"resource_str.py"
+			],
+			[
+				"mainlef",
+				"main_left_panel.py"
+			],
+			[
+				"cons",
+				"constant.py"
+			],
+			[
+				"cat",
+				"car\\car_trace_dialog.py"
+			],
+			[
+				"cart",
+				"car\\car_trace_dialog.py"
+			],
+			[
+				"py",
+				"pyinstaller\\pyinstaller.spec"
+			],
+			[
+				"pyi",
+				"pyinstaller\\pyinstaller.py"
+			],
+			[
+				"maincen",
+				"main_center_panel.py"
+			],
+			[
+				"dbtab",
+				"db\\db_tables.py"
+			],
+			[
+				"mainc",
+				"main_center_panel.py"
+			],
+			[
+				"modtas",
+				"task\\mod_task.py"
+			],
+			[
+				"modtask",
+				"task\\mod_task.py"
+			],
+			[
+				"con",
+				"constant.py"
+			],
+			[
+				"db_alarm_info",
+				"db\\db_alarm_info.py"
+			],
+			[
+				"resource_str",
+				"resource_str.py"
+			],
+			[
+				"util_wx",
+				"util\\util_wx.py"
+			],
+			[
+				"task",
+				"task\\task_dialog.py"
+			],
+			[
+				"aum",
+				"ambulance_panel.py"
+			],
+			[
+				"myf",
+				"E:\\Job\\120scheduler\\center_server\\my_ftp.py"
+			],
+			[
+				"dbm",
+				"db\\dbm.py"
+			],
+			[
+				"maincent",
+				"main_center_panel.py"
+			],
+			[
+				"detailrepor",
+				"printer\\detail_report.html.tpl"
+			],
+			[
+				"mypri",
+				"printer\\myprinter.py"
+			],
+			[
+				"patientre",
+				"printer\\patient_report.html.tpl"
+			],
+			[
+				"detail_report.html",
+				"printer\\detail_report.html.tpl"
+			],
+			[
+				"detaire",
+				"report\\detail_report.py"
+			],
+			[
+				"patienre",
+				"report\\patient_report_panel.py"
+			],
+			[
+				"utitime",
+				"util\\util_time.py"
+			],
+			[
+				"rep",
+				"report\\report_frame.py"
+			],
+			[
+				"dbt",
+				"db\\db_tables.py"
+			],
+			[
+				"dbuer",
+				"db\\db_user.py"
+			],
+			[
+				"patinetre",
+				"report\\patient_report_panel.py"
+			],
+			[
+				"dbrep",
+				"db\\db_report.py"
+			],
+			[
+				"bigev",
+				"report\\big_event_report_panel.py"
+			],
+			[
+				"cars",
+				"car\\car_setting_panel.py"
+			],
+			[
+				"taskquer",
+				"query\\task_query_panel.py"
+			],
+			[
+				"rs",
+				"resource_str.py"
+			],
+			[
+				"resou",
+				"resource_str.py"
+			],
+			[
+				"set",
+				"main_setting.py"
+			],
+			[
+				"task_info_panel",
+				"task\\task_info_panel.py"
+			],
+			[
+				"db_pathogeny_type",
+				"db\\db_pathogeny_type.py"
+			],
+			[
+				"maitop",
+				"main_top_panel.py"
+			],
+			[
+				"reso",
+				"resource_str.py"
+			],
+			[
+				"maito",
+				"main_top_panel.py"
+			],
+			[
+				"maintop",
+				"main_top_panel.py"
+			],
+			[
+				"ma",
+				"main.py"
+			],
+			[
+				"resoustr",
+				"resource_str.py"
+			],
+			[
+				"mai",
+				"main.py"
+			],
+			[
+				"resource_image",
+				"resource_image.py"
+			],
+			[
+				"ambulancepanel",
+				"ambulance_panel.py"
+			],
+			[
+				"wnd_style",
+				"wnd_style.py"
+			],
+			[
+				"reou",
+				"resource_image.py"
+			],
+			[
+				"main_gui",
+				"substation\\main_gui.py"
+			],
+			[
+				"maintoppanel",
+				"substation\\main_top_panel.py"
+			],
+			[
+				"basem",
+				"scheduler_center\\base_main_gui.py"
+			],
+			[
+				"const",
+				"substation\\constant.py"
+			],
+			[
+				"base",
+				"scheduler_center\\base_main_gui.py"
+			],
+			[
+				"resoui",
+				"substation\\resource_image.py"
+			],
+			[
+				"mainleftpanel",
+				"scheduler_center\\main_left_panel.py"
+			],
+			[
+				"basemin",
+				"scheduler_center\\base_main_gui.py"
+			],
+			[
+				"testmain",
+				"scheduler_center\\tests\\test_main.py"
+			],
+			[
+				"main_gui.py",
+				"scheduler_center\\main_gui.py"
+			],
+			[
+				"carmon",
+				"scheduler_center\\car\\car_monitor_dialog.py"
+			],
+			[
+				"ba",
+				"scheduler_center\\common_control\\background_image_panel.py"
+			],
+			[
+				"testce",
+				"scheduler_center\\tests\\test_cefpython.py"
+			],
+			[
+				"browser",
+				"scheduler_center\\common_control\\browser.py"
+			],
+			[
+				"man",
+				"scheduler_center\\main.py"
+			],
+			[
+				"map",
+				"scheduler_center\\resource\\map\\map.js"
+			],
+			[
+				"resourim",
+				"scheduler_center\\resource_image.py"
+			],
+			[
+				"wnd",
+				"scheduler_center\\wnd_style.py"
+			],
+			[
+				"baseman",
+				"scheduler_center\\base_main_gui.py"
+			],
+			[
+				"shom",
+				"scheduler_center\\resource\\map\\show_map.html"
+			],
+			[
+				"init",
+				"scheduler_center\\conf\\init_database.yaml"
+			],
+			[
+				"pos",
+				"scheduler_center\\alarm\\position_addr_dlg.py"
+			],
+			[
+				"catra",
+				"scheduler_center\\car\\car_trace_dialog.py"
+			],
+			[
+				"util",
+				"scheduler_center\\util\\util_wx.py"
+			],
+			[
+				"cartrac",
+				"scheduler_center\\car\\car_trace_dialog.py"
+			],
+			[
+				"car",
+				"scheduler_center\\car\\car_monitor_dialog.py"
+			],
+			[
+				"imaged",
+				"scheduler_center\\statistics\\image_dialog.py"
+			],
+			[
+				"m",
+				"scheduler_center\\main.py"
+			],
+			[
+				"host",
+				"scheduler_center\\hospital_state_panel.py"
+			],
+			[
+				"reouim",
+				"scheduler_center\\resource_image.py"
+			],
+			[
+				"carno",
+				"scheduler_center\\car\\car_monitor_dialog.py"
+			],
+			[
+				"carm",
+				"scheduler_center\\car\\car_monitor_dialog.pyc"
+			],
+			[
+				"resouima",
+				"scheduler_center\\resource_image.py"
+			],
+			[
+				"cartrace",
+				"scheduler_center\\car\\car_trace_dialog.py"
+			],
+			[
+				"re",
+				"scheduler_center\\resource_str.py"
+			],
+			[
+				"mailef",
+				"scheduler_center\\main_left_panel.py"
+			],
+			[
+				"resouim",
+				"scheduler_center\\resource_image.py"
+			],
+			[
+				"resimg",
+				"scheduler_center\\resource_image.py"
+			],
+			[
+				"tra",
+				"scheduler_center\\common_control\\transparent_control.py"
+			],
+			[
+				"mapjs",
+				"scheduler_center\\car\\map_js.py"
+			],
+			[
+				"brow",
+				"scheduler_center\\common_control\\browser.py"
+			],
+			[
+				"ini",
+				"scheduler_center\\conf\\init_database.yaml"
+			],
+			[
+				"gra",
+				"scheduler_center\\common_control\\gradient_panel.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Job\\120scheduler\\scheduler_center\\scheduler_center.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cfg_task",
+				"Record: cfg_task"
+			],
+			[
+				"GM_CHARGE",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"GM_CHARGET",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"common_trace",
+				"Macro: COMMON_STACKTRACE_LOG"
+			],
+			[
+				"p_role_",
+				"Record: p_role_info"
+			],
+			[
+				"m_gm_",
+				"Record: m_gm_test_tos"
+			],
+			[
+				"cfg_ac",
+				"Record: cfg_activity"
+			],
+			[
+				"cfg_",
+				"Function: cfg_error"
+			],
+			[
+				"r_daily_interest",
+				"Record: r_daily_interest"
+			],
+			[
+				"r_dail",
+				"Record: r_daily_count"
+			],
+			[
+				"r_dai",
+				"Record: r_daily_count"
+			],
+			[
+				"r_daily_count",
+				"Record: r_daily_count"
+			],
+			[
+				"m_shop_buy_tos",
+				"Record: m_shop_buy_tos"
+			],
+			[
+				"quit_channel",
+				"Function: quit_chat_channel"
+			],
+			[
+				"m_chat_quit_channel_tos",
+				"Record: m_chat_quit_channel_tos"
+			],
+			[
+				"m_chat_public_tos",
+				"Record: m_chat_public_tos"
+			],
+			[
+				"m_character_skill_learn_tos",
+				"Record: m_character_skill_learn_tos"
+			],
+			[
+				"m_match_start_tos",
+				"Record: m_match_start_tos"
+			],
+			[
+				"cfg_item",
+				"Record: cfg_item"
+			],
+			[
+				"ITEMTYPES_WEAPON",
+				"Macro: ITEMTYPES_WEAPON_RIFLE"
+			],
+			[
+				"m_sys",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"m_heartb",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"Debuf",
+				"Macro: DebugF"
+			],
+			[
+				"get_next",
+				"Function: get_next_session"
+			],
+			[
+				"p_ski",
+				"Record: p_skill"
+			],
+			[
+				"p_ch",
+				"Record: p_character"
+			],
+			[
+				"match_da",
+				"Record: match_data"
+			],
+			[
+				"p_role_in",
+				"Record: p_role_info"
+			],
+			[
+				"get_buff",
+				"Function: get_buff_value"
+			],
+			[
+				"r_role_buff",
+				"Record: r_role_buff"
+			],
+			[
+				"r_role_activity",
+				"Record: r_role_activity"
+			],
+			[
+				"utf8",
+				"Function: utf8_len"
+			],
+			[
+				"r_role",
+				"Record: r_role_activity"
+			],
+			[
+				"p_bu",
+				"Record: p_buff"
+			],
+			[
+				"p_role",
+				"Record: p_role_info"
+			],
+			[
+				"auto_eq",
+				"Function: auto_equip_armor"
+			],
+			[
+				"ts_u",
+				"Module: ts_ulink"
+			],
+			[
+				"lib_u",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"hand",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handlecre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle_cre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"debugf",
+				"Macro: DebugF"
+			],
+			[
+				"parse_bidi",
+				"Function: parse_bidi"
+			],
+			[
+				"handli",
+				"Function: handle_incoming_data"
+			],
+			[
+				"ts_ulni",
+				"Module: ts_ulink"
+			],
+			[
+				"ts_cli",
+				"Module: ts_client"
+			],
+			[
+				"handle_ne",
+				"Function: handle_next_request"
+			],
+			[
+				"next_",
+				"Function: handle_next_request"
+			],
+			[
+				"next_req",
+				"Function: handle_next_request"
+			],
+			[
+				"handle_in",
+				"Function: handle_incoming_data"
+			],
+			[
+				"get_app",
+				"Function: get_app_rpc"
+			],
+			[
+				"handle_incom",
+				"Function: handle_incoming_data"
+			],
+			[
+				"connect_rpc",
+				"Function: get_ulink_connect_rpc"
+			],
+			[
+				"TYPE_USEr",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"p_role_info",
+				"Record: p_role_info"
+			],
+			[
+				"type_",
+				"Macro: TYPE_RIFLE"
+			],
+			[
+				"handle_info",
+				"Function: handle_info"
+			],
+			[
+				"termia",
+				"Function: terminate"
+			],
+			[
+				"",
+				"ACTIVITY_TASK_FAMILY_YBC"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
