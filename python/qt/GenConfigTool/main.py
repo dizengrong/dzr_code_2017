@@ -40,7 +40,10 @@ def format(value):
         else:
             return value
     elif isinstance(value, str):
-        return as_escaped(value)
+        try:
+            return int(value)
+        except Exception:
+            return as_escaped(value)
     else:
         try:
             return int(value)
@@ -75,6 +78,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.cwd = os.path.abspath('.')
         self.excle_src_path = os.path.abspath('..')
         self.last_search_str = None
+        self.init_last_dir()
 
     def init_event(self):
         self.menu_export_all.triggered.connect(self.on_export_all)
@@ -246,8 +250,26 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             tpls = [self.export_list[x] for x in self.export_files[val]]
             self.OnExport(tpls)
 
+    def init_last_dir(self):
+        self.last_dir_file = os.path.join(self.cwd, "last_dir")
+        if os.path.exists(self.last_dir_file):
+            with open(self.last_dir_file, "r", encoding="UTF-8") as fd:
+                self.last_dir = fd.read()
+        else:
+            self.last_dir =self.cwd
+
+    def get_last_dir(self):
+        return self.last_dir
+
+    def set_last_dir(self, new_dir):
+        if self.last_dir != new_dir:
+            self.last_dir = new_dir
+            with open(self.last_dir_file, "w", encoding="UTF-8") as fd:
+                fd.write(new_dir)
+
     def OnExport(self, tpl_dicts):
-        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录")
+        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+        self.set_last_dir(path)
         print(path)
         if os.path.exists(path):
             succ_files = ""
