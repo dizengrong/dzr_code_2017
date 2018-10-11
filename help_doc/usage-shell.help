@@ -1,5 +1,7 @@
 1.查看端口占用情况：
 	netstat -tunlp
 
+正则表达式查看游戏服占用了多少个数据库连接
+netstat -natp|grep -n '.*3306.*beam.*' | wc -l
 
 	

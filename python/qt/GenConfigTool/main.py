@@ -43,7 +43,10 @@ def format(value):
         try:
             return int(value)
         except Exception:
-            return as_escaped(value)
+            try:
+                return float(value)
+            except Exception:
+                return as_escaped(value)
     else:
         try:
             return int(value)
@@ -51,7 +54,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v2.0    设计者：dzR    更新日期：2018-07-05    "
+VERSION = u"配置导出工具-v2.1    设计者：dzR    更新日期：2018-10-10    "
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -251,7 +254,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.OnExport(tpls)
 
     def init_last_dir(self):
-        self.last_dir_file = os.path.join(self.cwd, "last_dir")
+        self.last_dir_file = os.path.join(os.path.expanduser('~'), ".gen_conf_export_dir")
         if os.path.exists(self.last_dir_file):
             with open(self.last_dir_file, "r", encoding="UTF-8") as fd:
                 self.last_dir = fd.read()
@@ -269,9 +272,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def OnExport(self, tpl_dicts):
         path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
-        self.set_last_dir(path)
         print(path)
         if os.path.exists(path):
+            self.set_last_dir(path)
             succ_files = ""
             begin = time.time()
             for tpl_dict in tpl_dicts:
