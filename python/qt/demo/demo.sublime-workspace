@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mg",
+				"msg_box\tstatement"
+			],
+			[
+				"for",
+				"format\tfunction"
+			],
+			[
 				"get",
 				"GetLeftDays\tfunction"
 			],
@@ -506,14 +514,6 @@
 			[
 				"data_mons",
 				"data_monster_attack_city"
-			],
-			[
-				"rand",
-				"random\t(util.erl)"
-			],
-			[
-				"addmon",
-				"add_monster\t(fun_reflush_monster.erl)"
 			]
 		]
 	},
@@ -648,9 +648,113 @@
 			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/main.py",
 			"settings":
 			{
-				"buffer_size": 11462,
+				"buffer_size": 12959,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/readme.txt",
+			"settings":
+			{
+				"buffer_size": 27,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/main.spec",
+			"settings":
+			{
+				"buffer_size": 1118,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/test/pyqt5/examples/webkit/framecapture.py",
+			"settings":
+			{
+				"buffer_size": 5460,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/test/pyqt5/examples/webkit/previewer/previewer.py",
+			"settings":
+			{
+				"buffer_size": 6642,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/test/pyqt5/examples/webkit/previewer/ui_previewer.py",
+			"settings":
+			{
+				"buffer_size": 3011,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/data_achievement.erl.tpl",
+			"settings":
+			{
+				"buffer_size": 914,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/data_improve_all_attr.erl.tpl",
+			"settings":
+			{
+				"buffer_size": 838,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "pyinstaller -w --hidden-import PyQt5.sip --clean --exclude-module _socket, PyQt5.QtPrintSupport main.py\n\n_ssl\n_hashlib\nQt5Network.dll\nQt5Qml.dll\nQt5Svg.dll\nQt5Quick.dll\nQt5WebSockets.dll",
+			"settings":
+			{
+				"buffer_size": 186,
+				"line_ending": "Windows",
+				"name": "pyinstaller -w --hidden-import PyQt5.sip --clean -"
+			}
+		},
+		{
+			"contents": "# -*- mode: python -*-\n\nblock_cipher = None\n\n  \na = Analysis(['main.py'],\n             pathex=['D:\\\\Documents\\\\GitHub\\\\dzr_code_2017\\\\python\\\\qt\\\\GenConfigTool'],\n             binaries=[],\n             datas=[],\n             hiddenimports=['PyQt5.sip'],\n             hookspath=[],\n             runtime_hooks=[],\n             excludes=['_socket', '_ssl', '_hashlib', 'PyQt5.QtPrintSupport'],\n             win_no_prefer_redirects=False,\n             win_private_assemblies=False,\n             cipher=block_cipher)\npyz = PYZ(a.pure, a.zipped_data,\n             cipher=block_cipher)\n\nexclude_dll = ['Qt5Network.dll', 'Qt5Qml.dll', 'Qt5Svg.dll', 'Qt5Quick.dll', 'Qt5WebSockets.dll']\na.binaries = [x for x in a.binaries if x[0] not in exclude_dll]\n# print(a.binaries)\n\nexe = EXE(pyz,\n          a.scripts,\n          a.binaries,\n          a.zipfiles,\n          a.datas,\n          name='main',\n          debug=False,\n          strip=False,\n          upx=True,\n          icon=\"icon.ico\",\n          runtime_tmpdir=None,\n          console=False )\n\nCOLLECT(\n        exe,\n        strip=False,\n        upx=True,\n        name='main')\n",
+			"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/PyQt5.spec",
+			"file_size": 1159,
+			"file_write_time": 131753235587930002,
+			"settings":
+			{
+				"buffer_size": 1118,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Job/archives_manager/pyinstaller/build_client.py",
+			"settings":
+			{
+				"buffer_size": 2740,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Job/archives_manager/pyinstaller/archives_client.spec",
+			"settings":
+			{
+				"buffer_size": 1349,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/Job/120scheduler/scheduler_center/pyinstaller/hook-cefpython3.py",
+			"settings":
+			{
+				"buffer_size": 8007,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -1129,6 +1233,22 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Administrator/.gen_conf_export_dir",
+		"/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/pack.py",
+		"/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/last_dir",
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/data_item.erl.dump",
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/data_item.erl",
+		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/robot.erl.tpl.cache",
+		"/E/Job/archives_manager/pyinstaller/build_server.py",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/pyinstaller.spec",
+		"/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/pyinstaller.spec",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/pyinstaller.py",
+		"/D/program_lib/pyqt5/README",
+		"/D/program_lib/pyqt5/README.md",
+		"/D/program_lib/pyqt5/examples/mainwindows/application/application.py",
+		"/D/program_lib/pyqt5/examples/mainwindows/separations.py",
+		"/D/program_lib/pyqt5/examples/dialogs/standarddialogs.py",
+		"/D/program_lib/pyqt5/examples/widgets/tooltips/tooltips.py",
 		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/data_chapter.erl.dump",
 		"/F/guaji/cehua/Assets/svr_setting/server_config_tool/data_chapter.erl",
 		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Python3.sublime-build",
@@ -1240,23 +1360,7 @@
 		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/exa3_observer.py",
 		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/exa2_show-possibilities.py",
 		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/exa1_snapshot.py",
-		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/displayNameDev0.py",
-		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/demo.py",
-		"/D/programs/Python27/Lib/site-packages/PIL/version.py",
-		"/E/Job/120scheduler/scheduler_center/car/car_monitor_dialog.pyc",
-		"/E/Job/120scheduler/scheduler_center/common_control/transparent_control.py",
-		"/D/programs/Python27/lib/site-packages/MplayerCtrl.py",
-		"/E/Job/120scheduler/scheduler_center/setting/setting_dialog.py",
-		"/E/Job/120scheduler/scheduler_center/tests/test_sound.py",
-		"/E/Job/120scheduler/scheduler_center/tests/test_pyglet_audio.py",
-		"/E/Job/120scheduler/scheduler_center/main_left_panel.py",
-		"/E/Job/120scheduler/scheduler_center/v8function_handler.pyx",
-		"/E/Job/120scheduler/scheduler_center/db/mod_task.py",
-		"/E/Job/120scheduler/docs/conf.py",
-		"/C/Users/dzr/Desktop/dist/cefapp/conf/conf.yaml",
-		"/C/Windows/System32/drivers/etc/hosts",
-		"/C/Windows/System32/drivers/etc/networks",
-		"/C/Windows/System32/drivers/etc/lmhosts.sam"
+		"/D/programs/Python27/Lib/site-packages/VideoCapture/examples/displayNameDev0.py"
 	],
 	"find":
 	{
@@ -1275,6 +1379,14 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"last_dir",
+			"msg",
+			"critical",
+			"DoExport",
+			"PyQt5",
+			"app_name",
+			"dll",
+			"statusBar",
 			"self",
 			"3",
 			"m_grid1",
@@ -1321,7 +1433,7 @@
 	"groups":
 	[
 		{
-			"selected": 15,
+			"selected": 14,
 			"sheets":
 			[
 				{
@@ -1349,7 +1461,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 26,
 					"type": "text"
 				},
 				{
@@ -1365,19 +1477,21 @@
 						"selection":
 						[
 							[
-								135,
-								135
+								349,
+								386
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 138.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -1399,13 +1513,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 31,
 					"type": "text"
 				},
 				{
@@ -1427,13 +1543,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 25,
 					"type": "text"
 				},
 				{
@@ -1455,13 +1573,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 69.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
@@ -1477,19 +1597,21 @@
 						"selection":
 						[
 							[
-								43,
-								0
+								381,
+								381
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1511,13 +1633,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 30,
 					"type": "text"
 				},
 				{
@@ -1550,13 +1674,15 @@
 									"selector": "source.python - string - constant.numeric"
 								}
 							],
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 29,
 					"type": "text"
 				},
 				{
@@ -1589,13 +1715,15 @@
 									"selector": "source.python - string - constant.numeric"
 								}
 							],
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 24,
 					"type": "text"
 				},
 				{
@@ -1633,10 +1761,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 210.0,
+						"translation.y": 3.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -1666,7 +1794,7 @@
 						"translation.y": 207.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 28,
 					"type": "text"
 				},
 				{
@@ -1707,7 +1835,7 @@
 						"translation.y": 2070.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1737,7 +1865,7 @@
 						"translation.y": 6166.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
@@ -1753,8 +1881,8 @@
 						"selection":
 						[
 							[
-								2563,
-								2573
+								2024,
+								2017
 							]
 						],
 						"settings":
@@ -1764,10 +1892,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 737.0,
+						"translation.y": 759.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -1776,15 +1904,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11462,
+						"buffer_size": 12959,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11421,
-								11421
+								9063,
+								9063
 							]
 						],
 						"settings":
@@ -1798,21 +1926,387 @@
 								{
 									"characters": ".",
 									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
 								}
 							],
 							"complete_all_parameters": false,
 							"complete_parameters": false,
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6656.0,
+						"translation.y": 5554.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/readme.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/main.spec",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1032,
+								1032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 17,
+					"file": "/E/test/pyqt5/examples/webkit/framecapture.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2842,
+								2842
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1311.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/E/test/pyqt5/examples/webkit/previewer/previewer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2349,
+								2361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 966.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/E/test/pyqt5/examples/webkit/previewer/ui_previewer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3011,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3010,
+								3010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/data_achievement.erl.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/F/guaji/cehua/Assets/svr_setting/server_config_tool/config/data_improve_all_attr.erl.tpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								182
+							]
+						],
+						"settings":
+						{
+							"auto_name": "pyinstaller -w --hidden-import PyQt5.sip --clean -",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/PyQt5.spec",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								578,
+								578
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/E/Job/archives_manager/pyinstaller/build_client.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2740,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1206,
+								1221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/E/Job/archives_manager/pyinstaller/archives_client.spec",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1219,
+								1219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/E/Job/120scheduler/scheduler_center/pyinstaller/hook-cefpython3.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7730,
+								7760
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1863.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
 					"file": "/D/Documents/GitHub/dzr_code_2017/python/qt/GenConfigTool/fuzzyfinder.py",
 					"semi_transient": false,
 					"settings":
@@ -1824,8 +2318,8 @@
 						"selection":
 						[
 							[
-								1062,
-								1062
+								1112,
+								1112
 							]
 						],
 						"settings":
@@ -1849,11 +2343,11 @@
 						"translation.y": 276.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 28,
 					"file": "center_window.py",
 					"semi_transient": false,
 					"settings":
@@ -1871,17 +2365,19 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 29,
 					"file": "status_bar.py",
 					"semi_transient": false,
 					"settings":
@@ -1899,17 +2395,19 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 138.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 30,
 					"file": "menu.py",
 					"semi_transient": false,
 					"settings":
@@ -1921,23 +2419,25 @@
 						"selection":
 						[
 							[
-								641,
-								648
+								544,
+								544
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 138.0,
+						"translation.y": 118.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 31,
 					"file": "tool_bar.py",
 					"semi_transient": false,
 					"settings":
@@ -1955,13 +2455,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 27,
 					"type": "text"
 				}
 			]
@@ -2041,11 +2543,11 @@
 		[
 			[
 				"",
-				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\GenConfigTool\\main.py"
+				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\qt\\GenConfigTool\\main.py"
 			],
 			[
 				"main",
-				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\GenConfigTool\\main.py"
+				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\qt\\GenConfigTool\\main.py"
 			],
 			[
 				"mian",
