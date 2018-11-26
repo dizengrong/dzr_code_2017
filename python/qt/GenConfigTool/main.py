@@ -16,6 +16,7 @@ from xml.dom import minidom
 from tenjin.helpers import *
 from tenjin.escaped import *
 import time
+import gen_erlang_map
 
 # create engine object
 engine = tenjin.SafeEngine(path=[os.path.join(os.getcwd(), 'config')])
@@ -54,7 +55,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v2.1    设计者：dzR    更新日期：2018-10-10    "
+VERSION = u"配置导出工具-v3.0    设计者：dzR    更新日期：2018-11-26    "
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -64,6 +65,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.init_other()
         self.init_table()
+        self.init_map_table()
         self.create_context_menu()
         self.init_event()
         print(self.m_table.size())
@@ -80,15 +82,49 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         status_bar.addPermanentWidget(label)
         self.cwd = os.path.abspath('.')
         self.excle_src_path = os.path.abspath('..')
+        self.map_obj_path = os.path.abspath('../map/')
         self.last_search_str = None
         self.init_last_dir()
 
     def init_event(self):
         self.menu_export_all.triggered.connect(self.on_export_all)
+        self.menu_export_all_map.triggered.connect(self.on_export_all_map)
         self.m_search_edit.textChanged['QString'].connect(self.on_search)
         self.m_table.cellDoubleClicked['int','int'].connect(self.on_cell_double_click)
         self.m_table.setContextMenuPolicy(Qt.CustomContextMenu)
         self.m_table.customContextMenuRequested['QPoint'].connect(self.on_context_menu)
+
+        self.m_map_table.cellDoubleClicked['int','int'].connect(self.on_map_cell_double_click)
+
+    def init_map_table(self):
+        self.map_obj_files = []
+        for map_obj in os.listdir(self.map_obj_path):
+            _, ext = os.path.splitext(map_obj)
+            if ext == '.obj':
+                self.map_obj_files.append(map_obj)
+
+        self.map_obj_files.sort()
+
+        self.m_map_table.setRowCount(1 + len(self.map_obj_files))
+        self.m_map_table.setColumnCount(2)
+        self.m_map_table.verticalHeader().setFixedWidth(30)
+        self.m_map_table.verticalHeader().setDefaultAlignment(Qt.AlignCenter)
+        self.m_map_table.horizontalHeader().setStretchLastSection(True)
+        self.m_map_table.horizontalHeader().setFixedHeight(30)
+        header_labels = [u'地图源文件', u'导出文件']
+        self.m_map_table.setHorizontalHeaderLabels(header_labels)
+
+        row = 0
+        for map_obj in self.map_obj_files:
+            item1 = QTableWidgetItem(map_obj)
+            item1.setTextAlignment(Qt.AlignCenter)
+            self.m_map_table.setItem(row, 0, item1)
+            rootname, _ = os.path.splitext(map_obj)
+            item2 = QTableWidgetItem(rootname + '.erl')
+            item2.setTextAlignment(Qt.AlignCenter)
+            self.m_map_table.setItem(row, 1, item2)
+            row += 1
+        self.m_map_table.resizeColumnsToContents()
 
     def init_table(self):
         self.LoadConfigXML()
@@ -175,6 +211,32 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         print("do on_export_all")
         self.OnExport(self.export_list.values())
 
+    def on_export_all_map(self):
+        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+        if os.path.exists(path):
+            succ_files = ""
+            begin = time.time()
+            for map_obj in self.map_obj_files:
+                try:
+                    map_name, ext = os.path.splitext(map_obj)
+                    map_obj = os.path.join(self.map_obj_path, map_obj)
+                    erl_file = os.path.join(path, map_name + '.erl')
+                    gen_erlang_map.start(map_obj, erl_file)
+                    succ_files = succ_files + map_name + '.erl' + "\n    "
+                except Exception:
+                    msg = u"已成功导出的文件:\n    " + succ_files + "\n" \
+                        + u"导出失败的文件:\n    " + cfg_file + "\n" \
+                        + u"错误信息:\n" + traceback.format_exc()
+                    msg_box = QMessageBox(QMessageBox.Critical, u"错误", "导出发生错误!\t\t\t\t\t\t\t\t", parent=self)
+                    msg_box.setDetailedText(msg)
+                    msg_box.exec_()
+                    return
+            end = time.time()
+            msg = u"成功导出的文件列表:\n    {0}\n花费：{1}秒".format(succ_files, int(end - begin))
+            msg_box = QMessageBox(QMessageBox.Information, u"信息", "导出成功!\t\t\t\t\t\t\t\t", parent=self)
+            msg_box.setDetailedText(msg)
+            msg_box.exec_()
+
     def on_search(self, query_str):
         print ("on search %s" % (query_str))
         timer = QTimer(self)
@@ -196,6 +258,32 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         else:
             self.fill_grid(self.export_files)
         # self.Layout()
+
+    def on_map_cell_double_click(self, row, col):
+        print("on_cell_double_click row:%s, col:%s" % (row, col))
+        if self.m_map_table.item(row, col) is None:
+            return
+        erl_file = self.m_map_table.item(row, col).text()
+        if col == 1:
+            map_obj = self.m_map_table.item(row, 0).text()
+            path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+            if os.path.exists(path):
+                begin = time.time()
+                try:
+                    map_obj = os.path.join(self.map_obj_path, map_obj)
+                    erl_file = os.path.join(path, erl_file)
+                    gen_erlang_map.start(map_obj, erl_file)
+                    # self.DoExport(tpl_dict, path)
+                except Exception:
+                    msg = u"导出失败:\n    " + erl_file + "\n" \
+                        + u"错误信息:\n" + traceback.format_exc()
+                    msg_box = QMessageBox(QMessageBox.Critical, u"错误", "导出发生错误!\t\t\t\t\t\t\t\t", parent=self)
+                    msg_box.setDetailedText(msg)
+                    msg_box.exec_()
+                    return
+                end = time.time()
+                msg = u"成功导出文件:{0} 花费：{1}秒".format(erl_file, int(end - begin))
+                QMessageBox.information(self, u"导出成功", msg)
 
     def on_cell_double_click(self, row, col):
         print("on_cell_double_click row:%s, col:%s" % (row, col))
