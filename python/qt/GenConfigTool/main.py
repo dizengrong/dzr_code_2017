@@ -17,20 +17,9 @@ from tenjin.escaped import *
 import time
 import gen_erlang_map
 import gen_c_map
-from common import engine
+import gen_mutil_lang
+from common import *
 import json
-
-
-def get_attrvalue(node, attrname):
-    return node.getAttribute(attrname) if node else ''
-
-
-def get_nodevalue(node, index=0):
-    return node.childNodes[index].nodeValue if node else ''
-
-
-def get_xmlnode(node, name):
-    return node.getElementsByTagName(name) if node else []
 
 
 def format(value):
@@ -65,6 +54,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.init_other()
         self.init_table()
         self.init_map_table()
+        gen_mutil_lang.init_lang(self)
         self.create_context_menu()
         self.init_event()
         print(self.m_table.size())
@@ -95,6 +85,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.m_table.customContextMenuRequested['QPoint'].connect(self.on_context_menu)
 
         self.m_map_table.cellDoubleClicked['int','int'].connect(self.on_map_cell_double_click)
+        self.m_lang_tab.cellDoubleClicked['int','int'].connect(self.on_lang_cell_double_click)
+        self.m_lang_cnf_tab.cellDoubleClicked['int','int'].connect(self.on_lang_cnf_cell_double_click)
+
 
     def init_map_table(self):
         self.map_conf_dict = {}
@@ -297,6 +290,27 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.fill_grid(self.export_files)
         # self.Layout()
 
+    def on_lang_cnf_cell_double_click(self, row, col):
+        if self.m_lang_tab.item(row, col) is None:
+            return
+        val = self.m_lang_tab.item(row, col).text()
+        if col == 0:
+            excle_filename = os.path.join(self.excle_src_path, val)
+            self.OpenFile(excle_filename)
+
+    def on_lang_cell_double_click(self, row, col):
+        if self.m_lang_tab.item(row, col) is None:
+            return
+        val = self.m_lang_tab.item(row, col).text()
+        if col == 0:
+            excle_filename = os.path.join(self.excle_src_path, val)
+            self.OpenFile(excle_filename)
+        else:
+            tpl = val[2:] + ".tpl"
+            if tpl in self.lang_export_tpl_dict:
+                gen_mutil_lang.do_export(self, self.lang_export_tpl_dict[tpl])
+
+
     def on_map_cell_double_click(self, row, col):
         print("on_cell_double_click row:%s, col:%s" % (row, col))
         if self.m_map_table.item(row, col) is None:
@@ -443,6 +457,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             col_end = data['col_end']
             begin_row = data['begin_row']
             dict[key] = []
+            # 插入多语言翻译相关的东西 
+            if 'all_src_lang_text' in tpl_dict:
+                dict['all_src_lang_text'] = tpl_dict['all_src_lang_text']
+            if 'exists_key_list' in tpl_dict:
+                dict['exists_key_list'] = tpl_dict['exists_key_list']
+
             for i in range(begin_row, table.nrows):
                 tmp = []
                 for j in range(col_start - 1, col_end):

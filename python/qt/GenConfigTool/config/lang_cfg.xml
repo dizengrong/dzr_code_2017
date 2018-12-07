@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有需要生成配置文件的配置 -->
+<!-- excle配置文件与工具目录在同一个目录 -->
+
+<root>
+<!-- 下面是哪些Excel文件的sheet里的列需要翻译 -->
+<file excle_file='邮件表mail.xlsm' type='lang_src'>
+	<dict sheet='mail' begin_row='1' cols='B,C'></dict>
+</file>
+<file excle_file='文字提取.xlsm' type='lang_src'>
+	<dict sheet='text' begin_row='1' cols='B'></dict>
+</file>
+<file excle_file='称号titles.xlsm' type='lang_src'>
+	<dict sheet='titles' begin_row='1' cols='B'></dict>
+</file>
+<file excle_file='物品ItemConfig.xlsm' type='lang_src'>
+	<dict sheet='ItemConfig' begin_row='1' cols='BE'></dict>
+</file>
+
+
+<!-- 下面是要生成的翻译配置文件 -->
+
+<file excle_file='翻译-繁体.xlsx' type='translation_src'>
+	<export tpl='data_text_tw.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Sheet1' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='翻译-英文.xlsm' type='translation_src'>
+	<export tpl='data_text_en.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Sheet1' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+<file excle_file='翻译-韩文.xlsm' type='translation_src'>
+	<export tpl='data_text_ko.erl.tpl' type='1'>
+		<dict data_key='all_data' sheet='Sheet1' begin_row='1' col_start='1' col_end='2'></dict>
+	</export>
+</file>
+
+</root>
+
+
