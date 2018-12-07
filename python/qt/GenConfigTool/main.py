@@ -2,7 +2,6 @@
 
 import sys
 import os
-import tenjin
 import fuzzyfinder
 import traceback
 import xlrd
@@ -17,9 +16,9 @@ from tenjin.helpers import *
 from tenjin.escaped import *
 import time
 import gen_erlang_map
-
-# create engine object
-engine = tenjin.SafeEngine(path=[os.path.join(os.getcwd(), 'config')])
+import gen_c_map
+from common import engine
+import json
 
 
 def get_attrvalue(node, attrname):
@@ -55,7 +54,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v3.0    设计者：dzR    更新日期：2018-11-26    "
+VERSION = u"配置导出工具-v4.0    设计者：dzR    更新日期：2018-11-28    "
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -89,6 +88,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def init_event(self):
         self.menu_export_all.triggered.connect(self.on_export_all)
         self.menu_export_all_map.triggered.connect(self.on_export_all_map)
+        self.menu_export_all_c_map.triggered.connect(self.on_export_all_c_map)
         self.m_search_edit.textChanged['QString'].connect(self.on_search)
         self.m_table.cellDoubleClicked['int','int'].connect(self.on_cell_double_click)
         self.m_table.setContextMenuPolicy(Qt.CustomContextMenu)
@@ -97,6 +97,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.m_map_table.cellDoubleClicked['int','int'].connect(self.on_map_cell_double_click)
 
     def init_map_table(self):
+        self.map_conf_dict = {}
+        with open('config/map_conf.json') as fd: 
+            self.map_conf_dict = json.load(fd)
         self.map_obj_files = []
         for map_obj in os.listdir(self.map_obj_path):
             _, ext = os.path.splitext(map_obj)
@@ -104,14 +107,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.map_obj_files.append(map_obj)
 
         self.map_obj_files.sort()
+        print(self.map_obj_files)
 
         self.m_map_table.setRowCount(1 + len(self.map_obj_files))
-        self.m_map_table.setColumnCount(2)
+        self.m_map_table.setColumnCount(3)
         self.m_map_table.verticalHeader().setFixedWidth(30)
         self.m_map_table.verticalHeader().setDefaultAlignment(Qt.AlignCenter)
         self.m_map_table.horizontalHeader().setStretchLastSection(True)
         self.m_map_table.horizontalHeader().setFixedHeight(30)
-        header_labels = [u'地图源文件', u'导出文件']
+        header_labels = [u'地图源文件', u'导出Erlang文件', u'导出c文件']
         self.m_map_table.setHorizontalHeaderLabels(header_labels)
 
         row = 0
@@ -119,10 +123,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             item1 = QTableWidgetItem(map_obj)
             item1.setTextAlignment(Qt.AlignCenter)
             self.m_map_table.setItem(row, 0, item1)
+
             rootname, _ = os.path.splitext(map_obj)
             item2 = QTableWidgetItem(rootname + '.erl')
             item2.setTextAlignment(Qt.AlignCenter)
             self.m_map_table.setItem(row, 1, item2)
+
+            if rootname not in self.map_conf_dict:
+                item3_text = u'没有正确配置，将无法导出'
+            else:
+                item3_text = 'data_map_' + str(self.map_conf_dict[rootname]) + '.c'
+            item3 = QTableWidgetItem(item3_text)
+            item3.setTextAlignment(Qt.AlignCenter)
+            self.m_map_table.setItem(row, 2, item3)
             row += 1
         self.m_map_table.resizeColumnsToContents()
 
@@ -211,6 +224,31 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         print("do on_export_all")
         self.OnExport(self.export_list.values())
 
+    def on_export_all_c_map(self):
+        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+        if os.path.exists(path):
+            succ_files = ""
+            begin = time.time()
+            for obj in self.map_conf_dict:
+                try:
+                    map_obj = os.path.join(self.map_obj_path, obj)
+                    c_file = os.path.join(path, 'data_map_' + str(self.map_conf_dict[obj]) + '.c')
+                    gen_c_map.start(self.cwd, map_obj + '.obj', c_file)
+                    succ_files = succ_files + c_file + '.erl' + "\n    "
+                except Exception:
+                    msg = u"已成功导出的文件:\n    " + succ_files + "\n" \
+                        + u"导出失败的文件:\n    " + c_file + "\n" \
+                        + u"错误信息:\n" + traceback.format_exc()
+                    msg_box = QMessageBox(QMessageBox.Critical, u"错误", "导出发生错误!\t\t\t\t\t\t\t\t", parent=self)
+                    msg_box.setDetailedText(msg)
+                    msg_box.exec_()
+                    return
+            end = time.time()
+            msg = u"成功导出的文件列表:\n    {0}\n花费：{1}秒".format(succ_files, int(end - begin))
+            msg_box = QMessageBox(QMessageBox.Information, u"信息", "导出成功!\t\t\t\t\t\t\t\t", parent=self)
+            msg_box.setDetailedText(msg)
+            msg_box.exec_()
+
     def on_export_all_map(self):
         path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
         if os.path.exists(path):
@@ -225,7 +263,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     succ_files = succ_files + map_name + '.erl' + "\n    "
                 except Exception:
                     msg = u"已成功导出的文件:\n    " + succ_files + "\n" \
-                        + u"导出失败的文件:\n    " + cfg_file + "\n" \
+                        + u"导出失败的文件:\n    " + erl_file + "\n" \
                         + u"错误信息:\n" + traceback.format_exc()
                     msg_box = QMessageBox(QMessageBox.Critical, u"错误", "导出发生错误!\t\t\t\t\t\t\t\t", parent=self)
                     msg_box.setDetailedText(msg)
@@ -264,7 +302,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if self.m_map_table.item(row, col) is None:
             return
         erl_file = self.m_map_table.item(row, col).text()
-        if col == 1:
+        if col >= 1:
             map_obj = self.m_map_table.item(row, 0).text()
             path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
             if os.path.exists(path):
@@ -272,8 +310,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 try:
                     map_obj = os.path.join(self.map_obj_path, map_obj)
                     erl_file = os.path.join(path, erl_file)
-                    gen_erlang_map.start(map_obj, erl_file)
-                    # self.DoExport(tpl_dict, path)
+                    if col == 1:
+                        gen_erlang_map.start(map_obj, erl_file)
+                    else:
+                        gen_c_map.start(self.cwd, map_obj, erl_file)
                 except Exception:
                     msg = u"导出失败:\n    " + erl_file + "\n" \
                         + u"错误信息:\n" + traceback.format_exc()

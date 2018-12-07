@@ -76,8 +76,11 @@ class Ui_MainWindow(object):
         self.menu_export_all.setObjectName("menu_export_all")
         self.menu_export_all_map = QtWidgets.QAction(MainWindow)
         self.menu_export_all_map.setObjectName("menu_export_all_map")
+        self.menu_export_all_c_map = QtWidgets.QAction(MainWindow)
+        self.menu_export_all_c_map.setObjectName("menu_export_all_c_map")
         self.menu.addAction(self.menu_export_all)
         self.menu.addAction(self.menu_export_all_map)
+        self.menu.addAction(self.menu_export_all_c_map)
         self.menubar.addAction(self.menu.menuAction())
 
         self.retranslateUi(MainWindow)
@@ -92,5 +95,6 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab2), _translate("MainWindow", "地图配置"))
         self.menu.setTitle(_translate("MainWindow", "工具"))
         self.menu_export_all.setText(_translate("MainWindow", "导出所有功能配置"))
-        self.menu_export_all_map.setText(_translate("MainWindow", "导出所有地图配置"))
+        self.menu_export_all_map.setText(_translate("MainWindow", "导出所有Erlang地图配置"))
+        self.menu_export_all_c_map.setText(_translate("MainWindow", "导出所有C地图配置"))
 

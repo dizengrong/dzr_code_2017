@@ -147,6 +147,7 @@
     </property>
     <addaction name="menu_export_all"/>
     <addaction name="menu_export_all_map"/>
+    <addaction name="menu_export_all_c_map"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -162,7 +163,12 @@
   </action>
   <action name="menu_export_all_map">
    <property name="text">
-    <string>导出所有地图配置</string>
+    <string>导出所有Erlang地图配置</string>
+   </property>
+  </action>
+  <action name="menu_export_all_c_map">
+   <property name="text">
+    <string>导出所有C地图配置</string>
    </property>
   </action>
  </widget>

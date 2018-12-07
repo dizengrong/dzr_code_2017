@@ -31,14 +31,20 @@ class Line(object):
         self.p2 = p2
         self.connect_face1 = face_index
         self.connect_face2 = None
+        self.centre_point = None
 
 
 def start(map_obj, erl_file):
+    point_dict, line_dict, face_dict, from_point, to_point, per_point, divide_dict = parse_obj_file(map_obj)
+    write_erl_file(erl_file, point_dict, line_dict, face_dict, from_point, to_point, per_point, divide_dict)
+
+
+def parse_obj_file(map_obj):
     point_dict, line_dict, face_dict = read_obj_file(map_obj)
     remove_no_connect_line(line_dict)
     divide_data = (20, 1, 20)
     (from_point, to_point, per_point, divide_dict) = divide_face(point_dict, face_dict, divide_data)
-    write_erl_file(erl_file, point_dict, line_dict, face_dict, from_point, to_point, per_point, divide_dict)
+    return (point_dict, line_dict, face_dict, from_point, to_point, per_point, divide_dict)
 
 
 def format_map_point(point):
