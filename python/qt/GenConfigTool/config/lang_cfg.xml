@@ -16,6 +16,18 @@
 <file excle_file='物品ItemConfig.xlsm' type='lang_src'>
 	<dict sheet='ItemConfig' begin_row='1' cols='BE'></dict>
 </file>
+<file excle_file='场景Scene.xlsm' type='lang_src'>
+	<dict sheet='SceneConfig' begin_row='1' cols='B'></dict>
+</file>
+<file excle_file='随从Entourage.xlsm' type='lang_src'>
+	<dict sheet='Entourage' begin_row='1' cols='B'></dict>
+</file>
+<file excle_file='专精Mastery.xlsm' type='lang_src'>
+	<dict sheet='masteryConfig' begin_row='1' cols='B'></dict>
+</file>
+<file excle_file='robot机器人.xlsm' type='lang_src'>
+	<dict sheet='robot' begin_row='1' cols='B'></dict>
+</file>
 
 
 <!-- 下面是要生成的翻译配置文件 -->

@@ -7,16 +7,36 @@ import traceback
 import xlrd
 from xml.dom import minidom
 from common import *
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtWidgets import QTableWidgetItem, QAction, QMenu, QFileDialog, QMessageBox
 
+class Worker(QThread):
+    sinOut = pyqtSignal(str)
+    def __init__(self, gui, parent=None):
+        super(Worker, self).__init__(parent)
+        self.gui = gui
+
+    def run(self):
+        self.gui.all_src_lang_text = None
+        self.gui.lang_src_dict = {}
+        self.gui.lang_export_tpl_dict = {}
+        self.gui.lang_export_files = {}
+        self.gui.max_zh_col_size = load_lang_xml_cnf(self.gui.lang_src_dict, self.gui.lang_export_tpl_dict, self.gui.lang_export_files)
+        
+        for key in self.gui.lang_src_dict:
+            d = self.gui.lang_src_dict[key]
+            book = xlrd.open_workbook(os.path.join(self.gui.excle_src_path, key), on_demand = True)
+            for d in self.gui.lang_src_dict[key]:
+                table = book.sheet_by_name(d['sheet'])
+                d['cols_with_name'] = []
+                for col_name in d['cols']:
+                    d['cols_with_name'].append(col_name + u'(%s)' % (table.cell(0, excel_col_2_int(col_name)).value))
+            book.release_resources()
+            del book
+        self.sinOut.emit("ready")
 
 def init_lang(self):
-    self.all_src_lang_text = None
-    self.lang_src_dict = {}
-    self.lang_export_tpl_dict = {}
-    self.lang_export_files = {}
-    max_zh_col_size = load_lang_xml_cnf(self.lang_src_dict, self.lang_export_tpl_dict, self.lang_export_files)
+    max_zh_col_size = self.max_zh_col_size
     self.m_lang_cnf_tab.setRowCount(1 + len(self.lang_src_dict))
     self.m_lang_cnf_tab.setColumnCount(2 + max_zh_col_size)
     self.m_lang_cnf_tab.verticalHeader().setFixedWidth(30)
@@ -39,7 +59,7 @@ def init_lang(self):
             item2.setTextAlignment(Qt.AlignCenter)
             self.m_lang_cnf_tab.setItem(row, 1, item2)
             col = 2
-            for col_name in d['cols']:
+            for col_name in d['cols_with_name']:
                 item = QTableWidgetItem(col_name)
                 item.setTextAlignment(Qt.AlignCenter)
                 self.m_lang_cnf_tab.setItem(row, col, item)

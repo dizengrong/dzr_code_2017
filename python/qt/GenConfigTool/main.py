@@ -6,7 +6,7 @@ import fuzzyfinder
 import traceback
 import xlrd
 from base_main_window import Ui_MainWindow
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import QTableWidgetItem, QAction, QMenu, QFileDialog, QMessageBox
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtCore import QSize
@@ -54,7 +54,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.init_other()
         self.init_table()
         self.init_map_table()
-        gen_mutil_lang.init_lang(self)
+        timer = QTimer(self)
+        timer.timeout.connect(self.delay_init_lang)
+        timer.setSingleShot(True)
+        timer.start(200)
         self.create_context_menu()
         self.init_event()
         print(self.m_table.size())
@@ -62,6 +65,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         print(self.m_table.sizeHint())
         # setMinimumSize
         # self.showMaximized()
+
+    def delay_init_lang(self):
+        _translate = QtCore.QCoreApplication.translate
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), _translate("MainWindow", "多语言翻译配置(加载中，请稍后)"))
+        self.thread = gen_mutil_lang.Worker(self)
+        self.thread.sinOut.connect(self.thread_event)
+        self.thread.start()
+
+    def thread_event(self, test):
+        gen_mutil_lang.init_lang(self)
+        _translate = QtCore.QCoreApplication.translate
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), _translate("MainWindow", "多语言翻译配置(加载完成)"))
 
     def init_other(self):
         self.setWindowIcon(QIcon('icon.png'))
@@ -272,6 +287,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         print ("on search %s" % (query_str))
         timer = QTimer(self)
         timer.timeout.connect(self.show_search)
+        timer.setSingleShot(True)
         timer.start(200)
 
     def show_search(self):
