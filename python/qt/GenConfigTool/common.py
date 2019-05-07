@@ -1,11 +1,16 @@
 import os
 import tenjin
 
+# tab类别
+TAB_TYPE_ERL = 1
+TAB_TYPE_LUA = 2
+TAB_TYPE_CS = 3
+
 # create engine object
 engine = tenjin.SafeEngine(path=[os.path.join(os.getcwd(), 'config')])
 
 
-# ==================== xml functions ==================== 
+# ==================== xml functions ====================
 def get_attrvalue(node, attrname):
     return node.getAttribute(attrname) if node else ''
 

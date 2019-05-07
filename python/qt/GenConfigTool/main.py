@@ -20,6 +20,8 @@ import gen_c_map
 import gen_mutil_lang
 from common import *
 import json
+import tab_lua
+import tab_cs
 
 
 def format(value):
@@ -43,7 +45,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v4.0    设计者：dzR    更新日期：2018-11-28    "
+VERSION = u"配置导出工具-v5.0    设计者：dzR    更新日期：2019-05-05    "
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -57,12 +59,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         timer = QTimer(self)
         timer.timeout.connect(self.delay_init_lang)
         timer.setSingleShot(True)
-        timer.start(200)
+        timer.start(500)
         self.create_context_menu()
         self.init_event()
-        print(self.m_table.size())
-        print(self.m_table.frameSize())
-        print(self.m_table.sizeHint())
+        # 初始化lua配置功能页
+        tab_lua.init_tab(self)
+        tab_cs.init_tab(self)
+        # print(self.m_table.size())
+        # print(self.m_table.frameSize())
+        # print(self.m_table.sizeHint())
         # setMinimumSize
         # self.showMaximized()
 
@@ -106,7 +111,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def init_map_table(self):
         self.map_conf_dict = {}
-        with open('config/map_conf.json') as fd: 
+        with open('config/map_conf.json') as fd:
             self.map_conf_dict = json.load(fd)
         self.map_obj_files = []
         for map_obj in os.listdir(self.map_obj_path):
@@ -258,7 +263,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             msg_box.exec_()
 
     def on_export_all_map(self):
-        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir(TAB_TYPE_ERL))
         if os.path.exists(path):
             succ_files = ""
             begin = time.time()
@@ -290,6 +295,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         timer.setSingleShot(True)
         timer.start(200)
 
+    def on_search_lua(self, query_str):
+        print ("on search %s" % (query_str))
+        timer = QTimer(self)
+        timer.timeout.connect(self.show_search_lua)
+        timer.setSingleShot(True)
+        timer.start(200)
+
+    def on_search_cs(self, query_str):
+        print ("on search %s" % (query_str))
+        timer = QTimer(self)
+        timer.timeout.connect(self.show_search_cs)
+        timer.setSingleShot(True)
+        timer.start(200)
+
     def show_search(self):
         searchstr = self.m_search_edit.text()
         if self.last_search_str == searchstr:
@@ -305,6 +324,33 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         else:
             self.fill_grid(self.export_files)
         # self.Layout()
+
+    def show_search_lua(self):
+        searchstr = self.m_search_edit_lua.text()
+        if self.last_search_str == searchstr:
+            return
+        self.last_search_str = searchstr
+
+        self.m_tab_lua.clearContents()
+        if searchstr != '':
+            matched = fuzzyfinder.fuzzyfinder(searchstr, self.lua_export_files)
+            tab_lua.fill_grid(self, matched)
+        else:
+            tab_lua.fill_grid(self, self.lua_export_files)
+        # self.Layout()
+
+    def show_search_cs(self):
+        searchstr = self.m_search_edit_cs.text()
+        if self.last_search_str == searchstr:
+            return
+        self.last_search_str = searchstr
+
+        self.m_tab_cs.clearContents()
+        if searchstr != '':
+            matched = fuzzyfinder.fuzzyfinder(searchstr, self.cs_export_files)
+            tab_cs.fill_grid(self, matched)
+        else:
+            tab_cs.fill_grid(self, self.cs_export_files)
 
     def on_lang_cnf_cell_double_click(self, row, col):
         if self.m_lang_tab.item(row, col) is None:
@@ -326,7 +372,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             if tpl in self.lang_export_tpl_dict:
                 gen_mutil_lang.do_export(self, self.lang_export_tpl_dict[tpl])
 
-
     def on_map_cell_double_click(self, row, col):
         print("on_cell_double_click row:%s, col:%s" % (row, col))
         if self.m_map_table.item(row, col) is None:
@@ -334,7 +379,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         erl_file = self.m_map_table.item(row, col).text()
         if col >= 1:
             map_obj = self.m_map_table.item(row, 0).text()
-            path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+            path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir(TAB_TYPE_ERL))
             if os.path.exists(path):
                 begin = time.time()
                 try:
@@ -354,6 +399,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 end = time.time()
                 msg = u"成功导出文件:{0} 花费：{1}秒".format(erl_file, int(end - begin))
                 QMessageBox.information(self, u"导出成功", msg)
+
+    def on_cell_double_click_lua(self, row, col):
+        tab_lua.on_cell_double_click_lua(self, row, col)
+
+    def on_cell_double_click_cs(self, row, col):
+        tab_cs.on_cell_double_click_cs(self, row, col)
 
     def on_cell_double_click(self, row, col):
         print("on_cell_double_click row:%s, col:%s" % (row, col))
@@ -375,11 +426,26 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             QMessageBox.critical(self, u'错误', u'找不到文件：' + filename)
 
     def on_context_menu(self, point):
+        self.current_tab_type = TAB_TYPE_ERL
         # row = self.m_table.currentRow()
         for item in self.m_table.selectedItems():
             self.sell_tab_clicked_row = item.row()
             self.sell_tab_clicked_col = item.column()
             # print((self.sell_tab_clicked_row, self.sell_tab_clicked_col))
+        self.table_right_menu.exec_(QCursor.pos())
+
+    def on_context_menu_lua(self, point):
+        self.current_tab_type = TAB_TYPE_LUA
+        for item in self.m_tab_lua.selectedItems():
+            self.sell_tab_clicked_row = item.row()
+            self.sell_tab_clicked_col = item.column()
+        self.table_right_menu.exec_(QCursor.pos())
+
+    def on_context_menu_cs(self, point):
+        self.current_tab_type = TAB_TYPE_CS
+        for item in self.m_tab_cs.selectedItems():
+            self.sell_tab_clicked_row = item.row()
+            self.sell_tab_clicked_col = item.column()
         self.table_right_menu.exec_(QCursor.pos())
 
     def create_context_menu(self):
@@ -393,10 +459,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             action.triggered.connect(slot)
 
     def on_open_file_in_explore(self, event):
+        if self.current_tab_type == TAB_TYPE_ERL:
+            current_tab = self.m_table
+        elif self.current_tab_type == TAB_TYPE_LUA:
+            current_tab = self.m_tab_lua
+        elif self.current_tab_type == TAB_TYPE_CS:
+            current_tab = self.m_tab_cs
+
         if self.sell_tab_clicked_row is not None:
             row = self.sell_tab_clicked_row
             col = self.sell_tab_clicked_col
-            val = self.m_table.item(row, col).text()
+            val = current_tab.item(row, col).text()
             if col == 0:
                 excle_filename = os.path.join(self.excle_src_path, val)
                 os.system('explorer /select,' + excle_filename)
@@ -405,34 +478,59 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 os.system('explorer /select,' + tpl_filename)
 
     def on_export_one_line(self):
-        if self.sell_tab_clicked_row is not None:
-            row = self.sell_tab_clicked_row
-            val = self.m_table.item(row, 0).text()
-            tpls = [self.export_list[x] for x in self.export_files[val]]
-            self.OnExport(tpls)
+        if self.current_tab_type == TAB_TYPE_ERL:
+            current_tab = self.m_table
+            if self.sell_tab_clicked_row is not None:
+                row = self.sell_tab_clicked_row
+                val = current_tab.item(row, 0).text()
+                tpls = [self.export_list[x] for x in self.export_files[val]]
+                self.OnExport(tpls)
+        elif self.current_tab_type == TAB_TYPE_LUA:
+            current_tab = self.m_tab_lua
+            if self.sell_tab_clicked_row is not None:
+                row = self.sell_tab_clicked_row
+                val = current_tab.item(row, 0).text()
+                tpls = [self.lua_export_list[x] for x in self.lua_export_files[val]]
+                tab_lua.OnExport(self, tpls)
+        elif self.current_tab_type == TAB_TYPE_CS:
+            current_tab = self.m_tab_cs
+            if self.sell_tab_clicked_row is not None:
+                row = self.sell_tab_clicked_row
+                val = current_tab.item(row, 0).text()
+                tpls = [self.cs_export_list[x] for x in self.cs_export_files[val]]
+                tab_cs.OnExport(self, tpls)
 
     def init_last_dir(self):
-        self.last_dir_file = os.path.join(os.path.expanduser('~'), ".gen_conf_export_dir")
+        self.last_dir_file = os.path.join(os.path.expanduser('~'), ".gen_conf_export_dir.json")
         if os.path.exists(self.last_dir_file):
             with open(self.last_dir_file, "r", encoding="UTF-8") as fd:
-                self.last_dir = fd.read()
+                try:
+                    self.last_dir = json.load(fd)
+                except Exception:
+                    self.last_dir = {}
+                    self.last_dir[TAB_TYPE_ERL] = self.cwd
+                    self.last_dir[TAB_TYPE_LUA] = self.cwd
+                    self.last_dir[TAB_TYPE_CS] = self.cwd
         else:
-            self.last_dir =self.cwd
+            self.last_dir = {}
+            self.last_dir[TAB_TYPE_ERL] = self.cwd
+            self.last_dir[TAB_TYPE_LUA] = self.cwd
+            self.last_dir[TAB_TYPE_CS] = self.cwd
 
-    def get_last_dir(self):
-        return self.last_dir
+    def get_last_dir(self, tab_type):
+        return self.last_dir[str(tab_type)]
 
-    def set_last_dir(self, new_dir):
-        if self.last_dir != new_dir:
-            self.last_dir = new_dir
+    def set_last_dir(self, tab_type, new_dir):
+        if self.last_dir[str(tab_type)] != new_dir:
+            self.last_dir[str(tab_type)] = new_dir
             with open(self.last_dir_file, "w", encoding="UTF-8") as fd:
-                fd.write(new_dir)
+                fd.write(json.dumps(self.last_dir, indent=4))
 
     def OnExport(self, tpl_dicts):
-        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+        path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir(TAB_TYPE_ERL))
         print(path)
         if os.path.exists(path):
-            self.set_last_dir(path)
+            self.set_last_dir(TAB_TYPE_ERL, path)
             succ_files = ""
             begin = time.time()
             for tpl_dict in tpl_dicts:
