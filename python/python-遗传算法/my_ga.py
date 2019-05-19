@@ -1,10 +1,13 @@
+# -*- coding: utf-8 -*-
 """
 基础遗传算法实现
     Inputs:
         gene_factors:类型为数组，其长度表示遗传基因个数，每个基因的取值范围为：[1, gene_factors[i]].
         init_population_num:初始种群数量
         max_generation:最大迭代次数（即多少代后停止）
+        stop_search_num:种群中的最优解不变化多少代后停止
         cross_exchange_num:交叉互换位置个数
+        elitism:精英保留概率（%），如果为0表示采用精英机制
         selection_method:选择机制，对应不同的选择算法
         Algorithm: 0 for the brute-force algorithm, or 1 for genetic algorithm，暂时未实现.
         Reset: True to reset the travelling salesman algorithm.
@@ -25,7 +28,9 @@ gh_env.Component.NickName = "GeneticAlgorithm"
 
 gene_factor_list = [int(val) for val in gene_factors]
 max_gen_num = max_generation
+in_stop_search_num = stop_search_num
 in_cross_exchange_num = cross_exchange_num
+in_elitism = elitism
 use_algorithm = Algorithm
 keep_run = Run
 is_reset = Reset
@@ -39,6 +44,8 @@ import random
 import math
 import time
 from datetime import datetime
+import codecs
+import copy
 
 
 # 获取现在的时间
@@ -58,8 +65,8 @@ def normal_dt_str(time_tuple=None, only_date = False):
 
 
 def add_log(log):
-    with open("d:/gs_debug_log.log", "a") as fd:
-        fd.write("%s %s\n\n" % (normal_dt_str(), log))
+    with codecs.open("d:/gs_debug_log.log", "a", "utf-8") as fd:
+        fd.write(u"%s %s\n\n" % (normal_dt_str(), log))
         fd.flush()
 
 
@@ -144,6 +151,9 @@ class GeneticAlgorithm:
         self.first_population = []
         self.current_population = []
         self.current_fitness = []
+        self.current_best_result = None  # 当前最优解
+        self.best_no_change_count = 0  # 当前最优解已经有多少代没有变化了
+        self.elitism_list = []
 
         self.best_result = None
         self.count = 0
@@ -188,10 +198,42 @@ class GeneticAlgorithm:
             sticky["fitness_signal"] = fitness_signal
             return False, out_data
 
+    def update_current_best_result(self, new_best):
+        '''更新当前最优解，并处理计数'''
+        if self.current_best_result != new_best:
+            self.current_best_result = new_best
+            self.best_no_change_count = 1
+        else:
+            self.best_no_change_count += 1
+
     def select_by_fitness(self):
-        # 测试阶段，每次淘汰两个个体
+        # 选择机制，包含精英保留处理
         new_populations = []
-        for x in xrange(0, len(self.current_population)):
+        size = len(self.current_population)
+        add_log("in_elitism:%s" % in_elitism)
+        if in_elitism > 0:
+            reserve_num = max(1, int(size * in_elitism / 100))
+            # 精英保留处理
+            arrary = zip(self.current_population, self.current_fitness)
+            new_arrary = sorted(arrary, key = lambda tuple: tuple[1], reverse=True)
+            reservr_tuple_list = new_arrary[0:reserve_num]
+            self.elitism_list = copy.deepcopy(reservr_tuple_list)
+            add_log("current elitism_list:%s" % self.elitism_list)
+            # self.elitism_list = [t[0] for t in reservr_tuple_list]
+            # left = arrary[reserve_num:]
+            # current_population = [t[0] for t in left]
+            # current_fitness = [t[1] for t in left]
+
+            self.update_current_best_result(reservr_tuple_list[0][1])
+        else:
+            self.elitism_list = []
+            # reserve_num = 0
+            # current_population = self.current_population
+            # current_fitness = self.current_fitness
+
+            self.update_current_best_result(max(self.current_fitness))
+
+        for x in xrange(0, size):
             val = weighting_choice(self.current_population, self.current_fitness)
             new_populations.append(val)
         return new_populations
@@ -212,6 +254,7 @@ class GeneticAlgorithm:
         random.shuffle(population)
         left = len(population)
         while left > 0:
+            # 每个个体都是数组，因此这里的个体修改回直接修改其他引用个体的地方的
             father = population.pop()
             mother = population.pop()
             points = self.get_cross_exchange_points()
@@ -226,13 +269,36 @@ class GeneticAlgorithm:
             left = left - 2
         return children
 
+    def handle_elitism(self):
+        if len(self.elitism_list) == 0:
+            return
+        best_elitism_fitness = max([t[1] for t in self.elitism_list])
+        new_best_fitness = max(self.current_fitness)
+        add_log("best_elitism_fitness:%s, new_best_fitness:%s" % (best_elitism_fitness, new_best_fitness))
+        if new_best_fitness >= best_elitism_fitness:
+            return
+        # 新一代的精英不如上一代的精英，则上一代的精英需要保留下来，并替换掉当前最差的个体
+        arrary = zip(range(0, len(self.current_fitness)), self.current_fitness)
+        for elitism in self.elitism_list:
+            min_val = min(arrary, key=lambda x: x[1])
+            add_log("index:%s is replace by elitism:%s" % (min_val[0], elitism[0]))
+            self.current_population[min_val[0]] = elitism[0]
+            self.current_fitness[min_val[0]] = elitism[1]
+            arrary.remove(min_val)
+
     def update(self):
         """进行一次遗传算法的迭代繁衍"""
         global out_current_population
         if self.count >= self.max_generation:
             self.finished = True
             self.best_result = self.current_population
-            print(u"已达最大迭代次数，解：%s" % self.best_result)
+            add_log(u"已达最大迭代次数，停止计算，解：%s" % self.best_result)
+            return
+
+        if self.best_no_change_count >= in_stop_search_num:
+            self.finished = True
+            self.best_result = self.current_population
+            add_log(u"最优解已不再变化，停止计算，解：%s" % self.best_result)
             return
 
         wait, result = self.cacl_fitness()
@@ -247,11 +313,17 @@ class GeneticAlgorithm:
             add_log("got fitness:%s" % result)
             self.current_fitness = result
         add_log("current_population:%s" % self.current_population)
+        add_log("last elitism_list:%s" % self.elitism_list)
+        # 处理上一代的精英去留问题
+        self.handle_elitism()
         # 淘汰个体，得到剩余的个体参与繁衍
         new_populations = self.select_by_fitness()
-        add_log("new_populations:%s" % new_populations)
+        add_log("new_populations:%s" % (new_populations))
+        add_log("new elitism_list:%s" % self.elitism_list)
         # 交叉
         children = self.cross(new_populations)
+        add_log("new2 elitism_list:%s" % self.elitism_list)
+        # children.extend(self.elitism_list)
         add_log("children:%s" % children)
         self.current_population = children
         self.count += 1
@@ -311,7 +383,7 @@ if keep_run:
             gh_env.Component.Message = "Running... count:%s" % (ts.count)
         else:
             out_best_result = ts.get_best_result()
-            print("Completed, first_population:%s\nbest result:%s" % (ts.first_population, out_best_result))
+            print("generation:%s\nCompleted, first_population:%s\nbest result:%s" % (ts.count, ts.first_population, out_best_result))
             gh_env.Component.Message = "Completed, best result:%s" % (out_best_result)
         sticky["my_ga"] = ts
 

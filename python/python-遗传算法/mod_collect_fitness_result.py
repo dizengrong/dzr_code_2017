@@ -17,6 +17,7 @@ one_fitness_val = val
 
 from scriptcontext import sticky
 from datetime import datetime
+import codecs
 
 
 # 获取现在的时间
@@ -36,8 +37,8 @@ def normal_dt_str(time_tuple=None, only_date = False):
 
 
 def add_log(log):
-    with open("d:/gs_debug_log.log", "a") as fd:
-        fd.write("%s %s\n\n" % (normal_dt_str(), log))
+    with codecs.open("d:/gs_debug_log.log", "a", "utf-8") as fd:
+        fd.write(u"%s %s\n\n" % (normal_dt_str(), log))
         fd.flush()
 
 
