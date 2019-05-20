@@ -10,6 +10,29 @@ import time
 import traceback
 import os
 import xlrd
+from tenjin.helpers import *
+from tenjin.escaped import *
+
+
+def format(value):
+    if isinstance(value, float):
+        if int(value) == value:
+            return int(value)
+        else:
+            return value
+    elif isinstance(value, str):
+        try:
+            return int(value)
+        except Exception:
+            try:
+                return float(value)
+            except Exception:
+                return as_escaped(value)
+    else:
+        try:
+            return int(value)
+        except Exception:
+            return as_escaped(value)
 
 
 def init_tab(self):
@@ -35,7 +58,7 @@ def init_tab(self):
 
 
 def LoadLuaConfigXML(self):
-    doc = minidom.parse('config/cfg_lua.xml')
+    doc = minidom.parse('config_lua/cfg_lua.xml')
     root = doc.documentElement
     self.lua_export_files = {}
     self.lua_export_list = {}
@@ -100,7 +123,7 @@ def init_event(self):
 
 
 def on_cell_double_click_lua(self, row, col):
-    print("on_cell_double_click row:%s, col:%s" % (row, col))
+    # print("on_cell_double_click row:%s, col:%s" % (row, col))
     if self.m_tab_lua.item(row, col) is None:
         return
     val = self.m_tab_lua.item(row, col).text()
@@ -115,7 +138,7 @@ def on_cell_double_click_lua(self, row, col):
 
 def OnExport(self, tpl_dicts):
     path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir(TAB_TYPE_LUA))
-    print(path)
+    # print(path)
     if os.path.exists(path):
         self.set_last_dir(TAB_TYPE_LUA, path)
         succ_files = ""
@@ -143,7 +166,7 @@ def OnExport(self, tpl_dicts):
 
 
 def DoExport(self, tpl_dict, dest_dir):
-    dict = {}
+    render_dict = {}
     tpl = tpl_dict['tpl']
     cfg, ext = os.path.splitext(tpl)
     excle_file = tpl_dict['excle_file']
@@ -153,25 +176,45 @@ def DoExport(self, tpl_dict, dest_dir):
         xml_data = xlrd.open_workbook(excle_filename)
         table = xml_data.sheet_by_name(data['sheet'])
         key = data['data_key']
+        most_appear_key = key + '_most_appear'
         col_start = data['col_start']
         col_end = data['col_end']
         begin_row = data['begin_row']
-        dict[key] = []
+        render_dict[key] = []
+        render_dict[most_appear_key] = []
 
         for i in range(begin_row, table.nrows):
             tmp = []
             for j in range(col_start - 1, col_end):
                 tmp.append(format(table.cell(i, j).value))
-            dict[key].append(tmp)
+            render_dict[key].append(tmp)
+
+        most_appear_arrary = []
+        for j in range(col_start - 1, col_end):
+            temp_dict = {}
+            max_num = 0
+            max_num_key = None
+            for i in range(begin_row, table.nrows):
+                val = format(table.cell(i, j).value)
+                if val not in temp_dict:
+                    temp_dict[val] = 1
+                else:
+                    temp_dict[val] += 1
+                    if temp_dict[val] > max_num:
+                        max_num = temp_dict[val]
+                        max_num_key = val
+            most_appear_arrary.append(max_num_key)
+
+        render_dict[most_appear_key] = most_appear_arrary
 
         sort_col = data['sort_col']
         if sort_col is '':
             pass
         else:
             sort_col = int(sort_col) - 1
-            dict[key].sort(key=lambda x: x[sort_col], reverse=True)
+            render_dict[key].sort(key=lambda x: x[sort_col], reverse=True)
     # render template with dict data
-    content = engine.render(os.path.join(self.cwd, 'config', tpl), dict)
+    content = engine.render(os.path.join(self.cwd, 'config_lua', tpl), render_dict)
     cfg_file = os.path.join(dest_dir, cfg)
     dest = open(cfg_file, "w", encoding='UTF-8')
     content = content.replace("\r\n", "\n")

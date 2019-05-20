@@ -97,6 +97,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def init_event(self):
         self.menu_export_all.triggered.connect(self.on_export_all)
+        self.menu_export_all_lua.triggered.connect(self.on_export_all_lua)
+        self.menu_export_cs.triggered.connect(self.on_export_all_cs)
         self.menu_export_all_map.triggered.connect(self.on_export_all_map)
         self.menu_export_all_c_map.triggered.connect(self.on_export_all_c_map)
         self.m_search_edit.textChanged['QString'].connect(self.on_search)
@@ -120,7 +122,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.map_obj_files.append(map_obj)
 
         self.map_obj_files.sort()
-        print(self.map_obj_files)
+        # print(self.map_obj_files)
 
         self.m_map_table.setRowCount(1 + len(self.map_obj_files))
         self.m_map_table.setColumnCount(3)
@@ -236,6 +238,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def on_export_all(self):
         print("do on_export_all")
         self.OnExport(self.export_list.values())
+
+    def on_export_all_lua(self):
+        tab_lua.OnExport(self, self.lua_export_list.values())
+
+    def on_export_all_cs(self):
+        tab_cs.OnExport(self, self.cs_export_list.values())
 
     def on_export_all_c_map(self):
         path = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
@@ -508,14 +516,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     self.last_dir = json.load(fd)
                 except Exception:
                     self.last_dir = {}
-                    self.last_dir[TAB_TYPE_ERL] = self.cwd
-                    self.last_dir[TAB_TYPE_LUA] = self.cwd
-                    self.last_dir[TAB_TYPE_CS] = self.cwd
+                    self.last_dir[str(TAB_TYPE_ERL)] = self.cwd
+                    self.last_dir[str(TAB_TYPE_LUA)] = self.cwd
+                    self.last_dir[str(TAB_TYPE_CS)] = self.cwd
         else:
             self.last_dir = {}
-            self.last_dir[TAB_TYPE_ERL] = self.cwd
-            self.last_dir[TAB_TYPE_LUA] = self.cwd
-            self.last_dir[TAB_TYPE_CS] = self.cwd
+            self.last_dir[str(TAB_TYPE_ERL)] = self.cwd
+            self.last_dir[str(TAB_TYPE_LUA)] = self.cwd
+            self.last_dir[str(TAB_TYPE_CS)] = self.cwd
 
     def get_last_dir(self, tab_type):
         return self.last_dir[str(tab_type)]

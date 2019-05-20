@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1100</width>
+    <height>660</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -89,6 +89,9 @@
           <property name="editTriggers">
            <set>QAbstractItemView::NoEditTriggers</set>
           </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
           <property name="selectionMode">
            <enum>QAbstractItemView::SingleSelection</enum>
           </property>
@@ -143,7 +146,14 @@
          </layout>
         </item>
         <item>
-         <widget class="QTableWidget" name="m_tab_lua"/>
+         <widget class="QTableWidget" name="m_tab_lua">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -194,7 +204,14 @@
          </layout>
         </item>
         <item>
-         <widget class="QTableWidget" name="m_tab_cs"/>
+         <widget class="QTableWidget" name="m_tab_cs">
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -238,6 +255,21 @@
         <string>多语言翻译配置</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
          <widget class="QTableWidget" name="m_lang_cnf_tab">
           <property name="sizePolicy">
@@ -275,7 +307,7 @@
           <property name="maximumSize">
            <size>
             <width>16777215</width>
-            <height>150</height>
+            <height>180</height>
            </size>
           </property>
           <property name="editTriggers">
@@ -294,7 +326,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1100</width>
      <height>23</height>
     </rect>
    </property>
@@ -303,6 +335,9 @@
      <string>工具</string>
     </property>
     <addaction name="menu_export_all"/>
+    <addaction name="menu_export_all_lua"/>
+    <addaction name="menu_export_cs"/>
+    <addaction name="separator"/>
     <addaction name="menu_export_all_map"/>
     <addaction name="menu_export_all_c_map"/>
    </widget>
@@ -315,7 +350,7 @@
   </widget>
   <action name="menu_export_all">
    <property name="text">
-    <string>导出所有功能配置</string>
+    <string>导出所有Erl功能配置</string>
    </property>
   </action>
   <action name="menu_export_all_map">
@@ -326,6 +361,16 @@
   <action name="menu_export_all_c_map">
    <property name="text">
     <string>导出所有C地图配置</string>
+   </property>
+  </action>
+  <action name="menu_export_all_lua">
+   <property name="text">
+    <string>导出所有Lua功能配置</string>
+   </property>
+  </action>
+  <action name="menu_export_cs">
+   <property name="text">
+    <string>导出所有C#功能配置</string>
    </property>
   </action>
  </widget>
