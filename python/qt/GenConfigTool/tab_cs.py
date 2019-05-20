@@ -10,6 +10,29 @@ import time
 import traceback
 import os
 import xlrd
+from tenjin.helpers import *
+from tenjin.escaped import *
+
+
+def format(value):
+    if isinstance(value, float):
+        if int(value) == value:
+            return int(value)
+        else:
+            return value
+    elif isinstance(value, str):
+        try:
+            return int(value)
+        except Exception:
+            try:
+                return float(value)
+            except Exception:
+                return as_escaped(value)
+    else:
+        try:
+            return int(value)
+        except Exception:
+            return as_escaped(value)
 
 
 def init_tab(self):
@@ -35,7 +58,7 @@ def init_tab(self):
 
 
 def LoadLuaConfigXML(self):
-    doc = minidom.parse('config/cfg_cs.xml')
+    doc = minidom.parse('config_cs/cfg_cs.xml')
     root = doc.documentElement
     self.cs_export_files = {}
     self.cs_export_list = {}
@@ -171,7 +194,7 @@ def DoExport(self, tpl_dict, dest_dir):
             sort_col = int(sort_col) - 1
             dict[key].sort(key=lambda x: x[sort_col], reverse=True)
     # render template with dict data
-    content = engine.render(os.path.join(self.cwd, 'config', tpl), dict)
+    content = engine.render(os.path.join(self.cwd, 'config_cs', tpl), dict)
     cfg_file = os.path.join(dest_dir, cfg)
     dest = open(cfg_file, "w", encoding='UTF-8')
     content = content.replace("\r\n", "\n")

@@ -96,7 +96,11 @@ def init_lang(self):
 
 
 def check_contain_chinese(check_str):
+    # 暂时不检测是否为中文列了
+    return True
     # print(check_str)
+    if check_str.strip() == '':
+        return True
     if isinstance(check_str, str) or isinstance(check_str, unicode):
         try:
             print(check_str.encode('ascii'))
@@ -207,7 +211,7 @@ def do_export(self, tpl_dict):
         msg_box.exec_()
         return
 
-    dest_dir = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir())
+    dest_dir = QFileDialog.getExistingDirectory(self, caption=u"选择导出目录", directory=self.get_last_dir(TAB_TYPE_ERL))
     if os.path.exists(dest_dir):
         begin = time.time()
         try:
