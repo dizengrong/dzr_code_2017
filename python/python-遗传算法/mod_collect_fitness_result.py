@@ -37,7 +37,7 @@ def normal_dt_str(time_tuple=None, only_date = False):
 
 
 def add_log(log):
-    with codecs.open("d:/gs_debug_log.log", "a", "utf-8") as fd:
+    with codecs.open("d:/gs_log.log", "a", "utf-8") as fd:
         fd.write(u"%s %s\n\n" % (normal_dt_str(), log))
         fd.flush()
 
@@ -47,9 +47,10 @@ def add_log(log):
 
 if "fitness_signal" in sticky.keys() and one_fitness_val is not None:
     signal = sticky["fitness_signal"]
-    signal.out_data.insert(0,one_fitness_val)
+    signal.out_data.append(one_fitness_val)
     out_fitness_results = signal.out_data
     if len(signal.out_data) >= signal.signal_num:
+        signal.out_data.reverse()
         signal.set_wait(False)
         # add_log("collect fitness finished, return:%s" % out_fitness_results)
     sticky["fitness_signal"] = signal
