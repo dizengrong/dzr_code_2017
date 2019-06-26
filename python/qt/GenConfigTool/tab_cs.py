@@ -182,16 +182,15 @@ def DoExport(self, tpl_dict, dest_dir):
         dict[key] = []
 
         for i in range(begin_row, table.nrows):
-            tmp = []
+            data_dict = {}
             for j in range(col_start - 1, col_end):
-                tmp.append(format(table.cell(i, j).value))
-            dict[key].append(tmp)
+                data_dict[table.cell(0, j).value.strip()] = format(table.cell(i, j).value)
+            dict[key].append(data_dict)
 
         sort_col = data['sort_col']
         if sort_col is '':
             pass
         else:
-            sort_col = int(sort_col) - 1
             dict[key].sort(key=lambda x: x[sort_col], reverse=True)
     # render template with dict data
     content = engine.render(os.path.join(self.cwd, 'config_cs', tpl), dict)

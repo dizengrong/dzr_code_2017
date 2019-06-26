@@ -45,7 +45,7 @@ def format(value):
             return as_escaped(value)
 
 
-VERSION = u"配置导出工具-v5.0    设计者：dzR    更新日期：2019-05-05    "
+VERSION = u"配置导出工具-v5.1    设计者：dzR    更新日期：2019-05-28    "
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -586,16 +586,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 dict['exists_key_list'] = tpl_dict['exists_key_list']
 
             for i in range(begin_row, table.nrows):
-                tmp = []
+                data_dict = {}
                 for j in range(col_start - 1, col_end):
-                    tmp.append(format(table.cell(i, j).value))
-                dict[key].append(tmp)
+                    data_dict[table.cell(0, j).value.strip()] = format(table.cell(i, j).value)
+                dict[key].append(data_dict)
 
             sort_col = data['sort_col']
             if sort_col is '':
                 pass
             else:
-                sort_col = int(sort_col) - 1
                 dict[key].sort(key=lambda x: x[sort_col], reverse=True)
         # render template with dict data
         content = engine.render(os.path.join(self.cwd, 'config', tpl), dict)

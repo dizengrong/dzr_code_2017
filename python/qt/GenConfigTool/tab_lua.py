@@ -184,10 +184,10 @@ def DoExport(self, tpl_dict, dest_dir):
         render_dict[most_appear_key] = []
 
         for i in range(begin_row, table.nrows):
-            tmp = []
+            data_dict = {}
             for j in range(col_start - 1, col_end):
-                tmp.append(format(table.cell(i, j).value))
-            render_dict[key].append(tmp)
+                data_dict[table.cell(0, j).value.strip()] = format(table.cell(i, j).value)
+            render_dict[key].append(data_dict)
 
         most_appear_arrary = []
         for j in range(col_start - 1, col_end):
@@ -211,7 +211,6 @@ def DoExport(self, tpl_dict, dest_dir):
         if sort_col is '':
             pass
         else:
-            sort_col = int(sort_col) - 1
             render_dict[key].sort(key=lambda x: x[sort_col], reverse=True)
     # render template with dict data
     content = engine.render(os.path.join(self.cwd, 'config_lua', tpl), render_dict)
