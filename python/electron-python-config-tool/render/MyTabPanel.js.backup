@@ -1,0 +1,145 @@
+import React, { Component } from 'react';
+import { Tabs } from 'shineout'
+import { Button, Input } from 'shineout'
+import { Table } from 'shineout'
+const {ipcRenderer} = window.require('electron')
+
+const fs = window.require('fs')
+var xml2js = require('xml2js');
+var xmlParser = new xml2js.Parser({explicitArray : false})
+
+var excel_files = []
+
+const searchtrlStyle = { width: '100%' }
+const linkStyle = {color:'black'}
+
+// const columns = [
+//   { title: 'id', render: 'id', align: 'center', width: 40, render: d => `${d.id}`},
+//   { title: 'Excel文件（点击打开）', align: 'left', render: d => `${d.excle_file}`},
+//   { title: '配置1（点击导出）', align: 'left', render: d => `${d.export1 ? d.export1.tpl : ""}`},
+//   { title: '配置2（点击导出）', align: 'left', render: d => `${d.export2 ? d.export2.tpl : ""}`},
+//   { title: '配置3（点击导出）', align: 'left', render: d => `${d.export3 ? d.export3.tpl : ""}`},
+//   { title: '配置4（点击导出）', align: 'left', render: () => (<a href="javascript:void(0);" onClick={js_method}>data_monster.el</a>)},
+//   { title: '配置5（点击导出）', align: 'left', render: d => `${d.export5 ? d.export5.tpl : ""}`},
+//   { title: '配置6（点击导出）', align: 'left', render: d => `${d.export6 ? d.export6.tpl : ""}`},
+//   { title: '配置7（点击导出）', align: 'left', render: d => `${d.export7 ? d.export7.tpl : ""}`},
+//   { title: '配置8（点击导出）', align: 'left', render: d => `${d.export8 ? d.export8.tpl : ""}`},
+//   // { title: '配置9（点击导出）', align: 'left', render: 'export9'},
+//   // { title: '配置10（双击导出）', align: 'left', render: 'export10'},
+// ]
+
+// function ConfigDataTable(props) {
+//   console.log({props.toString()})
+//   // xmlParser.parseString(fs.readFileSync({props}), function (err, result) {
+//   //    var data = JSON.stringify(result)
+//   //    console.log(data);
+//   // });
+//   return (
+//     <div style={{ height: '100%', marginBottom: 40 }}>
+//       <Table rowsInView={0}  fixed="both" keygen="id"   columns={columns} bordered data={test_data} />
+//     </div>
+//   )
+// }
+
+class ConfigDataTable extends Component {
+  get_data_from_xml() {
+      xmlParser.parseString(fs.readFileSync(this.props.xml_file), function (err, result) {
+     var data = JSON.stringify(result)
+     console.log(data);
+    });
+  }
+  get_data_from_json() {
+    var datas = JSON.parse(fs.readFileSync(this.props.xml_file))
+    var result = []
+    var count = 0
+    var result_dict = {}
+    for (var i = 0, len = datas['files'].length; i < len; i++) {
+      // var dict = {
+      //   "id": i + 1,
+      //   "excle_file": datas['files'][i]["excle_file"],
+      //   "export_num": datas['files'][i]["export"].length
+      // }
+      var exports_list = datas['files'][i]["export"]
+      for (var j = 0, export_len = exports_list.length; j < export_len; j++) {
+        // var k = 'export' + (j + 1)
+        // var tpl = exports_list[j]["tpl"]
+        // dict[k] = {
+        //   "tpl": tpl.substring(0, tpl.length - 4),
+        //   "type": exports_list[j]["type"],
+        //   "dict": exports_list[j]["dict"],
+        // }
+        for (var k = 0, dict_len = exports_list[j]["dict"].length; k < dict_len; k++) {
+          var dict = {}
+          dict["id"] = count + 1
+          dict["excle_file_and_sheet"] = datas['files'][i]["excle_file"] + "|" + exports_list[j]["dict"][k].sheet
+          dict["tpl"] = exports_list[j]["tpl"]
+          dict["dict"] = exports_list[j]["dict"]
+          result.push(dict)
+          count = count + 1
+        }
+      }
+      console.log(dict)
+      // result.push(dict)
+    }
+    return result
+  }
+
+  get_columns() {
+    var columns = [
+      { title: 'id', render: 'id', align: 'center', width: 40, render: d => `${d.id}`},
+      { 
+        title: 'Excel文件（点击打开）', 
+        render: d => (<a style={linkStyle} onClick={(e) => this.on_export(d, 1, e)}>{d.excle_file}</a>),
+        sorter: order => (a, b) => {
+          if (order === 'asc') 
+            return a.id - b.id
+          return b.id - a.id
+        },
+        rowSpan: (a, b) => a.start === b.start,
+      },
+      { title: '配置1（点击导出）', render: (d, i) => (d.export1 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 1, e)}>{d.export1.tpl}</a> : "")},
+      { title: '配置2（点击导出）', render: (d, i) => (d.export2 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 2, e)}>{d.export2.tpl}</a> : "")},
+      { title: '配置3（点击导出）', render: (d, i) => (d.export3 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 3, e)}>{d.export3.tpl}</a> : "")},
+      { title: '配置4（点击导出）', render: (d, i) => (d.export4 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 4, e)}>{d.export4.tpl}</a> : "")},
+      { title: '配置5（点击导出）', render: (d, i) => (d.export5 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 5, e)}>{d.export5.tpl}</a> : "")},
+      { title: '配置6（点击导出）', render: (d, i) => (d.export6 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 6, e)}>{d.export6.tpl}</a> : "")},
+      { title: '配置7（点击导出）', render: (d, i) => (d.export7 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 7, e)}>{d.export7.tpl}</a> : "")},
+      { title: '配置8（点击导出）', render: (d, i) => (d.export8 ? <a style={linkStyle} onClick={(e) => this.on_export(d, 8, e)}>{d.export8.tpl}</a> : "")},
+    ]
+    return columns
+  }
+
+  on_export(row_data, col) {
+    console.log(row_data)
+    ipcRenderer.send('open-export-dialog', this.props.config_type, row_data, col)
+  }
+  render() {
+    this.get_data_from_xml()
+    return (
+      <div style={{ height: '100%', marginBottom: 40 }}>
+        <Table  keygen="id" size="small" columns={this.get_columns()} bordered data={this.get_data_from_json()} />
+      </div>
+    )
+  }
+}
+
+class PanelTable extends Component {
+  constructor(props) {
+    super(props);
+    // get_data_from_xml(this.props.xml_file)
+  }
+
+  render() {
+    return (
+      <div>
+        <Input.Group style={searchtrlStyle}>
+          <Input placeholder="模糊匹配搜索" />
+        </Input.Group>
+        <ConfigDataTable config_type={this.props.xml_file} xml_file={this.props.xml_file} />
+      </div>
+      )
+  }
+}
+
+export default PanelTable
+

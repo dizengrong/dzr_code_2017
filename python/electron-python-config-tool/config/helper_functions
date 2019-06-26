@@ -1,0 +1,82 @@
+%% 根据一个字段获取一个其他字段的方法，可以生成形如:get_data(Id) -> [Val];
+%% 返回一个字典
+<?py def select_one_field(datas, index_field, index_result):?>
+<?py	ret_list = {} ?>
+<?py	for data in datas: ?>
+<?py		if ret_list.has_key(data[index_field]): ?>
+<?py			ret_list[data[index_field]].append(data[index_result]) ?>
+<?py		else: ?>
+<?py			ret_list[data[index_field]] = [data[index_result]] ?>
+<?py #endif ?>
+<?py #endfor ?>
+<?py	return ret_list ?>
+<?py #enddef ?>
+
+%% 根据多个字段获取多个其他字段的方法，可以生成形如:get_data(Id1, Id2) -> [{Val1, Val2, Val3}];
+%% 返回一个字典
+<?py def select_multiple_field(datas, select_indexs, result_indexs):?>
+<?py	ret_list = {} ?>
+<?py	for data in datas: ?>
+<?py		key = tuple([data[i] for i in select_indexs]) ?>
+<?py		result = [data[i] for i in result_indexs] ?>
+<?py		if ret_list.has_key(key): ?>
+<?py			ret_list[key].append(result) ?>
+<?py		else: ?>
+<?py			ret_list[key] = [result] ?>
+<?py #endif ?>
+<?py #endfor ?>
+<?py	return ret_list ?>
+<?py #enddef ?>
+
+%% 生成所有id的方法
+<?py all_ids = [d[0] for d in all_data] ?>
+
+%% 分割字符串1，字符串格式为"1,a|2,b|3,c"，分割后格式为：[{1,a},{2,b},{3,c}]
+<?py def split_items(item_str):?>
+<?py 	if item_str.strip() == "":?>
+<?py 		return "[]" ?>
+<?py 	else: ?>
+<?py 		return "[{" + "}, {".join(item_str.split("|")) + "}]" ?>
+<?py 	#endif ?>
+<?py #enddef ?>
+
+%% 分割字符串方法2，格式同分割字符串1
+<?py def split_items(item_str):?>
+<?py	item_str2 = item_str.split("|") ?>
+<?py	ret = "[" ?>
+<?py	for index in range(len(item_str2)): ?>
+<?py		data2 = item_str2[index].split(",") ?>
+<?py		ret = ret + "{" + data2[0] + ", " + data2[1] +  "}, " ?>
+<?py #endfor ?>
+<?py	return ret[:-2] + "]" ?>
+<?py #enddef ?>
+
+%% ID列表过长，用于换行
+<?py def array_2_str(array_datas, n, sep_str1, sep_str2):?>
+<?py ret = "" ?>
+<?py count = 1 ?>
+<?py end_data = array_datas[-1] ?>
+<?py for data in array_datas: ?>
+<?py 	if end_data == data:?>
+<?py 		ret += data ?>
+<?py 	elif count < n:?>
+<?py 		ret += data + sep_str1 ?>
+<?py 		count += 1 ?>
+<?py 	else:?>
+<?py 		ret += data + sep_str2 ?>
+<?py 		count = 1 ?>
+<?py 	#endif ?>
+<?py #endfor ?>
+<?py return ret ?>
+<?py #enddef ?>
+
+%% 分割单个字段
+<?py for data in all_data: ?>
+<?py 	if data[6] != '': ?>
+<?py 		for attr in data[6].split('|'): ?>
+<?py 			arr = attr.split(';') ?>
+get_attr(${data[0]}, ${arr[0]}, ${arr[1]}) -> ${arr[2]};
+<?py 		#endfor ?>
+<?py 	#endif ?>
+<?py #endfor ?>
+get_attr(_, _A1, _A2) -> [].

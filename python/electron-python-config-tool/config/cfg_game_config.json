@@ -1,0 +1,1105 @@
+{
+  "files": [
+    {
+      "excle_file": "Artifact神器表.xlsx",
+      "export": [
+        {
+          "tpl": "data_shenqi.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_base_data",
+              "sheet": "godWeaponConfig",
+              "col_start": 1,
+              "col_end": 10,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "all_lv_data",
+              "sheet": "upLevel",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "all_star_data",
+              "sheet": "upStar",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_shenqi_illustration.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "artifactIllustrated",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },		
+		    {
+          "tpl": "data_Artifact_upLevel_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "upLevel",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },		
+		    {
+          "tpl": "data_Artifact_upStar_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "upStar",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_Artifact_illustration.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "artifactIllustrated",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "artifact_base_data",
+              "sheet": "godWeaponConfig",
+              "col_start": 1,
+              "col_end": 11,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }, 
+        {
+          "tpl": "data_godWeapon_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "godWeaponConfig",
+              "col_start": 1,
+              "col_end": 11,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },   
+        {
+          "tpl": "data_Artifact_type_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "type",
+              "col_start": 1,
+              "col_end": 2,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "AttributeType人物属性表.xlsx",
+      "export": [
+        {
+          "tpl": "data_prop.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "CharPropertyConfig",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "config_prop.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "CharPropertyConfig",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "ArenaPersonal个人竞技场.xlsx",
+      "export": [
+        {
+          "tpl": "data_arena.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "ArenaConfig",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "point_data",
+              "sheet": "SettleAccounts",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_arena_reward.erl.tpl",
+          "dict": [
+            {
+              "data_key": "daily_data",
+              "sheet": "DailyReward",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": "rankLevel"
+            },
+            {
+              "data_key": "season_data",
+              "sheet": "SeasonReward",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": "rankLevel"
+            }
+          ]
+        },
+        {
+          "tpl" : "data_arena_config.lua.tpl",
+          "dict" : [
+            {
+              "data_key": "all_data",
+              "sheet": "ArenaConfig",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl" : "data_arena_reward_daily.lua.tpl",
+          "dict" : [
+            {
+               "data_key": "all_daily_data",
+              "sheet": "DailyReward",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl" : "data_arena_reward_season.lua.tpl",
+          "dict":[
+             {
+              "data_key": "all_season_data",
+              "sheet": "SeasonReward",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Dungeons主关卡表.xlsx",
+      "export": [
+        {
+          "tpl": "data_dungeons_config.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "dungenConfig",
+              "col_start": 1,
+              "col_end": 38,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_dungeons_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "dungenConfig",
+              "col_start": 1,
+              "col_end": 38,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Entourage英雄.xlsx",
+      "export": [
+        {
+          "tpl": "data_entourage.erl.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "Entourage", "col_start": 1, "col_end": 22, "begin_row": 1},
+            {"data_key": "on_battle_data", "sheet": "Combat", "col_start": 1, "col_end": 2, "begin_row": 1}
+          ]
+        },
+        {
+          "tpl": "data_entourage_ex.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_lv_data",
+              "sheet": "Lv",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "all_grade_data",
+              "sheet": "Grade",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "all_star_data",
+              "sheet": "Star",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "all_compose_data",
+              "sheet": "HeroStar",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_entourage_illustration.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "HeroIllustratedHandbook",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_entourage_skill.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "EntourageSkill",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": "entourage_id"
+            }
+          ]
+        },
+        {
+          "tpl": "data_EntourageSkill_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "EntourageSkill",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_EntourageLevel_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Lv",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_EntourageGrade_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Grade",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_EntourageStarBase_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Star",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_EntourageStar_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_base_data",
+              "sheet": "Entourage",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "all_data",
+              "sheet": "HeroStar",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "config_herohandbook.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "HeroIllustratedHandbook",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            },
+            {
+              "data_key": "hero_base_data",
+              "sheet": "Entourage",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_combat.lua.tpl",
+          "dict": [{"data_key": "all_data", "sheet": "Combat", "col_start": 1, "col_end": 2, "begin_row": 1}]
+        },
+        {
+          "tpl": "data_Entourage_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Entourage",
+              "col_start": 1,
+              "col_end": 22,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "HeroFeatures英雄特征表.xlsx",
+      "export": [
+        {
+          "tpl": "data_entourage_features.erl.tpl",
+          "dict": [
+            {
+              "data_key": "mp_data",
+              "sheet": "Occupation",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_Race_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Race",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_Gender_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Gender",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_Occupation_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "Occupation",
+              "col_start": 1,
+              "col_end": 6,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Equipment物品ItemConfig.xlsx",
+      "export": [
+        {
+          "tpl": "data_item.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "ItemConfig",
+              "col_start": 1,
+              "col_end": 36,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_item_suit.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "SuitConfig",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_item_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "ItemConfig",
+              "col_start": 1,
+              "col_end": 37,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_Suit_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "SuitConfig",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_source_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "sourceConfig",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "EquipmentSynthesis装备合成表.xlsx",
+      "export": [
+        {
+          "tpl": "data_equipment_synthwsis.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "equipmentSynthesisConfig",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_equipmentSynthesis_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "equipmentSynthesisConfig",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Monster怪物.xlsx",
+      "export": [
+        {
+          "tpl": "data_monster.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "MonsterConfig",
+              "col_start": 1,
+              "col_end": 60,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_monster.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "MonsterConfig",
+              "col_start": 1,
+              "col_end": 60,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "ParaConfig常量配置表.xlsx",
+      "export": [
+        {
+          "tpl": "data_para.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "paraConfig",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_para.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "paraConfig",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "PlayerConfig角色创建.xlsx",
+      "export": [
+        {
+          "tpl": "data_update_lev.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "playerExpConfig",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Quality品质.xlsx",
+      "export": [
+        {
+          "tpl": "data_item_quality.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "qualityConfig",
+              "col_start": 1,
+              "col_end": 2,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Relation阵营设计.xlsx",
+      "export": [
+        {
+          "tpl": "data_relation.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "RelationConfig",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "robot机器人.xlsx",
+      "export": [
+        {
+          "tpl": "data_robot.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "robot",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Scene场景.xlsx",
+      "export": [
+        {
+          "tpl": "data_scene_config.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "SceneConfig",
+              "col_start": 1,
+              "col_end": 20,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Server_MSG错误报告.xlsx",
+      "export": [
+        {
+          "tpl": "data_error_info.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "ErrorCodeConfig",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "SkillConfig技能配置.xlsx",
+      "export": [
+        {
+          "tpl": "data_skillmain.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "skillMainConfig",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_skillleveldata.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "skillLevelDataConfig",
+              "col_start": 1,
+              "col_end": 13,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_skillperformance.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "skillPerformanceConfig",
+              "col_start": 1,
+              "col_end": 68,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_buff.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "buffConfig",
+              "col_start": 1,
+              "col_end": 40,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_arrow.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "ArrowConfig",
+              "col_start": 1,
+              "col_end": 21,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_trap.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "TrapConfig",
+              "col_start": 1,
+              "col_end": 12,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "config_skillmain.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "skillMainConfig",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "config_buff.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "buffConfig",
+              "col_start": 1,
+              "col_end": 41,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "mail邮件表.xlsx",
+      "export": [
+        {
+          "tpl": "data_mail.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "mail",
+              "col_start": 1,
+              "col_end": 3,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "BoxConfig宝箱表.xlsx",
+      "export": [
+        {
+          "tpl": "data_box_config.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "BoxConfig",
+              "col_start": 1,
+              "col_end": 5,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_droplistconfig.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "DropListConfig",
+              "col_start": 1,
+              "col_end": 8,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_dropcontentconfig.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "DropContentConfig",
+              "col_start": 1,
+              "col_end": 7,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "BuyTimePrice阶梯价格表.xlsx",
+      "export": [
+        {
+          "tpl": "data_buy_time_price.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "BuyTimePrice",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_buy_time_price.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "BuyTimePrice",
+              "col_start": 1,
+              "col_end": 4,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "MainCityLv主城等级.xlsx",
+      "export": [
+        {
+          "tpl": "data_update_lev.erl.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "maincitylv",
+              "col_start": 1,
+              "col_end": 2,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        },
+        {
+          "tpl": "data_maincitylv_config.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "maincitylv",
+              "col_start": 1,
+              "col_end": 2,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "text_replace文字替换.xlsx",
+      "export": [
+        {
+          "tpl": "data_Text_Replace.lua.tpl",
+          "dict": [
+            {
+              "data_key": "all_data",
+              "sheet": "textReplace",
+              "col_start": 1,
+              "col_end": 2,
+              "begin_row": 1,
+              "sort_col": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Array阵法.xlsx",
+      "export": [{
+          "tpl": "data_zhenfa.erl.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "Array", "col_start": 1, "col_end": 7, "begin_row": 1},
+            {"data_key": "all_restraint_data", "sheet": "Restraint", "col_start": 1, "col_end": 4, "begin_row": 1}
+          ]
+        },{
+          "tpl": "data_zhenfa.lua.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "Array", "col_start": 1, "col_end": 7, "begin_row": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Jump界面跳转.xlsx",
+      "export": [{
+          "tpl": "data_page.lua.tpl",
+          "dict": [
+            {"data_key": "all_page_data", "sheet": "page", "col_start": 1, "col_end": 2, "begin_row": 1},
+            {"data_key": "all_pageJump_data", "sheet": "pageJump", "col_start": 1, "col_end": 6, "begin_row": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "SystemEntrance功能入口.xlsx",
+      "export": [{
+          "tpl": "data_systementrance.lua.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "SystemType", "col_start": 1, "col_end": 4, "begin_row": 1},
+            {"data_key": "all_detail_data", "sheet": "SystemDetail", "col_start": 1, "col_end": 9, "begin_row": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Server_MSG错误报告.xlsx",
+      "export": [{
+          "tpl": "config_messagetips.lua.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "ErrorCodeConfig", "col_start": 1, "col_end": 5, "begin_row": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "Enter_name命名资源.xlsx",
+      "export": [{
+          "tpl": "config_random_name.lua.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "EnternameConfig", "col_start": 1, "col_end": 3, "begin_row": 1}
+          ]
+        }
+      ]
+    },
+    {
+      "excle_file": "sysOpen系统开放.xlsx",
+      "export": [{
+          "tpl": "config_sysOpen.lua.tpl",
+          "dict": [
+            {"data_key": "all_data", "sheet": "sysOpen", "col_start": 1, "col_end": 9, "begin_row": 1}
+          ]
+        }
+      ]
+    }
+  ]
+}
