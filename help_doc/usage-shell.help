@@ -4,4 +4,13 @@
 正则表达式查看游戏服占用了多少个数据库连接
 netstat -natp|grep -n '.*3306.*beam.*' | wc -l
 
+2.查看连接数情况：
+    netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'
+    会打印输出如下：
+        LAST_ACK 1
+        ESTABLISHED 178
+        FIN_WAIT2 2
+
+
+
 	
