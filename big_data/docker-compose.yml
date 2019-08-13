@@ -1,0 +1,14 @@
+version: '2'
+services:
+    centos:
+        image: centos:7
+    java:
+        image: mamohr/centos-java:latest
+    spark:
+        image: mesosphere/spark:2.8.0-2.4.0-hadoop-2.7
+        depends_on:
+            - centos
+            - java
+        ports:
+            - '4040:4040'
+            - '7070:7070'
