@@ -11,6 +11,26 @@ netstat -natp|grep -n '.*3306.*beam.*' | wc -l
         ESTABLISHED 178
         FIN_WAIT2 2
 
+3.rsync的使用：
+	本地文件同步至远程
+	rsync -e 'ssh -p 6622' -avt /var/lib/jenkins/workspace/p17_release/ebin/ root@120.92.229.76:/data/fbird/p17/1/ebin/   密码:9qHhMbIeYTOvo7a5
+	rsync -e 'ssh -p 6622' -avt /var/lib/jenkins/workspace/p17_debug/ebin/ root@120.92.229.76:/data/fbird/p17/1/ebin/ 
+	rsync -e 'ssh -p 6622' -avt /var/lib/jenkins/workspace/p17_debug/deps/bin root@120.92.229.76:/data/fbird/p17/1/deps/bin/ 
+	rsync -e 'ssh -p 6622' -avt ./p17_server_manager.py root@192.168.1.241:/data/ 123fbird$
+	远程同步至本地
+	rsync -P -avtplgo backup@192.168.1.237::git /cygdrive/d/backup_test/ --password-file=/cygdrive/d/secrets.txt 
 
+	本地文件夹A同步到文件夹B
+	rsync -av --exclude server_config_gen.beam ./ebin/ ../cross_node/ebin/
+	rsync -av /cygdrive/e/Job/120schedulerGit/center_server/chat_120/ /cygdrive/c/xampp/htdocs/chat_120/
 
+4.加入公钥：
+	1.在本机生成key:ssh-keygen 生成到当前用户的指定目录/{user_home}/.ssh/
+	2.将公钥复制到目的机器的/{user_home}/.ssh/authorized_keys
+
+	如果希望ssh公钥生效需满足至少下面两个条件：
+		1) .ssh目录的权限必须是700
+		2) .ssh/authorized_keys文件权限必须是600
+
+5.查看当前目录下各个文件及目录占用空间大小:du -sh *
 	
