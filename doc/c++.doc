@@ -1,0 +1,16 @@
+置顶：c++的awesome系列：https://blog.csdn.net/maigao1/article/details/80784832
+
+
+1.内存检测工具：valgrind：http://valgrind.org/
+
+2.prettyprint.hpp：
+	可以很方便的打印任何stl容器内的元素，只要在测试环境下包含这个头文件即可。
+	https://github.com/louisdx/cxx-prettyprint
+
+3.类似于python的format库：https://github.com/fmtlib/fmt
+
+4.c++程序静态检测：http://cppcheck.net/
+	具体可以参看：https://www.cnblogs.com/lvdongjie/p/9549254.html
+
+5.Google的c++编程风格指南：https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/
+
