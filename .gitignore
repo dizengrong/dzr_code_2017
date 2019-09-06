@@ -3,6 +3,7 @@
 *.dll
 *.pyo
 *.pyd
+*.o
 web/flask/uploads/vlc-record-2017-11-09-10h47m32s-test.mp4-.mp4
 web/flask/uploads/log.txt
 web/*
