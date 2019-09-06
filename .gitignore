@@ -11,4 +11,5 @@ python/qt/GenConfigTool/dist/*
 c++/study/cmake_demo/build/*
 c++/study/cmake_demo/*.exe
 c++/study/cmake_demo/*.o
+c++/qt/build*
 
