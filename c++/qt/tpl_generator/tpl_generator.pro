@@ -26,17 +26,44 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    modtabwidget.cpp \
-    maptabwidget.cpp \
-    langtabwidget.cpp
+    modtab.cpp \
+    maptab.cpp \
+    exportitem.cpp
 
 HEADERS += \
         mainwindow.h \
-    modtabwidget.h \
-    maptabwidget.h \
-    langtabwidget.h
+    modtab.h \
+    maptab.h \
+    style.h \
+    exportitem.h
 
 FORMS += \
-    modtabwidget.ui \
-    maptabwidget.ui \
-    langtabwidget.ui
+    modtab.ui \
+    maptab.ui
+
+RESOURCES += \
+    resource.qrc
+
+DISTFILES += \
+    my_style_sheet.qss \
+    cfg_game_config.json
+
+win32:{
+
+    file_pathes += "\"$$PWD/cfg_game_config.json\""
+
+    CONFIG(release, debug|release):{
+        destination_pathes += $$OUT_PWD/release/
+    }
+    else:CONFIG(debug, debug|release):{
+        destination_pathes += $$OUT_PWD/debug/
+    }
+
+    for(file_path,file_pathes){
+        file_path ~= s,/,\\,g
+        for(dest_path,destination_pathes){
+            dest_path ~= s,/,\\,g
+            QMAKE_POST_LINK += $$quote(xcopy $${file_path} $${dest_path} /I /Y $$escape_expand(\n\t))
+         }
+    }
+}
