@@ -92,7 +92,7 @@ void MainWindow::initTabs(QWidget* centralWidget)
 
     QDir dir(QCoreApplication::applicationDirPath());
     QString jsonFile = dir.absoluteFilePath("cfg_game_config.json");
-    if (not m_mod_tab->loadConfigJson(jsonFile))
+    if (! m_mod_tab->loadConfigJson(jsonFile))
         exit(0);
 
 }

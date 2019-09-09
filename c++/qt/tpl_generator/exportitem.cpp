@@ -37,3 +37,8 @@ ExportItem::ExportItem(const QJsonObject& json)
 
     }
 }
+
+bool ExportItem::isMatched(const QString &text)
+{
+    return m_excel_file.contains(text, Qt::CaseInsensitive);
+}

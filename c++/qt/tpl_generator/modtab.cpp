@@ -7,6 +7,11 @@
 #include <QMessageBox>
 #include <QDebug>
 #include <QJsonArray>
+#include <QProcess>
+#include <QMenu>
+#include <QContextMenuEvent>
+#include <QTimer>
+#include <QFileDialog>
 
 QPushButton* makeBtn(QWidget* parent, const QString &btnLable)
 {
@@ -24,6 +29,10 @@ ModTab::ModTab(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    m_timer = new QTimer(this);
+    m_timer->setSingleShot(true);
+    connect(m_timer, &QTimer::timeout, this, &ModTab::onSearchShowEvent);
+
     QStringList header;
     header.append("Excel文件(点击打开)");
     header.append("Sheet名称");
@@ -36,12 +45,21 @@ ModTab::ModTab(QWidget *parent) :
     ui->m_table->setHorizontalHeaderLabels(header);
     ui->m_table->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 
-    ui->m_table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
-    ui->m_table->horizontalHeader()->setSectionResizeMode(3, QHeaderView::ResizeToContents);
+    //ui->m_table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
+    //ui->m_table->horizontalHeader()->setSectionResizeMode(3, QHeaderView::ResizeToContents);
     //ui->m_table->horizontalHeader()->setSectionResizeMode(5, QHeaderView::ResizeToContents);
     ui->m_table->setSelectionBehavior(QAbstractItemView::SelectItems);
     ui->m_table->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->m_table->setSortingEnabled(false);
+    connect(ui->m_table, &QTableWidget::cellDoubleClicked, this, &ModTab::onCellDoubleClicked);
+
+    m_context_menu = new QMenu();
+    m_openDirAct = new QAction(this);
+    m_openDirAct->setText("open file directory");
+    m_context_menu->addAction(m_openDirAct);
+    connect(m_openDirAct, &QAction::triggered, this, &ModTab::openDirectory); //右键动作槽
+
+    connect(ui->m_search, &QLineEdit::textChanged, this, &ModTab::onSearchEvent);
 }
 
 ModTab::~ModTab()
@@ -79,40 +97,129 @@ bool ModTab::loadConfigJson(const QString &jsonFile)
         qDebug() << "key" << i << " is:" << filesObjs.at(i).toObject();
         m_exports.push_back(ExportItem(filesObjs.at(i).toObject()));
     }
+
     showWith(m_exports);
     return true;
 }
 
 void ModTab::showWith(const QList<ExportItem> &datas)
 {
-    int count, addSize;
-    qDebug() << datas.size();
+    int totalNum = 0;
+    for (int i = 0; i < datas.size(); ++i) {
+        totalNum += datas[i].m_sheets.size();
+    }
+    ui->m_table->setRowCount(totalNum + 1);
+
+    int count = 0, addSize;
+    qDebug() << "table size:" << datas.size();
     for (int i = 0; i < datas.size(); ++i) {
         const ExportItem* data = &datas.at(i);
-
-        count = ui->m_table->rowCount();
         addSize = data->m_sheets.size();
-        qDebug() << "addSize:" << addSize;
+
         QMap<QString, QMap<QString, QString>*>::const_iterator it = data->m_sheets.constBegin();
         int j = count;
         while (it != data->m_sheets.constEnd()) {
-          ui->m_table->insertRow(j);
+          //ui->m_table->insertRow(j);
           if (j == count){
               QPushButton *btn = makeBtn(ui->m_table, data->m_excel_file);
               ui->m_table->setCellWidget(j, 0, btn);
+              //ui->m_table->setItem(j, 0, new QTableWidgetItem(data->m_excel_file));
           }
           ui->m_table->setItem(j, 1, new QTableWidgetItem(it.key()));
-          //ui->m_table->setItem(j, 2, new QTableWidgetItem(it.value()->value("export_erl")));
-          if(!it.value()->value("export_erl").isEmpty())
-            ui->m_table->setCellWidget(j, 2, makeBtn(ui->m_table, it.value()->value("export_erl")));
-          if(!it.value()->value("export_lua").isEmpty())
-            ui->m_table->setCellWidget(j, 3, makeBtn(ui->m_table, it.value()->value("export_lua")));
+          ui->m_table->setItem(j, 2, new QTableWidgetItem(it.value()->value("export_erl")));
+          ui->m_table->setItem(j, 3, new QTableWidgetItem(it.value()->value("export_lua")));
+          //if(!it.value()->value("export_erl").isEmpty())
+          //  ui->m_table->setCellWidget(j, 2, makeBtn(ui->m_table, it.value()->value("export_erl")));
+          //if(!it.value()->value("export_lua").isEmpty())
+          //  ui->m_table->setCellWidget(j, 3, makeBtn(ui->m_table, it.value()->value("export_lua")));
 
           ui->m_table->setCellWidget(j, 5, makeBtn(ui->m_table, "导出该行配置"));
+          ++j;
           ++it;
         }
         if (addSize > 1){
             ui->m_table->setSpan(count, 0, addSize, 1);
         }
+        count += addSize;
     }
+}
+
+void ModTab::contextMenuEvent(QContextMenuEvent *event)
+{
+    qDebug() << "contextMenuEvent here";
+
+    QPoint point = event->pos(); //得到窗口坐标
+    // ui->m_table->viewport()->mapFromGlobal(point)
+
+    QTableWidgetItem *item = ui->m_table->itemAt(ui->m_table->viewport()->mapFrom(this, point));
+
+    if(item != NULL)
+    {
+        m_openDirAct->setData("F:\\p18\\p18_cehua_tool\\fbird_config_tool\\resources\\app\\config\\" + item->text() + ".tpl");
+        qDebug() << "row:" << item->row() << ", col:" << item->column(); //当前行
+
+        //菜单出现的位置为当前鼠标的位置
+        m_context_menu->exec(QCursor::pos());
+        event->accept();
+    } else {
+         qDebug() << "no item at pos:" << point;
+    }
+}
+
+void ModTab::openDirectory()
+{
+    QAction* action = qobject_cast<QAction*> (sender());
+    if (action == 0) return;
+
+    QString file = action->data().toString();	//get previous data saved by us
+    qDebug() << file;
+    file.replace("/", "\\"); // 只能识别 "\"
+
+    //do sth relative with the action
+    QProcess proc;
+    QString cmd = QString("explorer.exe /select,\"%1\"").arg(file);
+    proc.startDetached(cmd);
+}
+
+void ModTab::onCellDoubleClicked(int row, int column)
+{
+    qDebug() << "row:" << row << ", col:" << column; //当前行
+    QTableWidgetItem *item = ui->m_table->item(row, column);
+}
+
+void ModTab::onSearchEvent(const QString &text)
+{
+    if (!m_timer->isActive())
+        m_timer->start(300);
+}
+
+void ModTab::onSearchShowEvent()
+{
+    QString text = ui->m_search->text();
+    QList<ExportItem> matched;
+    for(int i = 0; i < m_exports.size(); ++i){
+        if(m_exports[i].isMatched(text)){
+            matched.push_back(m_exports[i]);
+        }
+    }
+    //ui->m_table->clearContents();
+    int j = ui->m_table->rowCount();
+    while (j >= 0) {
+        ui->m_table->removeRow(j);
+        --j;
+    }
+    showWith(matched);
+}
+
+void ModTab::on_m_btn_erl_dir_clicked()
+{
+    QString curPath=QDir::currentPath();//获取系统当前目录
+    QString dlgTitle="选择目录"; //对话框标题
+    QString dir = QFileDialog::getExistingDirectory(this, dlgTitle, curPath, QFileDialog::ShowDirsOnly);
+    if(!dir.isEmpty())
+}
+
+void ModTab::on_m_btn_lua_dir_clicked()
+{
+
 }

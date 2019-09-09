@@ -3,7 +3,9 @@
 
 #include "exportitem.h"
 
+#include <QAction>
 #include <QPushButton>
+#include <QTimer>
 #include <QWidget>
 
 namespace Ui {
@@ -23,7 +25,18 @@ public:
 private:
     Ui::ModTab *ui;
     QList<ExportItem> m_exports;
-    QPushButton *operatorBtn;
+    QMenu *m_context_menu;
+    QAction *m_openDirAct;
+    QTimer *m_timer;
+
+private slots:
+     void openDirectory();
+     void onCellDoubleClicked(int row, int column);
+     void onSearchEvent(const QString &text);
+     void onSearchShowEvent();
+     void contextMenuEvent(QContextMenuEvent *event); //右键默认槽
+     void on_m_btn_erl_dir_clicked();
+     void on_m_btn_lua_dir_clicked();
 };
 
 #endif // MODTAB_H

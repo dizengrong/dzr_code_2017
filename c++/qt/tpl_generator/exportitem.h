@@ -11,6 +11,7 @@ class ExportItem
 {
 public:
     ExportItem(const QJsonObject& json);
+    bool isMatched(const QString& text);
 
 public:
     QString m_excel_file;
