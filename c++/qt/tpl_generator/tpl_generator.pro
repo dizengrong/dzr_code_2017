@@ -28,14 +28,17 @@ SOURCES += \
         mainwindow.cpp \
     modtab.cpp \
     maptab.cpp \
-    exportitem.cpp
+    exportitem.cpp \
+    setting.cpp
 
 HEADERS += \
         mainwindow.h \
     modtab.h \
     maptab.h \
     style.h \
-    exportitem.h
+    exportitem.h \
+    util.h \
+    setting.h
 
 FORMS += \
     modtab.ui \

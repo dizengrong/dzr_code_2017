@@ -87,7 +87,7 @@ void MainWindow::createActions()
 void MainWindow::initTabs(QWidget* centralWidget)
 {
     m_tabWidget = new QTabWidget(centralWidget);
-    ModTab* m_mod_tab = new ModTab();
+    ModTab* m_mod_tab = new ModTab(this);
     m_tabWidget->addTab(m_mod_tab, QString(tr("游戏功能配置")));
 
     QDir dir(QCoreApplication::applicationDirPath());

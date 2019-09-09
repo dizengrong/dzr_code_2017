@@ -7,6 +7,7 @@ namespace Ui {
 class MapTab;
 }
 
+
 class MapTab : public QWidget
 {
     Q_OBJECT

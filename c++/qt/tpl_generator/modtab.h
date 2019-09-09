@@ -28,6 +28,7 @@ private:
     QMenu *m_context_menu;
     QAction *m_openDirAct;
     QTimer *m_timer;
+    QWidget* m_mainWindow;
 
 private slots:
      void openDirectory();

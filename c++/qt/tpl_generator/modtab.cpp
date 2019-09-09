@@ -1,5 +1,6 @@
 #include "modtab.h"
 #include "ui_modtab.h"
+#include "setting.h"
 #include <QtWidgets/QPushButton>
 #include <QFile>
 #include <QJsonObject>
@@ -13,6 +14,7 @@
 #include <QTimer>
 #include <QFileDialog>
 
+
 QPushButton* makeBtn(QWidget* parent, const QString &btnLable)
 {
     QPushButton *btn = new QPushButton(parent);
@@ -25,7 +27,8 @@ QPushButton* makeBtn(QWidget* parent, const QString &btnLable)
 
 ModTab::ModTab(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::ModTab)
+    ui(new Ui::ModTab),
+    m_mainWindow(parent)
 {
     ui->setupUi(this);
 
@@ -60,6 +63,10 @@ ModTab::ModTab(QWidget *parent) :
     connect(m_openDirAct, &QAction::triggered, this, &ModTab::openDirectory); //右键动作槽
 
     connect(ui->m_search, &QLineEdit::textChanged, this, &ModTab::onSearchEvent);
+
+    // other init
+    ui->m_edit_erl_dir->setText(Setting::getInstatnce().getErlDir());
+    ui->m_edit_lua_dir->setText(Setting::getInstatnce().getLuaDir());
 }
 
 ModTab::~ModTab()
@@ -215,11 +222,20 @@ void ModTab::on_m_btn_erl_dir_clicked()
 {
     QString curPath=QDir::currentPath();//获取系统当前目录
     QString dlgTitle="选择目录"; //对话框标题
-    QString dir = QFileDialog::getExistingDirectory(this, dlgTitle, curPath, QFileDialog::ShowDirsOnly);
-    if(!dir.isEmpty())
+    QString dir = QFileDialog::getExistingDirectory(m_mainWindow, dlgTitle, curPath, QFileDialog::ShowDirsOnly);
+    if(!dir.isEmpty()){
+        Setting::getInstatnce().setErlDir(dir);
+        ui->m_edit_erl_dir->setText(dir);
+    }
 }
 
 void ModTab::on_m_btn_lua_dir_clicked()
 {
-
+    QString curPath=QDir::currentPath();//获取系统当前目录
+    QString dlgTitle="选择目录"; //对话框标题
+    QString dir = QFileDialog::getExistingDirectory(m_mainWindow, dlgTitle, curPath, QFileDialog::ShowDirsOnly);
+    if(!dir.isEmpty()){
+        Setting::getInstatnce().setLuaDir(dir);
+        ui->m_edit_lua_dir->setText(dir);
+    }
 }
