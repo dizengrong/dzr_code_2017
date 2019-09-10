@@ -6,6 +6,7 @@
 #include <QCoreApplication>
 #include <QDir>
 #include <QMessageBox>
+#include <QDebug>
 
 void MainWindow::onExportAllErlModAction()
 {
@@ -57,11 +58,24 @@ MainWindow::MainWindow(QWidget *parent)
 
     horizontalLayout->addWidget(m_tabWidget);
     centralWidget->setLayout(horizontalLayout);
+
+    //启动python子进程
+    QProcess* m_pyProcess =new QProcess();
+    m_pyProcess->setWorkingDirectory(QCoreApplication::applicationDirPath());
+    m_pyProcess->setProcessChannelMode(QProcess::MergedChannels);
+    m_pyProcess->start("python D:/Documents/GitHub/dzr_code_2017/c++/qt/tpl_generator/py/main.py");
 }
 
 MainWindow::~MainWindow()
 {
 
+}
+
+void MainWindow::exportOneFile(const QString &save_dir, const QString &tpl_file)
+{
+    QString cmd = "export_one_file|" + save_dir + "|" + tpl_file;
+    m_pyProcess->write(cmd.toStdString().data());
+    qDebug() << m_pyProcess->readAll();
 }
 
 void MainWindow::createMenus()

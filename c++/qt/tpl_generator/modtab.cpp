@@ -192,6 +192,26 @@ void ModTab::onCellDoubleClicked(int row, int column)
 {
     qDebug() << "row:" << row << ", col:" << column; //当前行
     QTableWidgetItem *item = ui->m_table->item(row, column);
+    switch (column) {
+    case 2:
+        if(Setting::getInstatnce().getErlDir().isEmpty()){
+            QMessageBox::information(this, "tips", "please set erl export dir first!");
+            return;
+        }
+        m_mainWindow->exportOneFile(Setting::getInstatnce().getErlDir(), item->text());
+        break;
+    case 3:
+        if(Setting::getInstatnce().getLuaDir().isEmpty()){
+            QMessageBox::information(this, "tips", "please set lua export dir first!");
+            return;
+        }
+        m_mainWindow->exportOneFile(Setting::getInstatnce().getLuaDir(), item->text());
+        break;
+    default:
+        break;
+    }
+
+
 }
 
 void ModTab::onSearchEvent(const QString &text)

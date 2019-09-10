@@ -4,6 +4,7 @@
 #include "modtab.h"
 
 #include <QMainWindow>
+#include <QProcess>
 
 class MainWindow : public QMainWindow
 {
@@ -15,6 +16,7 @@ private:
     QAction *m_export_all_cs_act;
     QTabWidget *m_tabWidget;
     ModTab *m_mod_tab;
+    QProcess *m_pyProcess;
 
 private slots:
     void onExportAllErlModAction();
@@ -25,6 +27,7 @@ private slots:
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void exportOneFile(const QString& save_dir, const QString& tpl_file);
 private:
     void createMenus();
     void createActions();

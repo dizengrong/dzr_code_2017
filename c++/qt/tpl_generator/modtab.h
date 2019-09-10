@@ -12,6 +12,8 @@ namespace Ui {
 class ModTab;
 }
 
+class MainWindow;
+
 class ModTab : public QWidget
 {
     Q_OBJECT
@@ -28,7 +30,7 @@ private:
     QMenu *m_context_menu;
     QAction *m_openDirAct;
     QTimer *m_timer;
-    QWidget* m_mainWindow;
+    MainWindow* m_mainWindow;
 
 private slots:
      void openDirectory();
