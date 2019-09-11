@@ -43,12 +43,12 @@ QString readProcessOut(QProcess *process, int waitSces = 60000) {
 
 void MainWindow::onExportAllErlModAction()
 {
-
+    executePythonCmd("export_all|erl|" + Setting::getInstatnce().getErlDir() + "\n");
 }
 
 void MainWindow::onExportAllLuaModAction()
 {
-
+    executePythonCmd("export_all|lua|" + Setting::getInstatnce().getLuaDir() + "\n");
 }
 
 void MainWindow::onExportAllCsModAction()
@@ -76,6 +76,9 @@ void MainWindow::loadStyleSheet(const QString &styleSheetFile)
 MainWindow::MainWindow(QWidget *parent, QProcess *process)
     : QMainWindow(parent), m_pyProcess(process)
 {
+    QDir dir(QCoreApplication::applicationDirPath());
+    dir.cdUp();
+    m_excel_src_path = dir.path();
     loadStyleSheet(":/qss/my_style_sheet.qss");
     createActions();
     createMenus();
@@ -126,7 +129,13 @@ void MainWindow::exportBySheet(const QString &sheet)
     dirStr = QString("{\"erl\":\"%1\", \"lua\":\"%2\"}").arg(erlDir).arg(luaDir);
     qDebug() << dirStr;
     QString cmd = "export_by_sheet|" + dirStr + "|" + sheet + "\n";
+
     executePythonCmd(cmd);
+}
+
+const QString MainWindow::getExcelSrcPath() const
+{
+    return m_excel_src_path;
 }
 
 void MainWindow::createMenus()
@@ -165,8 +174,7 @@ void MainWindow::initTabs(QWidget* centralWidget)
 void MainWindow::executePythonCmd(const QString &cmd)
 {
     qDebug() << "execute cmd:" << cmd;
-    qDebug() << "std string cmd:" << cmd.toStdWString().data();
-    m_pyProcess->write(cmd.toStdString().data());
+    m_pyProcess->write(cmd.toLocal8Bit().data());
     QString ret = readProcessOut(m_pyProcess);
     qDebug() << "return result:" << ret;
     QStringList result = ret.split('|');

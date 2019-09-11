@@ -14,6 +14,7 @@
 #include <QContextMenuEvent>
 #include <QTimer>
 #include <QFileDialog>
+#include <QDesktopServices>
 
 
 QPushButton* makeBtn(QWidget* parent, const QString &btnLable)
@@ -130,7 +131,9 @@ void ModTab::showWith(const QList<ExportItem> &datas)
           //ui->m_table->insertRow(j);
           if (j == count){
               QPushButton *btn = makeBtn(ui->m_table, data->m_excel_file);
+              btn->setProperty("excle", data->m_excel_file);
               ui->m_table->setCellWidget(j, 0, btn);
+              connect(btn, &QPushButton::clicked, this, &ModTab::onOpenExcelFile);
               //ui->m_table->setItem(j, 0, new QTableWidgetItem(data->m_excel_file));
           }
           ui->m_table->setItem(j, 1, new QTableWidgetItem(it.key()));
@@ -140,11 +143,11 @@ void ModTab::showWith(const QList<ExportItem> &datas)
           //  ui->m_table->setCellWidget(j, 2, makeBtn(ui->m_table, it.value()->value("export_erl")));
           //if(!it.value()->value("export_lua").isEmpty())
           //  ui->m_table->setCellWidget(j, 3, makeBtn(ui->m_table, it.value()->value("export_lua")));
-          QPushButton* btn = makeBtn(ui->m_table, "导出该行配置");
-          btn->setProperty("excle", data->m_excel_file);
-          btn->setProperty("row_num", j);
-          connect(btn, &QPushButton::clicked, this, &ModTab::onExportBySheet);
-          ui->m_table->setCellWidget(j, 5, btn);
+          QPushButton* btn2 = makeBtn(ui->m_table, "导出该行配置");
+          btn2->setProperty("excle", data->m_excel_file);
+          btn2->setProperty("row_num", j);
+          connect(btn2, &QPushButton::clicked, this, &ModTab::onExportBySheet);
+          ui->m_table->setCellWidget(j, 5, btn2);
           ++j;
           ++it;
         }
@@ -273,4 +276,21 @@ void ModTab::onExportBySheet()
     QString sheet = ui->m_table->item(btn->property("row_num").toInt(), 1)->text();
     qDebug() << sheet;
     m_mainWindow->exportBySheet(excel + "#" + sheet);
+}
+
+void ModTab::onOpenExcelFile()
+{
+    QPushButton* btn = qobject_cast<QPushButton*> (sender());
+    QString excel = btn->property("excle").toString();
+
+    const QString &excelDir = m_mainWindow->getExcelSrcPath();
+    QString fileName = excelDir + "/" + excel;
+    qDebug() << fileName;
+    QFile file(fileName);
+    if(file.exists()){
+        QDesktopServices::openUrl(QUrl::fromLocalFile(fileName));
+    } else {
+        QMessageBox::critical(this, "error", "文件不存在：" + fileName);
+    }
+
 }

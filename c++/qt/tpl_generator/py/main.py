@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 '''
 注意本程序使用的第三方库版本号：
-zerorpc        0.6.1
-pyzmq          16.0.3 最新版18，执行bind时会卡住很久
 '''
 
 from __future__ import print_function
 import sys
-import zerorpc
 import os
 import xlrd
 from common import *
@@ -49,7 +46,8 @@ def excel_cell_value_format(value):
 
 
 def add_log(log):
-    with codecs.open("python_log.log", "a", "utf-8") as fd:
+    # with codecs.open("python_log.log", "a", "utf-8") as fd:
+    with open("python_log.log", "a", encoding="utf-8") as fd:
         fd.write(u"%s %s\n\n" % (util.normal_dt_str(), log))
         fd.flush()
 
@@ -307,8 +305,7 @@ def main():
     manager = ExportManager(excel_src_path, config_path)
     while True:
         s = input()
-        s = s.encode('utf-8')
-        # add_log(u"recv:" + s)
+        add_log(u"recv:" + s)
         parameters = s.split("|")
         cmd = parameters[0]
         if cmd == 'quit':
@@ -327,7 +324,7 @@ def main():
             save_dir = parameters[2]
             ret = manager.export_all(file_type, save_dir)
         else:
-            ret = "recv unknow cmd:" + s
+            ret = u"0|recv unknow cmd:" + s
         add_log(ret)
         print(ret)
 

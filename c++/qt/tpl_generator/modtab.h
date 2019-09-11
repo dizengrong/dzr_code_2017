@@ -41,6 +41,7 @@ private slots:
      void on_m_btn_erl_dir_clicked();
      void on_m_btn_lua_dir_clicked();
      void onExportBySheet();
+     void onOpenExcelFile();
 };
 
 #endif // MODTAB_H

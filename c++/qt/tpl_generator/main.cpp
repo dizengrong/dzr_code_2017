@@ -1,23 +1,28 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QDebug>
+#include <QTextCodec>
 
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    qDebug() << QCoreApplication::applicationDirPath();
+    //QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
+    QString pwd = QCoreApplication::applicationDirPath();
+    qDebug() << pwd;
 
     //启动python子进程
     QProcess* m_pyProcess =new QProcess();
-    m_pyProcess->setWorkingDirectory(QCoreApplication::applicationDirPath());
+    m_pyProcess->setWorkingDirectory(pwd);
     m_pyProcess->setProcessChannelMode(QProcess::MergedChannels);
-    m_pyProcess->start("python D:/Documents/GitHub/dzr_code_2017/c++/qt/tpl_generator/py/main.py");
+    QString cmd = QString("python 1%/py/main.py").arg(pwd);
+    m_pyProcess->start(cmd);
     qDebug() << m_pyProcess->state();
     qDebug() << m_pyProcess->processId();
 
     MainWindow w(nullptr, m_pyProcess);
-    w.show();
+    w.showMaximized();
+    //w.show();
 
     return a.exec();
 }

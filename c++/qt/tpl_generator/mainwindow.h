@@ -17,6 +17,7 @@ private:
     QTabWidget *m_tabWidget;
     ModTab *m_mod_tab;
     QProcess *m_pyProcess;
+    QString m_excel_src_path;
 
 private slots:
     void onExportAllErlModAction();
@@ -30,6 +31,7 @@ public:
     ~MainWindow();
     void exportOneFile(const QString& save_dir, const QString& tpl_file);
     void exportBySheet(const QString& sheet);
+    const QString getExcelSrcPath() const;
 private:
     void createMenus();
     void createActions();
