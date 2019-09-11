@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "maptab.h"
 #include "modtab.h"
 #include "setting.h"
 #include <QFile>
@@ -161,6 +162,8 @@ void MainWindow::createActions()
 void MainWindow::initTabs(QWidget* centralWidget)
 {
     m_tabWidget = new QTabWidget(centralWidget);
+
+    // init module config tab
     ModTab* m_mod_tab = new ModTab(this);
     m_tabWidget->addTab(m_mod_tab, QString(tr("游戏功能配置")));
 
@@ -169,6 +172,12 @@ void MainWindow::initTabs(QWidget* centralWidget)
     if (! m_mod_tab->loadConfigJson(jsonFile))
         exit(0);
 
+    // init map config tab
+    MapTab* m_map_tab = new MapTab(this);
+    m_tabWidget->addTab(m_map_tab, QString(tr("地图配置")));
+    jsonFile = dir.absoluteFilePath("map_conf.json");
+    if (! m_map_tab->loadConfigJson(jsonFile))
+        exit(0);
 }
 
 void MainWindow::executePythonCmd(const QString &cmd)

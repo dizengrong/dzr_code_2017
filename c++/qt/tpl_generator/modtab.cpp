@@ -41,9 +41,9 @@ ModTab::ModTab(QWidget *parent) :
     QStringList header;
     header.append("Excel文件(点击打开)");
     header.append("Sheet名称");
-    header.append("erl配置(点击导出)");
-    header.append("lua配置(点击导出)");
-    header.append("c#配置(点击导出)");
+    header.append("erl配置(双击导出)");
+    header.append("lua配置(双击导出)");
+    header.append("c#配置(双击导出)");
     header.append("操作");
     ui->m_table->setColumnCount(header.size());
 

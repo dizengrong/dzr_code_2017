@@ -299,7 +299,8 @@ def main():
     # excel_src_path = os.path.join(os.getcwd(), "..")
     # config_path = os.path.join(os.getcwd(), "config")
     excel_src_path = "F:/p18/p18_cehua_doc"
-    config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
+    # config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
+    config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
     add_log(excel_src_path)
     add_log(config_path)
     manager = ExportManager(excel_src_path, config_path)

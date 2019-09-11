@@ -53,7 +53,7 @@ DISTFILES += \
 
 win32:{
 
-    file_pathes += "\"$$PWD/cfg_game_config.json\""
+    file_pathes += "\"$$PWD/*.json\""
 
     CONFIG(release, debug|release):{
         destination_pathes += $$OUT_PWD/release/

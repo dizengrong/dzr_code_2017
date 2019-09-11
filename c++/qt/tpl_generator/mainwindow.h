@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "maptab.h"
 #include "modtab.h"
 
 #include <QMainWindow>
@@ -15,7 +16,9 @@ private:
     QAction *m_export_all_lua_act;
     QAction *m_export_all_cs_act;
     QTabWidget *m_tabWidget;
+
     ModTab *m_mod_tab;
+    MapTab *m_map_tab;
     QProcess *m_pyProcess;
     QString m_excel_src_path;
 
