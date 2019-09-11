@@ -28,7 +28,7 @@ public:
     }
 
 
-    QString & getErlDir(){
+    const QString & getErlDir(){
         if(m_erl_dir.isEmpty()){
             QSettings *reader = new QSettings(getUserDataFile(), QSettings::IniFormat);
             m_erl_dir = reader->value("/dir/erl_dir").toString();
@@ -37,7 +37,7 @@ public:
         return m_erl_dir;
     }
 
-    QString & getLuaDir(){
+    const QString & getLuaDir(){
         if(m_lua_dir.isEmpty()){
             QSettings *reader = new QSettings(getUserDataFile(), QSettings::IniFormat);
             m_lua_dir = reader->value("/dir/lua_dir").toString();
@@ -46,7 +46,7 @@ public:
         return m_lua_dir;
     }
 
-    QString & getCsDir(){
+    const QString & getCsDir(){
         if(m_cs_dir.isEmpty()){
             QSettings *reader = new QSettings(getUserDataFile(), QSettings::IniFormat);
             m_cs_dir = reader->value("/dir/cs_dir").toString();
@@ -55,7 +55,7 @@ public:
         return m_cs_dir;
     }
 
-    QString & getErlMapDir(){
+    const QString & getErlMapDir(){
         if(m_erl_map_dir.isEmpty()){
             QSettings *reader = new QSettings(getUserDataFile(), QSettings::IniFormat);
             m_erl_map_dir = reader->value("/dir/erl_map_dir").toString();
@@ -64,7 +64,7 @@ public:
         return m_erl_map_dir;
     }
 
-    QString & getCMapDir(){
+    const QString & getCMapDir(){
         if(m_c_map_dir.isEmpty()){
             QSettings *reader = new QSettings(getUserDataFile(), QSettings::IniFormat);
             m_c_map_dir = reader->value("/dir/erl_c_dir").toString();

@@ -103,17 +103,18 @@ class ExportManager(object):
         self.sheet_dict = {}
         self.export_file_dict = {}
         for data in self.cfg_game_config["files"]:
-            export_dict = {}
-            export_dict['excle_file'] = data["excle_file"]
+            
             add_log(data["excle_file"])
             for temp_dict in data["export"]:
                 tpl_file2, _ = os.path.splitext(temp_dict["tpl"])
                 _, file_type = os.path.splitext(tpl_file2)
                 temp_dict["tpl"] = tpl_file2
-                export_dict['export_' + file_type] = temp_dict
+                export_dict = {}
+                export_dict['excle_file'] = data["excle_file"]
+                export_dict['export_' + file_type[1:]] = temp_dict
                 self.export_file_dict[tpl_file2] = export_dict
                 for d in temp_dict["dict"]:
-                    self.sheet_dict[data["excle_file"] + "|" + d["sheet"]] = export_dict
+                    self.sheet_dict[data["excle_file"] + "#" + d["sheet"]] = export_dict
 
     def analysis_thread(self):
         try:
@@ -223,11 +224,10 @@ class ExportManager(object):
     def export_one_file(self, save_dir, tpl_file):
         try:
             begin = time.time()
-            tpl_file2, _ = os.path.splitext(tpl_file)
-            _, file_type = os.path.splitext(tpl_file2)
+            _, file_type = os.path.splitext(tpl_file)
             file_type = file_type[1:]
             add_log("save_dir:{}, file_type:{}".format(save_dir, file_type))
-            export_dict = self.export_file_dict[tpl_file2]
+            export_dict = self.export_file_dict[tpl_file]
             ret = self.export_one_file_help(save_dir, export_dict, file_type)
             end = time.time()
             return "|".join(["1", ret + u"\n消耗时间：{0}秒".format(int(end - begin))])
@@ -251,7 +251,7 @@ class ExportManager(object):
             return "|".join(["1", u'\n\t' + u'\n\t'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))])
         except Exception:
             exception_log = traceback.format_exc()
-            add_log(exception_log)
+            # add_log(exception_log)
             return "0|" + exception_log
 
     def export_one_file_help(self, save_dir, export_dict, file_type):
@@ -263,7 +263,6 @@ class ExportManager(object):
         tpl = tpl_dict['tpl'] + '.tpl'
         cfg, ext = os.path.splitext(tpl)
         for data in tpl_dict['dict']:
-            add_log("excle_file: %s" % (excle_file))
             excle_filename = os.path.join(self.excle_src_path, excle_file)
             xml_data = xlrd.open_workbook(excle_filename)
             table = xml_data.sheet_by_name(data['sheet'])
@@ -271,7 +270,6 @@ class ExportManager(object):
             col_start = 1
             col_end = table.ncols
             begin_row = data['begin_row']
-            add_log(col_end)
             dict[key] = []
             # 插入多语言翻译相关的东西
             if 'all_src_lang_text' in export_dict:
@@ -309,6 +307,8 @@ def main():
     manager = ExportManager(excel_src_path, config_path)
     while True:
         s = input()
+        s = s.encode('utf-8')
+        # add_log(u"recv:" + s)
         parameters = s.split("|")
         cmd = parameters[0]
         if cmd == 'quit':
@@ -326,6 +326,9 @@ def main():
             file_type = parameters[1]
             save_dir = parameters[2]
             ret = manager.export_all(file_type, save_dir)
+        else:
+            ret = "recv unknow cmd:" + s
+        add_log(ret)
         print(ret)
 
     add_log(u'python exit')

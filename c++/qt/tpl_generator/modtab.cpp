@@ -1,6 +1,7 @@
 #include "modtab.h"
 #include "ui_modtab.h"
 #include "setting.h"
+#include "mainwindow.h"
 #include <QtWidgets/QPushButton>
 #include <QFile>
 #include <QJsonObject>
@@ -28,7 +29,7 @@ QPushButton* makeBtn(QWidget* parent, const QString &btnLable)
 ModTab::ModTab(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ModTab),
-    m_mainWindow(parent)
+    m_mainWindow(dynamic_cast<MainWindow*>(parent))
 {
     ui->setupUi(this);
 
@@ -139,8 +140,11 @@ void ModTab::showWith(const QList<ExportItem> &datas)
           //  ui->m_table->setCellWidget(j, 2, makeBtn(ui->m_table, it.value()->value("export_erl")));
           //if(!it.value()->value("export_lua").isEmpty())
           //  ui->m_table->setCellWidget(j, 3, makeBtn(ui->m_table, it.value()->value("export_lua")));
-
-          ui->m_table->setCellWidget(j, 5, makeBtn(ui->m_table, "导出该行配置"));
+          QPushButton* btn = makeBtn(ui->m_table, "导出该行配置");
+          btn->setProperty("excle", data->m_excel_file);
+          btn->setProperty("row_num", j);
+          connect(btn, &QPushButton::clicked, this, &ModTab::onExportBySheet);
+          ui->m_table->setCellWidget(j, 5, btn);
           ++j;
           ++it;
         }
@@ -258,4 +262,15 @@ void ModTab::on_m_btn_lua_dir_clicked()
         Setting::getInstatnce().setLuaDir(dir);
         ui->m_edit_lua_dir->setText(dir);
     }
+}
+
+void ModTab::onExportBySheet()
+{
+    QPushButton* btn = qobject_cast<QPushButton*> (sender());
+    qDebug() << btn->property("row_num").toInt();
+    QString excel = btn->property("excle").toString();
+    qDebug() << excel;
+    QString sheet = ui->m_table->item(btn->property("row_num").toInt(), 1)->text();
+    qDebug() << sheet;
+    m_mainWindow->exportBySheet(excel + "#" + sheet);
 }

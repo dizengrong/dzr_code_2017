@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "modtab.h"
+#include "setting.h"
 #include <QFile>
 #include <QMenuBar> //前向声明需要
 #include <QtWidgets/QHBoxLayout>
@@ -7,6 +8,38 @@
 #include <QDir>
 #include <QMessageBox>
 #include <QDebug>
+
+QString readProcessOut(QProcess *process, int waitSces = 60000) {
+    const qint64 maxSize = 512;
+    char buffer[maxSize];
+    qint64 len;
+    bool ret;
+    QString ret_str;
+    int count = 1;
+    while(count > 0) {
+        /*
+         * 一个waitForReadyRead信号可能输出的是多行
+         */
+        --count;
+        //qDebug() << "being wait for read";
+        ret = process->waitForReadyRead(waitSces);
+        //qDebug() << "got read signal:" << ret;
+        if(!ret) {
+            break;
+        }
+        while(true) {
+            len = process->readLine(buffer, maxSize);
+            /*
+             * 因为每一行至少还有回车换行符，因此读到0，说明waitForReadyRead超时返回false
+             */
+            if(len <= 0) {
+                break;
+            }
+            ret_str += QString::fromLocal8Bit(buffer);
+        }
+    }
+    return ret_str;
+}
 
 void MainWindow::onExportAllErlModAction()
 {
@@ -40,8 +73,8 @@ void MainWindow::loadStyleSheet(const QString &styleSheetFile)
         }
 }
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
+MainWindow::MainWindow(QWidget *parent, QProcess *process)
+    : QMainWindow(parent), m_pyProcess(process)
 {
     loadStyleSheet(":/qss/my_style_sheet.qss");
     createActions();
@@ -59,11 +92,15 @@ MainWindow::MainWindow(QWidget *parent)
     horizontalLayout->addWidget(m_tabWidget);
     centralWidget->setLayout(horizontalLayout);
 
-    //启动python子进程
-    QProcess* m_pyProcess =new QProcess();
-    m_pyProcess->setWorkingDirectory(QCoreApplication::applicationDirPath());
-    m_pyProcess->setProcessChannelMode(QProcess::MergedChannels);
-    m_pyProcess->start("python D:/Documents/GitHub/dzr_code_2017/c++/qt/tpl_generator/py/main.py");
+
+    //QTimer *m_timer = new QTimer(this);
+    //connect(m_timer, &QTimer::timeout, this, &MainWindow::onTimerTest);
+    //m_timer->start(3000);
+}
+
+void MainWindow::onTimerTest()
+{
+    m_pyProcess->write("bbbb\n");
 }
 
 MainWindow::~MainWindow()
@@ -73,9 +110,23 @@ MainWindow::~MainWindow()
 
 void MainWindow::exportOneFile(const QString &save_dir, const QString &tpl_file)
 {
-    QString cmd = "export_one_file|" + save_dir + "|" + tpl_file;
-    m_pyProcess->write(cmd.toStdString().data());
-    qDebug() << m_pyProcess->readAll();
+
+    QString cmd = "export_one_file|" + save_dir + "|" + tpl_file + "\n";
+    executePythonCmd(cmd);
+}
+
+void MainWindow::exportBySheet(const QString &sheet)
+{
+    QString dirStr;
+    qDebug() << Setting::getInstatnce().getErlDir();
+    qDebug() << Setting::getInstatnce().getLuaDir();
+    const QString &erlDir = Setting::getInstatnce().getErlDir();
+    const QString &luaDir = Setting::getInstatnce().getLuaDir();
+    //dirStr.sprintf("{\"erl\":\"%s\", \"lua\":\"%s\"}", erlDir, luaDir);
+    dirStr = QString("{\"erl\":\"%1\", \"lua\":\"%2\"}").arg(erlDir).arg(luaDir);
+    qDebug() << dirStr;
+    QString cmd = "export_by_sheet|" + dirStr + "|" + sheet + "\n";
+    executePythonCmd(cmd);
 }
 
 void MainWindow::createMenus()
@@ -109,4 +160,19 @@ void MainWindow::initTabs(QWidget* centralWidget)
     if (! m_mod_tab->loadConfigJson(jsonFile))
         exit(0);
 
+}
+
+void MainWindow::executePythonCmd(const QString &cmd)
+{
+    qDebug() << "execute cmd:" << cmd;
+    qDebug() << "std string cmd:" << cmd.toStdWString().data();
+    m_pyProcess->write(cmd.toStdString().data());
+    QString ret = readProcessOut(m_pyProcess);
+    qDebug() << "return result:" << ret;
+    QStringList result = ret.split('|');
+    if (result[0].toInt() == 1) {
+        QMessageBox::information(this, "export succ", result[1]);
+    } else {
+        QMessageBox::information(this, "export failed", result[1]);
+    }
 }

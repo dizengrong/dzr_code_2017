@@ -23,15 +23,18 @@ private slots:
     void onExportAllLuaModAction();
     void onExportAllCsModAction();
     void loadStyleSheet(const QString &styleSheetFile);
+    void onTimerTest();
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent, QProcess *process);
     ~MainWindow();
     void exportOneFile(const QString& save_dir, const QString& tpl_file);
+    void exportBySheet(const QString& sheet);
 private:
     void createMenus();
     void createActions();
     void initTabs(QWidget* centralWidget);
+    void executePythonCmd(const QString &cmd);
 };
 
 #endif // MAINWINDOW_H

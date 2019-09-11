@@ -40,6 +40,7 @@ private slots:
      void contextMenuEvent(QContextMenuEvent *event); //右键默认槽
      void on_m_btn_erl_dir_clicked();
      void on_m_btn_lua_dir_clicked();
+     void onExportBySheet();
 };
 
 #endif // MODTAB_H
