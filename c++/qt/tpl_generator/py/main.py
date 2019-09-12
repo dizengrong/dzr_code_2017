@@ -149,7 +149,7 @@ class ExportManager(object):
             "lang_export_files": self.lang_export_files,
             "max_zh_col_size": self.max_zh_col_size,
         }
-        return resutl_dict
+        return json.dumps(resutl_dict)
 
 
     def do_search(self, searchstr, tab_datas):
@@ -170,11 +170,11 @@ class ExportManager(object):
             save_file = os.path.join(save_dir, map_name)
             gen_erlang_map.start(obj, save_file)
             end = time.time()
-            return [1, save_file + u"\n消耗时间：{0}秒".format(int(end - begin))]
+            return "|".join(["1", save_file + u"\n消耗时间：{0}秒".format(int(end - begin))])
         except Exception:
             exception_log = traceback.format_exc()
             add_log(exception_log)
-            return [0, exception_log]
+            return "0|" + exception_log
 
     def export_c_map(self, save_dir, obj, map_name):
         try:
@@ -182,11 +182,11 @@ class ExportManager(object):
             save_file = os.path.join(save_dir, map_name)
             gen_c_map.start(self.config_path, obj, save_file)
             end = time.time()
-            return [1, save_file + u"\n消耗时间：{0}秒".format(int(end - begin))]
+            return "|".join(["1", save_file + u"\n消耗时间：{0}秒".format(int(end - begin))])
         except Exception:
             exception_log = traceback.format_exc()
             add_log(exception_log)
-            return [0, exception_log]
+            return "0|" + exception_log
 
     def export_all(self, file_type, save_dir):
         try:
@@ -199,7 +199,7 @@ class ExportManager(object):
                     ret = self.export_one_file_help(save_dir, export_dict, file_type)
                     export_files.append(ret)
             end = time.time()
-            return "|".join(["1", u'\n\t' + '\n\t'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))])
+            return "|".join(["1", '\n'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))])
         except Exception:
             exception_log = traceback.format_exc()
             add_log(exception_log)
@@ -299,8 +299,8 @@ def main():
     # excel_src_path = os.path.join(os.getcwd(), "..")
     # config_path = os.path.join(os.getcwd(), "config")
     excel_src_path = "F:/p18/p18_cehua_doc"
-    # config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
-    config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
+    config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
+    # config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
     add_log(excel_src_path)
     add_log(config_path)
     manager = ExportManager(excel_src_path, config_path)
@@ -324,6 +324,18 @@ def main():
             file_type = parameters[1]
             save_dir = parameters[2]
             ret = manager.export_all(file_type, save_dir)
+        elif cmd == 'export_erl_map':
+            save_dir = parameters[1]
+            obj = parameters[2]
+            filename = parameters[3]
+            ret = manager.export_erl_map(save_dir, os.path.join(excel_src_path, "map", obj), filename)
+        elif cmd == 'export_c_map':
+            save_dir = parameters[1]
+            obj = parameters[2]
+            filename = parameters[3]
+            ret = manager.export_c_map(save_dir, os.path.join(excel_src_path, "map", obj), filename)
+        elif cmd == 'query_lang_is_ready':
+            ret = manager.query_lang_is_ready()
         else:
             ret = u"0|recv unknow cmd:" + s
         add_log(ret)

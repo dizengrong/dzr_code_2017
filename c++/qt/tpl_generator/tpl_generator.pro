@@ -29,7 +29,8 @@ SOURCES += \
     modtab.cpp \
     maptab.cpp \
     exportitem.cpp \
-    setting.cpp
+    setting.cpp \
+    langtab.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -38,18 +39,25 @@ HEADERS += \
     style.h \
     exportitem.h \
     util.h \
-    setting.h
+    setting.h \
+    langtab.h
 
 FORMS += \
     modtab.ui \
-    maptab.ui
+    maptab.ui \
+    langtab.ui
 
 RESOURCES += \
     resource.qrc
 
 DISTFILES += \
     my_style_sheet.qss \
-    cfg_game_config.json
+    cfg_game_config.json \
+    map_conf.json \
+    lang_Chinses.ts
+
+TRANSLATIONS = lang_English.ts \
+               lang_Chinses.ts
 
 win32:{
 

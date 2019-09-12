@@ -74,6 +74,7 @@ ModTab::ModTab(QWidget *parent) :
 ModTab::~ModTab()
 {
     delete ui;
+    //qDebug() << "delete ModTab";
 }
 
 bool ModTab::loadConfigJson(const QString &jsonFile)
@@ -103,7 +104,7 @@ bool ModTab::loadConfigJson(const QString &jsonFile)
 
     for(int i = 0; i < filesObjs.size(); i++)
     {
-        qDebug() << "key" << i << " is:" << filesObjs.at(i).toObject();
+        //qDebug() << "key" << i << " is:" << filesObjs.at(i).toObject();
         m_exports.push_back(ExportItem(filesObjs.at(i).toObject()));
     }
 

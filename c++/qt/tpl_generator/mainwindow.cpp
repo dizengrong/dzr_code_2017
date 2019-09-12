@@ -60,18 +60,18 @@ void MainWindow::onExportAllCsModAction()
 void MainWindow::loadStyleSheet(const QString &styleSheetFile)
 {
     QFile file(styleSheetFile);
-        file.open(QFile::ReadOnly);
-        if (file.isOpen())
-        {
-            QString styleSheet = this->styleSheet();
-            styleSheet += QLatin1String(file.readAll());//读取样式表文件
-            this->setStyleSheet(styleSheet);//把文件内容传参
-            file.close();
-        }
-        else
-        {
-            QMessageBox::information(this,"tip","cannot find qss file");
-        }
+    file.open(QFile::ReadOnly);
+    if (file.isOpen())
+    {
+        QString styleSheet = this->styleSheet();
+        styleSheet += QLatin1String(file.readAll());//读取样式表文件
+        this->setStyleSheet(styleSheet);//把文件内容传参
+        file.close();
+    }
+    else
+    {
+        QMessageBox::information(this,"tip","cannot find qss file");
+    }
 }
 
 MainWindow::MainWindow(QWidget *parent, QProcess *process)
@@ -97,25 +97,47 @@ MainWindow::MainWindow(QWidget *parent, QProcess *process)
     centralWidget->setLayout(horizontalLayout);
 
 
-    //QTimer *m_timer = new QTimer(this);
-    //connect(m_timer, &QTimer::timeout, this, &MainWindow::onTimerTest);
-    //m_timer->start(3000);
+    m_timer = new QTimer(this);
+    connect(m_timer, &QTimer::timeout, this, &MainWindow::onTimer);
+    m_timer->start(3000);
 }
 
-void MainWindow::onTimerTest()
+void MainWindow::onTimer()
 {
-    m_pyProcess->write("bbbb\n");
+    QString cmd = "query_lang_is_ready\n";
+    m_pyProcess->write(cmd.toLocal8Bit().data());
+    QString ret = readProcessOut(m_pyProcess, 10);
+    ret.trimmed();
+    qDebug() << ret;
+    if (ret.isEmpty())
+        return;
+    if(ret != 'wait'){
+        m_timer->stop();
+        m_lang_tab->loadConfigJson(ret);
+    }
 }
 
 MainWindow::~MainWindow()
 {
-
+    //qDebug() << "delete MainWindow";
 }
 
 void MainWindow::exportOneFile(const QString &save_dir, const QString &tpl_file)
 {
 
     QString cmd = "export_one_file|" + save_dir + "|" + tpl_file + "\n";
+    executePythonCmd(cmd);
+}
+
+void MainWindow::exportErlMap(const QString &save_dir, const QString &obj, const QString &file)
+{
+    QString cmd = "export_erl_map|" + save_dir + "|" + obj + "|" + file + "\n";
+    executePythonCmd(cmd);
+}
+
+void MainWindow::exportCMap(const QString &save_dir, const QString &obj, const QString &file)
+{
+    QString cmd = "export_c_map|" + save_dir + "|" + obj + "|" + file + "\n";
     executePythonCmd(cmd);
 }
 
@@ -178,6 +200,10 @@ void MainWindow::initTabs(QWidget* centralWidget)
     jsonFile = dir.absoluteFilePath("map_conf.json");
     if (! m_map_tab->loadConfigJson(jsonFile))
         exit(0);
+
+    // init lang config tab
+    LangTab* m_lang_tab = new LangTab(this);
+    m_tabWidget->addTab(m_lang_tab, QString(tr("多语言翻译配置")));
 }
 
 void MainWindow::executePythonCmd(const QString &cmd)
@@ -187,8 +213,13 @@ void MainWindow::executePythonCmd(const QString &cmd)
     QString ret = readProcessOut(m_pyProcess);
     qDebug() << "return result:" << ret;
     QStringList result = ret.split('|');
-    if (result[0].toInt() == 1) {
-        QMessageBox::information(this, "export succ", result[1]);
+    int ret_code = result[0].toInt();
+    if (ret_code == 1) {
+        QMessageBox dialog(QMessageBox::Information, "tips", "export succ\t\t\t\t\t\t\t\t", QMessageBox::Ok | QMessageBox::Cancel, this);
+        if(!(result[1].size() > 100))
+            dialog.setInformativeText(result[1].split('\n').at(0));
+        dialog.setDetailedText(result[1]);
+        dialog.exec();
     } else {
         QMessageBox::information(this, "export failed", result[1]);
     }

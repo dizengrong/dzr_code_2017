@@ -3,7 +3,7 @@
 
 #include <QSettings>
 #include <QString>
-
+#include <QDebug>
 
 
 class Setting
@@ -67,7 +67,8 @@ public:
     const QString & getCMapDir(){
         if(m_c_map_dir.isEmpty()){
             QSettings *reader = new QSettings(getUserDataFile(), QSettings::IniFormat);
-            m_c_map_dir = reader->value("/dir/erl_c_dir").toString();
+            m_c_map_dir = reader->value("/dir/c_map_dir").toString();
+            qDebug() << "m_c_map_dir:" << m_c_map_dir;
             delete reader;
         }
         return m_c_map_dir;
