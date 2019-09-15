@@ -27,10 +27,11 @@ QPushButton* makeBtn(QWidget* parent, const QString &btnLable)
     return btn;
 }
 
-ModTab::ModTab(QWidget *parent) :
+ModTab::ModTab(MainWindow *parent) :
     QWidget(parent),
     ui(new Ui::ModTab),
-    m_mainWindow(dynamic_cast<MainWindow*>(parent))
+    m_mainWindow(parent)
+    //m_mainWindow(dynamic_cast<MainWindow*>(parent))
 {
     ui->setupUi(this);
 
@@ -198,6 +199,7 @@ void ModTab::openDirectory()
 
 void ModTab::onCellDoubleClicked(int row, int column)
 {
+    qDebug() << "modtab->this:" << this;
     qDebug() << "row:" << row << ", col:" << column; //当前行
     QTableWidgetItem *item = ui->m_table->item(row, column);
     switch (column) {

@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
     #ifdef QT_NO_DEBUG
     QString cmd = QString("python %1/py/main.py").arg(pwd);
     #else
-    QString cmd = "python D:/Documents/GitHub/dzr_code_2017/c++/qt/tpl_generator/py/main.py";
+    //QString cmd = "python D:/Documents/GitHub/dzr_code_2017/c++/qt/tpl_generator/py/main.py";
+    QString cmd = "python C:/my_github/dzr_code_2017/c++/qt/tpl_generator/py/main.py";
     #endif
     qDebug() << cmd;
     m_pyProcess->start(cmd);

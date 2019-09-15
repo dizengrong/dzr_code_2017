@@ -57,6 +57,29 @@ void MainWindow::onExportAllCsModAction()
 
 }
 
+void MainWindow::onAboutAction()
+{
+    QString title;
+    title = QMessageBox::tr(
+        "<h3>Excel配置导出工具-v1.0</h3>"
+        "<p>本程序使用Qt（version %1）作为页面展示，使用python作为数据处理</p>"
+        ).arg(QLatin1String(QT_VERSION_STR));
+    QString content = QMessageBox::tr(
+        "<p align=\"right\" style=\"color:red\">开发者：dzR    构建时间：2019-09-15</p>"
+        );
+    QMessageBox *msgBox = new QMessageBox(this);
+    msgBox->setAttribute(Qt::WA_DeleteOnClose);
+    msgBox->setWindowTitle("关于");
+    msgBox->setText(title);
+    msgBox->setInformativeText(content);
+
+    QPixmap pm(QLatin1String(":/picture/qtlogo-64.png"));
+    if (!pm.isNull())
+            msgBox->setIconPixmap(pm);
+
+    msgBox->exec();
+}
+
 void MainWindow::loadStyleSheet(const QString &styleSheetFile)
 {
     QFile file(styleSheetFile);
@@ -77,6 +100,7 @@ void MainWindow::loadStyleSheet(const QString &styleSheetFile)
 MainWindow::MainWindow(QWidget *parent, QProcess *process)
     : QMainWindow(parent), m_pyProcess(process)
 {
+    setWindowTitle("策划配置工具");
     QDir dir(QCoreApplication::applicationDirPath());
     dir.cdUp();
     m_excel_src_path = dir.path();
@@ -98,24 +122,28 @@ MainWindow::MainWindow(QWidget *parent, QProcess *process)
 
 
     m_timer = new QTimer(this);
-    connect(m_timer, &QTimer::timeout, this, &MainWindow::onTimer);
+    connect(m_timer, &QTimer::timeout, this, &MainWindow::onUpdateTimer);
     m_timer->start(3000);
+    //QTimer::singleShot(6000, this, &MainWindow::onUpdateTimer);
+    //m_test_act = new QAction(tr("test_act"), this);
 }
 
-void MainWindow::onTimer()
+void MainWindow::onUpdateTimer()
 {
     QString cmd = "query_lang_is_ready\n";
     m_pyProcess->write(cmd.toLocal8Bit().data());
-    QString ret = readProcessOut(m_pyProcess, 10);
-    ret.trimmed();
+    QString ret = readProcessOut(m_pyProcess, 100);
+    ret = ret.trimmed();
     qDebug() << ret;
     if (ret.isEmpty())
         return;
     if(ret != 'wait'){
-        m_timer->stop();
         m_lang_tab->loadConfigJson(ret);
+        m_tabWidget->setTabText(m_tabWidget->indexOf(m_lang_tab), tr("多语言翻译配置"));
+        m_timer->stop();
     }
 }
+
 
 MainWindow::~MainWindow()
 {
@@ -124,7 +152,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::exportOneFile(const QString &save_dir, const QString &tpl_file)
 {
-
+    qDebug() << m_mod_tab;
     QString cmd = "export_one_file|" + save_dir + "|" + tpl_file + "\n";
     executePythonCmd(cmd);
 }
@@ -156,6 +184,12 @@ void MainWindow::exportBySheet(const QString &sheet)
     executePythonCmd(cmd);
 }
 
+void MainWindow::exportLangFile(const QString &save_dir, const QString &file)
+{
+    QString cmd = "export_lang_file|" + save_dir + "|" + file + "\n";
+    executePythonCmd(cmd);
+}
+
 const QString MainWindow::getExcelSrcPath() const
 {
     return m_excel_src_path;
@@ -167,6 +201,9 @@ void MainWindow::createMenus()
     menu->addAction(m_export_all_erl_act);
     menu->addAction(m_export_all_lua_act);
     menu->addAction(m_export_all_cs_act);
+
+    menu = menuBar()->addMenu(tr("帮助"));
+    menu->addAction(m_about_act);
 }
 
 void MainWindow::createActions()
@@ -179,6 +216,9 @@ void MainWindow::createActions()
 
     m_export_all_cs_act = new QAction(tr("导出所有C#功能配置"), this);
     connect(m_export_all_cs_act, &QAction::triggered, this, &MainWindow::onExportAllCsModAction);
+
+    m_about_act = new QAction(tr("关于"), this);
+    connect(m_about_act, &QAction::triggered, this, &MainWindow::onAboutAction);
 }
 
 void MainWindow::initTabs(QWidget* centralWidget)
@@ -186,7 +226,7 @@ void MainWindow::initTabs(QWidget* centralWidget)
     m_tabWidget = new QTabWidget(centralWidget);
 
     // init module config tab
-    ModTab* m_mod_tab = new ModTab(this);
+    m_mod_tab = new ModTab(this);
     m_tabWidget->addTab(m_mod_tab, QString(tr("游戏功能配置")));
 
     QDir dir(QCoreApplication::applicationDirPath());
@@ -195,15 +235,15 @@ void MainWindow::initTabs(QWidget* centralWidget)
         exit(0);
 
     // init map config tab
-    MapTab* m_map_tab = new MapTab(this);
+    m_map_tab = new MapTab(this);
     m_tabWidget->addTab(m_map_tab, QString(tr("地图配置")));
     jsonFile = dir.absoluteFilePath("map_conf.json");
     if (! m_map_tab->loadConfigJson(jsonFile))
         exit(0);
 
     // init lang config tab
-    LangTab* m_lang_tab = new LangTab(this);
-    m_tabWidget->addTab(m_lang_tab, QString(tr("多语言翻译配置")));
+    m_lang_tab = new LangTab(this);
+    m_tabWidget->addTab(m_lang_tab, QString(tr("多语言翻译配置(等到就绪)")));
 }
 
 void MainWindow::executePythonCmd(const QString &cmd)

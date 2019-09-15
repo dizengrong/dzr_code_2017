@@ -205,19 +205,19 @@ class ExportManager(object):
             add_log(exception_log)
             return "0|" + exception_log
 
-    def export_lang_file(self, save_dir, export_dict, file_type):
+    def export_lang_file(self, save_dir, tpl_file):
         try:
             begin = time.time()
-            add_log("save_dir:{}, file_type:{}".format(save_dir, file_type))
+            export_dict = self.lang_export_tpl_dict[tpl_file]
             gen_mutil_lang.do_export(self, save_dir, export_dict)
-            ret = self.export_one_file_help(save_dir, export_dict, file_type)
+            ret = self.export_one_file_help(save_dir, export_dict, "erl")
             end = time.time()
-            return [1, ret + u"\n消耗时间：{0}秒".format(int(end - begin))]
+            return "|".join(["1", ret + u"\n消耗时间：{0}秒".format(int(end - begin))])
         except Exception:
             self.all_src_lang_text = None
             exception_log = traceback.format_exc()
             add_log(exception_log)
-            return [0, exception_log]
+            return "0|" + exception_log
 
     def export_one_file(self, save_dir, tpl_file):
         try:
@@ -298,9 +298,13 @@ def main():
     add_log("begin start python...")
     # excel_src_path = os.path.join(os.getcwd(), "..")
     # config_path = os.path.join(os.getcwd(), "config")
-    excel_src_path = "F:/p18/p18_cehua_doc"
-    config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
-    # config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
+    
+    # excel_src_path = "F:/p18/p18_cehua_doc"
+    # config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
+    
+    excel_src_path = "C:/temp"
+    config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
+    
     add_log(excel_src_path)
     add_log(config_path)
     manager = ExportManager(excel_src_path, config_path)
@@ -336,6 +340,10 @@ def main():
             ret = manager.export_c_map(save_dir, os.path.join(excel_src_path, "map", obj), filename)
         elif cmd == 'query_lang_is_ready':
             ret = manager.query_lang_is_ready()
+        elif cmd == 'export_lang_file':
+            save_dir = parameters[1]
+            filename = parameters[2]
+            ret = manager.export_lang_file(save_dir, filename)
         else:
             ret = u"0|recv unknow cmd:" + s
         add_log(ret)

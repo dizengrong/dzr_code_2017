@@ -19,7 +19,7 @@ class ModTab : public QWidget
     Q_OBJECT
 
 public:
-    explicit ModTab(QWidget *parent = nullptr);
+    explicit ModTab(MainWindow *parent = nullptr);
     ~ModTab();
     bool loadConfigJson(const QString &jsonFile);
     void showWith(const QList<ExportItem> &datas);
