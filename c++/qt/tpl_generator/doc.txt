@@ -1,0 +1,2 @@
+python程序的打包：
+	pyinstaller --distpath ./py -F ./py/main.py
