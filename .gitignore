@@ -13,5 +13,6 @@ c++/study/cmake_demo/build/*
 c++/study/cmake_demo/*.exe
 c++/study/cmake_demo/*.o
 c++/qt/build*
+c++/qt/tpl_generator/build/*
 
 c++/qt/tpl_generator/py/python_log.log

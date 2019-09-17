@@ -5,4 +5,7 @@
     <qresource prefix="/picture">
         <file>qtlogo-64.png</file>
     </qresource>
+    <qresource prefix="/icon">
+        <file>logo.ico</file>
+    </qresource>
 </RCC>

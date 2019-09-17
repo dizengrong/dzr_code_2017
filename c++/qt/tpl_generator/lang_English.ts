@@ -14,55 +14,75 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="langtab.ui" line="41"/>
+        <location filename="langtab.ui" line="53"/>
         <source>翻译导出</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="langtab.cpp" line="16"/>
+        <location filename="langtab.cpp" line="21"/>
         <source>lang_header_excel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="langtab.cpp" line="17"/>
+        <location filename="langtab.cpp" line="22"/>
         <source>lang_header_tr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="langtab.cpp" line="102"/>
+        <source>lang_tab_zh</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.cpp" line="165"/>
+        <location filename="mainwindow.cpp" line="198"/>
         <source>工具</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="173"/>
+        <location filename="mainwindow.cpp" line="203"/>
+        <source>帮助</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="209"/>
         <source>导出所有Erl功能配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="176"/>
+        <location filename="mainwindow.cpp" line="212"/>
         <source>导出所有Lua功能配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="179"/>
+        <location filename="mainwindow.cpp" line="215"/>
         <source>导出所有C#功能配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="189"/>
+        <location filename="mainwindow.cpp" line="218"/>
+        <source>关于</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="228"/>
         <source>游戏功能配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="198"/>
+        <location filename="mainwindow.cpp" line="237"/>
         <source>地图配置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="244"/>
+        <source>多语言翻译配置(等到就绪)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="140"/>
         <source>多语言翻译配置</source>
         <translation type="unfinished"></translation>
     </message>
@@ -80,13 +100,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="maptab.ui" line="142"/>
-        <location filename="maptab.ui" line="272"/>
+        <location filename="maptab.ui" line="148"/>
+        <location filename="maptab.ui" line="284"/>
         <source>设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="maptab.ui" line="219"/>
+        <location filename="maptab.ui" line="225"/>
         <source>c_map导出目录：</source>
         <translation type="unfinished"></translation>
     </message>
@@ -119,25 +139,39 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modtab.ui" line="142"/>
-        <location filename="modtab.ui" line="246"/>
-        <location filename="modtab.ui" line="347"/>
+        <location filename="modtab.ui" line="148"/>
+        <location filename="modtab.ui" line="258"/>
+        <location filename="modtab.ui" line="365"/>
         <source>设置</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modtab.ui" line="219"/>
+        <location filename="modtab.ui" line="225"/>
         <source>lua导出目录：</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modtab.ui" line="320"/>
+        <location filename="modtab.ui" line="332"/>
         <source>c#导出目录：</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="modtab.ui" line="365"/>
+        <location filename="modtab.ui" line="383"/>
         <source>模糊匹配搜索</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QMessageBox</name>
+    <message>
+        <location filename="mainwindow.cpp" line="63"/>
+        <source>&lt;h3&gt;Excel配置导出工具-v1.0&lt;/h3&gt;&lt;p&gt;本程序使用Qt（version %1）作为页面展示，使用python作为数据处理&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.cpp" line="67"/>
+        <source>&lt;p align=&quot;right&quot; style=&quot;color:red&quot;&gt;dev:%1 	   build_time:%2&lt;/p&gt;</source>
+        <oldsource>&lt;p align=&quot;right&quot; style=&quot;color:red&quot;&gt;dev:%1    build_time:%2&lt;/p&gt;</oldsource>
         <translation type="unfinished"></translation>
     </message>
 </context>

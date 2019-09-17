@@ -64,9 +64,7 @@ void MainWindow::onAboutAction()
         "<h3>Excel配置导出工具-v1.0</h3>"
         "<p>本程序使用Qt（version %1）作为页面展示，使用python作为数据处理</p>"
         ).arg(QLatin1String(QT_VERSION_STR));
-    QString content = QMessageBox::tr(
-        "<p align=\"right\" style=\"color:red\">开发者：dzR    构建时间：2019-09-15</p>"
-        );
+    QString content = QMessageBox::tr("<p align=\"right\" style=\"color:red\">dev:%1    build_time:%2</p>").arg("dzR").arg("2019-09-17");
     QMessageBox *msgBox = new QMessageBox(this);
     msgBox->setAttribute(Qt::WA_DeleteOnClose);
     msgBox->setWindowTitle("关于");
@@ -101,6 +99,8 @@ MainWindow::MainWindow(QWidget *parent, QProcess *process)
     : QMainWindow(parent), m_pyProcess(process)
 {
     setWindowTitle("策划配置工具");
+    setWindowIcon(QIcon(":icon/logo.ico"));
+
     QDir dir(QCoreApplication::applicationDirPath());
     dir.cdUp();
     m_excel_src_path = dir.path();
@@ -230,14 +230,14 @@ void MainWindow::initTabs(QWidget* centralWidget)
     m_tabWidget->addTab(m_mod_tab, QString(tr("游戏功能配置")));
 
     QDir dir(QCoreApplication::applicationDirPath());
-    QString jsonFile = dir.absoluteFilePath("cfg_game_config.json");
+    QString jsonFile = dir.absoluteFilePath("config/cfg_game_config.json");
     if (! m_mod_tab->loadConfigJson(jsonFile))
         exit(0);
 
     // init map config tab
     m_map_tab = new MapTab(this);
     m_tabWidget->addTab(m_map_tab, QString(tr("地图配置")));
-    jsonFile = dir.absoluteFilePath("map_conf.json");
+    jsonFile = dir.absoluteFilePath("config/map_conf.json");
     if (! m_map_tab->loadConfigJson(jsonFile))
         exit(0);
 

@@ -46,10 +46,11 @@ def excel_cell_value_format(value):
 
 
 def add_log(log):
+    pass
     # with codecs.open("python_log.log", "a", "utf-8") as fd:
-    with open("python_log.log", "a", encoding="utf-8") as fd:
-        fd.write(u"%s %s\n\n" % (util.normal_dt_str(), log))
-        fd.flush()
+    # with open("python_log.log", "a", encoding="utf-8") as fd:
+    #     fd.write(u"%s %s\n\n" % (util.normal_dt_str(), log))
+    #     fd.flush()
 
 
 def xml_2_json(xml_file, to_json_file):
@@ -112,7 +113,11 @@ class ExportManager(object):
                 export_dict['export_' + file_type[1:]] = temp_dict
                 self.export_file_dict[tpl_file2] = export_dict
                 for d in temp_dict["dict"]:
-                    self.sheet_dict[data["excle_file"] + "#" + d["sheet"]] = export_dict
+                    sheet_key = data["excle_file"] + "#" + d["sheet"]
+                    if sheet_key not in self.sheet_dict:
+                        self.sheet_dict[sheet_key] = {}
+
+                    self.sheet_dict[sheet_key][file_type[1:]] = export_dict
 
     def analysis_thread(self):
         try:
@@ -238,15 +243,17 @@ class ExportManager(object):
         try:
             begin = time.time()
             export_files = []
-            export_dict = self.sheet_dict[sheet]
+            temp_dict = self.sheet_dict[sheet]
+            add_log(temp_dict)
             for key in ['erl', 'lua', 'cs']:
-                if 'export_' + key not in export_dict:
+                if key not in temp_dict:
                     continue
                 save_dir = dir_dict[key]
+                export_dict = temp_dict[key]
                 ret = self.export_one_file_help(save_dir, export_dict, key)
                 export_files.append(ret)
             end = time.time()
-            return "|".join(["1", u'\n\t' + u'\n\t'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))])
+            return "|".join(["1", u'\n'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))])
         except Exception:
             exception_log = traceback.format_exc()
             # add_log(exception_log)
@@ -296,14 +303,14 @@ class ExportManager(object):
 
 def main():
     add_log("begin start python...")
-    # excel_src_path = os.path.join(os.getcwd(), "..")
-    # config_path = os.path.join(os.getcwd(), "config")
+    excel_src_path = os.path.join(os.getcwd(), "..")
+    config_path = os.path.join(os.getcwd(), "config")
     
     # excel_src_path = "F:/p18/p18_cehua_doc"
     # config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
     
-    excel_src_path = "C:/temp"
-    config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
+    # excel_src_path = "C:/temp"
+    # config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
     
     add_log(excel_src_path)
     add_log(config_path)

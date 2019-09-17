@@ -24,7 +24,7 @@ def init_lang(self):
     for key in self.lang_src_dict:
         d = self.lang_src_dict[key]
         for d in self.lang_src_dict[key]:
-            print(d)
+            # print(d)
             item1 = QTableWidgetItem(key)
             item1.setTextAlignment(Qt.AlignCenter)
             self.m_lang_cnf_tab.setItem(row, 0, item1)
@@ -77,7 +77,7 @@ def check_contain_chinese(check_str):
         return True
     if isinstance(check_str, str) or isinstance(check_str, unicode):
         try:
-            print(check_str.encode('ascii'))
+            # print(check_str.encode('ascii'))
             return False
         except UnicodeDecodeError:
             return True
@@ -189,7 +189,7 @@ def read_exists_translated_file(erl_file):
     with open(erl_file, 'r', encoding='utf-8') as fd:
         for line in fd.readlines():
             match = compiled_re2.findall(line)
-            print(len(match))
+            # print(len(match))
             if len(match) > 0:
                 key = match[0]
                 if key != '_':

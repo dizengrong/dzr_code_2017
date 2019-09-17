@@ -171,7 +171,7 @@ void ModTab::contextMenuEvent(QContextMenuEvent *event)
 
     if(item != NULL)
     {
-        m_openDirAct->setData("F:\\p18\\p18_cehua_tool\\fbird_config_tool\\resources\\app\\config\\" + item->text() + ".tpl");
+        m_openDirAct->setData(m_mainWindow->getExcelSrcPath() + item->text() + ".tpl");
         qDebug() << "row:" << item->row() << ", col:" << item->column(); //当前行
 
         //菜单出现的位置为当前鼠标的位置

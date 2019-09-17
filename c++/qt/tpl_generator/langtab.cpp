@@ -99,7 +99,7 @@ void LangTab::initSourceTable(const QJsonObject &jsonObj)
     header.append("Excel文件");
     header.append("Sheet名称");
     for (int j = 0; j < max_zh_clos; ++j) {
-        header.append("中文列");
+        header.append(tr("lang_tab_zh"));
     }
     ui->m_cols_table->setColumnCount(header.size());
 
