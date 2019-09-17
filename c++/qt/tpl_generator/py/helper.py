@@ -38,7 +38,7 @@ def erl_split_items(item_str):
 def lua_split_items(item_str):
     # 分割字符串，字符串格式为"1,a|2,b|3,c"，分割后格式为：{{1,a},{2,b},{3,c}}
     if item_str.strip() == "":
-        return "[]"
+        return "{}"
     else:
         return "{{" + "}, {".join(item_str.split("|")) + "}}"
 
