@@ -3,6 +3,7 @@
 *.dll
 *.pyo
 *.pyd
+*.o
 web/flask/uploads/vlc-record-2017-11-09-10h47m32s-test.mp4-.mp4
 web/flask/uploads/log.txt
 web/*
@@ -11,4 +12,7 @@ python/qt/GenConfigTool/dist/*
 c++/study/cmake_demo/build/*
 c++/study/cmake_demo/*.exe
 c++/study/cmake_demo/*.o
+c++/qt/build*
+c++/qt/tpl_generator/build/*
 
+c++/qt/tpl_generator/py/python_log.log
