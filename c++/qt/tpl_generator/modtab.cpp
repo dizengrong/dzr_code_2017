@@ -171,7 +171,9 @@ void ModTab::contextMenuEvent(QContextMenuEvent *event)
 
     if(item != NULL)
     {
-        m_openDirAct->setData(m_mainWindow->getExcelSrcPath() + item->text() + ".tpl");
+        QDir dir(QCoreApplication::applicationDirPath());
+        QString tplPath = dir.absoluteFilePath("config/" + item->text() + ".tpl");
+        m_openDirAct->setData(tplPath);
         qDebug() << "row:" << item->row() << ", col:" << item->column(); //当前行
 
         //菜单出现的位置为当前鼠标的位置
