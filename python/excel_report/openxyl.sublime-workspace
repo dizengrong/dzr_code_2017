@@ -1,0 +1,2778 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"utils",
+				"util_sheet\tmodule"
+			],
+			[
+				"colo",
+				"color\tparam"
+			],
+			[
+				"co",
+				"comment\tfunction"
+			],
+			[
+				"Call",
+				"CallAfter\tfunction"
+			],
+			[
+				"from",
+				"from_call_comming"
+			],
+			[
+				"D",
+				"DateTime"
+			],
+			[
+				"get",
+				"get_by_name\tfunction"
+			],
+			[
+				"db",
+				"db_user\tmodule"
+			],
+			[
+				"app",
+				"AppendItems\tfunction"
+			],
+			[
+				"util",
+				"util_wx"
+			],
+			[
+				"c_ch",
+				"c_char\tclass"
+			],
+			[
+				"AL",
+				"ALIGN_LEFT\tinstance"
+			],
+			[
+				"r",
+				"rmtree\tfunction"
+			],
+			[
+				"READO",
+				"TE_READONLY\tinstance"
+			],
+			[
+				"isa",
+				"is_admin"
+			],
+			[
+				"GetPa",
+				"GetPath\tmodule"
+			],
+			[
+				"sheby",
+				"sheet_by_name\tfunction"
+			],
+			[
+				"max",
+				"max_unicode_cols\tstatement"
+			],
+			[
+				"shee",
+				"sheet_by_index\tfunction"
+			],
+			[
+				"main",
+				"main_gui\tmodule"
+			],
+			[
+				"whi",
+				"WHITE\tstatement"
+			],
+			[
+				"common",
+				"common_control\tmodule"
+			],
+			[
+				"Ref",
+				"Refresh\tmodule"
+			],
+			[
+				"Get",
+				"GetWidth"
+			],
+			[
+				"s",
+				"seat_amount\tstatement"
+			],
+			[
+				"vo",
+				"voice_handle\tstatement"
+			],
+			[
+				"voic",
+				"VoiceTalk\tclass"
+			],
+			[
+				"star",
+				"start_thread\tfunction"
+			],
+			[
+				"show",
+				"show_tool_tips\tfunction"
+			],
+			[
+				"conn",
+				"connect"
+			],
+			[
+				"stop",
+				"stop_ppv_voice_talk\tfunction"
+			],
+			[
+				"m_btn",
+				"m_btn_micro\tstatement"
+			],
+			[
+				"hk",
+				"hk_device"
+			],
+			[
+				"curr",
+				"current_show_cars\tstatement"
+			],
+			[
+				"devi",
+				"device_id\tparam"
+			],
+			[
+				"gps",
+				"gps_id\tstatement"
+			],
+			[
+				"us",
+				"user_callback\tstatement"
+			],
+			[
+				"is",
+				"is_connected\tfunction"
+			],
+			[
+				"Show",
+				"ShowModal\tmodule"
+			],
+			[
+				"car",
+				"car_id"
+			],
+			[
+				"map",
+				"map_js\tmodule"
+			],
+			[
+				"cef",
+				"cef_browser"
+			],
+			[
+				"m",
+				"map_js\tmodule"
+			],
+			[
+				"poin",
+				"points"
+			],
+			[
+				"dev",
+				"dev_id\tstatement"
+			],
+			[
+				"SetVa",
+				"SetValue\tfunction"
+			],
+			[
+				"col",
+				"colour_from"
+			],
+			[
+				"setb",
+				"SetBackgroundColour\tmodule"
+			],
+			[
+				"ver",
+				"VERTICAL\tinstance"
+			],
+			[
+				"mp",
+				"m_panel2\tstatement"
+			],
+			[
+				"pp",
+				"ppvs_port\tstatement"
+			],
+			[
+				"db_",
+				"db_monitor_device_param\tmodule"
+			],
+			[
+				"m_do",
+				"m_body_video_panel"
+			],
+			[
+				"cv",
+				"c_void_p\tclass"
+			],
+			[
+				"c_c",
+				"c_char\tclass"
+			],
+			[
+				"with",
+				"with\tkeyword"
+			],
+			[
+				"poi",
+				"POINTER\tfunction"
+			],
+			[
+				"B",
+				"BYTE\tstatement"
+			],
+			[
+				"win",
+				"wintypes\tmodule"
+			],
+			[
+				"pl",
+				"playm4_free_port\tfunction"
+			],
+			[
+				"playme_",
+				"playm4_open_stream\tfunction"
+			],
+			[
+				"pla",
+				"play_port\tstatement"
+			],
+			[
+				"playm_op",
+				"playm4_set_stream_open_mode\tfunction"
+			],
+			[
+				"ply",
+				"player_api\tstatement"
+			],
+			[
+				"play",
+				"player_api\tstatement"
+			],
+			[
+				"Blu",
+				"BLUE\tstatement"
+			],
+			[
+				"U",
+				"UpdateValue\tfunction"
+			],
+			[
+				"run",
+				"running\tstatement"
+			],
+			[
+				"try",
+				"try\tTry/Except/Finally"
+			],
+			[
+				"in",
+				"insert\tfunction"
+			],
+			[
+				"pi",
+				"print_html_text\tfunction"
+			],
+			[
+				"htm",
+				"html_tpl_file"
+			],
+			[
+				"Getsrin",
+				"GetStringSelection\tmodule"
+			],
+			[
+				"on_re",
+				"on_reset"
+			],
+			[
+				"refr",
+				"report_frame\tmodule"
+			],
+			[
+				"ins",
+				"install_path\tparam"
+			],
+			[
+				"e",
+				"exec_command\tfunction"
+			],
+			[
+				"zip",
+				"reload_zipfile"
+			],
+			[
+				"rlo",
+				"reload_zipfile\tstatement"
+			],
+			[
+				"N",
+				"NOT_FOUND"
+			],
+			[
+				"row",
+				"rows"
+			],
+			[
+				"Ver",
+				"VERTICAL\tinstance"
+			],
+			[
+				"stati",
+				"statistics_hospital_panel\tmodule"
+			],
+			[
+				"get_hos",
+				"get_hospital_name_by_id\tfunction"
+			],
+			[
+				"get_bn",
+				"get_btype_name_by_id\tfunction"
+			],
+			[
+				"res",
+				"on_reset_condition"
+			],
+			[
+				"SetS",
+				"SetSelection\tmodule"
+			],
+			[
+				"m_tex",
+				"m_text_name\tstatement"
+			],
+			[
+				"m_cho",
+				"m_choice_sick_reason\tstatement"
+			],
+			[
+				"pa",
+				"patient_name\tstatement"
+			],
+			[
+				"m_da",
+				"m_datePicker101\tstatement"
+			],
+			[
+				"m_choices",
+				"m_choice_task_state\tstatement"
+			],
+			[
+				"CLI",
+				"CLIENT_STATE_REGISTER\tstatement"
+			],
+			[
+				"CLIE",
+				"CLIENT_STATE_CONNECTED\tstatement"
+			],
+			[
+				"myci",
+				"my_cti\tstatement"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"uti",
+				"util_conf\tmodule"
+			],
+			[
+				"Dis",
+				"DispatchWithEvents\tfunction"
+			],
+			[
+				"Setb",
+				"SetBackgroundColour\tmodule"
+			],
+			[
+				"cti",
+				"cti_client\tmodule"
+			],
+			[
+				"Ev",
+				"EventIDEnum\tclass"
+			],
+			[
+				"c_",
+				"c_uint\tclass"
+			],
+			[
+				"typ",
+				"type_id"
+			],
+			[
+				"mainto",
+				"main_top_panel\tmodule"
+			],
+			[
+				"ap",
+				"app_report_dlg\tmodule"
+			],
+			[
+				"sta",
+				"statistics\tmodule"
+			],
+			[
+				"Setsi",
+				"SetSizer\tmodule"
+			],
+			[
+				"hos",
+				"hospital_id"
+			],
+			[
+				"dis",
+				"distance_dict\tstatement"
+			],
+			[
+				"re",
+				"resource_image"
+			],
+			[
+				"ini",
+				"init_set_phone\tfunction"
+			],
+			[
+				"sou",
+				"sound_len\tstatement"
+			],
+			[
+				"rev",
+				"removeOverlay"
+			],
+			[
+				"rem",
+				"removeOverlay"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"LOG",
+				"LOGSEVERITY_INFO\tinstance"
+			],
+			[
+				"prop",
+				"prop_data\tparam"
+			],
+			[
+				"propa",
+				"prop_name\tparam"
+			],
+			[
+				"Delteall",
+				"DeleteAllItems\tfunction"
+			],
+			[
+				"city",
+				"city_name"
+			],
+			[
+				"remov",
+				"remove_hospital_and_car\tfunction"
+			],
+			[
+				"cars",
+				"car_state"
+			],
+			[
+				"Dele",
+				"DeleteAllItems\tmodule"
+			],
+			[
+				"con",
+				"constants\tmodule"
+			],
+			[
+				"m_",
+				"m_st_hospital\tstatement"
+			],
+			[
+				"big",
+				"big_event"
+			],
+			[
+				"SetVal",
+				"SetValue\tmodule"
+			],
+			[
+				"reea",
+				"reason_type1"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "work_time_writer.py",
+			"settings":
+			{
+				"buffer_size": 4862,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_days.py",
+			"settings":
+			{
+				"buffer_size": 3681,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 179 files for \"width\" (whole word)\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\chart\\_chart.py:\n   58      title = TitleDescriptor()\n   59      anchor = \"E15\" # default anchor position\n   60:     width = 15 # in cm, approx 5 rows\n   61      height = 7.5 # in cm, approx 14 rows\n   62      _id = 1\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\chart\\layout.py:\n   29      y = NestedFloat(allow_none=True)\n   30      w = NestedFloat(allow_none=True)\n   31:     width = Alias('w')\n   32      h = NestedFloat(allow_none=True)\n   33      height = Alias('h')\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\comments\\comments.py:\n   10          self.content = text\n   11          self.author = author\n   12:         self.width = '108pt'\n   13          self.height = '59.25pt'\n   14  \n   ..\n   31          \"\"\"Create a detached copy of this comment.\"\"\"\n   32          clone = self.__class__(self.content, self.author)\n   33:         clone.width = self.width\n   34          clone.height = self.height\n   35          return clone\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\comments\\shape_writer.py:\n   85  \n   86      style = (\"position:absolute; margin-left:59.25pt;\"\n   87:              \"margin-top:1.5pt;width:{width};height:{height};\"\n   88               \"z-index:1;visibility:hidden\").format(height=\"59.25pt\",\n   89:                                                width=\"108pt\")\n   90      attrs = {\n   91          \"type\": \"#_x0000_t202\",\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\drawing\\drawing.py:\n   40  \n   41      @property\n   42:     def width(self):\n   43          return self._width\n   44  \n   45:     @width.setter\n   46:     def width(self, w):\n   47          if self.resize_proportional and w:\n   48              ratio = self._height / self._width\n   ..\n   98              anchor._from.row = self.anchorrow\n   99  \n  100:         anchor.ext.width = pixels_to_EMU(self._width)\n  101          anchor.ext.height = pixels_to_EMU(self._height)\n  102  \n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\drawing\\image.py:\n   50          # don't keep the image open\n   51          image = _import_image(img)\n   52:         self.width = image.size[0]\n   53          self.height = image.size[1]\n   54          try:\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\drawing\\line.py:\n  100  \n  101      w = MinMax(min=0, max=20116800, allow_none=True) # EMU\n  102:     width = Alias('w')\n  103      cap = NoneSet(values=(['rnd', 'sq', 'flat']))\n  104      cmpd = NoneSet(values=(['sng', 'dbl', 'thickThin', 'thinThick', 'tri']))\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\drawing\\shape.py:\n  286          self.axis_coordinates = coords\n  287          (x1, y1), (x2, y2) = coords # bottom left, top right\n  288:         drawing_width = pixels_to_EMU(self.chart.drawing.width)\n  289          drawing_height = pixels_to_EMU(self.chart.drawing.height)\n  290:         plot_width = drawing_width * self.chart.width\n  291          plot_height = drawing_height * self.chart.height\n  292  \n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\drawing\\shapes.py:\n   53  \n   54      cx = Integer()\n   55:     width = Alias('cx')\n   56      cy = Integer()\n   57      height = Alias('cy')\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\drawing\\spreadsheet_drawing.py:\n  228          anchor._from.col = col -1\n  229          if isinstance(obj, ChartBase):\n  230:             anchor.ext.width = cm_to_EMU(obj.width)\n  231              anchor.ext.height = cm_to_EMU(obj.height)\n  232          elif isinstance(obj, Image):\n  233:             anchor.ext.width = pixels_to_EMU(obj.width)\n  234              anchor.ext.height = pixels_to_EMU(obj.height)\n  235      return anchor\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\worksheet\\dimensions.py:\n  124      \"\"\"Information about the display properties of a column.\"\"\"\n  125  \n  126:     width = Float(allow_none=True)\n  127      bestFit = Bool()\n  128      auto_size = Alias('bestFit')\n  ...\n  132      collapsed = Bool()\n  133  \n  134:     __fields__ = Dimension.__fields__ + ('width', 'bestFit', 'customWidth', 'style',\n  135                                           'min', 'max')\n  136  \n  ...\n  138                   worksheet,\n  139                   index='A',\n  140:                  width=None,\n  141                   bestFit=False,\n  142                   hidden=False,\n  ...\n  150                   visible=None,\n  151                   auto_size=None,):\n  152:         self.width = width\n  153          self.min = min\n  154          self.max = max\n  ...\n  167      @property\n  168      def customWidth(self):\n  169:         \"\"\"Always true if there is a width for the column\"\"\"\n  170:         return self.width is not None\n  171  \n  172  \n\n28 matches across 11 files\n\n\nSearching 179 files for \"ColumnDimension\" (whole word)\n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\reader\\worksheet.py:\n   16  from openpyxl.worksheet import Worksheet\n   17  from openpyxl.worksheet.dimensions import (\n   18:     ColumnDimension,\n   19      RowDimension,\n   20      SheetFormatProperties,\n   ..\n  260          if 'style' in attrs:\n  261              attrs['style'] = self.styles[int(attrs['style'])]\n  262:         dim = ColumnDimension(self.ws, **attrs)\n  263          self.ws.column_dimensions[column] = dim\n  264  \n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\worksheet\\dimensions.py:\n  121  \n  122  \n  123: class ColumnDimension(Dimension):\n  124      \"\"\"Information about the display properties of a column.\"\"\"\n  125  \n  ...\n  161              outlineLevel = outline_level\n  162          self.collapsed = collapsed\n  163:         super(ColumnDimension, self).__init__(index, hidden, outlineLevel,\n  164                                                collapsed, worksheet, style=style)\n  165  \n\nC:\\Python27\\Lib\\site-packages\\openpyxl\\worksheet\\worksheet.py:\n   56  )\n   57  from .dimensions import (\n   58:     ColumnDimension,\n   59      RowDimension,\n   60      DimensionHolder,\n   ..\n  836          \"\"\"Dimension factory for column information\"\"\"\n  837  \n  838:         return ColumnDimension(self)\n  839  \n  840      def _add_row(self):\n\n6 matches across 3 files\n",
+			"settings":
+			{
+				"buffer_size": 6024,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/worksheet/worksheet.py",
+			"settings":
+			{
+				"buffer_size": 27958,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/worksheet/dimensions.py",
+			"settings":
+			{
+				"buffer_size": 8449,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "util_sheet.py",
+			"settings":
+			{
+				"buffer_size": 408,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/formula/tokenizer.py",
+			"settings":
+			{
+				"buffer_size": 14442,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/styles/alignment.py",
+			"settings":
+			{
+				"buffer_size": 2524,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/styles/borders.py",
+			"settings":
+			{
+				"buffer_size": 3557,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "table_header.py",
+			"settings":
+			{
+				"buffer_size": 4475,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "work_time_reader.py",
+			"settings":
+			{
+				"buffer_size": 1885,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/styles/fonts.py",
+			"settings":
+			{
+				"buffer_size": 3564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/styles/fills.py",
+			"settings":
+			{
+				"buffer_size": 6475,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Python27/Lib/site-packages/openpyxl/styles/colors.py",
+			"settings":
+			{
+				"buffer_size": 5145,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "util_cell.py",
+			"settings":
+			{
+				"buffer_size": 1523,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					""
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Build with dependencies"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (common_test)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Test Current Module (eunit)"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Generate Documentation"
+				],
+				[
+					"Packages/Erlang/rebar.sublime-build",
+					"Update Dependencies"
+				]
+			],
+			[
+				"Packages/Erlang/rebar.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Sublime-Erlang/Erlang.sublime-build",
+					""
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					""
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Build with dependencies"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Test (common_test)"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Test (eunit)"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Test Current Module (eunit)"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Generate Documentation"
+				],
+				[
+					"Packages/Sublime-Erlang/rebar.sublime-build",
+					"Update Dependencies"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Sublime-Erlang/Erlang.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ssp",
+		"selected_items":
+		[
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"ssj",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssc",
+				"Set Syntax: C++"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"newfi",
+				"ANF: New File"
+			],
+			[
+				"sse",
+				"Set Syntax: Erlang"
+			],
+			[
+				"pakin",
+				"Package Control: Install Package"
+			],
+			[
+				"packdis",
+				"Package Control: Disable Package"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"pakckd",
+				"Package Control: Disable Package"
+			],
+			[
+				"packrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gitgutter",
+				"Preferences: GitGutter Settings - Default"
+			],
+			[
+				"pakcin",
+				"Package Control: Install Package"
+			],
+			[
+				"pakcre",
+				"Package Control: Remove Channel"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssq",
+				"Set Syntax: SQL (Rails)"
+			],
+			[
+				"formatcode",
+				"CodeFormatter: Format Code"
+			],
+			[
+				"sss",
+				"Set Syntax: SQL"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"browse",
+				"Browse Mode: Left Sidebar"
+			],
+			[
+				"fileb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pack",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"Snippet: ",
+				"Snippet: nodes"
+			],
+			[
+				"pakcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"pps",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pai",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pp",
+				"Package Control: Disable Package"
+			],
+			[
+				"se",
+				"Set Syntax: Erlang"
+			],
+			[
+				"ppc",
+				"Package Control: Install Package"
+			],
+			[
+				"ppi",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"fc",
+				"File: Close All"
+			],
+			[
+				"sssh",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Snippet: gen_s",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"Snippet: gen",
+				"Snippet: gen_event Callbacks"
+			],
+			[
+				"todore",
+				"TodoReview: Project Files"
+			],
+			[
+				"Package Control: remove",
+				"Package Control: Remove Repository"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"reviewmys",
+				"ReviewMyself: Folders in Project"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inse",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"rmove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ge",
+				"Snippet: gen_server Callbacks"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 540.0
+	},
+	"console":
+	{
+		"height": 272.0,
+		"history":
+		[
+			"os.path.exists(\"D:/programs/erl5.10.1/bin\")",
+			"os.path.exists(\"D:/programs/erl5.10.1/bin/erl\")",
+			"import os",
+			"build/all.py",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Python27/Lib/site-packages/openpyxl"
+	],
+	"file_history":
+	[
+		"/D/program_lib/wxPython-demo-4.0.0b2/demo/demo.py",
+		"/C/Python27/Lib/site-packages/openpyxl/utils/formulas.py",
+		"/C/Python27/Lib/site-packages/openpyxl/styles/fonts.py",
+		"/C/Python27/Lib/site-packages/openpyxl/styles/alignment.py",
+		"/C/Python27/Lib/site-packages/openpyxl/worksheet/worksheet.py",
+		"/C/Python27/Lib/site-packages/openpyxl/packaging/workbook.py",
+		"/C/Python27/Lib/site-packages/openpyxl/workbook/workbook.py",
+		"/C/Python27/Lib/site-packages/openpyxl/cell/cell.py",
+		"/C/Python27/Lib/site-packages/openpyxl/styles/borders.py",
+		"/C/Python27/Lib/site-packages/openpyxl/reader/worksheet.py",
+		"/C/Python27/Lib/site-packages/openpyxl/utils/cell.py",
+		"/C/Python27/Lib/site-packages/openpyxl/utils/__init__.py",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/dist/cti_queue/cti/register_ocx.bat",
+		"/E/Job/archives_manager/pyinstaller/dist/archives_server/conf/conf.yaml",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Anaconda/README.md",
+		"/E/Job/120scheduler/scheduler_center/cef_log.txt.dump",
+		"/E/Job/120scheduler/scheduler_center/cef_log.txt",
+		"/E/Job/120scheduler/scheduler_center/tests/files.html",
+		"/E/Job/120scheduler/scheduler_center/cti/register_ocx.bat",
+		"/E/Job/120scheduler/scheduler_center/const.py",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/build_cti_queue.spec",
+		"/E/Job/archives_manager/pyinstaller/archives_client.spec",
+		"/E/Job/archives_manager/pyinstaller/build_client.py",
+		"/E/Job/archives_manager/pyinstaller/dist/archives_client/conf/conf.yaml",
+		"/D/programs/Sublime Text 33/sublime_text.exe",
+		"/E/Job/120scheduler/scheduler_center/cti/com_cti.py",
+		"/E/Job/120scheduler/docs/cti开发/第二次对接的oxc文件/test.html",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/pyinstaller.py",
+		"/E/Job/120scheduler/scheduler_center/tests/map_route.html",
+		"/E/Job/120scheduler/scheduler_center/tests/map_route2.html",
+		"/E/Job/120scheduler/scheduler_center/main.py",
+		"/E/Job/120scheduler/scheduler_center/center_client/client_handler.py",
+		"/E/Job/120scheduler/scheduler_center/user/mod_user.py",
+		"/E/Job/120scheduler/scheduler_center/user/login_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/resource_image.py",
+		"/E/Job/120scheduler/scheduler_center/hospital_state_panel.py",
+		"/E/Job/120scheduler/scheduler_center/base_main_gui.py",
+		"/E/Job/120scheduler/scheduler_center/main_left_panel.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/image_label.py",
+		"/E/Job/120scheduler/scheduler_center/phone/phone_book_frame.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_matplatlib.py",
+		"/E/Job/120scheduler/scheduler_center/car/base_car_monitor_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/alarm_handle_list_panel.py",
+		"/E/Job/120scheduler/scheduler_center/device/hk_device.py",
+		"/E/Job/120scheduler/scheduler_center/device/voice_talk.py",
+		"/E/Job/120scheduler/scheduler_center/device/hk_common.py",
+		"/E/Job/120scheduler/scheduler_center/test_hk_dvr2.py",
+		"/E/Job/120scheduler/scheduler_center/car/car_monitor_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/hook-cefpython3.py",
+		"/E/Job/120scheduler/scheduler_center/pyinstaller/pyinstaller.spec",
+		"/E/Job/120scheduler/scheduler_center/car/mod_trace.py",
+		"/E/Job/120scheduler/scheduler_center/alarm/alarm_call_coming.py",
+		"/E/Job/120scheduler/scheduler_center/alarm/base_alarm_call_coming.py",
+		"/E/Job/120scheduler/scheduler_center/phone/mod_call_in.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/transparent_control.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/my_grid.py",
+		"/E/Job/120scheduler/scheduler_center/cti/cti_queue.py",
+		"/E/Job/120scheduler/scheduler_center/main_cti.py",
+		"/E/Job/120scheduler/scheduler_center/mymap/map_js.py",
+		"/E/Job/120scheduler/scheduler_center/resource/map/map.js",
+		"/E/Job/120scheduler/scheduler_center/util/util_gps.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_transport_window.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/balloon_msg.py",
+		"/E/Job/120scheduler/scheduler_center/db/db_monitor_device_param.py",
+		"/E/Job/120scheduler/scheduler_center/message_panel.py",
+		"/E/Job/120scheduler/scheduler_center/car/base_car_trace_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/device/video_panel.py",
+		"/D/Documents/GitHub/dzr_code_2017/python/GenConfigTool/main.py",
+		"/D/Documents/GitHub/dzr_code_2017/python/excel_tools/excel_tools.py",
+		"/D/Documents/GitHub/dzr_code_2017/python/excel_tools/main_gui.py",
+		"/D/Documents/GitHub/dzr_code_2017/python/excel_tools/util_excel.py",
+		"/E/Job/120scheduler/scheduler_center/util/util_logger.py",
+		"/D/Documents/GitHub/dzr_code_2017/python/excel_tools/base_main_gui.py",
+		"/E/Job/120scheduler/substation/car/car_trace_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_browser_panel.py",
+		"/E/Job/120scheduler/scheduler_center/test_browser_panel.py",
+		"/E/Job/120scheduler/scheduler_center/resource/map/show_map.html",
+		"/E/Job/120scheduler/scheduler_center/resource_city.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/browser.py",
+		"/E/Job/120scheduler/scheduler_center/device/hk_common.py.old",
+		"/E/Job/120scheduler/scheduler_center/db/db_pathogeny_type.py",
+		"/E/Job/120scheduler/scheduler_center/report/report_reset_panel.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/background_image_panel.py",
+		"/E/Job/120scheduler/scheduler_center/main_top_back_panel.py",
+		"/E/Job/120scheduler/scheduler_center/main_title_bar_panel.py",
+		"/E/Job/120scheduler/scheduler_center/setting/change_passwd_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/report/report_frame.py",
+		"/E/Job/120scheduler/scheduler_center/report/patient_report_panel.py",
+		"/E/Job/120scheduler/scheduler_center/db/db_report.py",
+		"/E/Job/120scheduler/scheduler_center/db/db_user.py",
+		"/E/Job/120scheduler/scheduler_center/report/big_event_report_panel.py",
+		"/E/Job/120scheduler/scheduler_center/report/base_patient_report_panel.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_ulc.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_taskbar_icon.py",
+		"/D/program_lib/wxPython-demo-4.0.0b2/demo/Main.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/progress_renderer.py",
+		"/E/Job/120scheduler/scheduler_center/printer/my_print_table.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_flatmenu.py",
+		"/E/Job/120scheduler/scheduler_center/printer/st_by_hospital.html.tpl",
+		"/E/Job/120scheduler/docs/cti开发/cti_doc_zh.cpp",
+		"/E/Job/120scheduler/docs/cti开发/socket_client_interface.cpp",
+		"/F/guaji/server/script/my_util.py",
+		"/F/guaji/server/script/update_game_server.py",
+		"/F/guaji/server/script/remote_reload_script.py",
+		"/D/Documents/GitHub/dzr_code/python/path_util.py",
+		"/F/guaji/server/script/server_list.txt",
+		"/E/Job/120scheduler/scheduler_center/resource_str.py",
+		"/E/Job/120scheduler/scheduler_center/ambulance_panel.py",
+		"/E/Job/120scheduler/scheduler_center/main_gui.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_menu.py",
+		"/E/Job/120scheduler/scheduler_center/alarm/base_alarm_detail_dialog.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_call_phone.py",
+		"/E/Job/120scheduler/scheduler_center/common_control/gradient_panel.py",
+		"/E/Job/120scheduler/scheduler_center/phone/phone_call_panel.py",
+		"/D/program_lib/wxPython-docs-4.0.0b2/docs/html/_sources/wx.lib.platebtn.txt",
+		"/C/Python27/Lib/site-packages/wx/lib/colourutils.py",
+		"/E/Job/120scheduler/scheduler_center/cti/cti_client.py",
+		"/E/Job/120scheduler/scheduler_center/setting/setting_frame.py",
+		"/E/Job/120scheduler/scheduler_center/statistics/statistics_frame.py",
+		"/E/Job/120scheduler/scheduler_center/statistics/statistics_hospital_panel.py",
+		"/E/Job/120scheduler/scheduler_center/printer/myprinter.py",
+		"/E/Job/120scheduler/scheduler_center/tests/test_cefpython.py",
+		"/E/Job/120scheduler/scheduler_center/setting/setting_panel.py",
+		"/E/Job/120scheduler/scheduler_center/setting/base_data_setting_panel.py",
+		"/E/Job/120scheduler/scheduler_center/setting/sick_reason_panel.py",
+		"/E/Job/120scheduler/scheduler_center/setting/staff_setting_panel.py",
+		"/E/Job/120scheduler/scheduler_center/setting/car_setting_panel.py"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 113.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bestFit",
+			"_add_column",
+			"ColumnDimension",
+			"width",
+			"d_fill",
+			"1, 1",
+			"WEEK_DAY_DICT",
+			"col2",
+			"col1",
+			"bgColor",
+			"cell_letter",
+			"FORMULAE",
+			"alignment",
+			"g_side",
+			"value",
+			"rows",
+			"_sheets",
+			"merge_cells",
+			"style_range",
+			"get_column_letter",
+			"column_dimensions"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "work_time_writer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2146,
+								2146
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"complete_parameters": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1518.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "work_days.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3449,
+								3449
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1320.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6024,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										202,
+										207
+									],
+									[
+										459,
+										464
+									],
+									[
+										706,
+										711
+									],
+									[
+										922,
+										927
+									],
+									[
+										935,
+										940
+									],
+									[
+										1185,
+										1190
+									],
+									[
+										1192,
+										1197
+									],
+									[
+										1347,
+										1352
+									],
+									[
+										1526,
+										1531
+									],
+									[
+										1593,
+										1598
+									],
+									[
+										1621,
+										1626
+									],
+									[
+										1834,
+										1839
+									],
+									[
+										2103,
+										2108
+									],
+									[
+										2330,
+										2335
+									],
+									[
+										2726,
+										2731
+									],
+									[
+										2861,
+										2866
+									],
+									[
+										3043,
+										3048
+									],
+									[
+										3310,
+										3315
+									],
+									[
+										3332,
+										3337
+									],
+									[
+										3474,
+										3479
+									],
+									[
+										3500,
+										3505
+									],
+									[
+										3752,
+										3757
+									],
+									[
+										3944,
+										3949
+									],
+									[
+										4157,
+										4162
+									],
+									[
+										4352,
+										4357
+									],
+									[
+										4360,
+										4365
+									],
+									[
+										4531,
+										4536
+									],
+									[
+										4582,
+										4587
+									],
+									[
+										4872,
+										4887
+									],
+									[
+										5080,
+										5095
+									],
+									[
+										5271,
+										5286
+									],
+									[
+										5495,
+										5510
+									],
+									[
+										5769,
+										5784
+									],
+									[
+										5937,
+										5952
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								5944,
+								5944
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 2,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3036.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/worksheet/worksheet.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25728,
+								25728
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18812.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/worksheet/dimensions.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4398,
+								4398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3060.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "util_sheet.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								117
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/formula/tokenizer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								375
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/styles/alignment.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								449
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/styles/borders.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3557,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1488,
+								1488
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1168.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "table_header.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2417,
+								2430
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "work_time_reader.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1885,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1641,
+								1641
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 858.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/styles/fonts.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3538,
+								3543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/styles/fills.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 222.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Python27/Lib/site-packages/openpyxl/styles/colors.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5145,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1629,
+								1620
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 376.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "util_cell.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								372,
+								372
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.python - string - comment - constant.numeric"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 122.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 122.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 122.0
+	},
+	"output.anaconda_documentation":
+	{
+		"height": 145.0
+	},
+	"output.exec":
+	{
+		"height": 214.0
+	},
+	"output.find_results":
+	{
+		"height": 178.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 142.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "openxyl.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"formulae",
+				"formula\\tokenizer.py"
+			],
+			[
+				"",
+				"E:\\Job\\excel_report\\test\\table_header.py"
+			],
+			[
+				"workbook.py",
+				"workbook\\workbook.py"
+			],
+			[
+				"border",
+				"styles\\borders.py"
+			],
+			[
+				"alin",
+				"styles\\alignment.py"
+			],
+			[
+				"font",
+				"styles\\fonts.py"
+			],
+			[
+				"utiltime",
+				"util\\util_time.py"
+			],
+			[
+				"ctique",
+				"cti\\cti_queue.py"
+			],
+			[
+				"utilmisc",
+				"util\\util_misc.py"
+			],
+			[
+				"main",
+				"main.py"
+			],
+			[
+				"sou",
+				"sound\\sound_manager.py"
+			],
+			[
+				"soumn",
+				"sound\\sound_manager.py"
+			],
+			[
+				"db_sound",
+				"db\\db_sound.py"
+			],
+			[
+				"scheduler_center.spec",
+				"pyinstaller\\scheduler_center.spec"
+			],
+			[
+				"build",
+				"pyinstaller\\build_scheduler_center.py"
+			],
+			[
+				"cartra",
+				"car\\car_trace_dialog.py"
+			],
+			[
+				"testlush",
+				"tests\\js\\test_lushu.html"
+			],
+			[
+				"util_conf",
+				"util\\util_conf.py"
+			],
+			[
+				"util_wx",
+				"util\\util_wx.py"
+			],
+			[
+				"alarmco",
+				"alarm\\alarm_call_coming.py"
+			],
+			[
+				"lushu",
+				"tests\\js\\LuShu.js"
+			],
+			[
+				"testlu",
+				"tests\\js\\test_lushu.html"
+			],
+			[
+				"alarsub",
+				"alarm\\alarm_detail_sub_panel.py"
+			],
+			[
+				"db_hospital",
+				"db\\db_hospital.py"
+			],
+			[
+				"alarmde",
+				"alarm\\alarm_detail_dialog.py"
+			],
+			[
+				"dbhos",
+				"db\\db_hospital.py"
+			],
+			[
+				"maingui",
+				"main_gui.py"
+			],
+			[
+				"mes",
+				"message_panel.py"
+			],
+			[
+				"clien",
+				"center_client\\client_handler.py"
+			],
+			[
+				"cticlie",
+				"cti\\cti_client.py"
+			],
+			[
+				"hosta",
+				"hospital_state_panel.py"
+			],
+			[
+				"mainelf",
+				"main_left_panel.py"
+			],
+			[
+				"conf",
+				"conf\\conf.yaml"
+			],
+			[
+				"db_base_data",
+				"db\\db_base_data.py"
+			],
+			[
+				"dbsoun",
+				"db\\db_sound.py"
+			],
+			[
+				"dbbase",
+				"db\\db_base_data.py"
+			],
+			[
+				"dbta",
+				"db\\db_tables.py"
+			],
+			[
+				"build_cti_queue.spec",
+				"pyinstaller\\build_cti_queue.spec"
+			],
+			[
+				"resim",
+				"resource_image.py"
+			],
+			[
+				"buil",
+				"pyinstaller\\build_cti_queue.py"
+			],
+			[
+				"reg",
+				"cti\\register_ocx.bat"
+			],
+			[
+				"cons",
+				"constant.py"
+			],
+			[
+				"const",
+				"const.py"
+			],
+			[
+				"dbseat",
+				"db\\db_seat.py"
+			],
+			[
+				"maincti",
+				"main_cti.py"
+			],
+			[
+				"dbse",
+				"db\\db_seat.py"
+			],
+			[
+				"ctiqu",
+				"cti\\cti_queue.py"
+			],
+			[
+				"cticlient",
+				"cti\\cti_client.py"
+			],
+			[
+				"mainc",
+				"main_cti.py"
+			],
+			[
+				"com_cti",
+				"cti\\com_cti.py"
+			],
+			[
+				"cticl",
+				"cti\\cti_client.py"
+			],
+			[
+				"build_cti_queue",
+				"pyinstaller\\build_cti_queue.spec"
+			],
+			[
+				"cti_queue",
+				"pyinstaller\\build_cti_queue.spec"
+			],
+			[
+				"utiltmisc",
+				"util\\util_misc.py"
+			],
+			[
+				"sho",
+				"resource\\map\\show_map.html"
+			],
+			[
+				"alrde",
+				"alarm\\alarm_detail_dialog.py"
+			],
+			[
+				"car",
+				"car\\car_trace_dialog.py"
+			],
+			[
+				"cart",
+				"car\\car_trace_dialog.py"
+			],
+			[
+				"con",
+				"constant.py"
+			],
+			[
+				"dbsou",
+				"db\\db_sound.py"
+			],
+			[
+				"dbt",
+				"db\\db_tables.py"
+			],
+			[
+				"soun",
+				"sound\\sound_manager.py"
+			],
+			[
+				"res",
+				"resource_str.py"
+			],
+			[
+				"sound",
+				"sound\\sound_manager.py"
+			],
+			[
+				"utilt",
+				"util\\util_time.py"
+			],
+			[
+				"db",
+				"db\\db_tables.py"
+			],
+			[
+				"dbs",
+				"db\\db_sound.py"
+			],
+			[
+				"mod_call_in",
+				"phone\\mod_call_in.py"
+			],
+			[
+				"cos",
+				"constant.py"
+			],
+			[
+				"dbu",
+				"db\\db_user.py"
+			],
+			[
+				"mod_user",
+				"user\\mod_user.py"
+			],
+			[
+				"dbcall",
+				"db\\db_phone_call.py"
+			],
+			[
+				"modus",
+				"user\\mod_user.py"
+			],
+			[
+				"alarsu",
+				"alarm\\alarm_detail_sub_panel.py"
+			],
+			[
+				"htm",
+				"user\\html_login_dialog.py"
+			],
+			[
+				"use",
+				"setting\\user_setting_panel.py"
+			],
+			[
+				"dev",
+				"E:\\Job\\120scheduler\\docs\\develop_record.md"
+			],
+			[
+				"tesh",
+				"test_hk_dvr2.py"
+			],
+			[
+				"maintit",
+				"main_title_bar_panel.py"
+			],
+			[
+				"testm",
+				"tests\\test_menu.py"
+			],
+			[
+				"pange",
+				"query\\page_panel.py"
+			],
+			[
+				"pagen",
+				"query\\page_panel.py"
+			],
+			[
+				"down",
+				"download\\download_manager.py"
+			],
+			[
+				"pyt",
+				"pyinstaller\\pyinstaller.py"
+			],
+			[
+				"utilcon",
+				"util\\util_conf.py"
+			],
+			[
+				"dow",
+				"download\\download_manager.py"
+			],
+			[
+				"utilmi",
+				"util\\util_misc.py"
+			],
+			[
+				"utiltmi",
+				"util\\util_time.py"
+			],
+			[
+				"dbala",
+				"db\\db_alarm_info.py"
+			],
+			[
+				"quere",
+				"query\\alarm_query_panel.py"
+			],
+			[
+				"utilwx",
+				"util\\util_wx.py"
+			],
+			[
+				"maintop",
+				"main_top_panel.py"
+			],
+			[
+				"logindialog",
+				"user\\login_dialog.py"
+			],
+			[
+				"cticlien",
+				"cti\\cti_client.py"
+			],
+			[
+				"ctiqueu",
+				"cti\\cti_queue.py"
+			],
+			[
+				"test",
+				"tests\\test_ulc.py"
+			],
+			[
+				"ctiqueue",
+				"cti\\cti_queue.py"
+			],
+			[
+				"mygr",
+				"common_control\\my_grid.py"
+			],
+			[
+				"hkd",
+				"device\\hk_device.py"
+			],
+			[
+				"teskh",
+				"test_hk_dvr2.py"
+			],
+			[
+				"alar",
+				"alarm_handle_list_panel.py"
+			],
+			[
+				"wnd_style",
+				"wnd_style.py"
+			],
+			[
+				"mygri",
+				"common_control\\my_grid.py"
+			],
+			[
+				"utiltim",
+				"util\\util_time.py"
+			],
+			[
+				"hkcom",
+				"device\\hk_common.py"
+			],
+			[
+				"te",
+				"test_hk_dvr2.py"
+			],
+			[
+				"pyin",
+				"pyinstaller\\pyinstaller.py"
+			],
+			[
+				"db_seat",
+				"db\\db_seat.py"
+			],
+			[
+				"seat",
+				"setting\\seat_setting_panel.py"
+			],
+			[
+				"moduse",
+				"user\\mod_user.py"
+			],
+			[
+				"moduser",
+				"user\\mod_user.py"
+			],
+			[
+				"dbuser",
+				"db\\db_user.py"
+			],
+			[
+				"dbtab",
+				"db\\db_tables.py"
+			],
+			[
+				"mainlef",
+				"main_left_panel.py"
+			],
+			[
+				"utillo",
+				"util\\util_logger.py"
+			],
+			[
+				"utilex",
+				"D:\\Documents\\GitHub\\dzr_code_2017\\python\\excel_tools\\util_excel.py"
+			],
+			[
+				"vide",
+				"device\\video_panel.py"
+			],
+			[
+				"tesk",
+				"test_hk_dvr2.py"
+			],
+			[
+				"com",
+				"common.py"
+			],
+			[
+				"vioc",
+				"device\\voice_talk.py"
+			],
+			[
+				"citcle",
+				"cti\\cti_client.py"
+			],
+			[
+				"alade",
+				"alarm\\alarm_detail_dialog.py"
+			],
+			[
+				"voic",
+				"device\\voice_talk.py"
+			],
+			[
+				"voi",
+				"device\\voice_talk.py"
+			],
+			[
+				"utilw",
+				"util\\util_wx.py"
+			],
+			[
+				"usrse",
+				"setting\\user_setting_panel.py"
+			],
+			[
+				"common",
+				"common.py"
+			],
+			[
+				"comm",
+				"device\\hk_common.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Job\\archives_manager\\archives_manager.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cfg_task",
+				"Record: cfg_task"
+			],
+			[
+				"GM_CHARGE",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"GM_CHARGET",
+				"Macro: GM_CHARGET"
+			],
+			[
+				"common_trace",
+				"Macro: COMMON_STACKTRACE_LOG"
+			],
+			[
+				"p_role_",
+				"Record: p_role_info"
+			],
+			[
+				"m_gm_",
+				"Record: m_gm_test_tos"
+			],
+			[
+				"cfg_ac",
+				"Record: cfg_activity"
+			],
+			[
+				"cfg_",
+				"Function: cfg_error"
+			],
+			[
+				"r_daily_interest",
+				"Record: r_daily_interest"
+			],
+			[
+				"r_dail",
+				"Record: r_daily_count"
+			],
+			[
+				"r_dai",
+				"Record: r_daily_count"
+			],
+			[
+				"r_daily_count",
+				"Record: r_daily_count"
+			],
+			[
+				"m_shop_buy_tos",
+				"Record: m_shop_buy_tos"
+			],
+			[
+				"quit_channel",
+				"Function: quit_chat_channel"
+			],
+			[
+				"m_chat_quit_channel_tos",
+				"Record: m_chat_quit_channel_tos"
+			],
+			[
+				"m_chat_public_tos",
+				"Record: m_chat_public_tos"
+			],
+			[
+				"m_character_skill_learn_tos",
+				"Record: m_character_skill_learn_tos"
+			],
+			[
+				"m_match_start_tos",
+				"Record: m_match_start_tos"
+			],
+			[
+				"cfg_item",
+				"Record: cfg_item"
+			],
+			[
+				"ITEMTYPES_WEAPON",
+				"Macro: ITEMTYPES_WEAPON_RIFLE"
+			],
+			[
+				"m_sys",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"m_heartb",
+				"Record: m_system_heartbeat_tos"
+			],
+			[
+				"Debuf",
+				"Macro: DebugF"
+			],
+			[
+				"get_next",
+				"Function: get_next_session"
+			],
+			[
+				"p_ski",
+				"Record: p_skill"
+			],
+			[
+				"p_ch",
+				"Record: p_character"
+			],
+			[
+				"match_da",
+				"Record: match_data"
+			],
+			[
+				"p_role_in",
+				"Record: p_role_info"
+			],
+			[
+				"get_buff",
+				"Function: get_buff_value"
+			],
+			[
+				"r_role_buff",
+				"Record: r_role_buff"
+			],
+			[
+				"r_role_activity",
+				"Record: r_role_activity"
+			],
+			[
+				"utf8",
+				"Function: utf8_len"
+			],
+			[
+				"r_role",
+				"Record: r_role_activity"
+			],
+			[
+				"p_bu",
+				"Record: p_buff"
+			],
+			[
+				"p_role",
+				"Record: p_role_info"
+			],
+			[
+				"auto_eq",
+				"Function: auto_equip_armor"
+			],
+			[
+				"ts_u",
+				"Module: ts_ulink"
+			],
+			[
+				"lib_u",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"hand",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handlecre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"handle_cre",
+				"Function: handle_create_rpc"
+			],
+			[
+				"debugf",
+				"Macro: DebugF"
+			],
+			[
+				"parse_bidi",
+				"Function: parse_bidi"
+			],
+			[
+				"handli",
+				"Function: handle_incoming_data"
+			],
+			[
+				"ts_ulni",
+				"Module: ts_ulink"
+			],
+			[
+				"ts_cli",
+				"Module: ts_client"
+			],
+			[
+				"handle_ne",
+				"Function: handle_next_request"
+			],
+			[
+				"next_",
+				"Function: handle_next_request"
+			],
+			[
+				"next_req",
+				"Function: handle_next_request"
+			],
+			[
+				"handle_in",
+				"Function: handle_incoming_data"
+			],
+			[
+				"get_app",
+				"Function: get_app_rpc"
+			],
+			[
+				"handle_incom",
+				"Function: handle_incoming_data"
+			],
+			[
+				"connect_rpc",
+				"Function: get_ulink_connect_rpc"
+			],
+			[
+				"TYPE_USEr",
+				"Macro: LIBTYPE_USER"
+			],
+			[
+				"p_role_info",
+				"Record: p_role_info"
+			],
+			[
+				"type_",
+				"Macro: TYPE_RIFLE"
+			],
+			[
+				"handle_info",
+				"Function: handle_info"
+			],
+			[
+				"termia",
+				"Function: terminate"
+			],
+			[
+				"",
+				"ACTIVITY_TASK_FAMILY_YBC"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
