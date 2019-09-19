@@ -23,12 +23,12 @@ int main(void)
 
     cout<<f(t)<<endl;     //t = 5,a = 20  a = 25
 
-     t=f(t);                //a = 30 t = 30
+    t=f(t);                //a = 30 t = 30
 
     cout<<f(t)<<endl;      //a = 60 t = 30
     cout << t << endl;
 
-    char ori[]="hello";  
+    char ori[]="hello中文";  
     char *copy=new char[10];  
     strcpy(copy, ori);
     copy[0] = 'i';
