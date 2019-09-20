@@ -4,16 +4,25 @@
 1.内存检测工具：valgrind：http://valgrind.org/
 
 2.prettyprint.hpp：
-	可以很方便的打印任何stl容器内的元素，只要在测试环境下包含这个头文件即可。
-	https://github.com/louisdx/cxx-prettyprint
+    可以很方便的打印任何stl容器内的元素，只要在测试环境下包含这个头文件即可。
+    https://github.com/louisdx/cxx-prettyprint
 
 3.类似于python的format库：https://github.com/fmtlib/fmt
 
 4.c++程序静态检测：http://cppcheck.net/
-	具体可以参看：https://www.cnblogs.com/lvdongjie/p/9549254.html
+    具体可以参看：https://www.cnblogs.com/lvdongjie/p/9549254.html
 
 5.Google的c++编程风格指南：https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/
 
 6.c++返回传值的三种方式：https://blog.csdn.net/u012814856/article/details/84099328
 
 7.现代c++的学习：https://changkun.de/modern-cpp/pdf/modern-cpp-tutorial-en-us.pdf
+
+8.c++性能相关：
+    1）代码里尽量不使用dynamic_cast<>，因为它会做类型检测，对性能有影响
+    2）使用exception异常也会影响代码性能（和可执行文件大小，大10%-20%）
+       不过现在的编译器对异常有优化了，使用和未使用异常的代码性能差不多了
+    3）移动构造和移动赋值函数，对性能的提升还是比较明显的，需要的时候可以加上
+
+
+
