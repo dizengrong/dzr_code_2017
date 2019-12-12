@@ -61,10 +61,10 @@ void MainWindow::onAboutAction()
 {
     QString title;
     title = QMessageBox::tr(
-        "<h3>Excel配置导出工具-v1.0</h3>"
-        "<p>本程序使用Qt（version %1）作为页面展示，使用python作为数据处理</p>"
+        "<h3>Excel配置导出工具-v1.1</h3>"
+        "<p>本程序使用Qt（version %1）作为界面展示，使用python作为数据处理</p>"
         ).arg(QLatin1String(QT_VERSION_STR));
-    QString content = QMessageBox::tr("<p align=\"right\" style=\"color:red\">dev:%1    build_time:%2</p>").arg("dzR").arg("2019-09-17");
+    QString content = QMessageBox::tr("<p align=\"right\" style=\"color:red\">dev:%1    build_time:%2</p>").arg("dzR").arg("2019-12-12");
     QMessageBox *msgBox = new QMessageBox(this);
     msgBox->setAttribute(Qt::WA_DeleteOnClose);
     msgBox->setWindowTitle("关于");

@@ -40,5 +40,15 @@ ExportItem::ExportItem(const QJsonObject& json)
 
 bool ExportItem::isMatched(const QString &text)
 {
-    return m_excel_file.contains(text, Qt::CaseInsensitive);
+    if (m_excel_file.contains(text, Qt::CaseInsensitive))
+        return true;
+    QMap<QString, QMap<QString, QString>*>::const_iterator it = m_sheets.constBegin();
+    while (it != m_sheets.constEnd()) {
+        if ( it.key().contains(text, Qt::CaseInsensitive) ||
+             it.value()->value("export_erl").contains(text, Qt::CaseInsensitive)||
+             it.value()->value("export_lua").contains(text, Qt::CaseInsensitive))
+            return true;
+        ++it;
+    }
+    return false;
 }

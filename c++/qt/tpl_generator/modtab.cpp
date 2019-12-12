@@ -54,7 +54,7 @@ ModTab::ModTab(MainWindow *parent) :
     //ui->m_table->horizontalHeader()->setSectionResizeMode(0, QHeaderView::ResizeToContents);
     //ui->m_table->horizontalHeader()->setSectionResizeMode(3, QHeaderView::ResizeToContents);
     //ui->m_table->horizontalHeader()->setSectionResizeMode(5, QHeaderView::ResizeToContents);
-    ui->m_table->setSelectionBehavior(QAbstractItemView::SelectItems);
+    //ui->m_table->setSelectionBehavior(QAbstractItemView::SelectItems);
     ui->m_table->setEditTriggers(QAbstractItemView::NoEditTriggers);
     ui->m_table->setSortingEnabled(false);
     connect(ui->m_table, &QTableWidget::cellDoubleClicked, this, &ModTab::onCellDoubleClicked);
