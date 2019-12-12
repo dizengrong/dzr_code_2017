@@ -21,7 +21,12 @@ import gen_mutil_lang
 import fuzzyfinder
 from xml.dom import minidom
 import threading
-import helper
+import importlib
+
+
+sys.path.append('.')
+# import helper
+helper = importlib.import_module("helper")
 
 
 def excel_cell_value_format(value):
@@ -306,8 +311,8 @@ def main():
     excel_src_path = os.path.join(os.getcwd(), "..")
     config_path = os.path.join(os.getcwd(), "config")
     
-    # excel_src_path = "F:/p18/p18_cehua_doc"
-    # config_path = "F:/p18/p18_cehua_tool/fbird_config_tool/resources/app/config"
+    # excel_src_path = "F:/work/yz_project/cehua_doc/数值表格/config_gen_tool"
+    # config_path = os.path.join(excel_src_path, "config")
     
     # excel_src_path = "C:/temp"
     # config_path = "C:/my_github/dzr_code_2017/c++/qt/tpl_generator"
