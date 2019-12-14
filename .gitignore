@@ -16,3 +16,6 @@ c++/qt/build*
 c++/qt/tpl_generator/build/*
 
 c++/qt/tpl_generator/py/python_log.log
+python/OpenServerTool/.wxpython_env/*
+python/OpenServerTool/build
+python/OpenServerTool/dist
