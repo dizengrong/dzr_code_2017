@@ -2,15 +2,20 @@
 """
 打包：
     pyinstaller -w  --distpath ./dist -F -i caohua.ico main_dialog.py
+todo:
+    现在打包有一个很蛋疼的问题，打包成不带控制台的窗口文件后，执行子命令的popen方法都无法正常运行
+    试了很久也没找到解决的办法，只能打包成带控制台的窗口才不会报错
+    pyinstaller main_dialog.spec(记得把main_dialog.spec中的console改为true)
     
 """
 
 import wx
 import base_main_dialog
-import os
+import os, sys
 import subprocess, signal, time
 from datetime import datetime
 import images
+import wx.dataview as dv
 
 
 # 获取现在的时间
@@ -26,15 +31,11 @@ def time_str(dt=None):
 
 
 
-# class MyProcess(Process):
-#     def __init__(self, name):
-#         super(MyProcess,self).__init__()
-#         self.name=name
-# ​
-#     def run(self):
-#         print('%s is running' %self.name)
-#         time.sleep(3)
-#         print('%s has done' %self.name)
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
+
 
 
 # Implementing BaseOpenServerDialog
@@ -42,8 +43,12 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
     def __init__( self, parent ):
         base_main_dialog.BaseOpenServerDialog.__init__( self, parent )
         self.pwd = os.getcwd()
-        self.game_dir = os.path.abspath(os.path.join(self.pwd, '..'))
-        # self.game_dir = "F:/work/yz_project/server/"
+        self.game_dir = self.pwd
+        # self.game_dir = os.path.abspath(os.path.join(self.pwd, '..'))
+        print(self.game_dir)
+        self.game_dir = "F:/work/yz_project/server/"
+        os.chdir(self.game_dir)
+        print(sys.executable)
         self.game_process = None
         server_id, port = self.GetConfig()
 
@@ -53,6 +58,7 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
 
         self.m_text_log.SetEditable(False)
         self.m_text_dir.SetValue(self.game_dir)
+
         total_width = self.m_dvc.GetRect().GetWidth() - 5
         col_width = int(total_width / 4)
         print("total_width:%s, col_width:%s" % (total_width, col_width))
@@ -62,10 +68,10 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
         self.m_dvc.AppendTextColumn('ports', width=col_width, align=wx.ALIGN_CENTER)
         self.m_dvc.AppendItem([server_id, "主进程", "", port])
         self.SetBtnState()
+        self.AppendLog(u"工具启动成功，当前工作目录：%s\n" % self.game_dir)
 
     def GetConfig(self):
-        obj = subprocess.Popen("escript ./script/get_server_id.escript", 
-                               shell = True, cwd=self.game_dir, stdin=subprocess.PIPE, 
+        obj = subprocess.Popen("escript script/get_server_id.escript", shell = True, cwd=self.game_dir, stdin=subprocess.PIPE, 
                                stdout=subprocess.PIPE ,stderr=subprocess.PIPE)
         info, err = obj.communicate()
         server_id = info.decode('gbk')
@@ -80,36 +86,56 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
 
     # Handlers for BaseOpenServerDialog events.
     def OnOpenDir( self, event ):
-        os.system('explorer ' + self.game_dir)
+        # os.system('explorer ' + self.game_dir)
+        os.startfile(self.game_dir)
 
     def OnStart( self, event ):
-        cmd = "server_ctrl.bat start"
-        startupinfo = subprocess.STARTUPINFO()
-        startupinfo.dwFlags |= subprocess.CREATE_NEW_CONSOLE
-        startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-        # startupinfo.wShowWindow = subprocess.SW_HIDE
-        self.game_process = subprocess.Popen(cmd, shell=True, cwd=self.game_dir, startupinfo = startupinfo)
-        print(self.game_process.pid)
         self.AppendLog("游戏服启动中......\n")
+        cmd = os.path.join(self.game_dir, "server_ctrl.bat start")  # 不知为何要加路径才能找到批处理文件 - - 
+        # cmd = "server_ctrl.bat start"
+        # cmd = "cmd /k \"erl\""
+        # cmd = "erl"
+        # startupinfo = subprocess.STARTUPINFO()
+        # startupinfo.dwFlags |= subprocess.CREATE_NEW_CONSOLE
+        # startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        # startupinfo.wShowWindow = subprocess.SW_HIDE
+        # self.game_process = subprocess.Popen(cmd, shell=False, cwd=self.game_dir, startupinfo = startupinfo, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        self.game_process = subprocess.Popen(cmd, shell=False, cwd=self.game_dir, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        self.AppendLog(u"game process id:%s\n" % self.game_process.pid)
         self.SetBtnState()
         wx.CallLater(3000, self.CheckStart)
 
     def CheckStart(self):
-        if self.game_process.poll() is None:
-            self.AppendLog("游戏服启动成功\n")
-            self.m_dvc.SetValue(self.game_process.pid, 0, 2)
+        if self.game_process:
+            self.AppendLog(u"CheckStart:begin\n")
+            # cmd = "cd %s && %s status" % (self.game_dir, os.path.join(self.game_dir, 'server_ctrl.bat'))
+            # p = os.popen(cmd)
+            cmd = "server_ctrl.bat status"
+            p = subprocess.Popen(cmd, shell=False, cwd=self.game_dir, stdout=subprocess.PIPE)
+            info, err = p.communicate()
+            self.AppendLog(u"CheckStart:%s\n" % err)
+
+            last_log = info.decode('gbk')
+            print(last_log)
+            if 'running' in last_log:
+                self.AppendLog(u"游戏服启动成功：\n\t%s" % last_log)
+                self.m_dvc.SetValue(self.game_process.pid, 0, 2)
+            else:
+                self.AppendLog(u"游戏服启动失败了！请查看log\n")
         else:
-            self.AppendLog("游戏服启动失败了！请查看log\n")
+            self.AppendLog(u"CheckStart:no game process\n")
 
 
     def OnClose( self, event ):
-        cmd = "server_ctrl.bat stop"
+        cmd = "%s stop" % (os.path.join(self.game_dir, 'server_ctrl.bat'))
+        # cmd = "server_ctrl.bat stop"
+        self.AppendLog(u"开始关闭游戏服......\n")
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True, cwd=self.game_dir)
         p.wait()
         self.game_process = None
         self.m_dvc.SetValue("", 0, 2)
         
-        self.AppendLog("游戏服关闭成功\n\t%s" % p.stdout.read().decode('utf-8'))
+        self.AppendLog(u"游戏服关闭返回：\n\t%s" % p.stdout.read().decode('utf-8'))
         self.SetBtnState()
 
     def OnCleanDB( self, event ):
@@ -117,15 +143,18 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True, cwd=self.game_dir)
         p.wait()
         print("clean_db succ")
-        self.AppendLog("游戏服清档成功\n\t%s" % p.stdout.read().decode('utf-8'))
+        self.AppendLog(u"游戏服清档成功\n\t%s" % p.stdout.read().decode('utf-8'))
         self.SetBtnState()
 
     def OnCompile( self, event ):
-        cmd = "server_ctrl.bat make_debug"
-        p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True, cwd=self.game_dir)
-        p.wait()
+        cmd = "cd %s && server_ctrl.bat make_debug" % self.game_dir
+        # p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True, cwd=self.game_dir, bufsize=-1)
+        # p.wait()
+        p = os.popen(cmd)
+        # os.system("cd %s && %s" % (self.game_dir, cmd))
         print("compile succ")
-        self.AppendLog("游戏服编译完毕:\n\t%s" % p.stdout.read().decode('utf-8').replace('\n', '\n\t')[:-1])
+        self.AppendLog(u"游戏服编译完毕:\n\t%s" % "\t".join(p.readlines()))
+        # self.AppendLog("游戏服编译完毕:\n")
         self.SetBtnState()
 
     def OnCleanCompile( self, event ):
@@ -133,21 +162,18 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True, cwd=self.game_dir)
         p.wait()
         print("clean succ")
-        self.AppendLog("游戏服编译清理完毕\n\t%s" % p.stdout.read().decode('utf-8'))
+        self.AppendLog(u"游戏服编译清理完毕\n\t%s" % p.stdout.read().decode('utf-8'))
         self.SetBtnState()
 
     def OnCloseDialog( self, event ):
         if self.game_process:
-            self.AppendLog("正在退出中...\n")
+            self.AppendLog(u"正在退出中...\n")
             cmd = "server_ctrl.bat stop"
             p = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True, cwd=self.game_dir)
             p.wait()
 
             os.kill(self.game_process.pid, signal.CTRL_C_EVENT)
-            while self.game_process.poll() is None:
-                time.sleep(0.5)
-            self.AppendLog("退出成功\n")
-            time.sleep(0.5)
+            self.AppendLog(u"退出成功\n")
         event.Skip()
 
     def AppendLog(self, log):
@@ -167,6 +193,7 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
             self.m_btn_start.Enable(True)
             self.m_btn_close.Enable(False)
             self.m_btn_clean_db.Enable(True)
+
 
 
 app = wx.App()
