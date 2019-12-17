@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 打包：
-    pyinstaller -w  --distpath ./dist -F -i caohua.ico main_dialog.py
+    pyinstaller -w  --distpath ./dist -F -i caohua.ico main_dialog.py -n open_server
 todo:
     现在打包有一个很蛋疼的问题，打包成不带控制台的窗口文件后，执行子命令的popen方法都无法正常运行
     试了很久也没找到解决的办法，只能打包成带控制台的窗口才不会报错
@@ -44,7 +44,6 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
         base_main_dialog.BaseOpenServerDialog.__init__( self, parent )
         self.pwd = os.getcwd()
         self.game_dir = self.pwd
-        # self.game_dir = os.path.abspath(os.path.join(self.pwd, '..'))
         print(self.game_dir)
         self.game_dir = "F:/work/yz_project/server/"
         os.chdir(self.game_dir)
@@ -65,7 +64,7 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
         self.m_dvc.AppendTextColumn('game_id', width=col_width, align=wx.ALIGN_CENTER)
         self.m_dvc.AppendTextColumn('process_name', width=col_width, align=wx.ALIGN_CENTER)
         self.m_dvc.AppendTextColumn('process_pid', width=col_width, align=wx.ALIGN_CENTER)
-        self.m_dvc.AppendTextColumn('ports', width=col_width, align=wx.ALIGN_CENTER)
+        self.m_dvc.AppendTextColumn('ports', width=total_width - 3*col_width, align=wx.ALIGN_CENTER)
         self.m_dvc.AppendItem([server_id, "主进程", "", port])
         self.SetBtnState()
         self.AppendLog(u"工具启动成功，当前工作目录：%s\n" % self.game_dir)
@@ -89,6 +88,13 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
         # os.system('explorer ' + self.game_dir)
         os.startfile(self.game_dir)
 
+    def OnOpenWeb( self, event ):
+        p = os.popen("escript script/get_admin_web_url.escript")
+        url = p.readlines()[0]
+        print(url)
+        os.startfile(url)
+
+
     def OnStart( self, event ):
         self.AppendLog("游戏服启动中......\n")
         cmd = os.path.join(self.game_dir, "server_ctrl.bat start")  # 不知为何要加路径才能找到批处理文件 - - 
@@ -107,13 +113,11 @@ class OpenServerDialog( base_main_dialog.BaseOpenServerDialog ):
 
     def CheckStart(self):
         if self.game_process:
-            self.AppendLog(u"CheckStart:begin\n")
             # cmd = "cd %s && %s status" % (self.game_dir, os.path.join(self.game_dir, 'server_ctrl.bat'))
             # p = os.popen(cmd)
             cmd = "server_ctrl.bat status"
             p = subprocess.Popen(cmd, shell=False, cwd=self.game_dir, stdout=subprocess.PIPE)
             info, err = p.communicate()
-            self.AppendLog(u"CheckStart:%s\n" % err)
 
             last_log = info.decode('gbk')
             print(last_log)

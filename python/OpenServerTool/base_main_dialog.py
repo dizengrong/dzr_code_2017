@@ -20,7 +20,7 @@ import wx.stc as stc
 class BaseOpenServerDialog ( wx.Dialog ):
 
 	def __init__( self, parent ):
-		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"开服工具（windows下）", pos = wx.DefaultPosition, size = wx.Size( 575,604 ), style = wx.DEFAULT_DIALOG_STYLE|wx.RESIZE_BORDER )
+		wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = u"开服工具（windows下）", pos = wx.DefaultPosition, size = wx.Size( 608,604 ), style = wx.DEFAULT_DIALOG_STYLE|wx.MINIMIZE_BOX )
 
 		self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
 
@@ -58,6 +58,9 @@ class BaseOpenServerDialog ( wx.Dialog ):
 
 		self.m_button5 = wx.Button( sbSizer1.GetStaticBox(), wx.ID_ANY, u"清理编译", wx.DefaultPosition, wx.DefaultSize, 0 )
 		sbSizer1.Add( self.m_button5, 0, wx.ALL, 5 )
+
+		self.m_btn_open_web = wx.Button( sbSizer1.GetStaticBox(), wx.ID_ANY, u"打开web后台", wx.DefaultPosition, wx.DefaultSize, 0 )
+		sbSizer1.Add( self.m_btn_open_web, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
 
 		bSizer1.Add( sbSizer1, 0, wx.EXPAND, 0 )
@@ -129,6 +132,7 @@ class BaseOpenServerDialog ( wx.Dialog ):
 		self.m_btn_clean_db.Bind( wx.EVT_BUTTON, self.OnCleanDB )
 		self.m_button4.Bind( wx.EVT_BUTTON, self.OnCompile )
 		self.m_button5.Bind( wx.EVT_BUTTON, self.OnCleanCompile )
+		self.m_btn_open_web.Bind( wx.EVT_BUTTON, self.OnOpenWeb )
 
 	def __del__( self ):
 		pass
@@ -154,6 +158,9 @@ class BaseOpenServerDialog ( wx.Dialog ):
 		event.Skip()
 
 	def OnCleanCompile( self, event ):
+		event.Skip()
+
+	def OnOpenWeb( self, event ):
 		event.Skip()
 
 
