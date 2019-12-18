@@ -34,13 +34,13 @@ def excel_cell_value_format(value):
         if int(value) == value:
             return int(value)
         else:
-            return value
+            return round(value, 2)
     elif isinstance(value, str):
         try:
             return int(value)
         except Exception:
             try:
-                return float(value)
+                return round(value, 2)
             except Exception:
                 return as_escaped(value)
     else:
