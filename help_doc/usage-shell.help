@@ -33,4 +33,9 @@ netstat -natp|grep -n '.*3306.*beam.*' | wc -l
 		2) .ssh/authorized_keys文件权限必须是600
 
 5.查看当前目录下各个文件及目录占用空间大小:du -sh *
+
+6.tar命令的解压和压缩：
+	解压：tar -zxvf otp_src_20.3.tar.gz
+	压缩：tar -zcvf xxx.tar.gz 要被压缩的文件或目录名称
+
 	

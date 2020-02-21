@@ -27,7 +27,7 @@ private:
     QString m_excel_src_path;
     QTimer *m_timer;
 
-private slots:
+public slots:
     void onExportAllErlModAction();
     void onExportAllLuaModAction();
     void onExportAllCsModAction();

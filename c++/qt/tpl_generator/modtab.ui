@@ -372,17 +372,50 @@ background-color: rgb(45, 135, 225);</string>
     </layout>
    </item>
    <item>
-    <widget class="QLineEdit" name="m_search">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>30</height>
-      </size>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>10</number>
      </property>
-     <property name="placeholderText">
-      <string>模糊匹配搜索</string>
-     </property>
-    </widget>
+     <item>
+      <widget class="QLineEdit" name="m_search">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="placeholderText">
+        <string>模糊匹配搜索</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_btn_all_erl">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>导出所有Erl配置</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_btn_all_lua">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>导出所有Lua配置</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </item>
    <item>
     <widget class="QTableWidget" name="m_table">

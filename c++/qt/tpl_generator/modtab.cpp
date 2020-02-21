@@ -299,3 +299,13 @@ void ModTab::onOpenExcelFile()
     }
 
 }
+
+void ModTab::on_m_btn_all_erl_clicked()
+{
+    this->m_mainWindow->onExportAllErlModAction();
+}
+
+void ModTab::on_m_btn_all_lua_clicked()
+{
+    this->m_mainWindow->onExportAllLuaModAction();
+}
