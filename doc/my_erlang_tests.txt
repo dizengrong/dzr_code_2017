@@ -1,0 +1,179 @@
+%% ================================= 线上调试 ==================================
+erlang:statistics(context_switches).
+erlang:statistics(run_queue).
+recon:scheduler_usage(1000).
+recon:node_stats_list(3,1000).
+[{Id, U} || {Id, U} <- recon:scheduler_usage(1000), U > 0.01].
+
+recon:get_state(pid(0,580,0), 5000).
+
+%% 那时间间隔统计当前的占用资源靠前的进程
+recon:proc_window(heap_size, 10, 1000).
+recon:proc_window(reductions, 10, 1000).
+recon:proc_window(message_queue_len, 10, 1000).
+
+%% 那启动后统计总的占用资源靠前的进程
+recon:proc_count(heap_size, 10).
+recon:proc_count(message_queue_len, 10).
+recon:proc_count(reductions, 10).
+recon:inet_count(send_cnt, 10).
+recon:inet_count(recv_cnt, 10).
+
+%% 网络统计
+recon:inet_window(send_cnt, 10, 1000).
+recon:inet_window(recv_cnt, 10, 1000).
+recon:inet_count(send_cnt, 10).
+recon:inet_count(recv_cnt, 10).
+
+%% trace调试
+recon_trace:calls({mod_field_battle, send_info_to_client, 3}, 2).
+recon_trace:calls({mod_role_tab, insert, 2}, 2).
+recon_trace:calls({mod_rank_service, get_targets_by_section, fun(_) -> return_trace() end}, 4).
+
+%% 内存
+recon_alloc:memory(allocated).  系统给VM分配的总内存
+recon_alloc:memory(usage). 		使用比例
+recon_alloc:memory(used). 		使用量
+
+
+%% 手动回收内存
+[erlang:garbage_collect(P) || P <- erlang:processes()].
+
+%% 查看erl_crash.dump文件
+crashdump_viewer:start().
+
+spawn(fun() ->etop:start([{output, text}, {interval, 5}, {lines, 20}, {sort, memory}]) end).
+spawn(fun() -> etop:start([{output, text}, {interval, 5}, {lines, 20},{sort, runtime}]) end).
+spawn(fun() ->etop:start([{output, text}, {interval, 5}, {lines, 20}, {sort, runtime},{tracing, on}]) end).
+spawn(fun() -> etop:start([{output, text}, {interval, 5}, {lines, 20},{ accumulate,true },{sort,runtime}, {tracing, on}]) end).
+etop:stop().
+
+%% 找出了占用cpu最多的进程后，使用eprof分析该进程的情况
+eprof:start().
+eprof:profile([pid(x,x,x)]).
+eprof:stop_profiling().
+eprof:analyze().
+eprof:stop().
+
+%% ================================= 线上调试 ==================================
+
+修改开服时间：
+[Rec] = db:load_all(opening_server_time).
+db_api:dirty_write(Rec#opening_server_time{time = util_time:unixtime()}).
+
+
+%% 测试
+my_debug:agent_call(5000000000004, fun() -> fun_gm_code:process(get(uid), get(sid), "dotask 1 106") end).
+my_debug:agent_call(4090000000725, fun() -> fun_item:add_item(get(uid), get(sid), 3, 10000000, 6) end).
+my_debug:agent_call(Uid, fun() -> mod_card:send_info_to_client(get(uid), get(sid), 0) end).
+my_debug:agent_call(Uid, fun() -> mod_card:req_active_card(get(uid), get(sid), 0, 4) end).
+my_debug:agent_call(Uid, fun() -> mod_card:req_up_card(get(uid), get(sid), 0, 1) end).
+my_debug:agent_call(Uid, fun() -> get(battle_prop) end).
+mod_auction_shop:add_guild_shop_items(0, [], [{100001, 10, 0, 0, 0, 0}, {100002, 11, 0, 0, 0, 0}, {100003, 12, 0, 0, 0, 0}]).
+mod_auction_shop:add_item_to_guild_shop(0, 100002, 11, 0, 0, 0, 0).
+mod_auction_shop:add_item_to_guild_shop(0, 100003, 12, 0, 0, 0, 0).
+mod_auction_shop:add_item_to_guild_shop(0, 100004, 13, 0, 0, 0, 0).
+mod_auction_shop:add_item_to_guild_shop(0, 100005, 14, 0, 0, 0, 0).
+
+my_debug:agent_call(10000000001, fun() -> mod_melee:req_enter(get(uid), get(sid), 0) end).
+my_debug:agent_call(10000000006, fun() -> mod_thunderboss:req_enter_thunder(get(uid), get(sid), 0) end).
+my_debug:agent_call(10000000012, fun() -> cerl_map_api:test_sleep(4) end).
+my_debug:scene_call(200000000004, fun() -> fun_scene_obj:get_obj(200000000004) end).
+world_svr:debug_call(mod_guild_boss, fun() -> length(get(report_list)) end).
+common_server:debug_call(mod_guild_boss, fun() -> length(get(report_list)) end).
+
+tool_vect:check_point_in_face({map_point,1.906667,0,55.6399},{map_point,1.906667,0,55.64},{map_point,12.04667,0,54.86},{map_point,1.906667,1.0,55.6399}).
+
+addbuff 10005 1 1000 10000
+my_debug:agent_call(1110000000002, fun() -> mod_fuwen_equip:req_load(get(uid), get(sid), 0, 10, 11) end).
+my_debug:agent_call(1110000000002, fun() -> mod_fuwen_equip:req_unload(get(uid), get(sid), 0, 10, 11) end).
+my_debug:agent_call(1110000000002, fun() -> mod_fuwen_equip:req_strengthen(get(uid), get(sid), 0, 4) end).
+my_debug:agent_call(1110000000002, fun() -> mod_fuwen_equip:req_strengthen(get(uid), get(sid), 0, 7) end).
+my_debug:agent_call(1110000000002, fun() -> mod_fuwen_equip:req_strengthen(get(uid), get(sid), 0, 6) end).
+my_debug:agent_call(1110000000007, fun() -> mod_hero_expedition:req_info(get(uid), get(sid), 0) end).
+my_debug:agent_call(1110000000007, fun() -> mod_hero_expedition:req_do_event(get(uid), get(sid), 0) end).
+my_debug:agent_call(1110000000007, fun() -> mod_hero_expedition:req_enter(get(uid), get(sid), 0) end).
+my_debug:agent_call(1110000000007, fun() -> mod_hero_expedition:req_give_up_event(get(uid), get(sid), 0) end).
+my_debug:agent_call(1110000000007, fun() -> mod_hero_expedition:req_unlock_next_pos(get(uid), get(sid), 0, 0) end).
+
+
+./server_ctrl.sh exe_fun agent mod_trace_role add_trace_role 4090000001378
+server_ctrl.bat exe_fun agent mod_trace_role del_trace_role 210000000999
+server_ctrl.bat exe_fun agent db_api dirty_read usr 210000000999
+server_ctrl.bat exe_fun agent db_api size usr
+./server_ctrl.sh exe_fun agent db_api size ply
+./server_ctrl.sh exe_fun agent os getpid
+python p17_fbird_server_manager.py exe_code "agent db_api size usr" 100
+
+./server_ctrl.sh exe_fun agent update_mnesia_01_03 update_db
+python p17_fbird_server_manager.py exe_code "agent update_mnesia_01_03 update_db" 100 409 2
+python p17_fbird_server_manager.py exe_code "agent mod_online_fix fix_promotion_ranklist" 1002 1001
+
+[mod_equip:check_equip_data(Uid) || Uid <- db_api:dirty_all_keys(usr)].
+
+
+%% =============================================================================
+-define(ACTION_GUILD_CREATE,1041).%%请求创建公会 pt_create_guild 
+返回:pt_guild_commonality_d114  pt_guild_notice_d138
+
+-define(ACTION_GUILD_COMMONALITY_INFO,1054).%%获取公会基础信息 pt_action_d002
+返回:pt_guild_commonality_d114  pt_guild_member_verify_d141(通知有人申请加入公会)
+
+-define(ACTION_GUILD_INFO,1053).%%获取公会成员详情 pt_action_d002 
+返回:pt_guild_member_info_d112
+
+
+-define (ACTION_REQ_RECOMMEND_GUILDS, 12010). 	%% 请求推荐公会列表 pt_action_d002
+pt_all_guild_list_info_d111
+
+-define(ACTION_GUILD_SEEK,1050).%%搜索公会 pt_action_string_d004
+pt_all_guild_list_info_d111
+
+-define(ACTION_GUILD_JOIN,1045).%%请求加入公会 pt_action_int_d003
+pt_all_guild_list_info
+
+-define(ACTION_REPLY_GUILD_ENTRY,1037).%%请求回复加入公会申请 pt_action_two_int_d012 uid(0:同意全部) IsAccept:1同意，0不同意
+
+
+-define(ACTION_GUILD_APPLY_FOR_LIST,1075).%%请求公会申请列表 pt_action_d002
+pt_members_entry
+
+
+-define(ACTION_GUILD_QUIT,1039).%%请求退出公会 pt_action_int_d003 0:表示自己退出(如果是会长，则表示解散公会) 其他表示会长要踢掉的玩家的uid
+退出或解散成功返回：pt_guild_commonality_d114
+
+-define(ACTION_REQ_CHANGE_GUILD_NAME,11061). %%请求更换公会名称 pt_action_string_and_data_f032 
+返回:pt_guild_commonality_d114
+
+-define(ACTION_GUILD_CHANGE_NOTICE,1066).%%更新公告 pt_action_string_d004
+返回:pt_guild_commonality_d114
+
+-define (ACTION_REQ_CHANGE_GUILD_NOTICE, 12013). 	%% 请求修改公会旗帜 pt_action_int_d003
+返回:pt_guild_commonality_d114
+
+-define(ACTION_GUILD_PERM,1040).%%请求职位变更 pt_action_two_int_d012 参数1：要修改谁的 参数2:1：罢免官员 2：转让会长
+返回:pt_guild_member_info_d112
+
+
+-define(ACTION_REQ_COPY_TIMES,15).%%请求副本次数  pt_action_d002
+-define(ACTION_REQ_COPY_ENTER,16).%%请求进入副本 pt_action_int_d003 发副本类型
+-define(ACTION_REQ_BUY_DUNGEONS_TIMES   		,11005). %%购买地下城次数 pt_action_int_d003 发副本类型
+-define(ACTION_REQ_FAST_COPY,8036). %% 扫荡 pt_action_two_int_d012 参数1发副本id，参数2暂时忽略
+-define (ACTION_REQ_ACTIVE_COPY, 12110). 	%% 请求激活副本 pt_action_int_d003 发副本id
+
+
+%% 涉及的物品id协议修改
+pt_public_item_des:id,equip_list,used_times
+pt_public_item_list:item_id
+pt_public_on_battle_heros:item_id
+pt_public_on_battle_data:shenqi_id
+pt_shenqi_update_f092:id
+pt_arena_challenge_single_info_f08f:shenqi
+pt_public_two_int:data1
+pt_entourage_update_f131:eid
+pt_arena_challenge_f089:shenqi_id
+pt_hero_attr_info_f132:eid
+pt_req_entourage_create_model_f03b:id
+pt_entourage_create_model_f03a:oid,item_id
+pt_public_entourage_list:id
+pt_entourage_die_f023:id
