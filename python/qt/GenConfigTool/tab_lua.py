@@ -58,7 +58,7 @@ def init_tab(self):
 
 
 def LoadLuaConfigXML(self):
-    doc = minidom.parse('config_lua/cfg_lua.xml')
+    doc = minidom.parse('config/cfg_lua.xml')
     root = doc.documentElement
     self.lua_export_files = {}
     self.lua_export_list = {}

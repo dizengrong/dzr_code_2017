@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/image">
+    <file>ico.ico</file>
+    <file>tab_conf.png</file>
+  </qresource>
+</RCC>
