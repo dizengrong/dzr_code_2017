@@ -8,7 +8,7 @@ from base_main_gui import Ui_BaseMainFrame
 from tab_module_conf import TabModuleConfig
 from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import QTableWidgetItem, QAction, QMenu, QFileDialog, QMessageBox
-from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtCore import Qt, QTimer, QFile, QTextStream
 from PyQt5.QtCore import QSize
 from PyQt5.QtGui import QIcon, QCursor
 from xml.dom import minidom
@@ -39,30 +39,37 @@ def format(value):
         except Exception:
             return as_escaped(value)
 
-VERSION = u"配置导出工具-v5.1    设计者：dzR    更新日期：2019-05-28    "
+VERSION = u"配置导出工具-v6.0    设计者：dzR    更新日期：2020-03-23    "
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_BaseMainFrame):
     def __init__(self, parent=None):
         super(MainWindow, self).__init__(parent=parent)
+        self.load_stylesheet()
         self.setupUi(self)
+        self.setWindowTitle(VERSION)
 
         self.excel_src_path = os.path.abspath('..')
+        self.config_path = os.path.join(os.getcwd(), 'config')
+        # for local test
+        # self.excel_src_path = u'F:/work/yz_project/cehua_doc/数值表格'
+        # self.config_path = u'F:/work/yz_project/cehua_doc/数值表格/config_gen_tool/config'
 
         self.add_tab_widgets()
 
-        # self.init_other()
-        # self.init_table()
-        # self.init_map_table()
-        # timer = QTimer(self)
-        # timer.timeout.connect(self.delay_init_lang)
-        # timer.setSingleShot(True)
-        # timer.start(500)
-        # self.create_context_menu()
-        # self.init_event()
 
     def get_excel_src_path(self):
         return self.excel_src_path
+
+    def get_config_path(self):
+        return self.config_path
+
+    def load_stylesheet(self):
+        qss_file = QFile(":/qss/my_style_sheet.qss")
+        qss_file.open(QFile.ReadOnly | QFile.Text)
+        text_stream = QTextStream(qss_file)
+        self.setStyleSheet(text_stream.readAll())
+
 
     def add_tab_widgets(self):
         self.m_tab_mod_conf = TabModuleConfig(self.tab_container, self)
@@ -73,58 +80,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_BaseMainFrame):
         self.tab_container.setCurrentIndex(0)
 
   
-    def on_cell_double_click(self, row, col):
-        print("on_cell_double_click row:%s, col:%s" % (row, col))
-        if self.m_table.item(row, col) is None:
-            return
-        val = self.m_table.item(row, col).text()
-        if col == 0:
-            excle_filename = os.path.join(self.excel_src_path, val)
-            self.OpenFile(excle_filename)
-        else:
-            tpl = val[2:] + ".tpl"
-            if tpl in self.export_list:
-                self.OnExport([self.export_list[tpl]])
-
-
-    def on_context_menu(self, point):
-        self.current_tab_type = TAB_TYPE_ERL
-        # row = self.m_table.currentRow()
-        for item in self.m_table.selectedItems():
-            self.sell_tab_clicked_row = item.row()
-            self.sell_tab_clicked_col = item.column()
-            # print((self.sell_tab_clicked_row, self.sell_tab_clicked_col))
-        self.table_right_menu.exec_(QCursor.pos())
-
-   
-    def create_context_menu(self):
-        self.table_right_menu = QMenu(self)
-        menus = [
-            (u'打开文件所在目录', self.on_open_file_in_explore),
-            (u'导出该行的所有文件', self.on_export_one_line),
-        ]
-        for text, slot in menus:
-            action = self.table_right_menu.addAction(text)
-            action.triggered.connect(slot)
-
-    def on_open_file_in_explore(self, event):
-        if self.current_tab_type == TAB_TYPE_ERL:
-            current_tab = self.m_table
-        elif self.current_tab_type == TAB_TYPE_LUA:
-            current_tab = self.m_tab_lua
-        elif self.current_tab_type == TAB_TYPE_CS:
-            current_tab = self.m_tab_cs
-
-        if self.sell_tab_clicked_row is not None:
-            row = self.sell_tab_clicked_row
-            col = self.sell_tab_clicked_col
-            val = current_tab.item(row, col).text()
-            if col == 0:
-                excle_filename = os.path.join(self.excel_src_path, val)
-                os.system('explorer /select,' + excle_filename)
-            else:
-                tpl_filename = os.path.join(self.cwd, 'config', val[2:] + '.tpl')
-                os.system('explorer /select,' + tpl_filename)
 
     def on_export_one_line(self):
         if self.current_tab_type == TAB_TYPE_ERL:
@@ -202,7 +157,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_BaseMainFrame):
             msg_box = QMessageBox(QMessageBox.Information, u"信息", "导出成功!\t\t\t\t\t\t\t\t", parent=self)
             msg_box.setDetailedText(msg)
             msg_box.exec_()
-            # QMessageBox.information(self, u"导出成功", msg)
 
     def DoExport(self, tpl_dict, dest_dir):
         dict = {}

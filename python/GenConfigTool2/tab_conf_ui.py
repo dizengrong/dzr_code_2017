@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'tab_conf.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.13.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -163,6 +163,6 @@ class Ui_TabConfig(object):
         self.label_2.setText(_translate("TabConfig", "前端导出目录："))
         self.m_btn_c_dir.setText(_translate("TabConfig", "设置"))
         self.m_search.setPlaceholderText(_translate("TabConfig", "模糊匹配搜索"))
-        self.m_btn_all_s.setText(_translate("TabConfig", "导出所有Erl配置"))
-        self.m_btn_all_c.setText(_translate("TabConfig", "导出所有Lua配置"))
+        self.m_btn_all_s.setText(_translate("TabConfig", "导出所有后端配置"))
+        self.m_btn_all_c.setText(_translate("TabConfig", "导出所有前端配置"))
         self.m_table.setSortingEnabled(True)

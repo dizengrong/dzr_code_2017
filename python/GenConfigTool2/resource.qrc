@@ -1,6 +1,9 @@
 <RCC>
-  <qresource prefix="/image">
-    <file>ico.ico</file>
-    <file>tab_conf.png</file>
-  </qresource>
+    <qresource prefix="/image">
+        <file>ico.ico</file>
+        <file>tab_conf.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>my_style_sheet.qss</file>
+    </qresource>
 </RCC>

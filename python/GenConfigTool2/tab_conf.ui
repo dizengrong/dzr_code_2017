@@ -310,7 +310,7 @@ background-color: rgb(45, 135, 225);</string>
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>导出所有Erl配置</string>
+        <string>导出所有后端配置</string>
        </property>
       </widget>
      </item>
@@ -327,7 +327,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
-        <string>导出所有Lua配置</string>
+        <string>导出所有前端配置</string>
        </property>
       </widget>
      </item>
