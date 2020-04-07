@@ -19,3 +19,4 @@ c++/qt/tpl_generator/py/python_log.log
 python/OpenServerTool/.wxpython_env/*
 python/OpenServerTool/build
 python/OpenServerTool/dist
+/python/GenConfigTool2/build/*

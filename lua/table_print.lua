@@ -1,6 +1,9 @@
 -- @doc 以可读的方式打印table，table的key按字母顺序排列
 local table_print = {}
 
+local msg_2_print = {}
+
+
 local function sort_keys(t)
 	local index = {}
 	for k in pairs(t) do
@@ -10,25 +13,36 @@ local function sort_keys(t)
 	return index
 end
 
-local function show_kv(layer, k, v)
-	prefix = ""
-	for _ = 1, layer do
-		prefix = prefix .. "|  "
-	end
-	if v ~= nil then
-		str = prefix .. "|--" .. k .. ": " .. tostring(v)
+local function fomrat_val(v)
+	if type(v) == "number" then
+		return v
 	else
-		str = prefix .. "|--" .. k
+		return ("\"%s\""):format(v)
 	end
-	print(str)
+end
+
+local function show_kv(layer, k, v)
+	local prefix = ""
+	for _ = 1, layer do
+		prefix = prefix .. "|   "
+	end
+	local str = prefix .. "|--" .. fomrat_val(k)
+	if type(v) == "table" then
+		str = str .. ": { }"
+	else
+		str = str .. ": " .. fomrat_val(v)
+	end
+	-- print(str)
+	table.insert(msg_2_print, str)
 end
 
 local function show_tree_help(layer, t)
-	keys = sort_keys(t)
+	local keys = sort_keys(t)
 	local tmp
 	for _,k in ipairs(keys) do
 		tmp = t[k]
 		if type(tmp) == "table" then
+			show_kv(layer, k, tmp)
 			show_tree_help(layer + 1, tmp)
 		else
 			show_kv(layer, k, tmp)
@@ -40,20 +54,33 @@ end
 function table_print:show_tree(t, msg)
 	local layer = 0
 	local tmp
-	keys = sort_keys(t)
+	local keys = sort_keys(t)
+	table.insert(msg_2_print, "")
 	for _,k in ipairs(keys) do
 		tmp = t[k]
 		if type(tmp) == "table" then
-			show_kv(layer, k, nil)
+			show_kv(layer, k, tmp)
 			show_tree_help(layer + 1, tmp)
 		else
 			show_kv(layer, k, tmp)
 		end
 	end
+	print(table.concat(msg_2_print,"\n"))
 end
 
+
 function table_print:show_line(t)
-	keys = sort_keys(t)
+	local keys = sort_keys(t)
+	local result = {}
+	for _,k in ipairs(keys) do
+		table.insert(result, string.format("%s:%s",k,tostring(t[k])))
+	end
+	print(table.concat(result,"\t"))
+end
+
+
+function table_print:show_line(t)
+	local keys = sort_keys(t)
 	local result = {}
 	for _,k in ipairs(keys) do
 		table.insert(result, string.format("%s:%s",k,tostring(t[k])))
@@ -79,7 +106,26 @@ local t = {
 	}
 }
 
+local t2 = {
+	["role_id"] = 1000,
+	["heros"] = {
+		id = 8880001,
+		lv = 1,
+		exp = 0,
+		prof_lv = 0,
+		quality = 1,
+		race_lv = 1,
+		type_id = 110,
+		attr = {
+			defence = 100,
+			max_hp = 123,
+		},
+		callback = show_kv,
+	}
+}
+
 print(table_print:show_tree(t))
-print(table_print:show_line(t))
+print(table_print:show_tree(t2))
+-- print(table_print:show_line(t))
 
 return table_print
