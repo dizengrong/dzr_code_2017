@@ -1,4 +1,15 @@
+===================================== git ====================================== 
 git push origin --delete 分支名
+回滚到指定版本：
+	1.使用hard reset到指定的commit节点，然后使用命令行操作：git push origin HEAD --force
+	  这样会使从reset到的节点到最新的提交节点间的东西都抹掉，直接连提交记录都没有了
+	2.使用checkout命令到指定的节点，然后使用命令行操作：
+		git reset --mixed master
+		git checkout master
+		最后再把回滚的东西提交
+		这种方式会只是产生了一次新的提交操作而已，推荐使用！
+
+
 
 本地文件同步至远程
 rsync -e 'ssh -p 6622' -avt /var/lib/jenkins/workspace/p17_release/ebin/ root@120.92.229.76:/data/fbird/p17/1/ebin/   密码:9qHhMbIeYTOvo7a5
