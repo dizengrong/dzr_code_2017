@@ -289,7 +289,7 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
 
         dict = {}
         tpl = tpl_dict['tpl']
-        cfg, ext = os.path.splitext(tpl)
+        cfg, _ = os.path.splitext(tpl)
         for data in tpl_dict['datas']:
             excle_filename = os.path.join(self.main_window.get_excel_src_path(), excle_file)
             xml_data = xlrd.open_workbook(excle_filename)
@@ -313,6 +313,20 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
         content = engine.render(os.path.join(self.main_window.get_config_path(), tpl), dict)
         cfg_file = os.path.join(save_dir, cfg)
         dest = codecs.open(cfg_file, "w", 'utf-8')
+        # 写入common代码
+        _, ext = os.path.splitext(cfg)
+        if tpl_dict['export_type'] == 'server':
+            common_code_path = "common_server"
+        else:
+            common_code_path = "common_client"
+        common_code_path = os.path.join(self.main_window.get_config_path(), common_code_path + ext)
+        if os.path.exists(common_code_path):
+            common_code = open(common_code_path, "r").read()
+            if "%s" in common_code:
+                dest.write(common_code % cfg)
+            else:
+                dest.write(common_code)
+
         content = content.replace(u"\r\n", u"\n")
         dest.write(content)
         dest.close()
