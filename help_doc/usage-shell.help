@@ -1,3 +1,4 @@
+===================================== shell ==================================== 
 1.查看端口占用情况：
 	netstat -tunlp
 
@@ -38,4 +39,17 @@ netstat -natp|grep -n '.*3306.*beam.*' | wc -l
 	解压：tar -zxvf otp_src_20.3.tar.gz
 	压缩：tar -zcvf xxx.tar.gz 要被压缩的文件或目录名称
 
+7.修改时区：
+	cp /usr/share/zoneinfo/Asia/Chongqing  /etc/localtime
+
+===================================== git ====================================== 
+git push origin --delete 分支名
+回滚到指定版本：
+	1.使用hard reset到指定的commit节点，然后使用命令行操作：git push origin HEAD --force
+	  这样会使从reset到的节点到最新的提交节点间的东西都抹掉，直接连提交记录都没有了
+	2.使用checkout命令到指定的节点，然后使用命令行操作：
+		git reset --mixed master
+		git checkout master
+		最后再把回滚的东西提交
+		这种方式会只是产生了一次新的提交操作而已，推荐使用！
 	

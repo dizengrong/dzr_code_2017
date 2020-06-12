@@ -302,6 +302,9 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
 
             for i in range(begin_row, table.nrows):
                 data_dict = {}
+                # 如果第i行的第一列所在的单元格没有数据，则认为是空的，跳过该行
+                if str(table.cell(i, 0).value).strip() == '':
+                    continue
                 for j in range(col_start - 1, col_end):
                     if table.cell(0, j).ctype == xlrd.XL_CELL_TEXT:
                         data_dict[table.cell(0, j).value.strip()] = excel_cell_value_format(table.cell(i, j).value)
