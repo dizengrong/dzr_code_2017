@@ -1,0 +1,845 @@
+%% @doc 这个文件自动生成的，请不要修改
+
+-record(pt_break_succ, {type = 0}).
+-record(pt_daily_task_info, {status = 0, task_list = []}).
+-record(pt_guild_tec_info, {update_type = 0, used_reset_times = 0, datas = []}).
+-record(pt_main_task_info, {status = 0, task_id = 0, chapter = 0, task_list = []}).
+-record(pt_item_detail_info, {items = []}).
+-record(pt_offline_reward, {end_time = 0, rewards = []}).
+-record(pt_scene_hero_prop_change, {oid = 0, type = 0, val = 0}).
+-record(pt_guide_info, {list = []}).
+-record(pt_other_usr_info, {panel_arg = 0, lv = 0, position = 0, is_friend = 0, user_name = <<>>, guild_name = <<>>, total_gs = 0, arena_heros = [], heros_infos = []}).
+-record(pt_search_friends_result, {list = []}).
+-record(pt_recommend_friends_info, {list = []}).
+-record(pt_friends_apply_info, {list = []}).
+-record(pt_friends_info, {list = []}).
+-record(pt_hero_expedition_hero_hp, {list = []}).
+-record(pt_hero_expedition_scene_result, {result = 0, rewards = [], damage_list = [], treat_list = []}).
+-record(pt_scene_copy_id, {copy_id = 0}).
+-record(pt_act_copy_scene_result, {result = 0, ensure_rewards = [], other_rewards = [], damage_list = [], treat_list = []}).
+-record(pt_act_copy_scene_data, {kill_num = 0, rewards = []}).
+-record(pt_hero_expedition_succ, {}).
+-record(pt_on_scene_heros, {list = []}).
+-record(pt_hero_expedition_info, {pos = 0, main_event = 0, main_event_data = 0, main_event_state = 0, sub_event = 0, sub_event_data = 0, sub_event_state = 0, pos_list = [], history_sub_events = []}).
+-record(pt_act_copy_info, {datas = []}).
+-record(pt_draw_record, {type = 0, record_list = []}).
+-record(pt_high_turntable_result, {energy = 0, position = 0, table_list = []}).
+-record(pt_normal_turntable_result, {position = 0, items = []}).
+-record(pt_turntable_info, {energy = 0, free_time = 0, table_list = []}).
+-record(pt_guild_view_member_info, {panel_arg = 0, lv = 0, position = 0, user_name = <<>>, guild_name = <<>>, total_gs = 0, arena_heros = [], heros_infos = []}).
+-record(pt_draw_info, {energy = 0, list = []}).
+-record(pt_draw_result, {draw_type = 0, rewards = []}).
+-record(pt_recommend_guild_list, {guild_info_list = []}).
+-record(pt_create_guild, {banner = 0, guild_name = [], notice = []}).
+-record(pt_entourage_substitution_result, {etype = 0}).
+-record(pt_defender_zhenfa, {race_zhenfa = 0, prof_zhenfa = 0}).
+-record(pt_shenqi_update, {chnage_type = 0, id = 0}).
+-record(pt_shenqi_illustration, {shenqi_illustration_list = []}).
+-record(pt_on_battle_heros, {list = []}).
+-record(pt_arena_challenge_single_info, {uid = 0, shenqi = 0, fighting = 0, entourage_list = []}).
+-record(pt_time_reward, {time = 0}).
+-record(pt_action_data_and_two_int_list, {action = 0, data = 0, list = []}).
+-record(pt_item_num_update, {datas = []}).
+-record(pt_hero_illustration, {hero_illustration_list = []}).
+-record(pt_arena_challenge_info, {challenge_list = []}).
+-record(pt_update_resource, {resource_list = []}).
+-record(pt_entourage_update, {chnage_type = 0, eid = 0}).
+-record(pt_arena_challenge, {action = 0, t_uid = 0, rank_type = 0, shenqi_id = 0, entourage_list = []}).
+-record(pt_scene_monster_die, {id = 0}).
+-record(pt_scene_end, {time = 0}).
+-record(pt_main_scene_result, {result = 0, scene_change = 0, x = 0, y = 0, z = 0, rewards = [], damage_list = [], treat_list = []}).
+-record(pt_main_scene_status, {status = 0}).
+-record(pt_action_two_int_list, {action = 0, list = []}).
+-record(pt_hero_attr_info, {eid = 0, fighting = 0, attrs = []}).
+-record(pt_gm_act_turntable_draw_result, {id = 0, item_list = []}).
+-record(pt_gm_act_turntable, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_gm_act_rmb_package, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_gm_act_diamond_package, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_gm_act_point_package, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_gm_activity, {activity_list = []}).
+-record(pt_gm_act_acc_login, {startTime = 0, endTime = 0, close_time = 0, days = 0, desc = [], datas = []}).
+-record(pt_gm_act_single_recharge, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_arnea_store_info, {list = []}).
+-record(pt_arnea_task_info, {task_id = 0, count = 0, status = 0}).
+-record(pt_arnea_season_info, {time_state = 0, season_state = 0}).
+-record(pt_mystery_gift_info, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_god_costume_draw, {multi_num = 0, item_list = []}).
+-record(pt_god_costume_illustration_info, {illustration_list = [], illustration_suit_list = []}).
+-record(pt_god_costume_info, {position_num = 0, stage_lev = 0}).
+-record(pt_legendary_level_exp_info, {exp = 0, list = []}).
+-record(pt_legendary_level_start, {info = []}).
+-record(pt_entourage_challenge, {times = 0, buy_times = 0, refresh_time = 0, challenge_list = []}).
+-record(pt_legendary_level_info, {list = []}).
+-record(pt_system_time_zone, {time_zone = 0}).
+-record(pt_new_entourage_info, {etype = 0, num1 = 0, num2 = 0, num3 = 0, num4 = 0, num5 = 0, num6 = 0, num7 = 0, num8 = 0, num9 = 0, num10 = 0, num11 = 0}).
+-record(pt_special_upgrade, {type = 0}).
+-record(pt_return_investment_info, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_random_gift_package, {has_package = 0, id = 0, num = 0, end_time = 0}).
+-record(pt_guild_impeach, {impeach_person = []}).
+-record(pt_head_suit_info, {suit_list = []}).
+-record(pt_head_lev_info, {head_list = []}).
+-record(pt_shenqi_awaken, {lev = 0}).
+-record(pt_melleboss_revive, {boss_id = 0}).
+-record(pt_revive_info_new, {type = 0, countdown = 0, times = 0}).
+-record(pt_melle_boss_scene_info, {owner_id = 0, owner_hp = 0, boss_id = 0, boss_hp = 0}).
+-record(pt_scene_change_camp, {id = 0, new_camp = 0}).
+-record(pt_melleboss_info, {type = 0, reward_times = 0, buy_times = 0, list = []}).
+-record(pt_maze_ranklist, {my_rank = 0, my_lucky = 0, list = []}).
+-record(pt_lottery_carousel_list, {list = []}).
+-record(pt_gm_act_lottery_carousel, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_gm_act_literature_collection, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_global_guild_ranklist_info, {type = 0, my_num = 0, my_rank = 0, ranklist = []}).
+-record(pt_sailing_guard_info, {guard_time = 0, guard_type = 0, guard_list = []}).
+-record(pt_sailing_plunder_info, {plunder_time = 0, plunder_list = []}).
+-record(pt_sailing_info, {type = 0, status = 0, sailing_time = 0, buy_times = 0, has_be_plunder = 0, inspire = 0, succ_guard_time = 0, guard_name = [], guard_head = 0, end_time = 0, sailing_records = []}).
+-record(pt_maze_event, {id = 0, name = [], lev = 0, vip_lev = 0, head_id = 0, fighting = 0, server_id = 0, servername = [], monster_type = 0}).
+-record(pt_maze_info, {state = 0, has_settled = 0, power = 0, buy_times = 0, lucky = 0, bagdge = 0, inspare = 0, re_time = 0, step = 0, rewards = [], records = []}).
+-record(pt_mining_list, {datas = []}).
+-record(pt_mining_info, {status = 0, mining_left_seconds = 0, protect_left_seconds = 0, cur_gain = 0, cur_max_gain = 0, gain = 0, grab = 0, graped_times = 0, grap_buy_times = 0, inspire = 0, exchange_times = [], defend_records = []}).
+-record(pt_ele_pearl_info, {ele1 = 0, ele2 = 0, ele3 = 0, ele4 = 0, ele5 = 0}).
+-record(pt_talent_draw, {draw_id = [], items = []}).
+-record(pt_talent_info, {awaken = 0, skills = []}).
+-record(pt_gm_act_recharge_point, {startTime = 0, endTime = 0, close_time = 0, desc = [], datas = []}).
+-record(pt_praise_reward, {has_reward = 0, is_pop_ip = 0}).
+-record(pt_gm_act_limit_double_recharge, {startTime = 0, endTime = 0, desc = []}).
+-record(pt_global_arena_result, {type = 0, win_lose = 0, rank = 0, rank_change = 0, honor_change = 0, item_list = []}).
+-record(pt_global_arena_match_start, {time = 0}).
+-record(pt_global_arena_match_succ, {time = 0}).
+-record(pt_global_last_arena_ranklist, {worship_time = 0, ranklist = []}).
+-record(pt_global_arena_ranklist, {is_rank = 0, ranklist = []}).
+-record(pt_global_arena_info, {rank = 0, honor = 0, challenge_num = 0, buy_times = 0, daily_honor = 0, daily_task = [], season_win_time = 0, daily_log = [], season_state = 0, season_endtime = 0, worship_time = 0}).
+-record(pt_guild_operation, {operation_type = 0}).
+-record(pt_guild_blessing_info, {blessing_step = 0}).
+-record(pt_worldlevel_info, {world_level = 0, is_reward = 0}).
+-record(pt_usr_title, {uid = 0, titlelev = 0, titleexp = 0, chgProp = []}).
+-record(pt_req_entourage_create_model, {id = 0, create_type = 0}).
+-record(pt_entourage_create_model, {oid = 0, item_id = 0, cur_hp = 0, hp = 0, cur_mp = 0, mp = 0, star = 0, played_state = 0}).
+-record(pt_entourage_revive_new, {etype = 0}).
+-record(pt_entourage_die_new, {dead_entourage_list = []}).
+-record(pt_entourage_succeed_new, {success_action = 0, success_data = 0}).
+-record(pt_entourage_info_new, {type = 0, fighting = 0, lev = 0, star = 0, property_list = []}).
+-record(pt_entourage_list_new, {entourage_list = []}).
+-record(pt_sign_day, {day_num = 0}).
+-record(pt_entourage_property, {property_list = []}).
+-record(pt_action_string_and_data, {action = 0, data1 = 0, data2 = []}).
+-record(pt_rechargejifen_shop, {start_time = 0, end_time = 0, close_time = 0, my_jifen = 0, desc = [], jifen_shop = []}).
+-record(pt_consumejifen_shop, {start_time = 0, end_time = 0, close_time = 0, my_jifen = 0, desc = [], jifen_shop = []}).
+-record(pt_recharge_global_rank_info, {type = 0, rank = 0, start_time = 0, end_time = 0, close_time = 0, recharge_num = 0, desc = [], global_rewards_info = [], recharge_global_rank_list = []}).
+-record(pt_consume_global_rank_info, {type = 0, rank = 0, start_time = 0, end_time = 0, close_time = 0, consume_num = 0, desc = [], global_rewards_info = [], consume_global_rank_list = []}).
+-record(pt_usr_head, {uid = 0, useid = 0, headlist = []}).
+-record(pt_entourage_debt_exchange_succ, {name = [], num = 0}).
+-record(pt_limit_achievement_info, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_continuous_recharge_info, {startTime = 0, endTime = 0, total_recharge = 0, desc = [], datas = []}).
+-record(pt_entourage_rune_info, {etype = 0, can_have = 0, lev = 0, step = 0, property_list = []}).
+-record(pt_action_list_and_data, {action = 0, id_list = [], data = 0}).
+-record(pt_action_tri_int, {action = 0, data_One = 0, data_Two = 0, data_Three = 0}).
+-record(pt_entourage_revive, {etype = 0}).
+-record(pt_entourage_die, {id = 0}).
+-record(pt_gm_act_limit_summon, {startTime = 0, endTime = 0, desc = [], my_rank = 0, my_times = 0, rank_reward = [], ranking_list = []}).
+-record(pt_all_system_activity, {list = []}).
+-record(pt_system_activity_limitboss, {times = 0, buy_times = 0}).
+-record(pt_system_activity, {id = 0, status = 0}).
+-record(pt_gm_act_lv_rank, {startTime = 0, endTime = 0, desc = [], my_rank = 0, rank_reward = [], ranking_list = []}).
+-record(pt_random_task, {is_task = 0, task_id = 0, task1_num = 0, task1_status = 0, task2_num = 0, task2_status = 0, end_time = 0, is_pop = 0}).
+-record(pt_gm_act_reset_recharge, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_artifact_fast, {time = 0, status = 0, buy_times = 0}).
+-record(pt_revive_notify, {nofity_type = 0, data = 0}).
+-record(pt_client_error_report, {report_type = 0, msg = []}).
+-record(pt_gm_act_package, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_gm_act_treasure_record, {type = 0, records = []}).
+-record(pt_gm_act_treasure, {startTime = 0, endTime = 0, desc = [], my_rank = 0, my_times = 0, all_times = 0, one_times_cost = 0, ten_times_cost = 0, one_times_items = [], ten_times_items = [], rand_items = [], exchange = [], rank_reward = [], ranking_list = []}).
+-record(pt_recharge_return, {recharge_money = 0, return_coin = 0}).
+-record(pt_copy_data, {data_type = 0, data = 0}).
+-record(pt_worldboss_inspire, {current_id = 0}).
+-record(pt_worldboss_damage_rank, {type = 0, list = []}).
+-record(pt_worldboss_times, {left_times = 0, next_recover_time = 0}).
+-record(pt_worldboss_list, {list = []}).
+-record(pt_building_upgrade_complete, {id = 0}).
+-record(pt_home_building_produce_begin, {id = 0}).
+-record(pt_home_building_upgrade_begin, {id = 0}).
+-record(pt_home_building_req_produce, {id = 0, idx_list = []}).
+-record(pt_home_building_gather_succ, {id = 0}).
+-record(pt_home_building_factory_info, {id = 0, status = 0, rest_upgrade_time = 0, rest_produce_time = 0, rest_produce_cd = 0, items = []}).
+-record(pt_home_building_mine_info, {id = 0, rest_upgrade_time = 0, rest_res_num = 0, worker_list = [], assistant_list = [], status = 0}).
+-record(pt_home_building_common_detail, {id = 0, rest_upgrade_time = 0}).
+-record(pt_home_building_list, {uid = 0, building_list = []}).
+-record(pt_online_status, {uid = 0, is_online = 0}).
+-record(pt_barrier_rewards_info, {type = 0, datas = []}).
+-record(pt_recent_chat, {msgs = []}).
+-record(pt_shenqi_info, {stage_used_id = 0}).
+-record(pt_gm_act_double, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_gm_act_discount, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_acc_cost, {startTime = 0, endTime = 0, desc = [], picture = [], cost_coin = 0, datas = []}).
+-record(pt_gm_act_drop, {startTime = 0, endTime = 0, desc = []}).
+-record(pt_gm_act_sale, {startTime = 0, endTime = 0, desc = [], exchange_score = 0, datas = []}).
+-record(pt_gm_act_exchange, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_gm_act_week_task, {startTime = 0, endTime = 0, desc = [], datas = []}).
+-record(pt_show_fetched_reward, {show_type = [], type = 0, rewards = []}).
+-record(pt_acc_recharge_info, {startTime = 0, endTime = 0, picture = [], datas = []}).
+-record(pt_req_guild_stone_get, {type = 0}).
+-record(pt_guild_stone_donation, {target_id = 0, type = 0}).
+-record(pt_req_guild_stone_info, {type = 0, stone_list = [], can_get = 0}).
+-record(pt_task_step_info, {step = 0, num = 0, status = 0, sort = 0}).
+-record(pt_task_step, {id = 0, status = 0}).
+-record(pt_req_fly_planes, {id = 0}).
+-record(pt_stroy_reward_info, {reward = []}).
+-record(pt_story_show, {chapter = 0, step = 0}).
+-record(pt_update_guild_inspire_times, {buy_times = 0}).
+-record(pt_update_guild_boss_reward, {my_damage = 0, damage_reward_list = [], kill_reward_list = []}).
+-record(pt_time_reward_item, {reward_id = 0, item_list = []}).
+-record(pt_time_reward_info, {step = 0, extra_reward_state = 0, fetched_list = [], next_time = 0}).
+-record(pt_req_setting_pick_item, {setting_white = 0, setting_green = 0, setting_blue = 0}).
+-record(pt_update_quick_fight_info, {surplus_times = 0, max_times = 0, forever_times = 0, reward_exp = 0, reward_copper = 0, reward_res = 0, reward_item = []}).
+-record(pt_req_quick_fight, {req_type = 0}).
+-record(pt_clear_skill_cd, {sort = 0}).
+-record(pt_bslx, {}).
+-record(pt_compose_info, {action = 0, new_equip_id = 0, free_time = 0, refresh_time = 0, refresh_num = 0, item1 = 0, item2 = 0, item3 = 0, item1_property = [], item2_property = [], item3_property = [], item1_cost = 0, item1_price = 0, item2_cost = 0, item2_price = 0, item3_cost = 0, item3_price = 0}).
+-record(pt_melting_suc, {melting_num = 0}).
+-record(pt_req_melting, {ids = []}).
+-record(pt_sdk_auth_failed, {data = []}).
+-record(pt_flash_gift_bag_time, {start_time = 0, end_time = 0}).
+-record(pt_flash_gift_bag_info, {flash_gift_bag_list = []}).
+-record(pt_sky_ladder_scene_result, {result = 0}).
+-record(pt_sky_ladder_reward, {rewards = []}).
+-record(pt_sky_ladder_info, {rank = 0, total = 0, win = 0, lose = 0, score = 0, max_score = 0, reward_time = 0, first_reward = 0}).
+-record(pt_artifact_forging, {}).
+-record(pt_pet_book, {books = []}).
+-record(pt_join_hero_challenge, {hero_challenge_id_list = []}).
+-record(pt_pet_collect, {pet_collect_list = []}).
+-record(pt_hero_challenge_info, {hero_challenge_difficulty = 0, hero_challenge_wave = 0}).
+-record(pt_mystery_store_buy, {buy_item_info = []}).
+-record(pt_mystery_store_data, {mystery_store_finish_time = 0, mystery_store_item_list = []}).
+-record(pt_stamina_time, {stamina_data = 0}).
+-record(pt_copy_time_rewards, {copy_time = 0, copy_time_rewards_list = []}).
+-record(pt_military_skill, {use_skill_id = 0, military_skill_list = []}).
+-record(pt_glory_sword, {glory_sword_lev = 0}).
+-record(pt_lost_item_recover, {id = 0, debris_num = 0, recover_lev = 0}).
+-record(pt_dress_suit_data, {dress_suit_list = []}).
+-record(pt_recharge_package_data, {num = 0}).
+-record(pt_turning_wheel_hide, {start_time = 0, end_time = 0}).
+-record(pt_turning_wheel_config, {data = []}).
+-record(pt_gm_continu_recharge_reward, {}).
+-record(pt_gm_continu_recharge_close, {start_time = 0, end_time = 0}).
+-record(pt_gm_continu_recharge, {data = []}).
+-record(pt_rank_recharge_activity_time, {start_time = 0, end_time = 0}).
+-record(pt_rank_consume_activity_time, {start_time = 0, end_time = 0}).
+-record(pt_recharge_rank_info, {rank = 0, recharge_rank_list = []}).
+-record(pt_consume_rank_info, {rank = 0, consume_rank_list = []}).
+-record(pt_treasure_times, {times = 0}).
+-record(pt_treasure_all_rewards, {out_of_item_type = 0, out_of_item_num = 0, treasure_rewards_info = []}).
+-record(pt_extreme_luxury_gift, {extreme_luxury_gift_info = [], extreme_ranklist = []}).
+-record(pt_treasure_rewards, {treasure_rewards_info = []}).
+-record(pt_treasure_activity_time, {start_time = 0, end_time = 0}).
+-record(pt_all_people_info, {all_people_info = []}).
+-record(pt_share_info, {share_num = 0}).
+-record(pt_other_usr_skill_info, {strength_oven = 0, other_usr_skill = []}).
+-record(pt_flying_shoes, {}).
+-record(pt_entourage_mastery_grow, {entourage_mastery_info = []}).
+-record(pt_give_red_tips, {}).
+-record(pt_rev_red_response, {uid = 0, diamond = 0, red_num = 0, red_max_num = 0}).
+-record(pt_pwd_red_info, {reds = []}).
+-record(pt_give_pwd_red, {pwd_context = [], diamond = 0, red_num = 0}).
+-record(pt_abyss_box, {abyss_box_scene_item_id = 0, time = 0}).
+-record(pt_open_svr_time_limit, {time = 0}).
+-record(pt_entourage_expedition_reward, {en_list = [], en_exp = 0, items = [], item_ex = 0}).
+-record(pt_call_up_info, {call_up_id = 0, uid = 0, name = [], sceneid = 0}).
+-record(pt_send_red_packet_info, {uid = 0, name = [], prof = 0, balance = 0, sendnumber = 0}).
+-record(pt_guild_team_copy_succeed, {get_success_list = []}).
+-record(pt_guild_call_upon_broadcast, {call_upon_id = 0}).
+-record(pt_req_guild_call_upon, {call_upon_id = 0, min_lev = 0, min_gs = 0, min_post = 0}).
+-record(pt_guild_team_info, {guild_team_list = []}).
+-record(pt_guild_team_copy_info, {call_upon_id = 0, call_upon_uid = 0, join_scene_id = 0, guild_team_copy_list = []}).
+-record(pt_climb_tower_first_reward, {tower_id = 0}).
+-record(pt_climb_tower_fast, {tower_id = 0}).
+-record(pt_climb_tower_reset, {}).
+-record(pt_red_packet_rewards, {packet_rewards_num = 0}).
+-record(pt_red_packet_surplus_time, {surplus_time = 0, red_packet_state = 0, guild_rank = 0, guild_ranklist_state = 0, guild_payoff_state = 0}).
+-record(pt_climb_tower_data, {curr_tower = 0, max_tower = 0, rank = 0, times = 0, rewards = []}).
+-record(pt_team_process, {lev = 0, gs = 0, population = 0}).
+-record(pt_inscription_info, {inscription_list = []}).
+-record(pt_strength_oven_info, {strength_oven_list = []}).
+-record(pt_expedition_request, {action = 0, datas = []}).
+-record(pt_rent_entourage_info, {datas = []}).
+-record(pt_exped_task, {count = 0, reflush_times = 0, datas = []}).
+-record(pt_doing_exped_task, {datas = []}).
+-record(pt_rent_entourage, {type = 0, time = 0}).
+-record(pt_seven_day_target_succeed, {item_list = []}).
+-record(pt_seven_day_target_rewards_info, {day = 0, seven_day_target_rewards_list = []}).
+-record(pt_seven_day_target_info, {seven_day_target_info_list = []}).
+-record(pt_open_svr_five_day_camp, {}).
+-record(pt_open_svr_five_day_data, {sort = 0, rank = 0, prize_stat = 0, datas = []}).
+-record(pt_open_svr_five_day_time, {time = 0}).
+-record(pt_boss_born_and_die, {boss_id = 0, stat = 0}).
+-record(pt_hide_boss_response, {sort = 0, boss_id = 0}).
+-record(pt_hide_boss_data, {hides = []}).
+-record(pt_war_ready_finish, {}).
+-record(pt_scramble_info, {camp_two_score = 0, camp_three_score = 0}).
+-record(pt_team_war_seq, {war_id = 0}).
+-record(pt_blacklist_info, {blacklist_list = []}).
+-record(pt_guild_impeach_president, {guild_impeach_president_poll = 0}).
+-record(pt_req_atlas_team_info, {}).
+-record(pt_growth_bible_info, {growth_bible_info = []}).
+-record(pt_usr_info_pet, {pet_property_list = [], other_pet_list = [], use_pet = 0}).
+-record(pt_usr_info_mount, {mount_id = 0, illusion = [], equip = [], illusion_id = 0}).
+-record(pt_copy_notice_revive, {}).
+-record(pt_atlas_team_info, {atlas_team_list = []}).
+-record(pt_war_damage_rank, {my_damage = 0, damages = []}).
+-record(pt_update_name_succeed, {name = []}).
+-record(pt_updata_name_card, {item_id = 0, updata_name = []}).
+-record(pt_scene_full_tips, {}).
+-record(pt_ret_war_usr_area, {area = 0}).
+-record(pt_ret_gamble_record, {gamble_records = []}).
+-record(pt_ret_guide_tag_point, {wave = 0, x = 0, y = 0, z = 0, mx = 0, my = 0, mz = 0}).
+-record(pt_ret_wheel_info, {pool = 0}).
+-record(pt_national_war_start_time, {stat = 0, time = 0}).
+-record(pt_national_war_tips, {bosslist = []}).
+-record(pt_flag_status, {flag_camp = 0, flag_status = 0}).
+-record(pt_flag_count, {flag_count1 = 0, flag_count3 = 0, flag_count2 = 0}).
+-record(pt_ret_fast_copy, {id = 0, times = 0, items = []}).
+-record(pt_copy_rewards_info, {item_list = []}).
+-record(pt_picked_loginact, {type = 0, items = []}).
+-record(pt_picked_exchange, {type = 0, items = []}).
+-record(pt_picked_gift_recharge, {sort = 0, type = 0, items = []}).
+-record(pt_picked_repeat_recharge, {type = 0, items = []}).
+-record(pt_picked_single_recharge, {type = 0, items = []}).
+-record(pt_loginact_info, {startTime = 0, endTime = 0, loginDays = 0, diamond = 0, loginacts = []}).
+-record(pt_exchange_info, {startTime = 0, endTime = 0, type = 0, exchanges = []}).
+-record(pt_gift_recharge_info, {startTime = 0, endTime = 0, allRecharge = 0, allSpend = 0, dayRecharge = 0, daySpend = 0, gifts = []}).
+-record(pt_repeat_recharge_info, {startTime = 0, endTime = 0, repeatNum = 0, repeatTimes = 0, allNum = 0, pickTimes = 0, repeats = []}).
+-record(pt_single_recharge_info, {startTime = 0, endTime = 0, singles = []}).
+-record(pt_fortress_task_info, {task_id = 0, task_step = 0, task_star = 0, task_loop = 0}).
+-record(pt_guild_post, {post_id = 0}).
+-record(pt_national_war_show_info, {def_buff_num = 0, hp_rate = 0, time = 0}).
+-record(pt_wechat_rewards, {wechat_rewards_state = 0, wechat_rewards_time = 0}).
+-record(pt_ret_items_buffer, {way = 0, items = []}).
+-record(pt_ret_gamble_price, {sort = 0, ids = [], diamo = 0}).
+-record(pt_week_rewards_info, {week_rewards_time = 0, week_rewards_list = []}).
+-record(pt_ret_gamble_info, {cost = 0, vip = 0, low = 0, high = 0, times = 0, pool = 0}).
+-record(pt_match_finish, {}).
+-record(pt_ret_gs_rewards, {status = 0, gs_rewards = []}).
+-record(pt_equip_and_entourage_succeed, {sort = 0, id = 0}).
+-record(pt_equip_rewards, {equip_rewards_list = []}).
+-record(pt_entourage_star_rewards, {entourage_star_rewards_list = []}).
+-record(pt_royal_box_succeed, {royal_box_id = 0, item_list = []}).
+-record(pt_royal_box_info, {royal_box_time = 0, royal_box_astrict = 0, royal_box_list = []}).
+-record(pt_ans_match_war, {id = 0, action = 0, status = 0}).
+-record(pt_war_over, {id = 0, result = 0, drops = 0, items = [], cpl = 0, prev = 0, usrkill = 0, killrank = 0, continuekill = 0, score = 0, killm = 0, killu = 0, killc = 0}).
+-record(pt_ret_war_report, {id = 0, camp2score = 0, camp3score = 0, usrscore = 0, usrkill = 0, killsort = 0, continuekill = 0, curcontinuekill = 0, speed = 0}).
+-record(pt_national_war_call_broadcast, {name = []}).
+-record(pt_national_war_scrolls, {present_scrolls = []}).
+-record(pt_national_war_call, {cd_time = 0}).
+-record(pt_national_war_record, {war_records = []}).
+-record(pt_national_war_data, {stat = 0, time = 0, camp2_honor = 0, camp3_honor = 0, def_camp = 0, win_camp = 0, curr_hp = 0, max_hp = 0}).
+-record(pt_ret_war_times, {wars = []}).
+-record(pt_entourage_star, {uid = 0, star = 0}).
+-record(pt_guild_task, {guild_task_reset_num = 0, guild_task_star = 0, guild_task_loop = 0, guild_task_rewards_state = 0}).
+-record(pt_task_rewards_info, {task_id = 0, task_step = 0, task_rewards_list = []}).
+-record(pt_all_star, {star_num = 0}).
+-record(pt_buy_coin, {buy_coin_time = 0, total_times = 0, coin = 0, status = 0, free_times = 0, re_time = 0}).
+-record(pt_move_sand_buff_id, {move_sand_id = 0, scene_item_id = 0, buff_id = 0}).
+-record(pt_move_sand_buff, {move_sand_list = []}).
+-record(pt_return_quick_buy, {quick_buy_id = 0, quick_buy_item = 0, quick_buy_num = 0}).
+-record(pt_req_quick_buy, {quick_buy_id = 0, quick_buy_item = 0, quick_buy_num = 0}).
+-record(pt_retreve_succeed, {retreve_id = 0}).
+-record(pt_retrueve_info, {retrueve_info = []}).
+-record(pt_update_camp_leader, {camp_leader_id = 0}).
+-record(pt_gen_order, {type = 0, order = []}).
+-record(pt_login_auth_succ, {jsondata = []}).
+-record(pt_sdk_login, {acc = [], pwd = [], line = [], type = 0, statusCode = 0, logPack = 0, client_version = []}).
+-record(pt_off_line_succeed, {}).
+-record(pt_off_line_exp, {off_line_time = 0, off_line_exp = 0, off_line_coin = 0, off_line_res = 0, off_line_item_num = 0}).
+-record(pt_dart_time, {dart_time = 0}).
+-record(pt_system_time, {time_zone = 0, time = 0}).
+-record(pt_camp_leader_info, {uid = 0, name = [], prof = 0, military_lev = 0, lev = 0, limit_lev = 0, time = 0, deputys = []}).
+-record(pt_dart_pos, {pos_x = 0, pos_y = 0, pos_z = 0}).
+-record(pt_exit_queue, {}).
+-record(pt_ref_queue, {}).
+-record(pt_abddart_activity, {abddart_activity_list = []}).
+-record(pt_camp_skill, {skill_id = 0}).
+-record(pt_use_item_groupId, {use_item_groupId = []}).
+-record(pt_dart_activity_state, {activity_state = 0, activity_id_list = []}).
+-record(pt_first_extend_recharge, {recharge_succeed_id = 0, rewards = []}).
+-record(pt_recharge_data, {datas = []}).
+-record(pt_entourage_fetter_info, {entourage_fetter_info = []}).
+-record(pt_recharge_succ, {recharge_id = 0}).
+-record(pt_entourage_soul_link, {entourage_soul_link = [], all_unlinked_id = []}).
+-record(pt_update_charge_active, {sort = 0, reward = 0}).
+-record(pt_ret_charge_active, {rewards = []}).
+-record(pt_honor_kill, {killed_mlev = 0, is_kill = 0, kill_num = 0}).
+-record(pt_first_recharge, {recharge_time = 0, recharge_draw_id = 0, recharge_draw_money = 0, recharge_draw_state = 0}).
+-record(pt_activity_success, {reward_list = []}).
+-record(pt_vip_info, {daily_status = 0, list = []}).
+-record(pt_unlock_atlas, {unlock_atlas_list = []}).
+-record(pt_arena_start_time, {start_time = 0}).
+-record(pt_paragon_level, {paragon_level = []}).
+-record(pt_item_model_clothes, {item_model_clothes = []}).
+-record(pt_ret_achieves, {achieves = []}).
+-record(pt_scene_branching_info, {scene_branching_info = []}).
+-record(pt_scene_load, {}).
+-record(pt_ptc_item_compound_succeed, {get_success_list = []}).
+-record(pt_camp_killed_military, {killed_military = 0}).
+-record(pt_chapter_succeed, {}).
+-record(pt_ret_fast_trials, {copy = 0, times = 0, coin = 0, exp = 0, items = []}).
+-record(pt_arena_result, {arena_type = 0, result = 0, point_change = 0, usr_name = [], chall_name = [], usr_point = 0, chall_point = 0, usr_lev = 0, chall_lev = 0, reward_list = [], damage_list = [], treat_list = []}).
+-record(pt_arena_reflush_cd, {cd_time = 0}).
+-record(pt_arena_record_info, {records = []}).
+-record(pt_challenger_reflush, {challengers = []}).
+-record(pt_arena_info, {times = 0, rank = 0, point = 0, fighting = 0, last_rank = 0, arena_record = []}).
+-record(pt_boss_lose, {boss_id = 0}).
+-record(pt_boss_win, {boss_id = 0, demage = 0, rank = 0, items = []}).
+-record(pt_boss_info, {boss_list = []}).
+-record(pt_update_monster_prop, {id = 0, propertys = []}).
+-record(pt_req_quick_add_pet, {type_id = 0}).
+-record(pt_guild_member_verify, {}).
+-record(pt_chapter_info, {reward_chapter_id = 0, fetched_id = 0}).
+-record(pt_seven_day_target_status, {status = 0, activitieid = 0}).
+-record(pt_guild_notice, {data = []}).
+-record(pt_backpack_upgrade, {entourage_bag = 0, artifact_bag = 0}).
+-record(pt_crowd_num, {num = 0}).
+-record(pt_copy_exist_time, {time_len = 0}).
+-record(pt_update_scene_usr_data, {uid = 0, sort = 0, sdata = [], idata = 0}).
+-record(pt_req_continue_hc, {drops = []}).
+-record(pt_guild_name, {guild_name = []}).
+-record(pt_item_model, {item_id = 0}).
+-record(pt_camp_activity, {union_score = 0, tribe_score = 0, time_len = 0, need_exp = 0, curr_exp = 0, can_get_prize = 0, win_camp = 0, skill_id = 0, honor = 0, max_honor = 0}).
+-record(pt_military_prize, {}).
+-record(pt_ret_hero_challenge, {mission = 0, maxhp = 0, hp = 0, mp = 0, times = 0, entourages = []}).
+-record(pt_camp_task, {camp_task_star = 0, camp_task_loop = 0, camp_rewards_state = 0}).
+-record(pt_scene_fly_scene, {fly_scene_id = 0}).
+-record(pt_ret_risks_info, {risks = []}).
+-record(pt_worship_response, {}).
+-record(pt_can_worship, {can_wor = 0}).
+-record(pt_task_rewards_succeed, {get_success_list = []}).
+-record(pt_wanted_task, {wanted_reset_num = 0, wanted_task_star = 0, wanted_task_loop = 0, wanted_rewards_state = 0}).
+-record(pt_update_camp, {uid = 0, camp = 0}).
+-record(pt_ret_trials_info, {trials = [], copys = []}).
+-record(pt_join_camp, {campid = 0}).
+-record(pt_vote_succ, {}).
+-record(pt_camp_vote_data, {can_vote = 0, campvotes = []}).
+-record(pt_archaeology_reward, {draw_item_list = []}).
+-record(pt_archaeology, {archaeology_id = 0, archaeology_time = 0, refresh_time = 0, add_rewards_time = 0, add_rewards_succeed = 0}).
+-record(pt_broadcast_ride_info, {uid = 0, ride_state = 0, ride_type = 0, currskin = 0, eq1 = 0, eq2 = 0, eq3 = 0, eq4 = 0, eq5 = 0, eq6 = 0}).
+-record(pt_item_info_return, {item_list = []}).
+-record(pt_draw_times, {half = 0, draw_astrict = 0, draw_times = []}).
+-record(pt_draw, {draw_item_list = []}).
+-record(pt_submit_ready, {name = []}).
+-record(pt_match_succ, {sort = 0, id = 0, memebers = []}).
+-record(pt_usr_info_entourage, {entourage_info_list = []}).
+-record(pt_usr_info_lost_item, {lost_item_info = []}).
+-record(pt_usr_info_property, {prof = 0, military = 0, camp = 0, guild_name = [], vip_lev = 0, headid = 0, cur_hp = 0, cur_mp = 0, exp = 0, limit_hp = 0, limit_mp = 0, str = 0, agi = 0, sta = 0, wis = 0, spi = 0, atk = 0, def = 0, defIgnore = 0, cri = 0, criDmg = 0, tough = 0, hit = 0, dod = 0, cd = 0, dmgRate = 0, dmgDownRate = 0, blockRate = 0, blockDownRate = 0, realDmg = 0, stifle = 0, longSuffering = 0, moveSpd = 0, by_like = 0, lev = 0, peak_lev = 0}).
+-record(pt_usr_info_equi, {pid = 0, name = [], prof = 0, camp = 0, headid = 0, title = 0, military = 0, vip_lev = 0, relife_time = 0, achieve_lev = 0, model_clothes = 0, fighting = 0, item_list = [], other_gem_list = []}).
+-record(pt_start_match, {sort = 0, id = 0}).
+-record(pt_match_ready_cancel, {}).
+-record(pt_stop_match, {sort = 0, id = 0}).
+-record(pt_req_match, {id = 0}).
+-record(pt_rewards_return, {rewards_type = 0, rewards_state = 0, rewards_receive_list = []}).
+-record(pt_ret_skin_list, {skins = []}).
+-record(pt_receive_rewards_succeed, {get_success_list = []}).
+-record(pt_ret_ride_prop, {props = []}).
+-record(pt_ret_ride_info, {ride_type = 0, ride_id = 0, lev = 0, exp = 0, ride_state = 0, fighting = 0, currskin = 0, eq1 = 0, eq2 = 0, eq3 = 0, eq4 = 0, eq5 = 0, eq6 = 0, skin = []}).
+-record(pt_ranklist, {ranklistId = 0, position = 0, ranklist = []}).
+-record(pt_ret_scene_teams, {team_info = []}).
+-record(pt_mdf_team_info, {min_lev = 0, max_plys = 0, min_gs = 0, need_verify = 0}).
+-record(pt_update_usr_discrib, {uid = 0, sort = 0, int_data = 0, str_data = []}).
+-record(pt_break_timer, {}).
+-record(pt_start_timer, {timelen = 0}).
+-record(pt_use_someone_title, {title = 0}).
+-record(pt_guild_copy_damage_ranking, {my_damage = 0, guild_copy_damage_ranking = []}).
+-record(pt_guild_copy_enter, {guild_copy_enter_list = []}).
+-record(pt_guild_copy_trophy, {guild_copy_trophy_list = []}).
+-record(pt_guild_copy_list, {challenge_times = 0, buy_times = 0, guild_copy_list = []}).
+-record(pt_monster_affiliation, {monster_affiliation = []}).
+-record(pt_guild_building_list, {guild_building_list = []}).
+-record(pt_donation_record_list, {donation_record_list = []}).
+-record(pt_copy_win, {winorlose = 0, coin = 0, exp = 0, boss_max_hp = 0, total_damage = 0, damage = 0, totalexp = 0, totalcoin = 0, items = [], collect_drops = [], rank_list = []}).
+-record(pt_invite_join_guild, {usr_name = [], guild_name = []}).
+-record(pt_update_mail, {update_data = []}).
+-record(pt_read_mail_item, {mails = []}).
+-record(pt_del_mail, {mails = []}).
+-record(pt_mail_content, {mail_id = 0, title = [], content = [], items = []}).
+-record(pt_req_mail, {mails = []}).
+-record(pt_ret_titles, {used = 0, titles = []}).
+-record(pt_acquire_new_title, {title = 0, lasttime = 0}).
+-record(pt_scene_jump, {pid = 0, dir = 0, x = 0, y = 0, z = 0}).
+-record(pt_req_jump, {}).
+-record(pt_req_chat, {rec_name = [], chanle = 0, content = []}).
+-record(pt_chat, {pid = 0, rec_uid = 0, name = [], rec_name = [], vip_lev = 0, chanle = 0, content = [], sender_military = 0, sender_camp = 0, is_camp_leader = 0, server_id = 0, servre_name = [], guild_id = 0, click_type = 0}).
+-record(pt_entourage_succeed, {get_success_list = []}).
+-record(pt_item_recoin_return, {item_prop_list = []}).
+-record(pt_item_recoin, {item_id = 0, item_prop_list = []}).
+-record(pt_guild_succeed, {type = 0, guild_operation_list = []}).
+-record(pt_members_entry, {guild_members_entry_list = []}).
+-record(pt_guild_commonality, {guild_id = 0, banner = 0, guild_name = [], lev = 0, guild_exp = 0, member_amount = 0, my_donation = 0, donation_times = 0, guild_state = 0, notice = []}).
+-record(pt_guild_member_info, {update_state = 0, guild_member_list = []}).
+-record(pt_all_guild_list_info, {guild_state = 0, guild_info_list = []}).
+-record(pt_revive_times, {countdown = 0, times = 0}).
+-record(pt_get_success, {get_success_list = []}).
+-record(pt_copy_times, {copys = [], passed = []}).
+-record(pt_open_box_get_item, {item_list = []}).
+-record(pt_revive, {revive_uid = 0, revive_sort = 0, x = 0, y = 0, z = 0}).
+-record(pt_progress_bar_end, {uid = 0, target_id = 0, result = 0}).
+-record(pt_progress_bar_begin, {uid = 0, target_id = 0}).
+-record(pt_activity_info, {activity_val = 0, activity_info = [], activity_rewards = []}).
+-record(pt_return_sign, {signe_state = 0, sign_data = 0, fetched_data = 0}).
+-record(pt_req_item_recycle, {recycle_list = []}).
+-record(pt_say_notify, {target_id = 0, say_id = 0}).
+-record(pt_scene_item, {target_id = 0}).
+-record(pt_return_gem_update, {gem_list = []}).
+-record(pt_req_gem_update, {gem_id = 0, item_id = 0, state = 0}).
+-record(pt_store_buy, {store_id = 0, cell_id = 0, buy_num = 0}).
+-record(pt_store_info, {store_list = [], info_list = []}).
+-record(pt_pet, {pet_id = 0, follow_pet_id = 0, lv = 0, exp = 0}).
+-record(pt_mastery_update, {mastery_id = 0, mastery_lev = 0}).
+-record(pt_mastery, {masterys = []}).
+-record(pt_reloading, {uid = 0, model_clothes = 0, equip_id_state_list = []}).
+-record(pt_team_req_cancle, {req_uid = 0}).
+-record(pt_team_ask_cancle, {ask_uid = 0}).
+-record(pt_team_destroy, {}).
+-record(pt_team_member_leave, {leave_uid = 0}).
+-record(pt_team_leader_chg, {new_leader_uid = 0}).
+-record(pt_team_ans_req, {ans_uid = 0, ans = 0}).
+-record(pt_team_req, {req_uid = 0, req_name = [], req_lev = 0}).
+-record(pt_team_ans_ask, {ans_uid = 0, ans = 0}).
+-record(pt_team_ask, {ask_uid = 0, ask_usr_name = []}).
+-record(pt_team_member_chg, {team_member_list = []}).
+-record(pt_team_info, {team_id = 0, leader_id = 0, target = 0, team_member_list = []}).
+-record(pt_entourage_create, {etype = 0, oid = 0, played_state = 0}).
+-record(pt_update_base, {uid = 0, property_list = []}).
+-record(pt_action_two_int, {action = 0, data_One = 0, data_Two = 0}).
+-record(pt_all_skill, {new_unlock = 0, normal_skill_list = []}).
+-record(pt_req_task_list, {}).
+-record(pt_finish_task_response, {taskid = 0, taskstep = 0}).
+-record(pt_del_task, {taskid = 0, taskstep = 0}).
+-record(pt_finish_task, {taskid = 0, taskstep = 0}).
+-record(pt_accept_task, {taskid = 0, taskstep = 0}).
+-record(pt_entourage_info, {eType = 0, fighting = 0, lev = 0, exp = 0, hp = 0, itemType = 0, itemVal = 0, eStar = 0, fightType = 0, played = 0, settle_type = 0, skill_list = [], equip_list = [], property_list = [], rune_list = [], entourage_fetter_info = []}).
+-record(pt_entourage_list, {entourage_list = []}).
+-record(pt_scene_transform, {oid = 0, obj_sort = 0, type = 0, time = 0, x = 0, y = 0, z = 0}).
+-record(pt_lost_item_active, {itemid = 0}).
+-record(pt_lost_item_lev, {itemid = 0, lev = 0, debris_num = 0}).
+-record(pt_lost_item_get, {itemid = 0, lev = 0, debris_num = 0}).
+-record(pt_lost_item, {lost_item_total_num = 0, active_id = 0, lost_item_list = []}).
+-record(pt_item_chg, {item_list = []}).
+-record(pt_item_info, {entourage_bag = 0, artifact_bag = 0, fuwen_bag = 0, item_list = []}).
+-record(pt_scene_skill_aleret_cancel, {skill = 0, lev = 0, oid = 0, obj_sort = 0}).
+-record(pt_scene_skill_aleret, {skill = 0, lev = 0, oid = 0, obj_sort = 0, x = 0, y = 0, z = 0, dir = 0, target_id = 0, target_x = 0, target_y = 0, target_z = 0, aleret_x = 0, aleret_y = 0, aleret_z = 0, aleret_dir = 0}).
+-record(pt_scene_hide, {hide_list = []}).
+-record(pt_scene_usr_team_chg, {uid = 0, team_id = 0, team_leader = 0}).
+-record(pt_scene_delete_trap, {tid = 0}).
+-record(pt_scene_add_trap, {list = []}).
+-record(pt_scene_delete_arrow, {aid = 0}).
+-record(pt_scene_add_arrow, {list = []}).
+-record(pt_scene_pickup, {pickup_list = []}).
+-record(pt_scene_drop, {oid = 0, drop_list = []}).
+-record(pt_scene_break_persistent, {}).
+-record(pt_scene_remove_buff, {oid = 0, obj_sort = 0, buff_type = 0}).
+-record(pt_scene_chg_buff, {oid = 0, obj_sort = 0, adder_oid = 0, adder_obj_sort = 0, buff_type = 0, buff_sort = 0, buff_power = 0, buff_mix_lev = 0, buff_len = 0}).
+-record(pt_scene_property, {oid = 0, property_list = []}).
+-record(pt_scene_skill_effect, {error_code = 0, oid = 0, cur_mp = 0, obj_sort = 0, skill = 0, lev = 0, x = 0, y = 0, z = 0, dir = 0, target_id = 0, target_x = 0, target_y = 0, target_z = 0, shift_x = 0, shift_y = 0, shift_z = 0, effect_list = []}).
+-record(pt_scene_skill, {skill = 0, lev = 0, oid = 0, x = 0, y = 0, z = 0, dir = 0, target_id = 0, target_x = 0, target_y = 0, target_z = 0}).
+-record(pt_scene_fly_by_fly_point, {fly_point_id = 0}).
+-record(pt_scene_dec, {oid = 0}).
+-record(pt_scene_add, {ply_list = [], monster_list = [], item_list = [], entourage_list = [], usr_equip_list = [], pets = [], models = []}).
+-record(pt_niubi, {status = 0}).
+-record(pt_scene_move, {oid = 0, obj_sort = 0, dir = 0, is_path_move = 0, point_list = []}).
+-record(pt_medicine, {buff = []}).
+-record(pt_draw_base, {item = 0, num = 0}).
+-record(pt_relife_succeed, {time = 0}).
+-record(pt_ggb_battle_waiting, {waiting_seconds = 0}).
+-record(pt_ggb_battle_result, {status = [], win_server_name = [], win_guild_name = [], win_kill_num = [], lose_server_name = [], lose_guild_name = [], lose_kill_num = []}).
+-record(pt_ggb_nofity, {status = 0}).
+-record(pt_ggb_battle_log, {status = 0, logs = []}).
+-record(pt_ggb_scene_report, {report_type = 0, datas = []}).
+-record(pt_ggb_scene_brief_info, {server_name1 = [], guild_name1 = [], strategy1 = 0, inspire_lv1 = 0, team1_left_num = 0, team1_total_num = 0, server_name2 = [], guild_name2 = [], strategy2 = 0, inspire_lv2 = 0, team2_left_num = 0, team2_total_num = 0}).
+-record(pt_ggb_group_info, {my_team_pos = 0, is_fight = 0, result = 0, server_id1 = 0, guild_id1 = 0, server_name1 = [], guild_name1 = [], fighting1 = 0, strategy1 = 0, inspire_lv1 = 0, stake11 = 0, stake12 = 0, stake1_type1_total = 0, stake1_type2_total = 0, server_id2 = 0, guild_id2 = 0, server_name2 = [], guild_name2 = [], fighting2 = 0, strategy2 = 0, inspire_lv2 = 0, stake21 = 0, stake22 = 0, stake2_type1_total = 0, stake2_type2_total = 0}).
+-record(pt_ggb_my_team_info, {is_fight = 0, strategy = 0, inspire_lv = 0, opponent_strategy = 0, opponent_inspire_lv = 0, opponent_server_name = [], opponent_guild_name = []}).
+-record(pt_ggb_info, {status = 0, total_server = 0, is_candidate = 0, promotion_result = 0, first_period = [], second_period = []}).
+-record(pt_charge_card, {sort = 0, date = 0}).
+-record(pt_last_called_hero, {combat_entourage_list = []}).
+-record(pt_net_chg_code, {code = 0}).
+-record(pt_ping, {}).
+-record(pt_action_list, {action = 0, id_list = []}).
+-record(pt_action_float, {action = 0, data = 0}).
+-record(pt_action_string, {action = 0, data = []}).
+-record(pt_action_int, {action = 0, data = 0}).
+-record(pt_action, {action = 0}).
+-record(pt_delete_usr, {uid = 0}).
+-record(pt_req_delete_usr, {uid = 0}).
+-record(pt_create_usr_list, {usr_list = []}).
+-record(pt_req_create_usr, {name = 0}).
+-record(pt_scene_info, {camp = 0, scene = 0}).
+-record(pt_load_scene_finish, {scene = 0}).
+-record(pt_req_load_scene, {scene = 0, is_planes = 0, dir = 0, x = 0, y = 0, z = 0}).
+-record(pt_usr_enter_scene, {}).
+-record(pt_usr_info, {id = 0, name = [], level = 0, exp = 0, camp = 0, guide_id = 0, guild_name = [], resource_list = [], paragon_level = 0, vip_lev = 0, create_time = 0, scene_lev = 0}).
+-record(pt_usr_enter, {uid = 0, phone_type = 0, key = 0}).
+-record(pt_net_info, {ip = [], port = 0, uid = 0, key = 0}).
+-record(pt_queue_info, {max_num = 0, cur_num = 0}).
+-record(pt_req_net, {uid = 0, phone_type = 0}).
+-record(pt_usr_list, {default_camp = 0, platform_id = 0, usr_list = [], is_version_matched = 0}).
+-record(pt_error_info, {error = 0, msg = []}).
+-record(pt_login_robot, {account = [], password = [], mini_lev = 0, max_lev = 0}).
+-record(pt_login, {account = [], password = [], pt_version = 0}).
+-record(pt_grow_fund_info, {have = 0, step = 0, fetched_id = 0, can_fetch_id = 0}).
+-record(pt_daily_acc_cost, {startTime = 0, endTime = 0, cost_coin = 0, desc = [], datas = []}).
+-record(pt_daily_acc_recharge_info, {startTime = 0, endTime = 0, datas = []}).
+-record(pt_download_reward, {id = 0, state = 0}).
+-record(pt_relife_task_info, {time = 0, relife_task_info = []}).
+-record(pt_cast_shenqi_skill, {skill = 0, target_id = 0, target_x = 0, target_y = 0, target_z = 0}).
+-record(pt_shenqi_skill_effect, {src_id = 0, src_sort = 0, skill = 0, target_id = 0, target_x = 0, target_y = 0, target_z = 0, effect_list = []}).
+-record(pt_public_task_list, {task_id = 0, num = 0, status = 0}).
+-record(pt_public_pending_list, {uid = 0, name = [], lev = 0, vip_lev = 0}).
+-record(pt_public_friend_list, {uid = 0, name = [], guild_name = [], lev = 0, vip_lev = 0, rank = 0, online = 0, last_logout_time = 0}).
+-record(pt_public_left_hp, {oid = 0, hp = 0}).
+-record(pt_public_on_battle_data, {type = 0, shenqi_id = 0, heros = []}).
+-record(pt_public_draw_record_list, {time = 0, item = []}).
+-record(pt_public_turntable_list, {position = 0, times = 0, item = []}).
+-record(pt_public_draw_list, {draw_type = 0, free_time = 0}).
+-record(pt_public_expedition_sub_event, {event_id = 0, num = 0}).
+-record(pt_public_expedition_pos, {pos = 0, event_id = 0, walked = 0}).
+-record(pt_public_act_copy, {copy_type = 0, activated_copy_id = 0, win_copy_id = 0, left_times = 0, buy_times = 0, max_kill_num = 0}).
+-record(pt_public_arena_record_list, {t_uid = 0, name = [], time = 0, result = 0, change = 0, revenge = 0}).
+-record(pt_public_illustration_info, {type = 0, star = 0}).
+-record(pt_public_on_battle_heros, {item_id = 0, type = 0, pos = 0}).
+-record(pt_public_act_turntable_point_reward_list, {id = 0, need_point = 0, reward = [], desc = [], status = 0}).
+-record(pt_public_act_turntable_reward_list, {id = 0, item = [], effect = 0, status = 0}).
+-record(pt_public_act_turntable_des, {reward = [], item_cost = [], diamond_cost = [], all_cost = [], discount = [], refresh_cost = 0, point_exchange = 0, all_cost_pre = 0, point = 0, point_reward = []}).
+-record(pt_public_act_rmb_package_des, {id = 0, reward = [], item = [], status = 0, multi = 0}).
+-record(pt_public_act_diamond_package_des, {id = 0, icon = [], title = [], item = [], cost = [], status = 0, multi = 0}).
+-record(pt_public_act_point_package_box_des, {id = 0, max_times = 0, times = 0, type = 0, status = 0, content = [], discount = [], item = [], cost = []}).
+-record(pt_public_act_point_package_des, {id = 0, name = [], box_list = []}).
+-record(pt_public_activity_list, {id = 0, name = [], icon = []}).
+-record(pt_public_scene_damage_list, {id = 0, obj_type = 0, kill_num = 0, damage = 0}).
+-record(pt_public_acc_login_des, {id = 0, days = 0, fetched = 0, items = []}).
+-record(pt_public_single_recharge_des, {id = 0, type = 0, items = [], system_type = 0, charge_times = 0, pick_times = 0, max_times = 0}).
+-record(pt_public_arena_store_info_list, {id = 0, num = 0}).
+-record(pt_public_legendary_exp_buy_list, {type = 0, times = 0}).
+-record(pt_public_entourage_challenge_info, {chapter = 0, difficulty = 0, lev = 0}).
+-record(pt_public_legendary_level_info_list, {type = 0, lev = 0}).
+-record(pt_public_return_investment_reward_list, {id = 0, des = [], status = 0, reward = []}).
+-record(pt_public_mystery_gift_info_des, {id = 0, type = 0, gift_name = [], originalPrice = [], presentPrice = 0, checkpoint = 0, status = 0, discount = [], backpic = [], reward_list = []}).
+-record(pt_public_return_investment_des, {my_dioamnd = 0, need_diomand = 0, reward_list = []}).
+-record(pt_public_head_list, {id = 0, lev = 0}).
+-record(pt_public_melleboss_list, {boss_id = 0, boss_hp = 0, usr_num = 0, revive_time = 0}).
+-record(pt_public_maze_ranklist, {name = [], lucky = 0, rank = 0}).
+-record(pt_public_carousel_item_list, {id = 0, type = 0, num = 0}).
+-record(pt_public_point_reward_list_des, {id = 0, des = [], status = 0, reward = []}).
+-record(pt_public_point_ranklist_des, {uid = 0, name = [], rank = 0, server_name = [], point = 0, reward = []}).
+-record(pt_public_act_lottery_carousel_des, {reward_item = [], one_time = 0, ten_time = 0, point = 0, price_pool = 0, max_price_pool = 0, point_ranklist = [], point_reward_list = []}).
+-record(pt_public_act_literature_collection_des, {task_id = 0, max_times = 0, times = 0, need_item = [], reward_item = []}).
+-record(pt_public_global_guild_ranklist, {guild_id = 0, guild_name = [], server_id = 0, server_name = [], num = 0, rank = 0}).
+-record(pt_public_mining_list_des, {uid = 0, name = [], lv = 0, in_protect = 0, head_id = 0, gain = 0}).
+-record(pt_public_mining_defend_des, {result = 0, grabber = [], time = 0, failed_lost = 0}).
+-record(pt_public_guard_list, {type = 0, uid = 0, name = [], barrier = 0, fighting = 0}).
+-record(pt_public_plunder_list, {has_sign = 0, type = 0, uid = 0, name = [], guild_name = [], server_id = 0, server_name = [], fighting = 0, scene_lev = 0}).
+-record(pt_public_sailing_record, {type = 0, name = [], guild_name = [], server_name = [], time = 0}).
+-record(pt_public_maze_record, {uid = 0, name = [], server_id = 0, server_name = [], type = 0, time = 0, result = 0, lost_list = []}).
+-record(pt_public_act_recharge_total_des, {all_id = 0, all_point = 0, all_need = 0, all_desc = [], all_reward = [], can_all = 0}).
+-record(pt_public_act_recharge_own_des, {own_id = 0, own_point = 0, own_need = 0, own_desc = [], own_reward = [], can_own = 0}).
+-record(pt_public_act_recharge_ranklist_des, {uid = 0, rank = 0, prof = 0, sex = 0, name = [], rank_reward = [], point = 0}).
+-record(pt_public_act_recharge_point_des, {need = 0, own_point = 0, all_point = 0, rank_list = [], own_list = [], total_list = []}).
+-record(pt_public_global_arena_last_ranklist_info, {uid = 0, name = [], rank_num = 0, vip_lev = 0, head_id = 0, lev = 0, rank = 0, honor = 0, win_time = 0, can_worship = 0, be_worship_time = 0, server_id = 0, server_name = []}).
+-record(pt_public_global_arena_ranklist_info, {name = [], rank_num = 0, vip_lev = 0, head_id = 0, lev = 0, rank = 0, honor = 0, win_time = 0, server_name = []}).
+-record(pt_public_global_arena_daily_log, {name = [], result = 0, rank = 0, honor_change = 0, time = 0}).
+-record(pt_public_global_arena_daily_task, {id = 0, state = 0}).
+-record(pt_public_guild_operation_list, {time = 0, type = 0, be_name = [], name = []}).
+-record(pt_public_title_chpprof, {type = 0, curnum = 0, addnum = 0}).
+-record(pt_public_jifen_shop, {itemid = 0, num = 0, need_jifen = 0}).
+-record(pt_public_global_rewards_info, {desc = [], treasure_rewards_info = []}).
+-record(pt_public_recharge_global_rank_list, {rank_no = 0, server_name = [], rank_name = [], rank_recharge = 0}).
+-record(pt_public_consume_global_rank_list, {rank_no = 0, server_name = [], rank_name = [], rank_consume = 0}).
+-record(pt_public_talent_skill_des, {id = 0, lv = 0}).
+-record(pt_public_guild_ranklist, {uid = 0, name = [], rank = 0, fighting = 0}).
+-record(pt_public_ggb_team_pos_info, {pos = 0, group_id = 0, stake1_total = 0, stake2_total = 0, promotion_result = 0, servername = [], guild_name = []}).
+-record(pt_public_ggb_battle_record, {num = 0, result = 0, status = 0, servername1 = [], guild_name1 = [], score1 = 0, servername2 = [], guild_name2 = [], score2 = 0}).
+-record(pt_public_ggb_second_period_detail, {my_pos = 0, datas = []}).
+-record(pt_public_ggb_first_period_detail, {result = 0, left_num = 0, records = []}).
+-record(pt_public_usrid_list, {headid = 0}).
+-record(pt_public_limit_achievement_ranking_des, {rank = 0, uid = 0, prof = 0, sex = 0, name = [], times = 0}).
+-record(pt_public_limit_achievement_total_des, {all_times = 0, all_id = 0, all_need = 0, all_desc = [], all_reward = [], can_all = 0}).
+-record(pt_public_limit_achievement_own_des, {own_times = 0, own_id = 0, own_need = 0, own_desc = [], own_reward = [], can_own = 0}).
+-record(pt_public_limit_achievement_day_des, {day_times = 0, day_id = 0, day_need = 0, day_desc = [], day_reward = [], can_day = 0}).
+-record(pt_public_limit_achievement_des, {type = 0, rank_list_num = 0, rank_list_need = 0, day_list = [], own_list = [], total_list = [], rank_list = []}).
+-record(pt_public_continuous_recharge_reward_des, {id = 0, need_day = 0, reward = [], desc = [], can_fetch = 0}).
+-record(pt_public_continuous_recharge_des, {any_id = 0, any_desc = [], any_reward = [], can_any = 0, spe_id = 0, spe_need = 0, spe_desc = [], spe_reward = [], can_spe = 0, continuous_list = []}).
+-record(pt_public_entourage_rune_list, {can_have = 0, lev = 0, step = 0, property_list = []}).
+-record(pt_public_dead_entourage_list, {etype = 0, revive_time = 0}).
+-record(pt_public_combat_entourage_list, {id = 0}).
+-record(pt_public_limit_summon_rank_reward_des, {begin_rank = 0, end_rank = 0, need_times = 0, items = [], desc = []}).
+-record(pt_public_limit_summon_ranking_des, {rank = 0, uid = 0, prof = 0, sex = 0, name = [], times = 0}).
+-record(pt_public_system_activity_info, {id = 0, status = 0}).
+-record(pt_public_gm_act_reset_recharge_des, {tab_title = [], desc = []}).
+-record(pt_public_institue_skill_list, {status = 0, skill_id = 0, skill_lev = 0}).
+-record(pt_public_help_work_list, {id = 0, uid = 0, name = [], hero_id = 0, hero_lev = 0, add_ratio = 0, fighting = 0, leave_time = 0}).
+-record(pt_public_friend_name_list, {name = []}).
+-record(pt_public_buff_list, {id = 0, end_time = 0}).
+-record(pt_public_treasure_record_des, {name = [], item = 0}).
+-record(pt_public_treasure_exchange_des, {id = 0, need_item = 0, need_num = 0, gain_item = 0, gain_num = 0}).
+-record(pt_public_treasure_ranking_des, {rank = 0, uid = 0, prof = 0, sex = 0, name = [], times = 0}).
+-record(pt_public_treasure_rank_reward_des, {begin_rank = 0, end_rank = 0, need_times = 0, items = [], desc = []}).
+-record(pt_public_home_building_worker_info, {type = 0, lev = 0, owner_name = [], rest_work_time = 0, fight_score = 0, ratio_add = 0}).
+-record(pt_public_home_building_base_info, {id = 0, type = 0, level = 0, status = 0, need_num = 0, get_num = 0, friend_num = 0, friend_list = [], reward = [], upgrade_end_time = 0, work_end_time = 0, rest_end_time = 0, quick_mine_time = 0, commander = [], work_list = [], institue_skill = []}).
+-record(pt_public_worldboss_damage_info, {rank = 0, uid = 0, name = [], damage = 0, inspire_lv = 0}).
+-record(pt_public_worldboss_info, {boss_id = 0, state = 0, next_revive_time = 0}).
+-record(pt_public_recent_chat_msg, {pid = 0, rec_uid = 0, name = [], rec_name = [], vip_lev = 0, chanle = 0, content = [], sender_military = 0, sender_camp = 0, is_camp_leader = 0, server_id = 0, guild_id = 0, server_name = []}).
+-record(pt_public_lv_rank_reward_des, {begin_rank = 0, end_rank = 0, items = [], desc = []}).
+-record(pt_public_gm_act_lv_rank_des, {rank = 0, uid = 0, prof = 0, sex = 0, name = [], lv = 0}).
+-record(pt_public_gm_act_package_des, {id = 0, name = [], pic = [], item = [], times = 0, state = 0, total_times = 0, desc = []}).
+-record(pt_public_gm_act_double_des, {type = 0, tab_title = [], desc = [], double_times = 0, extra_reward = []}).
+-record(pt_public_gm_act_discount_des, {type = 0, tab_title = [], desc = [], discount = 0}).
+-record(pt_public_gm_act_sale_des, {id = 0, client_id = 0, sort = 0, tab_title = [], items = [], original_price = 0, present_price = 0, cost_score = 0, limit = 0, left_times = 0, state = 0}).
+-record(pt_public_gm_act_exchange_des, {id = 0, state = 0, tab_title = [], max_times = 0, exchange_times = 0, src_items = [], exchange_items = []}).
+-record(pt_public_daily_acc_cost_des, {id = 0, need_cost = 0, state = 0, items = []}).
+-record(pt_public_acc_cost_des, {id = 0, need_cost = 0, state = 0, items = []}).
+-record(pt_public_barrier_rewards_des, {id = 0, done = 0, state = 0, current_fetched = 0}).
+-record(pt_public_gm_act_week_task_des, {id = 0, sort = 0, tab_title = [], done = 0, condtion = [], state = 0, items = []}).
+-record(pt_public_daily_acc_recharge_des, {sort = 0, need_diamond = 0, recharge_diamond = 0, state = 0, sort_desc = [], desc = [], products = []}).
+-record(pt_public_acc_recharge_des, {sort = 0, need_diamond = 0, recharge_diamond = 0, state = 0, sort_desc = [], desc = [], products = []}).
+-record(pt_public_guild_stone_list, {target_id = 0, target_name = [], type = 0, num = 0}).
+-record(pt_public_time_reward, {type = 0, num = 0}).
+-record(pt_public_flash_gift_bag_list, {gift_bag_id = 0, items = [], gift_bag_time = 0, gift_bag_already_time = 0, cost_diamond = 0}).
+-record(pt_public_reward_info, {id = 0, stat = 0}).
+-record(pt_public_boss_ex_info, {boss_id = 0, boss_time = 0, stat = 0}).
+-record(pt_public_mystery_store_item_list, {item_type = 0, item_num = 0}).
+-record(pt_public_military_skill_info, {military_skill_id = 0, military_skill_lev = 0}).
+-record(pt_public_turning_wheel_config_list, {config_id = 0, wheelType = 0, item = 0, num = 0}).
+-record(pt_public_diamond_lev_list, {diam_Lev = 0, day = 0, items = []}).
+-record(pt_public_stat_item_list, {stat = 0, item_id = 0, item_num = 0}).
+-record(pt_public_recharge_rank_list, {start_rank = 0, end_rank = 0, rank_name = [], rank_recharge = 0, treasure_rewards_info = []}).
+-record(pt_public_consume_rank_list, {start_rank = 0, end_rank = 0, rank_name = [], rank_consume = 0, treasure_rewards_info = []}).
+-record(pt_public_extreme_ranklist, {ranklist_id = 0, ranklist_name = [], ranklist_prof = 0, ranklist_time = 0}).
+-record(pt_public_extreme_luxury_gift_info, {treasure_rewards_id = 0, rewards_condition_time = 0, treasure_rewards_info = []}).
+-record(pt_public_treasure_rewards_info, {treasure_rewards_type = 0, treasure_rewards_num = 0}).
+-record(pt_public_all_people_info, {all_people_id = 0, all_people_data_time = 0, all_people_state = 0, treasure_rewards_info = []}).
+-record(pt_public_other_usr_skill, {other_usr_skill_id = 0, other_usr_skill_lev = 0}).
+-record(pt_public_entourage_mastery_list, {mastery_id = 0, mastery_lev = 0}).
+-record(pt_public_entourage_mastery_info, {entourage_type = 0, entourage_mastery_list = []}).
+-record(pt_public_pwd_red_list, {uid = 0, pwd_context = [], state = 0, give_name = [], time = 0}).
+-record(pt_public_guild_team_list, {uid = 0, prof = 0, name = [], gs = 0, lev = 0, state = 0, post = 0, crud_state = 0}).
+-record(pt_public_guild_team_copy_list, {scene_id = 0, wave_number = 0}).
+-record(pt_public_climb_tower_first_reward, {tower_id = 0, stat = 0}).
+-record(pt_public_inscription_list, {inscription_id = 0, inscription_lev = 0}).
+-record(pt_public_exped_entourage_list, {owner_uid = 0, entype = 0}).
+-record(pt_public_rent_entourage_list, {owner_uid = 0, entype = 0, lev = 0, star = 0, fighting = 0}).
+-record(pt_public_expedition_list, {id = 0, config_id = 0, time = 0}).
+-record(pt_public_strength_oven_list, {oven_id = 0, oven_lev = 0, oven_state = 0}).
+-record(pt_public_seven_day_target_rewards_list, {rewards_id = 0, rewards_num = 0, rewards_state = 0}).
+-record(pt_public_seven_day_target_info_list, {target_id = 0, target_num = 0, target_state = 0}).
+-record(pt_public_five_act_info, {name = [], data = 0, ent_name = []}).
+-record(pt_public_war_info_list, {war_id = 0, num = 0, stat = 0, timelen = 0}).
+-record(pt_public_blacklist_list, {blacklist_uid = 0, blacklist_relife = 0, blacklist_prof = 0, blacklist_name = 0, blacklist_lev = 0, blacklist_headid = 0}).
+-record(pt_public_growth_bible_info, {growth_bible_id = 0, growth_bible_val = 0}).
+-record(pt_public_other_gem_list, {gem_id = 0, gem_lev = 0}).
+-record(pt_public_other_pet_list, {pet_id = 0}).
+-record(pt_public_pet_property_list, {property_id = 0, property_val = 0}).
+-record(pt_public_mount_equip_list, {equip_id = 0}).
+-record(pt_public_atlas_team_list, {teammate_id = 0, teammate_name = [], teammate_prof = 0, teammate_lev = 0, teammate_x = 0, teammate_z = 0}).
+-record(pt_public_war_damage, {rank = 0, name = [], damage = 0}).
+-record(pt_public_illusion_list, {illusion_id = 0}).
+-record(pt_public_gamble_record, {name = [], item = 0, num = 0}).
+-record(pt_public_deputy_list, {uid = 0, name = [], prof = 0, military_lev = 0, lev = 0, limit_lev = 0}).
+-record(pt_public_loginact_des, {type = 0, picked = 0, products = []}).
+-record(pt_public_exchange_des, {type = 0, picked_time = 0, max_time = 0, products = [], outputs = []}).
+-record(pt_public_gift_des, {type = 0, starNum = 0, picked = 0, products = []}).
+-record(pt_public_repeat_des, {type = 0, products = []}).
+-record(pt_public_single_des, {type = 0, system_type = 0, get_times = 0, pick_times = 0, max_times = 0, products = []}).
+-record(pt_public_week_rewards_list, {week_rewards_id = 0}).
+-record(pt_public_equip_rewards_list, {rewards_id = 0, rewards_state = 0}).
+-record(pt_public_entourage_star_rewards, {rewards_id = 0, rewards_state = 0}).
+-record(pt_public_royal_box_list, {royal_box_id = 0, royal_box_type = 0, royal_box_state = 0, royal_box_final_time = 0}).
+-record(pt_public_national_war_record, {win_camp = 0, lose_camp = 0, time = 0}).
+-record(pt_public_present_entourage_scrolls, {stat = 0, id = 0, num = 0, max_num = 0}).
+-record(pt_public_task_rewards_list, {item_id = 0, item_num = 0}).
+-record(pt_public_move_sand_list, {move_sand_id = 0, sand_buff_id = 0, move_sand_time = 0}).
+-record(pt_public_retrueve_info, {retrueve_id = 0, retrueve_time = 0}).
+-record(pt_public_abddart_activity_list, {activity_id = 0, activity_state = 0, activity_time = 0}).
+-record(pt_public_use_item_groupId, {group_id = 0, group_id_time = 0}).
+-record(pt_public_activity_id_list, {id = 0}).
+-record(pt_public_recharge_list, {id = 0, is_double = 0}).
+-record(pt_public_entourage_soul_link, {entourage_id = 0, hole_site = 0, prop_type = 0, prop_value = 0}).
+-record(pt_public_entourage_fetter_info, {entourage_id = 0, fetter_lev = 0}).
+-record(pt_public_charge_active, {sort = 0, state = 0, schedule = 0, reward = 0}).
+-record(pt_public_vip_rewards_list, {id = 0, status = 0}).
+-record(pt_public_unlock_atlas_list, {unlock_atlas = 0}).
+-record(pt_public_paragon_level, {prop_type = 0, prop_val = 0}).
+-record(pt_public_item_model_clothes, {state = 0, type = 0, lev = 0}).
+-record(pt_public_achieve, {sort = 0, type = 0, num = 0}).
+-record(pt_public_scene_branching_info, {branching_id = 0, people_number = 0}).
+-record(pt_public_int32x4, {d1 = 0, d2 = 0, d3 = 0, d4 = 0}).
+-record(pt_public_arena_record, {chall_name = [], time = 0, sort = 0, chg_rank = 0}).
+-record(pt_public_challenge_list, {uid = 0, rank = 0, name = []}).
+-record(pt_public_boss_info, {boss_id = 0, stat = 0}).
+-record(pt_public_resource_list, {resource_type = 0, resource_num = 0}).
+-record(pt_public_entourage, {id = 0, hp = 0}).
+-record(pt_public_camp_model_list, {pid = 0, name = [], prof = 0, dir = 0, x = 0, y = 0, z = 0, camp = 0, model_clothes = 0, is_camp_model = 0, equips = []}).
+-record(pt_public_trial_nums, {trialid = 0, num = 0}).
+-record(pt_public_camp_vote_list, {rank = 0, uid = 0, military = 0, name = [], fighting = 0, vote_num = 0}).
+-record(pt_public_draw_item_list, {draw_item_id = 0, draw_item_type = 0, draw_item_num = 0}).
+-record(pt_public_draw_times, {draw_type = 0, draw_time = 0, last_time = 0, draw_one_time = 0, draw_the_time = 0}).
+-record(pt_public_lost_item_info, {lost_item_type = 0, lost_item_lev = 0, lost_item_state = 0}).
+-record(pt_public_entourage_info_list, {etype = 0, lev = 0, estar = 0}).
+-record(pt_public_match_succ_list, {name = [], lev = 0, prof = 0}).
+-record(pt_public_rewards_receive_list, {rewards_id = 0}).
+-record(pt_public_prop_entry, {prop_name = 0, num = 0}).
+-record(pt_public_r_skin, {id = 0, type = 0, cur_starnum = 1, cur_atk = 0, cur_life = 0, cur_defense = 0, add_atk = 0, add_defense = 0, add_life = 0}).
+-record(pt_public_ranklist, {uid = 0, rank = 0, usr_name = [], lev = 0, val = 0, other_id = 0, other_name = [], vip_lev = 0}).
+-record(pt_public_team_info, {tid = 0, camp = 0, leader_id = 0, max_plys = 0, fighting = 0, members = []}).
+-record(pt_public_member_info, {id = 0, lev = 0, name = []}).
+-record(pt_public_scene_objs, {sort = 0, id = 0}).
+-record(pt_public_guild_trophy_list, {item_id = 0, apply_position = 0, item_num = 0, queued_num = 0}).
+-record(pt_public_guild_copy_damage_ranking, {ranking = 0, uid = 0, usr_name = [], prof = 0, lev = 0, vip_lev = 0, damage_num = 0, position = 0}).
+-record(pt_public_guild_copy_enter_list, {scene_id = 0, enter_state = 0, usr_name = [], prof = 0}).
+-record(pt_public_guild_copy_trophy_list, {scene_id = 0, guild_trophy_list = []}).
+-record(pt_public_guild_copy_list, {scene_id = 0, copy_id = 0, copy_step = 0, damage = 0, remaining_time = 0, open_state = 0, is_open_scene = 0, fast_server_name = [], fast_guild_name = [], fast_guild_progress = 0, rank_list = []}).
+-record(pt_public_monster_affiliation, {monster_id = 0, owner_id = 0}).
+-record(pt_public_update_mails, {mail_id = 0, items = []}).
+-record(pt_public_donation_record_list, {donation_time = 0, donation_subscriber = [], building_num = 0}).
+-record(pt_public_guild_building_list, {building_id = 0, building_lev = 0, building_exp = 0}).
+-record(pt_public_id_list, {id = 0}).
+-record(pt_public_title_obj, {title = 0, lasttime = 0}).
+-record(pt_public_mail_list, {mail_id = 0, title = [], resoure = 0, is_read = 0, s_time = 0, config_id = 0}).
+-record(pt_public_guild_members_entry_list, {uid = 0, name = [], lev = 0, prof = 0, head_id = 0, fighting = 0}).
+-record(pt_public_guild_member_list, {member_id = 0, member_vip = 0, member_name = [], member_post = 0, member_fighting = 0, member_head_id = 0, memberlevel = 0, contribution = 0, recentOnlineTime = 0, friends_state = 0, online_state = 0}).
+-record(pt_public_guild_info_list, {guild_id = 0, guild_name = [], president_name = [], member_amount = 0, guild_level = 0, req_state = 0, banner = 0}).
+-record(pt_public_get_success_list, {time = 0, success_action = 0, success_data = 0, success_data2 = 0}).
+-record(pt_public_common_rank, {rank = 0, uid = 0, name = [], data = 0}).
+-record(pt_public_copy_times, {group_id = 0, buy_times = 0, next_recover_time = 0, times = 0, my_history_record = 0}).
+-record(pt_public_item_list, {item_id = 0, item_num = 0, item_star = 0}).
+-record(pt_public_relife_task_info, {task_id = 0, task_num = 0, task_status = 0}).
+-record(pt_public_activity_info, {activity_id = 0, activity_time = 0, activity_status = 0}).
+-record(pt_public_recycle_list, {item_id = 0, item_num = 0}).
+-record(pt_public_pet_list, {uid = 0, pet_id = 0, pet_type = 0}).
+-record(pt_public_gem_list, {gem_id = 0, gem_lev = 0, gem_exp = 0}).
+-record(pt_public_usr_buy_cell_info, {cell_id = 0, buy_times = 0}).
+-record(pt_public_cell_info, {cell_id = 0, item_list = []}).
+-record(pt_public_store_info, {store_id = 0, cell_list = []}).
+-record(pt_public_pet_coll_info, {config_id = 0, coll_num = 0}).
+-record(pt_public_pet_skill_books, {id = 0, book = 0}).
+-record(pt_public_pet_info, {config_id = 0, state = 0, time_len = 0, fighting = 0, prop1 = 0, value1 = 0, prop2 = 0, value2 = 0, prop3 = 0, value3 = 0, prop4 = 0, value4 = 0, books = []}).
+-record(pt_public_scene_trap, {owner_id = 0, owner_sort = 0, did = 0, type = 0, dir = 0, x = 0, y = 0, z = 0}).
+-record(pt_public_scene_arrow, {owner_id = 0, owner_sort = 0, aid = 0, type = 0, dir = 0, x = 0, y = 0, z = 0}).
+-record(pt_public_equip_id_state_list, {equip_id = 0, equip_state = 0}).
+-record(pt_public_equip_id_list, {equip_id = 0}).
+-record(pt_public_usr_equip_list, {uid = 0, equip_id = 0}).
+-record(pt_public_team_member_list, {uid = 0, lev = 0, prof = 0, name = [], scene = 0, hp = 0, limit_hp = 0, fighting = 0}).
+-record(pt_public_mastery_list, {mastery_id = 0, mastery_lev = 0}).
+-record(pt_public_scene_entourage, {eid = 0, type = 0, level = 0, star = 0, dir = 0, x = 0, y = 0, z = 0, owner = 0, owner_name = [], camp = 0, hp = 0, max_hp = 0, mp = 0, max_mp = 0}).
+-record(pt_public_normal_skill_list, {skill_id = 0, skill_lev = 0, rune_one = 0, rune_two = 0, rune_three = 0, rune_four = 0, rune_five = 0, rune_six = 0, rune_use = 0}).
+-record(pt_public_entourage_list, {id = 0, lev = 0, skill_list = [], property_list = []}).
+-record(pt_public_property_list, {propertyId = 0, propertyVal = 0}).
+-record(pt_public_equip_list, {equipId = 0, activateType = 0, itemType = 0, itemNum = 0}).
+-record(pt_public_skill_list, {skillId = 0}).
+-record(pt_public_lost_list, {lost_id = 0, can_get = 0, lev = 0, debris_num = 0, recover_lev = 0}).
+-record(pt_public_pickup_des, {deleted_state = 0, state = 0, id = 0}).
+-record(pt_public_drop_des, {id = 0, owner = 0, type = 0, num = 0, x = 0, y = 0, z = 0}).
+-record(pt_public_item_des, {id = 0, type = 0, num = 0, bind = 0, lev = 0, star = 0, pos = 0, break_lev = 0, get_time = 0, battle_status = 0, used_times = 0, equips = []}).
+-record(pt_public_property, {sort = 0, type = 0, data = 0}).
+-record(pt_public_skill_effect, {target_id = 0, target_sort = 0, atk_sort = 0, def_sort = 0, demage = 0, cur_hp = 0, cur_mp = 0, effect_x = 0, effect_y = 0, effect_z = 0}).
+-record(pt_public_scene_item, {iid = 0, type = 0, dir = 0, x = 0, y = 0, z = 0, camp = 0}).
+-record(pt_public_scene_monster, {mid = 0, type = 0, level = 0, dir = 0, x = 0, y = 0, z = 0, camp = 0, hp = 0, max_hp = 0, mp = 0, max_mp = 0, ownerID = 0, master = 0, name = [], scale = 0}).
+-record(pt_public_scene_ply, {pid = 0, name = [], level = 0, prof = 0, dir = 0, x = 0, y = 0, z = 0, camp = 0, hp = 0, max_hp = 0, mp = 0, max_mp = 0, team_id = 0, team_leader = 0, is_die = 0, title = 0, fighting = 0, ride_state = 0, ride_type = 0, currskin = 0, shenqi_id = 0, shenqi_star = 0, shenqi_lev = 0, military = 0, guildName = [], model_clothes = 0, paragon_level = 0, vip_lev = 0, camp_leader = 0, relife = 0}).
+-record(pt_public_create_usr_info, {id = 0, name = [], level = 0, prof = 0, camp = 0, equip_id_list = [], last_login_time = 0, model_clothes = 0, paragon_level = 0, vip_lev = 0, create_time = 0, sum_star = 0}).
+-record(pt_public_point3, {x = 0, y = 0, z = 0}).
+-record(pt_public_normal_info, {type = 0, data = []}).
+-record(pt_public_attr_info, {attr = 0, val = 0}).
+-record(pt_public_two_int, {data1 = 0, data2 = 0}).

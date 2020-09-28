@@ -1,0 +1,25 @@
+当前使用的erlang版本：OTP20.3
+
+开发工具：sublime text
+================================ 本项目工程说明 ================================
+1.使用windows系统来开发时，第一次初始化可以使用doc目录下的install_project来安装
+  1）按说明配置好git_config.ini（已配置好了）
+  2）执行install_project.exe，会在与install_project同一级目录签出代码
+
+2.项目使用makefile来编译，因此在Windows下需要安装make命令
+	1）安装文档下的make-3.81.exe，安装时记得安装所在的目录
+	2）在make的安装目录下找到bin目录，将这个完整的目录加入到系统的环境变量里去
+	(gnu make下载地址：http://gnuwin32.sourceforge.net/packages/make.htm)
+
+3.第一次编译之前，需要执行./server_ctrl.bat gen_makefile来生成本地的makefile文件
+
+4.配置文件拷贝server.config.sample并重命名为server.config
+
+5.Windows下使用server_ctrl.bat来执行诸如编译、启动游戏、停止游戏等操作
+  具体看脚本
+
+6.协议：
+	协议定义文件存放在：./src/proto_def/
+	生成: server_ctrl.bat gen_protocol
+
+

@@ -1,0 +1,108 @@
+Linux环境：centos6.6
+
+安装JDK1.8：
+	旧的先删除:yum -y remove java
+	安装新的java:yum install java
+
+安装ftd服务:
+	yum install -y vsftpd
+	service vsftpd restart
+	vim /etc/vsftpd/vsftpd.conf 添加或设置：local_root=/data/ftp/
+	建立目录:mkdir /data/ftp/
+	chmod 777 /data/ftp/
+	由于安装了SELinux，先查看：
+		getsebool -a | grep ftp
+	只要把allow_ftpd_full_access --> off，ftp_home_dir --> off改为on就可以了
+	setsebool ftp_home_dir 1
+	setsebool allow_ftpd_full_access 1
+	打开端口21和20:
+		/sbin/iptables -I INPUT -p tcp --dport 21 -j ACCEPT
+		/sbin/iptables -I INPUT -p tcp --dport 20 -j ACCEPT
+	或者直接关闭防火墙:
+		service iptables stop
+
+
+安装Jenkins:https://pkg.jenkins.io/redhat-stable/
+http://updates.jenkins.io/update-center.json
+http://mirror.xmission.com/jenkins/updates/update-center.json
+jenkins配置：/etc/sysconfig/jenkins
+/var/lib/jenkins
+
+启动Jenkins:service jenkins start
+默认访问路径为:http://you-ip:8080/
+默认设置账户密码：admin 123456
+
+Jenkins安装插件：
+	Multiple SCMs
+	Git Parameter
+	ftpd-public，用于把打包的文件上传到ftp服务器上去
+	在系统管理-->系统设置，找到FTP repository hosts设置，添加ftp服务器
+
+Jenkins中创建项目：
+	1.构建一个自由风格的软件项目
+	2.General里勾选丢弃旧的构建，然后在第二栏里填写最大保存的构建数量
+	3.General里勾选参数化构建过程，然后添加Git Parameter参数：branch_name 参数类型填：Branch
+	4.General里添加选项参数：agent_name，用于选择代理商(release版本才有)
+	4.General里添加选项参数：language，用于选择语言配置(release版本才有)
+	4.General里添加选项参数：timezone，用于选择时区配置(release版本才有)
+	5.General里添加布尔值参数：build_only，是否只编译和打包(release版本才有)
+	6.General里添加字符参数：hot_reload_modules，如果填了则会生成直指定模块的热更新包
+	7.Source Code Management里选择：Multiple SCMs，然后把代码和配置分支库都添加进入
+		其中Branch Specifier：填写$branch_name
+		配置分支库的Additional Behaviours选择添加：Check out to a sub-directory并填写为:src/config
+	8.Build里添加执行shell：
+		debug版本：
+			sh server_ctrl.sh gen_makefile
+			sh server_ctrl.sh clean
+			sh server_ctrl.sh make_debug
+			deploy_dir=`escript ./script/make_deploy_dir.escript`
+			echo "deploy to direcctory $deploy_dir succ" 
+			cd $deploy_dir
+			sh server_ctrl.sh stop
+			sh server_ctrl.sh start &
+			sleep 5
+			sh server_ctrl.sh status
+		release版本：
+			if [ ! "$branch_name" ];then
+				echo "please select branch_name!"
+			    exit 1
+			fi
+
+			rm -f *.zip
+
+			sh server_ctrl.sh gen_makefile
+			sh server_ctrl.sh clean
+			sh server_ctrl.sh make_release
+			sh server_ctrl.sh compile_tpl
+
+			if [ "$build_only" ];then
+				code_hash=`/usr/local/bin/git log -n 1 | grep commit | awk 'NR==1 {print $2}'`
+			    config_hash=`cd src/config && /usr/local/bin/git log -n 1 | grep commit | awk '{print $2}'`
+			    
+			    cp server.config.$agent_name.sample server.config.sample
+			    escript ./script/package_server.escript $branch_name $agent_name $language $timezone $code_hash $config_hash
+			else
+				deploy_dir=`escript ./script/make_deploy_dir.escript`
+				echo "deploy to direcctory $deploy_dir succ" 
+				cd $deploy_dir
+				sh server_ctrl.sh stop
+				sh server_ctrl.sh start &
+				sleep 5
+				sh server_ctrl.sh status
+			fi
+
+			if [ -n "$hot_reload_modules" ];then
+				escript ./script/package_hot_reload_zip.escript $branch_name $hot_reload_modules
+			fi
+
+注意Jenkins创建启动的游戏的权限限于Jenkins用户，不能使用其他如root这样的用户再去操作
+否则可能出现文件权限问题，导致游戏启动失败或是相关问题。
+
+xml_cnf_file="deploy/config/common_cfg.xml"
+if [ !  -f "$xml_cnf_file" ];then 
+	cp deploy/config/common_cfg.xml.sample deploy/config/common_cfg.xml
+fi
+xml_cnf_file="deploy/config/hero_server_1.xml"
+if [ !  -f "$xml_cnf_file" ];then 
+	cp deploy/config/hero_server_1.xml.sample deploy/config/hero_server_1.xml
+fi

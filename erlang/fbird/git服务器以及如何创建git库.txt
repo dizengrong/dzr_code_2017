@@ -1,0 +1,29 @@
+======================= 本文档记录了创建git库的相关操作 ========================
+1.git服务器：192.168.1.237 登陆账号：root 密码：dzr19870711 端口：22
+
+2.添加一个新的用户：useradd {new_user}
+
+3.将新用户的所属组设置为gitGroup：usermod -g gitGroup {new_user}
+
+4.创建一个新的ssh key，这是为RSA，导出格式为OpenSSH，将公钥添加到/home/{new_user}/.ssh/authorized_keys里
+
+5.使用Git Extensions导入刚生产的私钥，然后生成一个.ppk文件
+
+6.在git服务器的/git/git_repos/目录下使用root权限创建一个git库目录：{new_git_dir}
+
+7.修改{new_git_dir}目录的权限：chown {new_user}:gitGroup ./{new_git_dir} -R
+
+8.cd ./{new_git_dir} 切换到su {new_user}，再创建一个可写的裸库：git --bare init --shared
+
+9.完成，接下来就可以clone这个库了，地址为:{new_user}@192.168.1.237:/git_repos/{new_git_dir}
+
+
+
+================================== GIT库备份 ===================================
+使用rsync进行同步备份，目前git服务器已经设置好了
+Windows需要做做如下事情：
+1.安装：cwRsyncClient，将其中的bin目录加入到环境变量里去
+2.在某个地方新建一个密码文件，如：c:/secrets.txt 
+3.然后使用如下命令备份：
+	rsync -P -avtplgo backup@192.168.1.237::git /cygdrive/d/backup_test/ --password-file=/cygdrive/c/secrets.txt 
+4.可以将这个加入到Windows计划任务里来定时执行

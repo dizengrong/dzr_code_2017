@@ -1,0 +1,13 @@
+-record(robot_state, {socket = 0,recv=0,acc,pass}).
+-define(robot_log(F,D), inface:robot_log("[~10.10s] " ++ F, [atom_to_list(?MODULE)|D])).
+-define(robot_log(F), inface:robot_log("[~10.10s] " ++ F, [atom_to_list(?MODULE)])).
+
+-define(DIC_TASKSTEP, 'task_step').
+-define(DIC_PVEMAIN, 'pve_main').
+-define(DIC_ITEMLIST, 'item_list').
+-define(DIC_HEROLIST, 'hero_list').
+-define(DIC_WINEHEROLIST, 'winehero_list').
+-define(DIC_BUILDINGS, 'building_list').
+-define(DIC_WILDLIST, 'wild_list').
+-define(DIC_UNIT, 'dic_unit').
+-define(DIC_SQUAD, 'squad_list').

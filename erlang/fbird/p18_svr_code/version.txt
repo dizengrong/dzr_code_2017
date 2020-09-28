@@ -1,0 +1,5 @@
+{agent_name, "fbird"}.  %% 运营商名称
+{server_version, "master_01.01"}.  %% 版本
+
+{timezone, 8}.  %% 时区，东区为正数，西区则为负数，比如东八区则配8
+{language, zh_cn}.  %% 语言配置，zh_cn:简体中文 zh_tw:繁体中文 en:英文 ko:韩国 ja:日本 vi:越南

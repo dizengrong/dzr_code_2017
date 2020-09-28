@@ -1,0 +1,7 @@
+1.下载xampp：https://www.apachefriends.org/download.html
+2.安装xampp：https://www.apachefriends.org/faq_linux.html
+3.修改/opt/lampp/lampp，修改start里面的东西，如果不需要启动它的mysql那就注释掉mysql的启动
+4.使用lampp自带的ftp服务，配置文件：/opt/lampp/etc/proftpd.conf（使用本目录的proftpd.conf即可）
+5.注意：jenkins中配置ftp服务器时，是相对目录
+6./opt/lampp/lampp start
+

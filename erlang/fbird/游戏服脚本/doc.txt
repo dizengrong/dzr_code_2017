@@ -1,0 +1,108 @@
+新项目使用ansible来管理操作服务器。
+安装了ansible的服务器我们称为主控机，被管理的其他服务器称为客户机。
+
+================================================================================
+============================== 普通方式操作游戏服 ==============================
+1.客户机上单独操作游戏服：
+    客户机操作时，必须把用户切换到:fbird_ansible
+    游戏服的安装目录是固定的，不是随意的，目录错了会导致游戏服无法启动的
+    安装目录一般为：
+        /data/${agent_name}/${game_name}/${serverid}/ 比如：/data/fbird/p17/100/
+    游戏服日志目录是按配置文件来的，现在默认配置为相对于安装目录的log目录下，如：
+        /data/fbird/p17/100/log/ 这个不用修改
+    1）启动游戏服：
+        ./server_ctrl.sh start
+    2）关闭游戏服：
+        ./server_ctrl.sh stop
+    3）获取游戏服状态：
+        ./server_ctrl.sh status
+    4）备份数据库：（备份到：/data/mnesia_merge_src/${game_name}_${agent_name}_${serverid}/）
+        ./server_ctrl.sh backup 
+    5）恢复数据库：
+        ./server_ctrl.sh restore <数据库备份文件>
+    6）合服：（把数据库备份文件放到合服目录下：/data/mnesia_merge_src/${game_name}_${agent_name}/）
+        ./server_ctrl.sh merge <源数据serverid1> <源数据serverid2> <源数据serverid3>
+    7）清档：
+        ./server_ctrl.sh clean_db 
+    8）迁移数据库：
+        当需要把A服的数据导入到B服时，就需要在B服里执行迁移命令：
+        ./server_ctrl.sh migration p17_fbird_agent_{A服serverid}@{A服ip} p17_fbird_agent_{B服serverid}@{B服ip} /path/to/A服/mnesia数据库.backup /path/to/B服/mnesia数据库.backup
+        /path/to/A服/mnesia数据库.backup:为A服的备份数据库文件
+        /path/to/B服/mnesia数据库.backup:为保存迁移的数据库到哪里去
+        迁移完成后在执行：./server_ctrl.sh restore 就可以启动B服了
+
+
+================================================================================
+=============================== ansible操作游戏服 ==============================
+1.安装ansible：
+    可以在内网服务器或者外网服务器上安装
+    将python升级到2.7，并安装了pip
+    然后使用pip安装ansible：pip install ansible
+
+2.在/etc/ansible/目录下建立相应项目的hosts文件，如：p17_fbird_hosts，配置格式如下：
+    192.168.1.23 ansible_host=192.168.1.23 ansible_ssh_port=22 ansible_connection=ssh ansible_ssh_user=fbird_ansible ansible_ssh_private_key_file=/home/thankserver/fbird_ansible
+
+3.新增客户机：
+    1）所有的客户机需要创建用户:fbird_ansible 并将fbird_ansible.pub中公钥复制到:/home/fbird_ansible/.ssh/authorized_keys中
+       测试使用fbird_ansible能成功登陆
+    2）客户机创建目录：/data 并且权限是fbird_ansible可读写
+    3）在主控机上的p17_fbird_hosts文件中，把该客户机加入进去
+    4）在主控机上执行命令以做一些准备工作：
+        python p17_fbird_server_manager.py prepare <ip地址>
+        执行命令后，会创建如下目录：
+        用于保存代码安装包的：/data/codes/
+        数据库文件存放目录：/data/mnesia_db/
+        数据库备份文件存放目录：/data/mnesia_backup/
+        合服需要的源数据库文件存放目录：/data/mnesia_merge_src
+        注意这些目录的权限！不要使用除了fbird_ansible以外的其他用户去创建它们
+
+4.安装游戏服（以下操作都在主控机上执行）
+    1）运营人员先配置好新的指定server_id的游戏服，然后通知运维人员拿指定的游戏包进行安装
+    2）上传游戏安装包：
+        python p17_fbird_server_manager.py upload_code <指定的hosts文件> <代码zip文件>
+        参数：<指定的hosts文件>可以使用如下命令生成：
+            python p17_fbird_server_manager.py dump_server
+            再编辑生成的文件，只保留需要的服务器配置
+        或者使用/etc/ansible/p17_fbird_hosts，不过这样会导致安装包copy到hosts里配置的所有服务器的
+        （注：如果客户机上已存在相同名字的游戏服安装包了，则不会拷贝了）
+    3）安装：
+        python p17_fbird_server_manager.py install_game <代码zip文件> <serverid1> <serverid2> <serverid3>
+    4）安装成功了就可以启动了：
+        python p17_fbird_server_manager.py start_game <serverid>
+    5）查看游戏服状态：
+        python p17_fbird_server_manager.py game_status <serverid>
+
+5.大版本更新已存在的游戏服：（以下操作都在主控机上执行）（线上的服已在运行了，更新时会自动先备份数据库的）
+    1）按照第4步中的上传游戏安装包说明，上传新的游戏服安装包
+    2）更新单个：
+        python p17_fbird_server_manager.py update_game <serverid> <代码zip文件>
+    3）更新全部：（更新/etc/ansible/p17_fbird_hosts里指定的所有服务器）
+        python p17_fbird_server_manager.py update_all_game <代码zip文件>
+
+6.热更新：（以下操作都在主控机上执行）
+    1）上传热更新包：
+        python p17_fbird_server_manager.py upload_reload_zip <指定的hosts文件> <zip文件> 
+    2）热更新单个或者少量几个：
+        python p17_fbird_server_manager.py hot_reload <热更新zip文件> <serverid1> <serverid2> <serverid3>
+    3）热更新全部：
+        python p17_fbird_server_manager.py hot_reload_all <热更新zip文件> 
+
+7.其他命令：（以下操作都在主控机上执行）
+    1）启动游戏服：
+        python p17_fbird_server_manager.py start_game <serverid>
+    2）关闭游戏服：
+        python p17_fbird_server_manager.py stop_game <serverid>
+    3）启动所有游戏服：
+        python p17_fbird_server_manager.py start_all_game
+    4）关闭所有游戏服：
+        python p17_fbird_server_manager.py stop_all_game
+    5）获取所有游戏服状态：
+        python p17_fbird_server_manager.py all_game_status
+    6）执行erlang代码：
+        python p17_fbird_server_manager.py exe_code <code> <serverid1> <serverid2> <serverid3>
+        现在提供给运维操作的代码有：
+            1.关闭所有的运营活动：
+                python p17_fbird_server_manager.py exe_code agent test_gm_act close_all 
+
+
+

@@ -1,0 +1,3394 @@
+message pt_shenqi_skill_effect_f11b {
+	required uint64 src_id = 0;
+	required uint32 src_sort = 0;
+	required uint32 skill = 0;
+	required uint64 target_id = 0;
+	required float target_x = 0;
+	required float target_y = 0;
+	required float target_z = 0;
+	repeated pt_public_skill_effect effect_list = [];
+}
+
+message pt_cast_shenqi_skill_f11a {
+	required uint32 skill = 0;
+	required uint64 target_id = 0;
+	required float target_x = 0;
+	required float target_y = 0;
+	required float target_z = 0;
+}
+
+message pt_relife_task_info_f00e {
+	required uint32 time = 0;
+	repeated pt_public_relife_task_info relife_task_info = [];
+}
+
+message pt_download_reward_f013 {
+	required uint64 id = 0;
+	required uint32 state = 0;
+}
+
+message pt_daily_acc_recharge_info_f120 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	repeated pt_public_daily_acc_recharge_des datas = [];
+}
+
+message pt_daily_acc_cost_f121 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 cost_coin = 0;
+	required string desc = [];
+	repeated pt_public_daily_acc_cost_des datas = [];
+}
+
+message pt_grow_fund_info_f122 {
+	required uint32 have = 0;
+	required uint32 step = 0;
+	required uint32 fetched_id = 0;
+	required uint32 can_fetch_id = 0;
+}
+
+message pt_login_a001 {
+	required string account = [];
+	required string password = [];
+	required uint32 pt_version = 0;
+}
+
+message pt_login_robot_a10c {
+	required string account = [];
+	required string password = [];
+	required uint32 mini_lev = 0;
+	required uint32 max_lev = 0;
+}
+
+message pt_error_info_d001 {
+	required int32 error = 0;
+	repeated pt_public_normal_info msg = [];
+}
+
+message pt_usr_list_a102 {
+	required uint32 default_camp = 0;
+	required uint32 platform_id = 0;
+	repeated pt_public_create_usr_info usr_list = [];
+	required uint32 is_version_matched = 0;
+}
+
+message pt_req_net_a003 {
+	required uint64 uid = 0;
+	required uint32 phone_type = 0;
+}
+
+message pt_queue_info_a104 {
+	required uint32 max_num = 0;
+	required uint32 cur_num = 0;
+}
+
+message pt_net_info_a105 {
+	required string ip = [];
+	required uint32 port = 0;
+	required uint64 uid = 0;
+	required uint32 key = 0;
+}
+
+message pt_usr_enter_b001 {
+	required uint64 uid = 0;
+	required uint8 phone_type = 0;
+	required uint32 key = 0;
+}
+
+message pt_usr_info_b102 {
+	required uint64 id = 0;
+	required string name = [];
+	required uint32 level = 0;
+	required uint32 exp = 0;
+	required uint32 camp = 0;
+	required uint32 guide_id = 0;
+	required string guild_name = [];
+	repeated pt_public_resource_list resource_list = [];
+	required uint32 paragon_level = 0;
+	required uint32 vip_lev = 0;
+	required uint32 create_time = 0;
+	required uint32 scene_lev = 0;
+}
+
+message pt_usr_enter_scene_b003 {
+}
+
+message pt_req_load_scene_b104 {
+	required uint32 scene = 0;
+	required float is_planes = 0;
+	required float dir = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+}
+
+message pt_load_scene_finish_b005 {
+	required uint32 scene = 0;
+}
+
+message pt_scene_info_b106 {
+	required uint16 camp = 0;
+	required uint32 scene = 0;
+}
+
+message pt_req_create_usr_a006 {
+	required string name = 0;
+}
+
+message pt_create_usr_list_a107 {
+	repeated pt_public_create_usr_info usr_list = [];
+}
+
+message pt_req_delete_usr_a008 {
+	required uint64 uid = 0;
+}
+
+message pt_delete_usr_a109 {
+	required uint64 uid = 0;
+}
+
+message pt_action_d002 {
+	required int32 action = 0;
+}
+
+message pt_action_int_d003 {
+	required int32 action = 0;
+	required uint64 data = 0;
+}
+
+message pt_action_string_d004 {
+	required int32 action = 0;
+	required string data = [];
+}
+
+message pt_action_float_d005 {
+	required int32 action = 0;
+	required float data = 0;
+}
+
+message pt_action_list_f014 {
+	required int32 action = 0;
+	repeated pt_public_id_list id_list = [];
+}
+
+message pt_ping_a10a {
+}
+
+message pt_net_chg_code_a10b {
+	required uint32 code = 0;
+}
+
+message pt_last_called_hero_d31a {
+	repeated pt_public_combat_entourage_list combat_entourage_list = [];
+}
+
+message pt_charge_card_f00d {
+	required uint32 sort = 0;
+	required int32 date = 0;
+}
+
+message pt_ggb_info_e200 {
+	required uint8 status = 0;
+	required uint8 total_server = 0;
+	required uint8 is_candidate = 0;
+	required uint8 promotion_result = 0;
+	repeated pt_public_ggb_first_period_detail first_period = [];
+	repeated pt_public_ggb_second_period_detail second_period = [];
+}
+
+message pt_ggb_my_team_info_e201 {
+	required uint8 is_fight = 0;
+	required uint8 strategy = 0;
+	required uint8 inspire_lv = 0;
+	required uint8 opponent_strategy = 0;
+	required uint8 opponent_inspire_lv = 0;
+	required string opponent_server_name = [];
+	required string opponent_guild_name = [];
+}
+
+message pt_ggb_group_info_e202 {
+	required uint8 my_team_pos = 0;
+	required uint8 is_fight = 0;
+	required uint8 result = 0;
+	required int32 server_id1 = 0;
+	required uint64 guild_id1 = 0;
+	required string server_name1 = [];
+	required string guild_name1 = [];
+	required uint32 fighting1 = 0;
+	required uint8 strategy1 = 0;
+	required uint8 inspire_lv1 = 0;
+	required uint8 stake11 = 0;
+	required uint8 stake12 = 0;
+	required uint16 stake1_type1_total = 0;
+	required uint16 stake1_type2_total = 0;
+	required int32 server_id2 = 0;
+	required uint64 guild_id2 = 0;
+	required string server_name2 = [];
+	required string guild_name2 = [];
+	required uint32 fighting2 = 0;
+	required uint8 strategy2 = 0;
+	required uint8 inspire_lv2 = 0;
+	required uint8 stake21 = 0;
+	required uint8 stake22 = 0;
+	required uint16 stake2_type1_total = 0;
+	required uint16 stake2_type2_total = 0;
+}
+
+message pt_ggb_scene_brief_info_e203 {
+	required string server_name1 = [];
+	required string guild_name1 = [];
+	required uint8 strategy1 = 0;
+	required uint8 inspire_lv1 = 0;
+	required uint8 team1_left_num = 0;
+	required uint8 team1_total_num = 0;
+	required string server_name2 = [];
+	required string guild_name2 = [];
+	required uint8 strategy2 = 0;
+	required uint8 inspire_lv2 = 0;
+	required uint8 team2_left_num = 0;
+	required uint8 team2_total_num = 0;
+}
+
+message pt_ggb_scene_report_e204 {
+	required uint8 report_type = 0;
+	repeated string datas = [];
+}
+
+message pt_ggb_battle_log_e205 {
+	required uint8 status = 0;
+	repeated pt_public_ggb_battle_record logs = [];
+}
+
+message pt_ggb_nofity_e206 {
+	required uint8 status = 0;
+}
+
+message pt_ggb_battle_result_e207 {
+	required uint8 status = [];
+	required string win_server_name = [];
+	required string win_guild_name = [];
+	required uint8 win_kill_num = [];
+	required string lose_server_name = [];
+	required string lose_guild_name = [];
+	required uint8 lose_kill_num = [];
+}
+
+message pt_ggb_battle_waiting_e208 {
+	required uint32 waiting_seconds = 0;
+}
+
+message pt_relife_succeed_f00f {
+	required uint32 time = 0;
+}
+
+message pt_draw_base_f010 {
+	required uint32 item = 0;
+	required uint32 num = 0;
+}
+
+message pt_medicine_f012 {
+	repeated pt_public_buff_list buff = [];
+}
+
+message pt_scene_move_c001 {
+	required uint64 oid = 0;
+	required uint32 obj_sort = 0;
+	required float dir = 0;
+	required uint8 is_path_move = 0;
+	repeated pt_public_point3 point_list = [];
+}
+
+message pt_niubi_f00c {
+	required uint64 status = 0;
+}
+
+message pt_scene_add_c002 {
+	repeated pt_public_scene_ply ply_list = [];
+	repeated pt_public_scene_monster monster_list = [];
+	repeated pt_public_scene_item item_list = [];
+	repeated pt_public_scene_entourage entourage_list = [];
+	repeated pt_public_usr_equip_list usr_equip_list = [];
+	repeated pt_public_pet_list pets = [];
+	repeated pt_public_camp_model_list models = [];
+}
+
+message pt_scene_dec_c003 {
+	required uint64 oid = 0;
+}
+
+message pt_scene_fly_by_fly_point_c004 {
+	required int32 fly_point_id = 0;
+}
+
+message pt_scene_skill_c005 {
+	required uint32 skill = 0;
+	required uint32 lev = 0;
+	required uint64 oid = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+	required float dir = 0;
+	required uint64 target_id = 0;
+	required float target_x = 0;
+	required float target_y = 0;
+	required float target_z = 0;
+}
+
+message pt_scene_skill_effect_c006 {
+	required uint32 error_code = 0;
+	required uint64 oid = 0;
+	required uint32 cur_mp = 0;
+	required uint32 obj_sort = 0;
+	required uint32 skill = 0;
+	required uint32 lev = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+	required float dir = 0;
+	required uint64 target_id = 0;
+	required float target_x = 0;
+	required float target_y = 0;
+	required float target_z = 0;
+	required float shift_x = 0;
+	required float shift_y = 0;
+	required float shift_z = 0;
+	repeated pt_public_skill_effect effect_list = [];
+}
+
+message pt_scene_property_c007 {
+	required uint64 oid = 0;
+	repeated pt_public_property property_list = [];
+}
+
+message pt_scene_chg_buff_c008 {
+	required uint64 oid = 0;
+	required uint32 obj_sort = 0;
+	required uint32 adder_oid = 0;
+	required uint32 adder_obj_sort = 0;
+	required uint32 buff_type = 0;
+	required uint32 buff_sort = 0;
+	required uint32 buff_power = 0;
+	required uint32 buff_mix_lev = 0;
+	required uint32 buff_len = 0;
+}
+
+message pt_scene_remove_buff_c009 {
+	required uint64 oid = 0;
+	required uint32 obj_sort = 0;
+	required uint32 buff_type = 0;
+}
+
+message pt_scene_break_persistent_c010 {
+}
+
+message pt_scene_drop_c011 {
+	required uint32 oid = 0;
+	repeated pt_public_drop_des drop_list = [];
+}
+
+message pt_scene_pickup_c012 {
+	repeated pt_public_pickup_des pickup_list = [];
+}
+
+message pt_scene_add_arrow_c014 {
+	repeated pt_public_scene_arrow list = [];
+}
+
+message pt_scene_delete_arrow_c016 {
+	required uint32 aid = 0;
+}
+
+message pt_scene_add_trap_c015 {
+	repeated pt_public_scene_trap list = [];
+}
+
+message pt_scene_delete_trap_c017 {
+	required uint32 tid = 0;
+}
+
+message pt_scene_usr_team_chg_c018 {
+	required uint64 uid = 0;
+	required uint32 team_id = 0;
+	required uint32 team_leader = 0;
+}
+
+message pt_scene_hide_c020 {
+	repeated pt_public_scene_objs hide_list = [];
+}
+
+message pt_scene_skill_aleret_c021 {
+	required uint32 skill = 0;
+	required uint32 lev = 0;
+	required uint32 oid = 0;
+	required uint32 obj_sort = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+	required float dir = 0;
+	required uint32 target_id = 0;
+	required float target_x = 0;
+	required float target_y = 0;
+	required float target_z = 0;
+	required float aleret_x = 0;
+	required float aleret_y = 0;
+	required float aleret_z = 0;
+	required float aleret_dir = 0;
+}
+
+message pt_scene_skill_aleret_cancel_c022 {
+	required uint32 skill = 0;
+	required uint32 lev = 0;
+	required uint32 oid = 0;
+	required uint32 obj_sort = 0;
+}
+
+message pt_item_info_d007 {
+	required uint32 entourage_bag = 0;
+	required uint32 artifact_bag = 0;
+	required uint32 fuwen_bag = 0;
+	repeated pt_public_item_des item_list = [];
+}
+
+message pt_item_chg_d008 {
+	repeated pt_public_item_des item_list = [];
+}
+
+message pt_lost_item_d009 {
+	required uint32 lost_item_total_num = 0;
+	required uint32 active_id = 0;
+	repeated pt_public_lost_list lost_item_list = [];
+}
+
+message pt_lost_item_get_d01a {
+	required uint32 itemid = 0;
+	required uint32 lev = 0;
+	required uint32 debris_num = 0;
+}
+
+message pt_lost_item_lev_d01b {
+	required uint32 itemid = 0;
+	required uint32 lev = 0;
+	required uint32 debris_num = 0;
+}
+
+message pt_lost_item_active_d01e {
+	required uint32 itemid = 0;
+}
+
+message pt_scene_transform_c013 {
+	required uint64 oid = 0;
+	required uint32 obj_sort = 0;
+	required uint32 type = 0;
+	required float time = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+}
+
+message pt_entourage_list_d010 {
+	repeated pt_public_entourage_list entourage_list = [];
+}
+
+message pt_entourage_info_d011 {
+	required uint32 eType = 0;
+	required uint32 fighting = 0;
+	required uint32 lev = 0;
+	required uint32 exp = 0;
+	required uint32 hp = 0;
+	required uint32 itemType = 0;
+	required uint32 itemVal = 0;
+	required uint32 eStar = 0;
+	required uint32 fightType = 0;
+	required uint32 played = 0;
+	required uint32 settle_type = 0;
+	repeated pt_public_skill_list skill_list = [];
+	repeated pt_public_equip_list equip_list = [];
+	repeated pt_public_property_list property_list = [];
+	repeated pt_public_entourage_rune_list rune_list = [];
+	repeated pt_public_entourage_fetter_info entourage_fetter_info = [];
+}
+
+message pt_accept_task_d015 {
+	required uint32 taskid = 0;
+	required uint32 taskstep = 0;
+}
+
+message pt_finish_task_d016 {
+	required uint32 taskid = 0;
+	required uint32 taskstep = 0;
+}
+
+message pt_del_task_d017 {
+	required uint32 taskid = 0;
+	required uint32 taskstep = 0;
+}
+
+message pt_finish_task_response_d019 {
+	required uint32 taskid = 0;
+	required uint32 taskstep = 0;
+}
+
+message pt_req_task_list_d01c {
+}
+
+message pt_all_skill_d100 {
+	required uint32 new_unlock = 0;
+	repeated pt_public_normal_skill_list normal_skill_list = [];
+}
+
+message pt_action_two_int_d012 {
+	required int32 action = 0;
+	required uint64 data_One = 0;
+	required uint64 data_Two = 0;
+}
+
+message pt_update_base_d01d {
+	required uint64 uid = 0;
+	repeated pt_public_property property_list = [];
+}
+
+message pt_entourage_create_d01f {
+	required uint32 etype = 0;
+	required uint32 oid = 0;
+	required uint32 played_state = 0;
+}
+
+message pt_team_info_d022 {
+	required uint32 team_id = 0;
+	required uint64 leader_id = 0;
+	required uint64 target = 0;
+	repeated pt_public_team_member_list team_member_list = [];
+}
+
+message pt_team_member_chg_d023 {
+	repeated pt_public_team_member_list team_member_list = [];
+}
+
+message pt_team_ask_d024 {
+	required uint64 ask_uid = 0;
+	required string ask_usr_name = [];
+}
+
+message pt_team_ans_ask_d025 {
+	required uint64 ans_uid = 0;
+	required uint32 ans = 0;
+}
+
+message pt_team_req_d026 {
+	required uint64 req_uid = 0;
+	required string req_name = [];
+	required uint8 req_lev = 0;
+}
+
+message pt_team_ans_req_d027 {
+	required uint64 ans_uid = 0;
+	required uint32 ans = 0;
+}
+
+message pt_team_leader_chg_d028 {
+	required uint64 new_leader_uid = 0;
+}
+
+message pt_team_member_leave_d029 {
+	required uint64 leave_uid = 0;
+}
+
+message pt_team_destroy_d030 {
+}
+
+message pt_team_ask_cancle_d031 {
+	required uint64 ask_uid = 0;
+}
+
+message pt_team_req_cancle_d032 {
+	required uint64 req_uid = 0;
+}
+
+message pt_reloading_d101 {
+	required uint64 uid = 0;
+	required uint32 model_clothes = 0;
+	repeated pt_public_equip_id_state_list equip_id_state_list = [];
+}
+
+message pt_mastery_d020 {
+	repeated pt_public_mastery_list masterys = [];
+}
+
+message pt_mastery_update_d021 {
+	required uint32 mastery_id = 0;
+	required uint32 mastery_lev = 0;
+}
+
+message pt_pet_d201 {
+	required uint32 pet_id = 0;
+	required uint32 follow_pet_id = 0;
+	required uint32 lv = 0;
+	required uint32 exp = 0;
+}
+
+message pt_store_info_d033 {
+	repeated pt_public_store_info store_list = [];
+	repeated pt_public_usr_buy_cell_info info_list = [];
+}
+
+message pt_store_buy_d034 {
+	required uint32 store_id = 0;
+	required uint32 cell_id = 0;
+	required uint32 buy_num = 0;
+}
+
+message pt_req_gem_update_d102 {
+	required int32 gem_id = 0;
+	required int32 item_id = 0;
+	required int32 state = 0;
+}
+
+message pt_return_gem_update_d103 {
+	repeated pt_public_gem_list gem_list = [];
+}
+
+message pt_scene_item_c019 {
+	required uint32 target_id = 0;
+}
+
+message pt_say_notify_d202 {
+	required uint32 target_id = 0;
+	required uint32 say_id = 0;
+}
+
+message pt_req_item_recycle_d104 {
+	repeated pt_public_recycle_list recycle_list = [];
+}
+
+message pt_return_sign_d105 {
+	required uint32 signe_state = 0; // 签到状态
+	required uint32 sign_data = 0; // 签到第几个循环
+	required uint32 fetched_data = 0; // 签到第几天
+}
+
+message pt_activity_info_d106 {
+	required uint32 activity_val = 0;
+	repeated pt_public_activity_info activity_info = [];
+	repeated uint32 activity_rewards = [];
+}
+
+message pt_progress_bar_begin_d203 {
+	required uint64 uid = 0;
+	required uint32 target_id = 0;
+}
+
+message pt_progress_bar_end_d204 {
+	required uint64 uid = 0;
+	required uint32 target_id = 0;
+	required uint32 result = 0;
+}
+
+message pt_revive_d205 {
+	required uint64 revive_uid = 0;
+	required uint32 revive_sort = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+}
+
+message pt_open_box_get_item_d108 {
+	repeated pt_public_item_list item_list = [];
+}
+
+message pt_copy_times_d206 {
+	repeated pt_public_copy_times copys = [];
+	repeated uint32 passed = [];
+}
+
+message pt_get_success_d110 {
+	repeated pt_public_get_success_list get_success_list = [];
+}
+
+message pt_revive_times_d207 {
+	required uint32 countdown = 0;
+	required uint32 times = 0;
+}
+
+message pt_all_guild_list_info_d111 {
+	required uint32 guild_state = 0;
+	repeated pt_public_guild_info_list guild_info_list = [];
+}
+
+message pt_guild_member_info_d112 {
+	required uint8 update_state = 0;
+	repeated pt_public_guild_member_list guild_member_list = [];
+}
+
+message pt_guild_commonality_d114 {
+	required uint64 guild_id = 0;
+	required uint8 banner = 0;    // 公会旗帜
+	required string guild_name = [];
+	required int32 lev = 0;
+	required int32 guild_exp = 0;
+	required int32 member_amount = 0;  // 公会人数
+	required int32 my_donation = 0;
+	required int32 donation_times = 0;
+	required uint32 guild_state = 0;  // 0:表示不自动加入 1:表示自动加入
+	required string notice = []; 	//公会公告 	
+}
+
+message pt_members_entry_d113 {
+	repeated pt_public_guild_members_entry_list guild_members_entry_list = [];
+}
+
+message pt_guild_succeed_d115 {
+	required uint32 type = 0;
+	repeated pt_public_guild_operation_list guild_operation_list = [];
+}
+
+message pt_item_recoin_d116 {
+	required int32 item_id = 0;
+	repeated uint32 item_prop_list = [];
+}
+
+message pt_item_recoin_return_d117 {
+	repeated uint32 item_prop_list = [];
+}
+
+message pt_entourage_succeed_d118 {
+	repeated pt_public_get_success_list get_success_list = [];
+}
+
+message pt_chat_d208 {
+	required uint64 pid = 0;
+	required uint64 rec_uid = 0;
+	required string name = [];
+	required string rec_name = [];
+	required uint32 vip_lev = 0;
+	required uint32 chanle = 0;
+	repeated string content = [];
+	required uint32 sender_military = 0;
+	required uint32 sender_camp = 0;
+	required uint32 is_camp_leader = 0;
+	required uint32 server_id = 0;
+	required string servre_name = [];
+	required uint64 guild_id = 0;
+	required uint32 click_type = 0;
+}
+
+message pt_req_chat_d209 {
+	required string rec_name = [];
+	required uint32 chanle = 0;
+	required string content = [];
+}
+
+message pt_req_jump_c01a {
+}
+
+message pt_scene_jump_d20b {
+	required uint64 pid = 0;
+	required float dir = 0;
+	required float x = 0;
+	required float y = 0;
+	required float z = 0;
+}
+
+message pt_acquire_new_title_e10a {
+	required uint16 title = 0;
+	required uint32 lasttime = 0;
+}
+
+message pt_ret_titles_e10b {
+	required uint16 used = 0;
+	repeated pt_public_title_obj titles = [];
+}
+
+message pt_req_mail_d20a {
+	repeated pt_public_mail_list mails = [];
+}
+
+message pt_mail_content_d20c {
+	required uint32 mail_id = 0;
+	required string title = [];
+	required string content = [];
+	repeated pt_public_item_list items = [];
+}
+
+message pt_del_mail_d20d {
+	repeated pt_public_id_list mails = [];
+}
+
+message pt_read_mail_item_d210 {
+	repeated pt_public_id_list mails = [];
+}
+
+message pt_update_mail_d211 {
+	repeated pt_public_update_mails update_data = [];
+}
+
+message pt_invite_join_guild_d119 {
+	required string usr_name = [];
+	required string guild_name = [];
+}
+
+message pt_copy_win_d20e {
+	required int32 winorlose = 0;
+	required int32 coin = 0;
+	required int32 exp = 0;
+	required int32 boss_max_hp = 0;
+	required int32 total_damage = 0;
+	required int32 damage = 0;
+	required int32 totalexp = 0;
+	required int32 totalcoin = 0;
+	repeated pt_public_item_list items = [];
+	repeated pt_public_item_list collect_drops = [];
+	repeated pt_public_common_rank rank_list = [];
+}
+
+message pt_donation_record_list_d11b {
+	repeated pt_public_donation_record_list donation_record_list = [];
+}
+
+message pt_guild_building_list_d11a {
+	repeated pt_public_guild_building_list guild_building_list = [];
+}
+
+message pt_monster_affiliation_c01b {
+	repeated pt_public_monster_affiliation monster_affiliation = [];
+}
+
+message pt_guild_copy_list_d11c {
+	required int32 challenge_times = 0;
+	required int32 buy_times = 0;
+	repeated pt_public_guild_copy_list guild_copy_list = [];
+}
+
+message pt_guild_copy_trophy_d11d {
+	repeated pt_public_guild_copy_trophy_list guild_copy_trophy_list = [];
+}
+
+message pt_guild_copy_enter_d11e {
+	repeated pt_public_guild_copy_enter_list guild_copy_enter_list = [];
+}
+
+message pt_guild_copy_damage_ranking_d11f {
+	required int32 my_damage = 0;
+	repeated pt_public_guild_copy_damage_ranking guild_copy_damage_ranking = [];
+}
+
+message pt_use_someone_title_e10c {
+	required uint16 title = 0;
+}
+
+message pt_start_timer_d212 {
+	required uint32 timelen = 0;
+}
+
+message pt_break_timer_d213 {
+}
+
+message pt_update_usr_discrib_e10d {
+	required uint64 uid = 0;
+	required uint16 sort = 0;
+	required uint32 int_data = 0;
+	required string str_data = [];
+}
+
+message pt_mdf_team_info_e10e {
+	required uint8 min_lev = 0;
+	required uint8 max_plys = 0;
+	required uint8 min_gs = 0;
+	required uint8 need_verify = 0;
+}
+
+message pt_ret_scene_teams_e110 {
+	repeated pt_public_team_info team_info = [];
+}
+
+message pt_ranklist_d120 {
+	required uint32 ranklistId = 0;
+	required uint32 position = 0;
+	repeated pt_public_ranklist ranklist = [];
+}
+
+message pt_ret_ride_info_e111 {
+	required uint32 ride_type = 0;
+	required uint32 ride_id = 0;
+	required uint8 lev = 0;
+	required uint32 exp = 0;
+	required uint8 ride_state = 0;
+	required uint32 fighting = 0;
+	required uint32 currskin = 0;
+	required uint32 eq1 = 0;
+	required uint32 eq2 = 0;
+	required uint32 eq3 = 0;
+	required uint32 eq4 = 0;
+	required uint32 eq5 = 0;
+	required uint32 eq6 = 0;
+	repeated pt_public_r_skin skin = [];
+}
+
+message pt_ret_ride_prop_e112 {
+	repeated pt_public_prop_entry props = [];
+}
+
+message pt_receive_rewards_succeed_d121 {
+	repeated pt_public_get_success_list get_success_list = [];
+}
+
+message pt_ret_skin_list_e113 {
+	repeated pt_public_r_skin skins = [];
+}
+
+message pt_rewards_return_d122 {
+	required int32 rewards_type = 0;
+	required int32 rewards_state = 0;
+	repeated pt_public_rewards_receive_list rewards_receive_list = [];
+}
+
+message pt_req_match_d214 {
+	required uint32 id = 0;
+}
+
+message pt_stop_match_d215 {
+	required uint32 sort = 0;
+	required uint32 id = 0;
+}
+
+message pt_match_ready_cancel_d216 {
+}
+
+message pt_start_match_d217 {
+	required uint32 sort = 0;
+	required uint32 id = 0;
+}
+
+message pt_usr_info_equi_d123 {
+	required uint64 pid = 0;
+	required string name = [];
+	required uint32 prof = 0;
+	required uint32 camp = 0;
+	required uint32 headid = 0;
+	required uint32 title = 0;
+	required uint32 military = 0;
+	required uint32 vip_lev = 0;
+	required uint32 relife_time = 0;
+	required uint32 achieve_lev = 0;
+	required uint32 model_clothes = 0;
+	required uint32 fighting = 0;
+	repeated pt_public_item_des item_list = [];
+	repeated pt_public_other_gem_list other_gem_list = [];
+}
+
+message pt_usr_info_property_d124 {
+	required uint32 prof = 0;
+	required uint32 military = 0;
+	required uint32 camp = 0;
+	required string guild_name = [];
+	required uint32 vip_lev = 0;
+	required uint32 headid = 0;
+	required uint32 cur_hp = 0;
+	required uint32 cur_mp = 0;
+	required uint32 exp = 0;
+	required uint32 limit_hp = 0;
+	required uint32 limit_mp = 0;
+	required uint32 str = 0;
+	required uint32 agi = 0;
+	required uint32 sta = 0;
+	required uint32 wis = 0;
+	required uint32 spi = 0;
+	required uint32 atk = 0;
+	required uint32 def = 0;
+	required uint32 defIgnore = 0;
+	required uint32 cri = 0;
+	required uint32 criDmg = 0;
+	required uint32 tough = 0;
+	required uint32 hit = 0;
+	required uint32 dod = 0;
+	required uint32 cd = 0;
+	required uint32 dmgRate = 0;
+	required uint32 dmgDownRate = 0;
+	required uint32 blockRate = 0;
+	required uint32 blockDownRate = 0;
+	required uint32 realDmg = 0;
+	required uint32 stifle = 0;
+	required uint32 longSuffering = 0;
+	required uint32 moveSpd = 0;
+	required uint32 by_like = 0;
+	required uint32 lev = 0;
+	required uint32 peak_lev = 0;
+}
+
+message pt_usr_info_lost_item_d126 {
+	repeated pt_public_lost_item_info lost_item_info = [];
+}
+
+message pt_usr_info_entourage_d125 {
+	repeated pt_public_entourage_info_list entourage_info_list = [];
+}
+
+message pt_match_succ_d218 {
+	required uint32 sort = 0;
+	required uint32 id = 0;
+	repeated pt_public_match_succ_list memebers = [];
+}
+
+message pt_submit_ready_d219 {
+	required string name = [];
+}
+
+message pt_draw_d127 {
+	repeated pt_public_draw_item_list draw_item_list = [];
+}
+
+message pt_draw_times_d128 {
+	required uint8 half = 0;
+	required uint32 draw_astrict = 0;
+	repeated pt_public_draw_times draw_times = [];
+}
+
+message pt_item_info_return_d129 {
+	repeated pt_public_item_des item_list = [];
+}
+
+message pt_broadcast_ride_info_e114 {
+	required uint64 uid = 0;
+	required uint8 ride_state = 0;
+	required uint32 ride_type = 0;
+	required uint32 currskin = 0;
+	required uint32 eq1 = 0;
+	required uint32 eq2 = 0;
+	required uint32 eq3 = 0;
+	required uint32 eq4 = 0;
+	required uint32 eq5 = 0;
+	required uint32 eq6 = 0;
+}
+
+message pt_archaeology_d130 {
+	required uint32 archaeology_id = 0;
+	required uint32 archaeology_time = 0;
+	required uint32 refresh_time = 0;
+	required uint32 add_rewards_time = 0;
+	required uint32 add_rewards_succeed = 0;
+}
+
+message pt_archaeology_reward_d131 {
+	repeated pt_public_draw_item_list draw_item_list = [];
+}
+
+message pt_camp_vote_data_d21a {
+	required uint32 can_vote = 0;
+	repeated pt_public_camp_vote_list campvotes = [];
+}
+
+message pt_vote_succ_d21b {
+}
+
+message pt_join_camp_d21c {
+	required uint32 campid = 0;
+}
+
+message pt_ret_trials_info_e115 {
+	repeated pt_public_trial_nums trials = [];
+	repeated pt_public_int32x4 copys = [];
+}
+
+message pt_update_camp_d21d {
+	required uint64 uid = 0;
+	required int32 camp = 0;
+}
+
+message pt_wanted_task_d132 {
+	required uint32 wanted_reset_num = 0;
+	required uint32 wanted_task_star = 0;
+	required uint32 wanted_task_loop = 0;
+	required uint32 wanted_rewards_state = 0;
+}
+
+message pt_task_rewards_succeed_d133 {
+	repeated pt_public_get_success_list get_success_list = [];
+}
+
+message pt_can_worship_d21e {
+	required int32 can_wor = 0;
+}
+
+message pt_worship_response_d21f {
+}
+
+message pt_ret_risks_info_e116 {
+	repeated pt_public_trial_nums risks = [];
+}
+
+message pt_scene_fly_scene_d134 {
+	required int32 fly_scene_id = 0;
+}
+
+message pt_camp_task_d135 {
+	required uint32 camp_task_star = 0;
+	required uint32 camp_task_loop = 0;
+	required uint32 camp_rewards_state = 0;
+}
+
+message pt_ret_hero_challenge_e117 {
+	required uint32 mission = 0;
+	required uint32 maxhp = 0;
+	required uint32 hp = 0;
+	required uint32 mp = 0;
+	required uint8 times = 0;
+	repeated pt_public_entourage entourages = [];
+}
+
+message pt_military_prize_d220 {
+}
+
+message pt_camp_activity_d221 {
+	required uint32 union_score = 0;
+	required uint32 tribe_score = 0;
+	required uint32 time_len = 0;
+	required uint32 need_exp = 0;
+	required uint32 curr_exp = 0;
+	required uint32 can_get_prize = 0;
+	required uint32 win_camp = 0;
+	required uint32 skill_id = 0;
+	required uint32 honor = 0;
+	required uint32 max_honor = 0;
+}
+
+message pt_item_model_d136 {
+	required int32 item_id = 0;
+}
+
+message pt_guild_name_d137 {
+	required string guild_name = [];
+}
+
+message pt_req_continue_hc_e118 {
+	repeated pt_public_drop_des drops = [];
+}
+
+message pt_update_scene_usr_data_d222 {
+	required uint64 uid = 0;
+	required uint32 sort = 0;
+	required string sdata = [];
+	required uint32 idata = 0;
+}
+
+message pt_copy_exist_time_d223 {
+	required int32 time_len = 0;
+}
+
+message pt_crowd_num_d224 {
+	required int32 num = 0;
+}
+
+message pt_backpack_upgrade_d140 {
+	required int32 entourage_bag = 0;
+	required int32 artifact_bag = 0;
+}
+
+message pt_guild_notice_d138 {
+	required string data = [];
+}
+
+message pt_seven_day_target_status_f00b {
+	required uint32 status = 0;
+	required uint32 activitieid = 0;
+}
+
+message pt_chapter_info_d139 {
+	required int32 reward_chapter_id = 0;
+	required int32 fetched_id = 0;
+}
+
+message pt_guild_member_verify_d141 {
+}
+
+message pt_req_quick_add_pet_d225 {
+	required uint32 type_id = 0;
+}
+
+message pt_update_monster_prop_d226 {
+	required uint32 id = 0;
+	repeated pt_public_property_list propertys = [];
+}
+
+message pt_boss_info_d227 {
+	repeated pt_public_boss_ex_info boss_list = [];
+}
+
+message pt_boss_win_d228 {
+	required int32 boss_id = 0;
+	required int32 demage = 0;
+	required int32 rank = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_boss_lose_d229 {
+	required int32 boss_id = 0;
+}
+
+message pt_arena_info_d22a {
+	required int32 times = 0;
+	required int32 rank = 0;
+	required int32 point = 0;
+	required uint32 fighting = 0;
+	required uint32 last_rank = 0;
+	repeated pt_public_arena_record_list arena_record = [];
+}
+
+message pt_challenger_reflush_d22b {
+	repeated pt_public_challenge_list challengers = [];
+}
+
+message pt_arena_record_info_d22c {
+	repeated pt_public_arena_record records = [];
+}
+
+message pt_arena_reflush_cd_d22d {
+	required int32 cd_time = 0;
+}
+
+message pt_arena_result_d22e {
+	required int8 arena_type = 0;
+	required int32 result = 0;
+	required int32 point_change = 0;
+	required string usr_name = [];
+	required string chall_name = [];
+	required int32 usr_point = 0;
+	required int32 chall_point = 0;
+	required int32 usr_lev = 0;
+	required int32 chall_lev = 0;
+	repeated pt_public_item_list reward_list = [];
+	repeated pt_public_scene_damage_list damage_list = [];
+	repeated pt_public_scene_damage_list treat_list = [];
+}
+
+message pt_ret_fast_trials_e119 {
+	required int32 copy = 0;
+	required int32 times = 0;
+	required int32 coin = 0;
+	required int32 exp = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_chapter_succeed_d142 {
+}
+
+message pt_camp_killed_military_d22f {
+	required uint32 killed_military = 0;
+}
+
+message pt_ptc_item_compound_succeed_d143 {
+	repeated pt_public_get_success_list get_success_list = [];
+}
+
+message pt_scene_load_d144 {
+}
+
+message pt_scene_branching_info_d145 {
+	repeated pt_public_scene_branching_info scene_branching_info = [];
+}
+
+message pt_ret_achieves_e11a {
+	repeated pt_public_achieve achieves = [];
+}
+
+message pt_item_model_clothes_d146 {
+	repeated pt_public_item_model_clothes item_model_clothes = [];
+}
+
+message pt_paragon_level_d147 {
+	repeated pt_public_paragon_level paragon_level = [];
+}
+
+message pt_arena_start_time_d230 {
+	required int32 start_time = 0;
+}
+
+message pt_unlock_atlas_d148 {
+	repeated pt_public_unlock_atlas_list unlock_atlas_list = [];
+}
+
+message pt_vip_info_d149 {
+	required uint32 daily_status = 0;
+	repeated pt_public_vip_rewards_list list = [];
+}
+
+message pt_activity_success_d14a {
+	repeated pt_public_item_list reward_list = [];
+}
+
+message pt_first_recharge_d14b {
+	required int32 recharge_time = 0;
+	required int32 recharge_draw_id = 0;
+	required int32 recharge_draw_money = 0;
+	required int32 recharge_draw_state = 0;
+}
+
+message pt_honor_kill_d231 {
+	required int32 killed_mlev = 0;
+	required int32 is_kill = 0;
+	required int32 kill_num = 0;
+}
+
+message pt_ret_charge_active_e11c {
+	repeated pt_public_charge_active rewards = [];
+}
+
+message pt_update_charge_active_e11d {
+	required int8 sort = 0;
+	required int32 reward = 0;
+}
+
+message pt_entourage_soul_link_d14d {
+	repeated pt_public_entourage_soul_link entourage_soul_link = [];
+	repeated uint32 all_unlinked_id = [];
+}
+
+message pt_recharge_succ_d232 {
+	required int32 recharge_id = 0;
+}
+
+message pt_entourage_fetter_info_d14c {
+	repeated pt_public_entourage_fetter_info entourage_fetter_info = [];
+}
+
+message pt_recharge_data_d233 {
+	repeated pt_public_recharge_list datas = [];
+}
+
+message pt_first_extend_recharge_d151 {
+	required uint32 recharge_succeed_id = 0;
+	repeated pt_public_item_list rewards = [];
+}
+
+message pt_dart_activity_state_d152 {
+	required uint32 activity_state = 0;
+	repeated pt_public_activity_id_list activity_id_list = [];
+}
+
+message pt_use_item_groupId_d154 {
+	repeated pt_public_use_item_groupId use_item_groupId = [];
+}
+
+message pt_camp_skill_d234 {
+	required int32 skill_id = 0;
+}
+
+message pt_abddart_activity_d155 {
+	repeated pt_public_abddart_activity_list abddart_activity_list = [];
+}
+
+message pt_ref_queue_a10d {
+}
+
+message pt_exit_queue_a10e {
+}
+
+message pt_dart_pos_d156 {
+	required uint32 pos_x = 0;
+	required uint32 pos_y = 0;
+	required uint32 pos_z = 0;
+}
+
+message pt_camp_leader_info_d235 {
+	required uint64 uid = 0;
+	required string name = [];
+	required int32 prof = 0;
+	required int32 military_lev = 0;
+	required int32 lev = 0;
+	required int32 limit_lev = 0;
+	required int32 time = 0;
+	repeated pt_public_deputy_list deputys = [];
+}
+
+message pt_system_time_d236 {
+	required int32 time_zone = 0;
+	required int32 time = 0;
+}
+
+message pt_dart_time_d157 {
+	required uint32 dart_time = 0;
+}
+
+message pt_off_line_exp_d158 {
+	required int32 off_line_time = 0;
+	required int32 off_line_exp = 0;
+	required int32 off_line_coin = 0;
+	required int32 off_line_res = 0;
+	required int32 off_line_item_num = 0;
+}
+
+message pt_off_line_succeed_d159 {
+}
+
+message pt_sdk_login_a10f {
+	required string acc = [];
+	required string pwd = [];
+	required string line = [];
+	required uint32 type = 0;
+	required uint32 statusCode = 0;
+	required uint32 logPack = 0;
+	required string client_version = [];
+}
+
+message pt_login_auth_succ_a110 {
+	required string jsondata = [];
+}
+
+message pt_gen_order_e11e {
+	required uint32 type = 0;
+	required string order = [];
+}
+
+message pt_update_camp_leader_d15a {
+	required uint32 camp_leader_id = 0;
+}
+
+message pt_retrueve_info_d15b {
+	repeated pt_public_retrueve_info retrueve_info = [];
+}
+
+message pt_retreve_succeed_d15c {
+	required int32 retreve_id = 0;
+}
+
+message pt_req_quick_buy_d15d {
+	required uint32 quick_buy_id = 0;
+	required uint32 quick_buy_item = 0;
+	required uint32 quick_buy_num = 0;
+}
+
+message pt_return_quick_buy_d160 {
+	required uint32 quick_buy_id = 0;
+	required uint32 quick_buy_item = 0;
+	required uint32 quick_buy_num = 0;
+}
+
+message pt_move_sand_buff_d161 {
+	repeated pt_public_move_sand_list move_sand_list = [];
+}
+
+message pt_move_sand_buff_id_d162 {
+	required uint32 move_sand_id = 0;
+	required uint32 scene_item_id = 0;
+	required uint32 buff_id = 0;
+}
+
+message pt_buy_coin_d163 {
+	required uint32 buy_coin_time = 0;
+	required uint32 total_times = 0;
+	required uint32 coin = 0;
+	required uint32 status = 0;
+	required uint32 free_times = 0;
+	required uint32 re_time = 0;
+}
+
+message pt_all_star_d164 {
+	required uint32 star_num = 0;
+}
+
+message pt_task_rewards_info_d165 {
+	required uint32 task_id = 0;
+	required uint32 task_step = 0;
+	repeated pt_public_task_rewards_list task_rewards_list = [];
+}
+
+message pt_guild_task_d166 {
+	required uint32 guild_task_reset_num = 0;
+	required uint32 guild_task_star = 0;
+	required uint32 guild_task_loop = 0;
+	required uint32 guild_task_rewards_state = 0;
+}
+
+message pt_entourage_star_d167 {
+	required uint64 uid = 0;
+	required uint32 star = 0;
+}
+
+message pt_ret_war_times_e11f {
+	repeated pt_public_war_info_list wars = [];
+}
+
+message pt_national_war_data_d237 {
+	required int32 stat = 0;
+	required int32 time = 0;
+	required int32 camp2_honor = 0;
+	required int32 camp3_honor = 0;
+	required int32 def_camp = 0;
+	required int32 win_camp = 0;
+	required int32 curr_hp = 0;
+	required int32 max_hp = 0;
+}
+
+message pt_national_war_record_d238 {
+	repeated pt_public_national_war_record war_records = [];
+}
+
+message pt_national_war_call_d239 {
+	required int32 cd_time = 0;
+}
+
+message pt_national_war_scrolls_d23a {
+	repeated pt_public_present_entourage_scrolls present_scrolls = [];
+}
+
+message pt_national_war_call_broadcast_d23b {
+	required string name = [];
+}
+
+message pt_ret_war_report_e120 {
+	required uint32 id = 0;
+	required uint32 camp2score = 0;
+	required uint32 camp3score = 0;
+	required uint32 usrscore = 0;
+	required uint16 usrkill = 0;
+	required uint16 killsort = 0;
+	required uint16 continuekill = 0;
+	required uint16 curcontinuekill = 0;
+	required uint16 speed = 0;
+}
+
+message pt_war_over_e121 {
+	required uint32 id = 0;
+	required uint8 result = 0;
+	required uint32 drops = 0;
+	repeated pt_public_item_list items = [];
+	required uint32 cpl = 0;
+	required uint32 prev = 0;
+	required uint32 usrkill = 0;
+	required uint32 killrank = 0;
+	required uint32 continuekill = 0;
+	required uint32 score = 0;
+	required uint32 killm = 0;
+	required uint32 killu = 0;
+	required uint32 killc = 0;
+}
+
+message pt_ans_match_war_e122 {
+	required uint32 id = 0;
+	required uint8 action = 0;
+	required uint8 status = 0;
+}
+
+message pt_royal_box_info_d168 {
+	required uint32 royal_box_time = 0;
+	required int32 royal_box_astrict = 0;
+	repeated pt_public_royal_box_list royal_box_list = [];
+}
+
+message pt_royal_box_succeed_d169 {
+	required int32 royal_box_id = 0;
+	repeated pt_public_recycle_list item_list = [];
+}
+
+message pt_entourage_star_rewards_d16a {
+	repeated pt_public_entourage_star_rewards entourage_star_rewards_list = [];
+}
+
+message pt_equip_rewards_d16b {
+	repeated pt_public_equip_rewards_list equip_rewards_list = [];
+}
+
+message pt_equip_and_entourage_succeed_d16c {
+	required uint32 sort = 0;
+	required uint32 id = 0;
+}
+
+message pt_ret_gs_rewards_e123 {
+	required uint8 status = 0;
+	repeated pt_public_equip_rewards_list gs_rewards = [];
+}
+
+message pt_match_finish_d301 {
+}
+
+message pt_ret_gamble_info_e124 {
+	required uint16 cost = 0;
+	required uint8 vip = 0;
+	required uint16 low = 0;
+	required uint16 high = 0;
+	required uint8 times = 0;
+	required uint16 pool = 0;
+}
+
+message pt_week_rewards_info_d16d {
+	required uint32 week_rewards_time = 0;
+	repeated pt_public_week_rewards_list week_rewards_list = [];
+}
+
+message pt_ret_gamble_price_e125 {
+	required uint8 sort = 0;
+	repeated pt_public_id_list ids = [];
+	required uint16 diamo = 0;
+}
+
+message pt_ret_items_buffer_e126 {
+	required uint16 way = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_wechat_rewards_d170 {
+	required uint32 wechat_rewards_state = 0;
+	required uint32 wechat_rewards_time = 0;
+}
+
+message pt_national_war_show_info_d23d {
+	required int32 def_buff_num = 0;
+	required int32 hp_rate = 0;
+	required int32 time = 0;
+}
+
+message pt_guild_post_d171 {
+	required uint32 post_id = 0;
+}
+
+message pt_fortress_task_info_d172 {
+	required uint32 task_id = 0;
+	required uint32 task_step = 0;
+	required uint32 task_star = 0;
+	required uint32 task_loop = 0;
+}
+
+message pt_single_recharge_info_d302 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	repeated pt_public_single_des singles = [];
+}
+
+message pt_repeat_recharge_info_d303 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 repeatNum = 0;
+	required uint32 repeatTimes = 0;
+	required uint32 allNum = 0;
+	required uint32 pickTimes = 0;
+	repeated pt_public_repeat_des repeats = [];
+}
+
+message pt_gift_recharge_info_d304 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 allRecharge = 0;
+	required uint32 allSpend = 0;
+	required uint32 dayRecharge = 0;
+	required uint32 daySpend = 0;
+	repeated pt_public_gift_des gifts = [];
+}
+
+message pt_exchange_info_d30a {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 type = 0;
+	repeated pt_public_exchange_des exchanges = [];
+}
+
+message pt_loginact_info_d30c {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 loginDays = 0;
+	required uint32 diamond = 0;
+	repeated pt_public_loginact_des loginacts = [];
+}
+
+message pt_picked_single_recharge_d307 {
+	required uint32 type = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_picked_repeat_recharge_d308 {
+	required uint32 type = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_picked_gift_recharge_d309 {
+	required uint32 sort = 0;
+	required uint32 type = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_picked_exchange_d30b {
+	required uint32 type = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_picked_loginact_d30d {
+	required uint32 type = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_copy_rewards_info_d173 {
+	repeated pt_public_item_list item_list = [];
+}
+
+message pt_ret_fast_copy_e127 {
+	required uint32 id = 0;
+	required uint8 times = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_flag_count_d305 {
+	required int32 flag_count1 = 0;
+	required int32 flag_count3 = 0;
+	required int32 flag_count2 = 0;
+}
+
+message pt_flag_status_d306 {
+	required int32 flag_camp = 0;
+	required int32 flag_status = 0;
+}
+
+message pt_national_war_tips_d23e {
+	repeated pt_public_boss_info bosslist = [];
+}
+
+message pt_national_war_start_time_d23f {
+	required int32 stat = 0;
+	required int32 time = 0;
+}
+
+message pt_ret_wheel_info_e128 {
+	required uint16 pool = 0;
+}
+
+message pt_ret_guide_tag_point_e129 {
+	required uint32 wave = 0;
+	required uint32 x = 0;
+	required uint32 y = 0;
+	required uint32 z = 0;
+	required uint32 mx = 0;
+	required uint32 my = 0;
+	required uint32 mz = 0;
+}
+
+message pt_ret_gamble_record_e12a {
+	repeated pt_public_gamble_record gamble_records = [];
+}
+
+message pt_ret_war_usr_area_e12b {
+	required uint32 area = 0;
+}
+
+message pt_scene_full_tips_d240 {
+}
+
+message pt_updata_name_card_d174 {
+	required uint32 item_id = 0;
+	required string updata_name = [];
+}
+
+message pt_update_name_succeed_d175 {
+	required string name = [];
+}
+
+message pt_war_damage_rank_d241 {
+	required int32 my_damage = 0;
+	repeated pt_public_war_damage damages = [];
+}
+
+message pt_atlas_team_info_d179 {
+	repeated pt_public_atlas_team_list atlas_team_list = [];
+}
+
+message pt_copy_notice_revive_d242 {
+}
+
+message pt_usr_info_mount_d176 {
+	required uint32 mount_id = 0;
+	repeated pt_public_illusion_list illusion = [];
+	repeated pt_public_mount_equip_list equip = [];
+	required uint32 illusion_id = 0;
+}
+
+message pt_usr_info_pet_d177 {
+	repeated pt_public_pet_property_list pet_property_list = [];
+	repeated pt_public_other_pet_list other_pet_list = [];
+	required uint32 use_pet = 0;
+}
+
+message pt_growth_bible_info_d178 {
+	repeated pt_public_growth_bible_info growth_bible_info = [];
+}
+
+message pt_req_atlas_team_info_d17d {
+}
+
+message pt_guild_impeach_president_d180 {
+	required uint32 guild_impeach_president_poll = 0;
+}
+
+message pt_blacklist_info_d181 {
+	repeated pt_public_blacklist_list blacklist_list = [];
+}
+
+message pt_team_war_seq_d243 {
+	required uint32 war_id = 0;
+}
+
+message pt_scramble_info_d182 {
+	required uint32 camp_two_score = 0;
+	required uint32 camp_three_score = 0;
+}
+
+message pt_war_ready_finish_d245 {
+}
+
+message pt_hide_boss_data_d246 {
+	repeated pt_public_id_list hides = [];
+}
+
+message pt_hide_boss_response_d247 {
+	required int32 sort = 0;
+	required int32 boss_id = 0;
+}
+
+message pt_boss_born_and_die_d248 {
+	required int32 boss_id = 0;
+	required int32 stat = 0;
+}
+
+message pt_open_svr_five_day_time_d249 {
+	required int32 time = 0;
+}
+
+message pt_open_svr_five_day_data_d24a {
+	required int32 sort = 0;
+	required int32 rank = 0;
+	required int32 prize_stat = 0;
+	repeated pt_public_five_act_info datas = [];
+}
+
+message pt_open_svr_five_day_camp_d24c {
+}
+
+message pt_seven_day_target_info_d183 {
+	repeated pt_public_seven_day_target_info_list seven_day_target_info_list = [];
+}
+
+message pt_seven_day_target_rewards_info_d184 {
+	required uint32 day = 0;
+	repeated pt_public_seven_day_target_rewards_list seven_day_target_rewards_list = [];
+}
+
+message pt_seven_day_target_succeed_d185 {
+	repeated pt_public_item_list item_list = [];
+}
+
+message pt_rent_entourage_d24d {
+	required int32 type = 0;
+	required int32 time = 0;
+}
+
+message pt_doing_exped_task_d24e {
+	repeated pt_public_expedition_list datas = [];
+}
+
+message pt_exped_task_d24f {
+	required uint32 count = 0;
+	required uint32 reflush_times = 0;
+	repeated pt_public_id_list datas = [];
+}
+
+message pt_rent_entourage_info_d250 {
+	repeated pt_public_rent_entourage_list datas = [];
+}
+
+message pt_expedition_request_d251 {
+	required int32 action = 0;
+	repeated pt_public_exped_entourage_list datas = [];
+}
+
+message pt_strength_oven_info_d186 {
+	repeated pt_public_strength_oven_list strength_oven_list = [];
+}
+
+message pt_inscription_info_d187 {
+	repeated pt_public_inscription_list inscription_list = [];
+}
+
+message pt_team_process_d188 {
+	required uint32 lev = 0;
+	required uint32 gs = 0;
+	required uint32 population = 0;
+}
+
+message pt_climb_tower_data_d252 {
+	required uint32 curr_tower = 0;
+	required uint32 max_tower = 0;
+	required uint32 rank = 0;
+	required uint32 times = 0;
+	repeated pt_public_climb_tower_first_reward rewards = [];
+}
+
+message pt_red_packet_surplus_time_d189 {
+	required uint32 surplus_time = 0;
+	required uint32 red_packet_state = 0;
+	required uint32 guild_rank = 0;
+	required uint32 guild_ranklist_state = 0;
+	required uint32 guild_payoff_state = 0;
+}
+
+message pt_red_packet_rewards_d190 {
+	required uint32 packet_rewards_num = 0;
+}
+
+message pt_climb_tower_reset_d253 {
+}
+
+message pt_climb_tower_fast_d254 {
+	required uint32 tower_id = 0;
+}
+
+message pt_climb_tower_first_reward_d255 {
+	required uint32 tower_id = 0;
+}
+
+message pt_guild_team_copy_info_d191 {
+	required uint32 call_upon_id = 0;
+	required uint64 call_upon_uid = 0;
+	required uint32 join_scene_id = 0;
+	repeated pt_public_guild_team_copy_list guild_team_copy_list = [];
+}
+
+message pt_guild_team_info_d192 {
+	repeated pt_public_guild_team_list guild_team_list = [];
+}
+
+message pt_req_guild_call_upon_d193 {
+	required uint32 call_upon_id = 0;
+	required uint32 min_lev = 0;
+	required uint32 min_gs = 0;
+	required uint32 min_post = 0;
+}
+
+message pt_guild_call_upon_broadcast_d194 {
+	required uint32 call_upon_id = 0;
+}
+
+message pt_guild_team_copy_succeed_d195 {
+	repeated pt_public_get_success_list get_success_list = [];
+}
+
+message pt_send_red_packet_info_d196 {
+	required uint64 uid = 0;
+	required string name = [];
+	required uint32 prof = 0;
+	required uint32 balance = 0;
+	required uint32 sendnumber = 0;
+}
+
+message pt_call_up_info_d197 {
+	required uint32 call_up_id = 0;
+	required uint64 uid = 0;
+	required string name = [];
+	required uint32 sceneid = 0;
+}
+
+message pt_entourage_expedition_reward_d256 {
+	repeated pt_public_id_list en_list = [];
+	required int32 en_exp = 0;
+	repeated pt_public_item_list items = [];
+	required int32 item_ex = 0;
+}
+
+message pt_open_svr_time_limit_d257 {
+	required int32 time = 0;
+}
+
+message pt_abyss_box_d198 {
+	required uint32 abyss_box_scene_item_id = 0;
+	required uint32 time = 0;
+}
+
+message pt_give_pwd_red_d258 {
+	required string pwd_context = [];
+	required uint32 diamond = 0;
+	required uint32 red_num = 0;
+}
+
+message pt_pwd_red_info_d259 {
+	repeated pt_public_pwd_red_list reds = [];
+}
+
+message pt_rev_red_response_d25a {
+	required uint64 uid = 0;
+	required uint32 diamond = 0;
+	required uint32 red_num = 0;
+	required uint32 red_max_num = 0;
+}
+
+message pt_give_red_tips_d25b {
+}
+
+message pt_entourage_mastery_grow_d199 {
+	repeated pt_public_entourage_mastery_info entourage_mastery_info = [];
+}
+
+message pt_flying_shoes_d200 {
+}
+
+message pt_other_usr_skill_info_d401 {
+	required uint32 strength_oven = 0;
+	repeated pt_public_other_usr_skill other_usr_skill = [];
+}
+
+message pt_share_info_d402 {
+	required uint32 share_num = 0;
+}
+
+message pt_all_people_info_d403 {
+	repeated pt_public_all_people_info all_people_info = [];
+}
+
+message pt_treasure_activity_time_d404 {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_treasure_rewards_d405 {
+	repeated pt_public_treasure_rewards_info treasure_rewards_info = [];
+}
+
+message pt_extreme_luxury_gift_d406 {
+	repeated pt_public_extreme_luxury_gift_info extreme_luxury_gift_info = [];
+	repeated pt_public_extreme_ranklist extreme_ranklist = [];
+}
+
+message pt_treasure_all_rewards_d407 {
+	required uint32 out_of_item_type = 0;
+	required uint32 out_of_item_num = 0;
+	repeated pt_public_treasure_rewards_info treasure_rewards_info = [];
+}
+
+message pt_treasure_times_d408 {
+	required uint32 times = 0;
+}
+
+message pt_consume_rank_info_d409 {
+	required uint32 rank = 0;
+	repeated pt_public_consume_rank_list consume_rank_list = [];
+}
+
+message pt_recharge_rank_info_d40a {
+	required uint32 rank = 0;
+	repeated pt_public_recharge_rank_list recharge_rank_list = [];
+}
+
+message pt_rank_consume_activity_time_d40b {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_rank_recharge_activity_time_d40c {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_gm_continu_recharge_d25c {
+	repeated pt_public_diamond_lev_list data = [];
+}
+
+message pt_gm_continu_recharge_close_d25d {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_gm_continu_recharge_reward_d25e {
+}
+
+message pt_turning_wheel_config_d25f {
+	repeated pt_public_turning_wheel_config_list data = [];
+}
+
+message pt_turning_wheel_hide_d260 {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_recharge_package_data_d261 {
+	required uint32 num = 0;
+}
+
+message pt_dress_suit_data_d262 {
+	repeated pt_public_id_list dress_suit_list = [];
+}
+
+message pt_lost_item_recover_d263 {
+	required uint32 id = 0;
+	required uint32 debris_num = 0;
+	required uint32 recover_lev = 0;
+}
+
+message pt_glory_sword_d40d {
+	required uint32 glory_sword_lev = 0;
+}
+
+message pt_military_skill_d410 {
+	required uint32 use_skill_id = 0;
+	repeated pt_public_military_skill_info military_skill_list = [];
+}
+
+message pt_copy_time_rewards_d411 {
+	required uint32 copy_time = 0;
+	repeated uint32 copy_time_rewards_list = [];
+}
+
+message pt_stamina_time_d412 {
+	required uint32 stamina_data = 0;
+}
+
+message pt_mystery_store_data_d413 {
+	required uint32 mystery_store_finish_time = 0;
+	repeated pt_public_mystery_store_item_list mystery_store_item_list = [];
+}
+
+message pt_mystery_store_buy_d414 {
+	repeated pt_public_mystery_store_item_list buy_item_info = [];
+}
+
+message pt_hero_challenge_info_d415 {
+	required uint32 hero_challenge_difficulty = 0;
+	required uint32 hero_challenge_wave = 0;
+}
+
+message pt_pet_collect_d265 {
+	repeated pt_public_pet_coll_info pet_collect_list = [];
+}
+
+message pt_join_hero_challenge_d416 {
+	repeated uint32 hero_challenge_id_list = [];
+}
+
+message pt_pet_book_d264 {
+	repeated pt_public_pet_skill_books books = [];
+}
+
+message pt_artifact_forging_d417 {
+}
+
+message pt_sky_ladder_info_d266 {
+	required int32 rank = 0;
+	required int32 total = 0;
+	required int32 win = 0;
+	required int32 lose = 0;
+	required int32 score = 0;
+	required int32 max_score = 0;
+	required int32 reward_time = 0;
+	required int32 first_reward = 0;
+}
+
+message pt_sky_ladder_reward_d267 {
+	repeated pt_public_reward_info rewards = [];
+}
+
+message pt_sky_ladder_scene_result_d268 {
+	required int32 result = 0;
+}
+
+message pt_flash_gift_bag_info_d418 {
+	repeated pt_public_flash_gift_bag_list flash_gift_bag_list = [];
+}
+
+message pt_flash_gift_bag_time_d419 {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_sdk_auth_failed_a005 {
+	required string data = [];
+}
+
+message pt_req_melting_d30e {
+	repeated uint32 ids = [];
+}
+
+message pt_melting_suc_d30f {
+	required int32 melting_num = 0;
+}
+
+message pt_compose_info_d310 {
+	required uint32 action = 0;
+	required uint32 new_equip_id = 0;
+	required uint32 free_time = 0;
+	required uint32 refresh_time = 0;
+	required uint32 refresh_num = 0;
+	required uint32 item1 = 0;
+	required uint32 item2 = 0;
+	required uint32 item3 = 0;
+	repeated uint32 item1_property = [];
+	repeated uint32 item2_property = [];
+	repeated uint32 item3_property = [];
+	required uint32 item1_cost = 0;
+	required uint32 item1_price = 0;
+	required uint32 item2_cost = 0;
+	required uint32 item2_price = 0;
+	required uint32 item3_cost = 0;
+	required uint32 item3_price = 0;
+}
+
+message pt_bslx_d311 {
+}
+
+message pt_clear_skill_cd_c00a {
+	required uint32 sort = 0;
+}
+
+message pt_req_quick_fight_c100 {
+	required uint32 req_type = 0;
+}
+
+message pt_update_quick_fight_info_c101 {
+	required int32 surplus_times = 0;
+	required int32 max_times = 0;
+	required int32 forever_times = 0;
+	required uint32 reward_exp = 0;
+	required uint32 reward_copper = 0;
+	required uint32 reward_res = 0;
+	repeated pt_public_item_list reward_item = [];
+}
+
+message pt_req_setting_pick_item_c102 {
+	required uint32 setting_white = 0;
+	required uint32 setting_green = 0;
+	required uint32 setting_blue = 0;
+}
+
+message pt_time_reward_info_f001 {
+	required uint32 step = 0;
+	required uint32 extra_reward_state = 0;
+	repeated uint32 fetched_list = [];
+	required uint32 next_time = 0;
+}
+
+message pt_time_reward_item_f002 {
+	required uint32 reward_id = 0;
+	repeated pt_public_time_reward item_list = [];
+}
+
+message pt_update_guild_boss_reward_c103 {
+	required uint32 my_damage = 0;
+	repeated pt_public_id_list damage_reward_list = [];
+	repeated pt_public_id_list kill_reward_list = [];
+}
+
+message pt_update_guild_inspire_times_c104 {
+	required uint32 buy_times = 0;
+}
+
+message pt_story_show_f003 {
+	required uint32 chapter = 0;
+	required uint32 step = 0;
+}
+
+message pt_stroy_reward_info_f004 {
+	repeated uint32 reward = [];
+}
+
+message pt_req_fly_planes_d320 {
+	required int32 id = 0;
+}
+
+message pt_task_step_f005 {
+	required uint32 id = 0;
+	required uint32 status = 0;
+}
+
+message pt_task_step_info_f00a {
+	required uint32 step = 0;
+	required uint32 num = 0;
+	required uint32 status = 0;
+	required uint32 sort = 0;
+}
+
+message pt_req_guild_stone_info_f006 {
+	required uint32 type = 0;
+	repeated pt_public_guild_stone_list stone_list = [];
+	required uint32 can_get = 0;
+}
+
+message pt_guild_stone_donation_f007 {
+	required uint32 target_id = 0;
+	required uint32 type = 0;
+}
+
+message pt_req_guild_stone_get_f008 {
+	required uint32 type = 0;
+}
+
+message pt_acc_recharge_info_f10d {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string picture = [];
+	repeated pt_public_acc_recharge_des datas = [];
+}
+
+message pt_show_fetched_reward_f10e {
+	repeated pt_public_friend_name_list show_type = [];
+	required uint32 type = 0;
+	repeated pt_public_item_list rewards = [];
+}
+
+message pt_gm_act_week_task_f114 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_gm_act_week_task_des datas = [];
+}
+
+message pt_gm_act_exchange_f115 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_gm_act_exchange_des datas = [];
+}
+
+message pt_gm_act_sale_f116 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	required uint32 exchange_score = 0;
+	repeated pt_public_gm_act_sale_des datas = [];
+}
+
+message pt_gm_act_drop_f117 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+}
+
+message pt_acc_cost_f111 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	required string picture = [];
+	required uint32 cost_coin = 0;
+	repeated pt_public_acc_cost_des datas = [];
+}
+
+message pt_gm_act_discount_f113 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_gm_act_discount_des datas = [];
+}
+
+message pt_gm_act_double_f112 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_gm_act_double_des datas = [];
+}
+
+message pt_shenqi_info_f118 {
+	required uint32 stage_used_id = 0;		//主关卡里使用的神器物品id
+}
+
+message pt_recent_chat_f119 {
+	repeated pt_public_recent_chat_msg msgs = [];
+}
+
+message pt_barrier_rewards_info_f12d {
+	required int32 type = 0;
+	repeated pt_public_barrier_rewards_des datas = [];
+}
+
+message pt_online_status_d17a {
+	required uint64 uid = 0;
+	required uint8 is_online = 0;
+}
+
+message pt_home_building_list_d270 {
+	required uint64 uid = 0;
+	repeated pt_public_home_building_base_info building_list = [];
+}
+
+message pt_home_building_common_detail_d271 {
+	required uint32 id = 0;
+	required uint32 rest_upgrade_time = 0;
+}
+
+message pt_home_building_mine_info_d272 {
+	required uint32 id = 0;
+	required uint32 rest_upgrade_time = 0;
+	required uint32 rest_res_num = 0;
+	repeated pt_public_home_building_worker_info worker_list = [];
+	repeated pt_public_home_building_worker_info assistant_list = [];
+	required uint32 status = 0;
+}
+
+message pt_home_building_factory_info_d274 {
+	required uint32 id = 0;
+	required uint32 status = 0;
+	required uint32 rest_upgrade_time = 0;
+	required uint32 rest_produce_time = 0;
+	required uint32 rest_produce_cd = 0;
+	repeated pt_public_item_list items = [];
+}
+
+message pt_home_building_gather_succ_d273 {
+	required uint32 id = 0;
+}
+
+message pt_home_building_req_produce_d275 {
+	required uint32 id = 0;
+	repeated uint8 idx_list = [];
+}
+
+message pt_home_building_upgrade_begin_d276 {
+	required uint32 id = 0;
+}
+
+message pt_home_building_produce_begin_d277 {
+	required uint32 id = 0;
+}
+
+message pt_building_upgrade_complete_f015 {
+	required uint32 id = 0;
+}
+
+message pt_worldboss_list_f126 {
+	repeated pt_public_worldboss_info list = [];
+}
+
+message pt_worldboss_times_f125 {
+	required uint32 left_times = 0;
+	required uint32 next_recover_time = 0;
+}
+
+message pt_worldboss_damage_rank_f128 {
+	required uint32 type = 0;
+	repeated pt_public_worldboss_damage_info list = [];
+}
+
+message pt_worldboss_inspire_f127 {
+	required uint32 current_id = 0;
+}
+
+message pt_copy_data_f12a {
+	required uint32 data_type = 0;
+	required uint32 data = 0;
+}
+
+message pt_recharge_return_f129 {
+	required uint32 recharge_money = 0;
+	required uint32 return_coin = 0;
+}
+
+message pt_gm_act_treasure_f123 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	required uint32 my_rank = 0;
+	required uint32 my_times = 0;
+	required uint32 all_times = 0;
+	required uint32 one_times_cost = 0;
+	required uint32 ten_times_cost = 0;
+	repeated pt_public_item_list one_times_items = [];
+	repeated pt_public_item_list ten_times_items = [];
+	repeated pt_public_item_list rand_items = [];
+	repeated pt_public_treasure_exchange_des exchange = [];
+	repeated pt_public_treasure_rank_reward_des rank_reward = [];
+	repeated pt_public_treasure_ranking_des ranking_list = [];
+}
+
+message pt_gm_act_treasure_record_f124 {
+	required uint32 type = 0;
+	repeated pt_public_treasure_record_des records = [];
+}
+
+message pt_gm_act_package_f011 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_gm_act_package_des datas = [];
+}
+
+message pt_client_error_report_f130 {
+	required uint32 report_type = 0;
+	required string msg = [];
+}
+
+message pt_revive_notify_f12b {
+	required uint32 nofity_type = 0;
+	required uint32 data = 0;
+}
+
+message pt_artifact_fast_f016 {
+	required uint32 time = 0;
+	required uint32 status = 0;
+	required uint32 buy_times = 0;
+}
+
+message pt_gm_act_reset_recharge_f017 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_gm_act_reset_recharge_des datas = [];
+}
+
+message pt_random_task_f018 {
+	required uint32 is_task = 0;
+	required uint32 task_id = 0;
+	required uint32 task1_num = 0;
+	required uint32 task1_status = 0;
+	required uint32 task2_num = 0;
+	required uint32 task2_status = 0;
+	required uint32 end_time = 0;
+	required uint32 is_pop = 0;
+}
+
+message pt_gm_act_lv_rank_f12c {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	required uint32 my_rank = 0;
+	repeated pt_public_lv_rank_reward_des rank_reward = [];
+	repeated pt_public_gm_act_lv_rank_des ranking_list = [];
+}
+
+message pt_system_activity_f019 {
+	required uint32 id = 0;
+	required uint32 status = 0;
+}
+
+message pt_system_activity_limitboss_f020 {
+	required uint32 times = 0;
+	required uint32 buy_times = 0;
+}
+
+message pt_all_system_activity_f021 {
+	repeated pt_public_system_activity_info list = [];
+}
+
+message pt_gm_act_limit_summon_f022 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	required uint32 my_rank = 0;
+	required uint32 my_times = 0;
+	repeated pt_public_limit_summon_rank_reward_des rank_reward = [];
+	repeated pt_public_limit_summon_ranking_des ranking_list = [];
+}
+
+message pt_entourage_die_f023 {
+	required uint32 id = 0;
+}
+
+message pt_entourage_revive_f024 {
+	required uint32 etype = 0;
+}
+
+message pt_action_tri_int_f025 {
+	required int32 action = 0;
+	required uint64 data_One = 0;
+	required uint64 data_Two = 0;
+	required uint64 data_Three = 0;
+}
+
+message pt_action_list_and_data_f026 {
+	required int32 action = 0;
+	repeated pt_public_id_list id_list = [];
+	required int32 data = 0;
+}
+
+message pt_entourage_rune_info_f027 {
+	required int32 etype = 0;
+	required int32 can_have = 0;
+	required int32 lev = 0;
+	required int32 step = 0;
+	repeated pt_public_property_list property_list = [];
+}
+
+message pt_continuous_recharge_info_f028 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 total_recharge = 0;
+	required string desc = [];
+	repeated pt_public_continuous_recharge_des datas = [];
+}
+
+message pt_limit_achievement_info_f029 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_limit_achievement_des datas = [];
+}
+
+message pt_entourage_debt_exchange_succ_f030 {
+	required string name = [];
+	required uint32 num = 0;
+}
+
+message pt_usr_head_d02a {
+	required uint64 uid = 0;
+	required uint32 useid = 0;
+	repeated pt_public_usrid_list headlist = [];
+}
+
+message pt_consume_global_rank_info_d41a {
+	required uint32 type = 0;
+	required uint32 rank = 0;
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+	required uint32 close_time = 0;
+	required uint32 consume_num = 0;
+	required string desc = [];
+	repeated pt_public_global_rewards_info global_rewards_info = [];
+	repeated pt_public_consume_global_rank_list consume_global_rank_list = [];
+}
+
+message pt_recharge_global_rank_info_d41b {
+	required uint32 type = 0;
+	required uint32 rank = 0;
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+	required uint32 close_time = 0;
+	required uint32 recharge_num = 0;
+	required string desc = [];
+	repeated pt_public_global_rewards_info global_rewards_info = [];
+	repeated pt_public_recharge_global_rank_list recharge_global_rank_list = [];
+}
+
+message pt_consumejifen_shop_d41e {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+	required uint32 close_time = 0;
+	required uint32 my_jifen = 0;
+	required string desc = [];
+	repeated pt_public_jifen_shop jifen_shop = [];
+}
+
+message pt_rechargejifen_shop_d41f {
+	required uint32 start_time = 0;
+	required uint32 end_time = 0;
+	required uint32 close_time = 0;
+	required uint32 my_jifen = 0;
+	required string desc = [];
+	repeated pt_public_jifen_shop jifen_shop = [];
+}
+
+message pt_action_string_and_data_f032 {
+	required int32 action = 0;
+	required int32 data1 = 0;
+	required string data2 = [];
+}
+
+message pt_entourage_property_f033 {
+	repeated pt_public_property_list property_list = [];
+}
+
+message pt_sign_day_f034 {
+	required uint32 day_num = 0;
+}
+
+message pt_entourage_list_new_f035 {
+	repeated pt_public_entourage_list entourage_list = [];
+}
+
+message pt_entourage_info_new_f036 {
+	required uint32 type = 0;
+	required uint32 fighting = 0;
+	required uint32 lev = 0;
+	required uint32 star = 0;
+	repeated pt_public_property_list property_list = [];
+}
+
+message pt_entourage_succeed_new_f037 {
+	required uint32 success_action = 0;
+	required uint32 success_data = 0;
+}
+
+message pt_entourage_die_new_f038 {
+	repeated pt_public_dead_entourage_list dead_entourage_list = [];
+}
+
+message pt_entourage_revive_new_f039 {
+	required uint32 etype = 0;
+}
+
+message pt_entourage_create_model_f03a {
+	required uint32 oid = 0;
+	required uint32 item_id = 0;
+	required uint32 cur_hp = 0;
+	required uint32 hp = 0;
+	required uint32 cur_mp = 0;
+	required uint32 mp = 0;
+	required uint32 star = 0;
+	required uint32 played_state = 0;
+}
+
+message pt_req_entourage_create_model_f03b {
+	required uint32 id = 0;
+	required uint32 create_type = 0;
+}
+
+message pt_usr_title_e10f {
+	required uint64 uid = 0;
+	required uint16 titlelev = 0;
+	required uint32 titleexp = 0;
+	repeated pt_public_title_chpprof chgProp = [];
+}
+
+message pt_worldlevel_info_f03c {
+	required uint32 world_level = 0;
+	required uint32 is_reward = 0;
+}
+
+message pt_guild_blessing_info_f03d {
+	required uint32 blessing_step = 0;
+}
+
+message pt_guild_operation_f03e {
+	required uint32 operation_type = 0;
+}
+
+message pt_global_arena_info_f040 {
+	required uint32 rank = 0;
+	required uint32 honor = 0;
+	required uint32 challenge_num = 0;
+	required uint32 buy_times = 0;
+	required uint32 daily_honor = 0;
+	repeated pt_public_global_arena_daily_task daily_task = [];
+	required uint32 season_win_time = 0;
+	repeated pt_public_global_arena_daily_log daily_log = [];
+	required uint32 season_state = 0;
+	required uint32 season_endtime = 0;
+	required uint32 worship_time = 0;
+}
+
+message pt_global_arena_ranklist_f041 {
+	required uint32 is_rank = 0;
+	repeated pt_public_global_arena_ranklist_info ranklist = [];
+}
+
+message pt_global_last_arena_ranklist_f042 {
+	required uint32 worship_time = 0;
+	repeated pt_public_global_arena_last_ranklist_info ranklist = [];
+}
+
+message pt_global_arena_match_succ_f043 {
+	required uint32 time = 0;
+}
+
+message pt_global_arena_match_start_f044 {
+	required uint32 time = 0;
+}
+
+message pt_global_arena_result_f045 {
+	required uint32 type = 0;
+	required uint32 win_lose = 0;
+	required uint32 rank = 0;
+	required uint32 rank_change = 0;
+	required uint32 honor_change = 0;
+	repeated pt_public_item_list item_list = [];
+}
+
+message pt_gm_act_limit_double_recharge_f046 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+}
+
+message pt_praise_reward_f04a {
+	required uint32 has_reward = 0;
+	required uint32 is_pop_ip = 0;
+}
+
+message pt_gm_act_recharge_point_f047 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_recharge_point_des datas = [];
+}
+
+message pt_talent_info_e210 {
+	required uint32 awaken = 0;
+	repeated pt_public_talent_skill_des skills = [];
+}
+
+message pt_talent_draw_e211 {
+	repeated uint32 draw_id = [];
+	repeated pt_public_item_list items = [];
+}
+
+message pt_ele_pearl_info_e212 {
+	required uint32 ele1 = 0;
+	required uint32 ele2 = 0;
+	required uint32 ele3 = 0;
+	required uint32 ele4 = 0;
+	required uint32 ele5 = 0;
+}
+
+message pt_mining_info_e213 {
+	required uint8 status = 0;
+	required uint32 mining_left_seconds = 0;
+	required uint32 protect_left_seconds = 0;
+	required uint32 cur_gain = 0;
+	required uint32 cur_max_gain = 0;
+	required uint32 gain = 0;
+	required uint32 grab = 0;
+	required uint16 graped_times = 0;
+	required uint16 grap_buy_times = 0;
+	required uint16 inspire = 0;
+	repeated pt_public_property_list exchange_times = [];
+	repeated pt_public_mining_defend_des defend_records = [];
+}
+
+message pt_mining_list_e214 {
+	repeated pt_public_mining_list_des datas = [];
+}
+
+message pt_maze_info_f049 {
+	required uint32 state = 0;
+	required uint32 has_settled = 0;
+	required uint32 power = 0;
+	required uint32 buy_times = 0;
+	required uint32 lucky = 0;
+	required uint32 bagdge = 0;
+	required uint32 inspare = 0;
+	required uint32 re_time = 0;
+	required uint32 step = 0;
+	repeated pt_public_item_list rewards = [];
+	repeated pt_public_maze_record records = [];
+}
+
+message pt_maze_event_f050 {
+	required uint32 id = 0;
+	required string name = [];
+	required uint32 lev = 0;
+	required uint32 vip_lev = 0;
+	required uint32 head_id = 0;
+	required uint32 fighting = 0;
+	required uint32 server_id = 0;
+	required string servername = [];
+	required uint32 monster_type = 0;
+}
+
+message pt_sailing_info_f051 {
+	required uint32 type = 0;
+	required uint32 status = 0;
+	required uint32 sailing_time = 0;
+	required uint32 buy_times = 0;
+	required uint32 has_be_plunder = 0;
+	required uint32 inspire = 0;
+	required uint32 succ_guard_time = 0;
+	required string guard_name = [];
+	required uint32 guard_head = 0;
+	required uint32 end_time = 0;
+	repeated pt_public_sailing_record sailing_records = [];
+}
+
+message pt_sailing_plunder_info_f052 {
+	required uint32 plunder_time = 0;
+	repeated pt_public_plunder_list plunder_list = [];
+}
+
+message pt_sailing_guard_info_f053 {
+	required uint32 guard_time = 0;
+	required uint32 guard_type = 0;
+	repeated pt_public_guard_list guard_list = [];
+}
+
+message pt_global_guild_ranklist_info_f054 {
+	required uint32 type = 0;
+	required uint32 my_num = 0;
+	required uint32 my_rank = 0;
+	repeated pt_public_global_guild_ranklist ranklist = [];
+}
+
+message pt_gm_act_literature_collection_f055 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_literature_collection_des datas = [];
+}
+
+message pt_gm_act_lottery_carousel_f056 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_lottery_carousel_des datas = [];
+}
+
+message pt_lottery_carousel_list_f057 {
+	repeated pt_public_id_list list = [];
+}
+
+message pt_maze_ranklist_f058 {
+	required uint32 my_rank = 0;
+	required uint32 my_lucky = 0;
+	repeated pt_public_maze_ranklist list = [];
+}
+
+message pt_melleboss_info_f059 {
+	required uint32 type = 0;
+	required uint32 reward_times = 0;
+	required uint32 buy_times = 0;
+	repeated pt_public_melleboss_list list = [];
+}
+
+message pt_scene_change_camp_f05a {
+	required uint64 id = 0;
+	required uint32 new_camp = 0;
+}
+
+message pt_melle_boss_scene_info_f05b {
+	required uint64 owner_id = 0;
+	required uint32 owner_hp = 0;
+	required uint32 boss_id = 0;
+	required uint32 boss_hp = 0;
+}
+
+message pt_revive_info_new_f05c {
+	required uint32 type = 0;
+	required uint32 countdown = 0;
+	required uint32 times = 0;
+}
+
+message pt_melleboss_revive_f05d {
+	required uint32 boss_id = 0;
+}
+
+message pt_shenqi_awaken_f05e {
+	required uint32 lev = 0;
+}
+
+message pt_head_lev_info_f060 {
+	repeated pt_public_head_list head_list = [];
+}
+
+message pt_head_suit_info_f061 {
+	repeated pt_public_head_list suit_list = [];
+}
+
+message pt_guild_impeach_f062 {
+	required string impeach_person = [];
+}
+
+message pt_random_gift_package_f063 {
+	required uint32 has_package = 0;
+	required uint32 id = 0;
+	required uint32 num = 0;
+	required uint32 end_time = 0;
+}
+
+message pt_return_investment_info_f064 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_return_investment_des datas = [];
+}
+
+message pt_special_upgrade_f065 {
+	required uint32 type = 0;
+}
+
+message pt_new_entourage_info_f066 {
+	required uint32 etype = 0;
+	required uint32 num1 = 0;
+	required uint32 num2 = 0;
+	required uint32 num3 = 0;
+	required uint32 num4 = 0;
+	required uint32 num5 = 0;
+	required uint32 num6 = 0;
+	required uint32 num7 = 0;
+	required uint32 num8 = 0;
+	required uint32 num9 = 0;
+	required uint32 num10 = 0;
+	required uint32 num11 = 0;
+}
+
+message pt_system_time_zone_f067 {
+	required int32 time_zone = 0;
+}
+
+message pt_legendary_level_info_f068 {
+	repeated pt_public_legendary_level_info_list list = [];
+}
+
+message pt_entourage_challenge_f069 {
+	required uint32 times = 0;
+	required uint32 buy_times = 0;
+	required uint32 refresh_time = 0;
+	repeated pt_public_entourage_challenge_info challenge_list = [];
+}
+
+message pt_legendary_level_start_f05f {
+	required string info = [];
+}
+
+message pt_legendary_level_exp_info_f06a {
+	required uint32 exp = 0;
+	repeated pt_public_legendary_exp_buy_list list = [];
+}
+
+message pt_god_costume_info_f070 {
+	required uint32 position_num = 0;
+	required uint32 stage_lev = 0;
+}
+
+message pt_god_costume_illustration_info_f071 {
+	repeated pt_public_id_list illustration_list = [];
+	repeated pt_public_id_list illustration_suit_list = [];
+}
+
+message pt_god_costume_draw_f072 {
+	required uint32 multi_num = 0;
+	repeated pt_public_item_list item_list = [];
+}
+
+message pt_mystery_gift_info_f06b {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required string desc = [];
+	repeated pt_public_mystery_gift_info_des datas = [];
+}
+
+message pt_arnea_season_info_f073 {
+	required uint32 time_state = 0;
+	required uint32 season_state = 0;
+}
+
+message pt_arnea_task_info_f074 {
+	required uint32 task_id = 0;
+	required uint32 count = 0;
+	required uint32 status = 0;
+}
+
+message pt_arnea_store_info_f075 {
+	repeated pt_public_arena_store_info_list list = [];
+}
+
+message pt_gm_act_single_recharge_f076 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_single_recharge_des datas = [];
+}
+
+message pt_gm_act_acc_login_f077 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required uint32 days = 0;
+	required string desc = [];
+	repeated pt_public_acc_login_des datas = [];
+}
+
+message pt_gm_activity_f078 {
+	repeated pt_public_activity_list activity_list = [];
+}
+
+message pt_gm_act_point_package_f079 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_point_package_des datas = [];
+}
+
+message pt_gm_act_diamond_package_f080 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_diamond_package_des datas = [];
+}
+
+message pt_gm_act_rmb_package_f081 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_rmb_package_des datas = [];
+}
+
+message pt_gm_act_turntable_f082 {
+	required uint32 startTime = 0;
+	required uint32 endTime = 0;
+	required uint32 close_time = 0;
+	required string desc = [];
+	repeated pt_public_act_turntable_des datas = [];
+}
+
+message pt_gm_act_turntable_draw_result_f083 {
+	required uint32 id = 0;
+	repeated pt_public_item_list item_list = [];
+}
+
+message pt_hero_attr_info_f132 {
+	required uint32 eid = 0;
+	required uint32 fighting = 0;
+	repeated pt_public_attr_info attrs = [];
+}
+
+message pt_action_two_int_list_f084 {
+	required uint32 action = 0;
+	repeated pt_public_two_int list = [];
+}
+
+message pt_main_scene_status_f085 {
+	required uint32 status = 0;
+}
+
+message pt_main_scene_result_f086 {
+	required int32 result = 0;
+	required int32 scene_change = 0;
+	required uint32 x = 0;
+	required uint32 y = 0;
+	required uint32 z = 0;
+	repeated pt_public_item_list rewards = [];
+	repeated pt_public_scene_damage_list damage_list = [];
+	repeated pt_public_scene_damage_list treat_list = [];
+}
+
+message pt_scene_end_f087 {
+	required int32 time = 0;
+}
+
+message pt_scene_monster_die_f088 {
+	required int32 id = 0;
+}
+
+message pt_arena_challenge_f089 {
+	required uint32 action = 0;
+	required uint64 t_uid = 0;
+	required uint32 rank_type = 0;
+	required uint32 shenqi_id = 0;
+	repeated pt_public_two_int entourage_list = [];
+}
+
+message pt_entourage_update_f131 {
+	required uint8 chnage_type = 0;
+	required uint32 eid = 0;
+}
+
+message pt_update_resource_f08a {
+	repeated pt_public_resource_list resource_list = [];
+}
+
+message pt_arena_challenge_info_f08b {
+	repeated pt_public_challenge_list challenge_list = [];
+}
+
+message pt_hero_illustration_f08c {
+	repeated pt_public_illustration_info hero_illustration_list = [];
+}
+
+message pt_item_num_update_e21e {
+	repeated pt_public_two_int datas = [];
+}
+
+message pt_action_data_and_two_int_list_f08d {
+	required uint32 action = 0;
+	required uint64 data = 0;
+	repeated pt_public_two_int list = [];
+}
+
+message pt_time_reward_f08e {
+	required uint32 time = 0;
+}
+
+message pt_arena_challenge_single_info_f08f {
+	required uint64 uid = 0;
+	required uint32 shenqi = 0;
+	required uint32 fighting = 0;
+	repeated pt_public_entourage_info_list entourage_list = [];
+}
+
+message pt_on_battle_heros_f090 {
+	repeated pt_public_on_battle_data list = []; //出战的英雄列表
+}
+
+message pt_shenqi_illustration_f091 {
+	repeated pt_public_illustration_info shenqi_illustration_list = [];
+}
+
+message pt_shenqi_update_f092 {
+	required uint8 chnage_type = 0;
+	required uint32 id = 0;
+}
+
+message pt_defender_zhenfa_f093 {	// 防守方的阵法
+	required uint32 race_zhenfa = 0;
+	required uint32 prof_zhenfa = 0;
+}
+
+message pt_entourage_substitution_result_f094 {	// 英雄置换结果
+	required uint32 etype = 0;
+}
+
+message pt_create_guild_f095 {
+	required uint8 banner = 0;    // 公会旗帜
+	required string guild_name = [];
+	required string notice = []; 	// 公告
+}
+
+message pt_recommend_guild_list_f096 {
+	repeated pt_public_guild_info_list guild_info_list = [];
+}
+
+message pt_draw_result_f097 {
+	required uint8 draw_type = 0;
+	repeated pt_public_item_list rewards = [];
+}
+
+message pt_draw_info_f098 {
+	required uint32 energy = 0;
+	repeated pt_public_draw_list list = [];
+}
+
+message pt_guild_view_member_info_f099 {
+	required uint8 panel_arg = 0; 	// 客户端面板参数
+	required uint32 lv = 0; 		// 等级
+	required uint8 position = 0; 	// 职位
+	required string user_name = ""; 
+	required string guild_name = "";
+	required uint32 total_gs = 0;	// 竞技场上阵的英雄的总战力
+	repeated pt_public_on_battle_heros arena_heros = []; //竞技场出战的英雄列表
+	repeated pt_public_item_des heros_infos = []; //具体的英雄属性
+}
+
+message pt_turntable_info_f09a {
+	required uint32 energy = 0; // 能量
+	required uint32 free_time = 0; // 免费时间
+	repeated pt_public_turntable_list table_list = []; //转盘数据
+}
+
+message pt_normal_turntable_result_f09b {
+	required uint32 position = 0; // 格子
+	repeated pt_public_item_list items = []; // 物品
+}
+
+message pt_high_turntable_result_f09c {
+	required uint32 energy = 0; // 能量
+	required uint32 position = 0; // 格子
+	repeated pt_public_turntable_list table_list = []; //转盘数据
+}
+
+message pt_draw_record_f09d {
+	required uint32 type = 0; // 类型
+	repeated pt_public_draw_record_list record_list = []; //抽奖记录
+}
+
+message pt_act_copy_info_f09e {
+	repeated pt_public_act_copy datas = []; // 活动副本数据
+}
+
+message pt_hero_expedition_info_f133 {
+	required uint8 pos = 0; //当前据点位置
+	required uint8 main_event = 0; //主事件
+	required uint8 main_event_data = 0; //主事件数据
+	required uint8 main_event_state = 0; //主事件状态
+	required uint8 sub_event = 0; //子事件
+	required uint8 sub_event_data = 0; //子事件数据
+	required uint8 sub_event_state = 0; //子事件状态
+	repeated pt_public_expedition_pos pos_list = []; // 据点数据
+	repeated pt_public_expedition_sub_event history_sub_events = []; // 历史获得的子事件列表
+}
+
+message pt_on_scene_heros_f134 {
+	repeated pt_public_on_battle_data list = []; //出战的英雄列表
+}
+
+// 英雄远征事件做了的返回
+message pt_hero_expedition_succ_f135 {
+}
+
+message pt_act_copy_scene_data_f136 {
+	required uint32 kill_num = 0; //击杀数量
+	repeated pt_public_item_list rewards = []; //奖励
+}
+
+message pt_act_copy_scene_result_f137 {
+	required uint8 result = 0; //胜利1还是失败0
+	repeated pt_public_item_list ensure_rewards = []; //保底奖励
+	repeated pt_public_item_list other_rewards = []; //其他奖励
+	repeated pt_public_scene_damage_list damage_list = [];
+	repeated pt_public_scene_damage_list treat_list = [];
+}
+
+message pt_scene_copy_id_f138 {
+	required uint32 copy_id = 0;
+}
+
+message pt_hero_expedition_scene_result_f139 {
+	required uint8 result = 0; //胜利1还是失败0
+	repeated pt_public_item_list rewards = []; //奖励
+	repeated pt_public_scene_damage_list damage_list = [];
+	repeated pt_public_scene_damage_list treat_list = [];
+}
+
+message pt_hero_expedition_hero_hp_f13a {
+	repeated pt_public_left_hp list = [];
+}
+
+message pt_friends_info_f13b {
+	repeated pt_public_friend_list list = [];
+}
+
+message pt_friends_apply_info_f13c {
+	repeated pt_public_pending_list list = [];
+}
+
+message pt_recommend_friends_info_f13d {
+	repeated pt_public_pending_list list = [];
+}
+
+message pt_search_friends_result_f13e {
+	repeated pt_public_pending_list list = [];
+}
+
+message pt_other_usr_info_f13f {
+	required uint8 panel_arg = 0; 	// 客户端面板参数
+	required uint32 lv = 0; 		// 等级
+	required uint8 position = 0; 	// 职位
+	required uint8 is_friend = 0; 	// 是否是好友
+	required string user_name = ""; 
+	required string guild_name = "";
+	required uint32 total_gs = 0;	// 竞技场上阵的英雄的总战力
+	repeated pt_public_on_battle_heros arena_heros = []; //竞技场出战的英雄列表
+	repeated pt_public_item_des heros_infos = []; //具体的英雄属性
+}
+
+message pt_guide_info_f140 {
+	repeated uint32 list = []; // 已完成的引导id数组
+}
+
+message pt_scene_hero_prop_change_f141 {
+	required uint64 oid = 0; 		// 对象id
+	required uint32 type = 0; 		// 什么属性改变了
+	required uint32 val  = 0; 		// 新值
+}
+
+message pt_offline_reward_f142 {
+	required uint32 end_time = 0; 	// 倒计时结束时间
+	repeated pt_public_item_list rewards = []; // 奖励
+}
+
+message pt_item_detail_info_f143 {
+	repeated pt_public_item_des items = []; //请求的某个物品的详细信息
+}
+
+message pt_main_task_info_f144 {
+	required uint32 status  = 0;
+	required uint32 task_id = 0;
+	required uint32 chapter = 0;
+	repeated pt_public_task_list task_list = []; //任务列表
+}
+
+message pt_guild_tec_info_f145 {
+	required uint8 update_type  = 0; 		//0:所有信息 1:升级更新 2:新解锁
+	required uint8 used_reset_times = 0;	//已使用的重置次数
+	repeated pt_public_two_int datas = []; //公会科技信息
+}
+
+message pt_daily_task_info_f146 {
+	required uint32 status  = 0;
+	repeated pt_public_task_list task_list = []; //任务列表
+}
+
+message pt_break_succ_f147 {
+	required uint32 type = 0;
+}

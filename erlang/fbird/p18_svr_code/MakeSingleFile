@@ -1,0 +1,7 @@
+
+SRC_DIRS := $(erl_file)
+			
+include ./include.mk
+
+$(EBIN_DIR)/%.$(EMULATOR): $(hrl) $(erl_file)
+	$(ERLC) $(ERLC_FLAGS) -o $(EBIN_DIR) $<

@@ -1,0 +1,34 @@
+%% ============================= 基本配置项 ====================================
+{game_name, "p18"}.  %% 游戏名称，节点命名时会加入此名称
+{serverid, <serverid>}.  %% 服务器id，如果该节点为跨服节点，则serverid固定为[10000,10010]，游戏服节点范围:[1, 9999]
+
+{log_level, 4}.  %% 日志级别
+{log_path, "./log/"}.  %% 日志存放路径
+
+{cookie, fbird_p18_dafa}.  %% 节点相互连接时需要cookie一致
+{server_host, "<server_host>"}.  %% 服务器ip，节点命名时会加入此IP(配置为内网地址)
+
+{net_port, <net_port>}.  %% 游戏服连接端口
+{web_port, <web_port>}.  %% 游戏服的web服务端口
+%% ============================= 基本配置项 ====================================
+
+
+%% ============================ SDK和上报相关配置项 ============================
+{sdk,"https://p17-uc.lynlzqy.com"}.
+{gameid,"27"}.
+{gamekey,"OO9do1ewfG92eOPq"}.
+{bindips,["127.0.0.1","58.229.184.13","58.229.184.14"]}.
+{addrbc, "p17-report.lynlzqy.com"}.  %% 没有配："0.0.0.0"
+{report_srv_port, 10000}. %% 上报服务器端口
+{http_listen_port,<http_listen_port>}.  %% gm后台下发端口(gm后台和充值合并了)
+%% ============================ SDK和上报相关配置项 ============================
+
+
+%% ============== 本地调试相关，线上服不配 ==============
+%% {client_pt_dir, "../p18_client/Assets/Protocol/"}.  %% 前端协议目录
+%% {client_pt_lua_dir, "../p18_client/Assets/Lua/Protoc/"}.  %% 前端Lua协议目录
+%% {temp_erl_pt_dir, "../temp_erl_pt/"}.  %% 后端生成的协议临时存放的路径
+%% {open_gm_code, true}. 	%% 是否开启gm命令
+%% {test_cross_node, 'p18_fbird_cross_10000@127.0.0.1'}. 	%% 游戏服节点配置：跨服节点测试
+%% {test_cross_group, [{1, [20]}]}. 	%% 跨服节点配置：跨服分组测试[{分组id, [游戏服serverid]}]
+%% 本地调试跨服时，把游戏服的beam同步到跨服去(注意目录)：rsync -a --exclude server_config_gen.beam ./ebin/ ../cross_node/ebin/

@@ -5,4 +5,6 @@ pyuic5 tab_conf.ui -o tab_conf_ui.py
 将.qrc文件转为python代码文件：
 pyrcc5 resource.qrc -o resource_rc.py
 
+打包：
+pyinstaller main_window.spec
 

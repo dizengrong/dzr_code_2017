@@ -9,8 +9,14 @@ git push origin --delete 分支名
 		最后再把回滚的东西提交
 		这种方式会只是产生了一次新的提交操作而已，推荐使用！
 
+设置保存账号密码：
+git config --global credential.helper store
+
+重置密码：
+git config --system --unset credential.helper
 
 
+===================================== rsync ====================================
 本地文件同步至远程
 rsync -e 'ssh -p 6622' -avt /var/lib/jenkins/workspace/p17_release/ebin/ root@120.92.229.76:/data/fbird/p17/1/ebin/   密码:9qHhMbIeYTOvo7a5
 rsync -e 'ssh -p 6622' -avt /var/lib/jenkins/workspace/p17_debug/ebin/ root@120.92.229.76:/data/fbird/p17/1/ebin/ 
