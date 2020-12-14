@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# 如果遇到引号转义问题，使用as_escaped来解决
 
 def tuple_list_2_dict(tuple_list):
     '''tuple_list:[(k, v)], return:{k:v}'''
@@ -77,7 +78,11 @@ def lua_split_items(item_str):
     if item_str.strip() == "":
         return "{}"
     else:
-        return "{{" + "}, {".join([s for s in item_str.split("|") if s != '']) + "}}"
+        s = "}, {".join([s for s in item_str.split("|") if s != ''])
+        if s == '':
+          return "{}"
+        else:
+          return "{{" + s + "}}"
 
 
 def lua_split_attrs(attr_str):
@@ -87,9 +92,9 @@ def lua_split_attrs(attr_str):
     else:
         return "{" + ", ".join(['[' + item.replace(',', '] = ') for item in attr_str.split("|")]) + "}"
 
-def list_2_lua_table(item_str):
+def list_2_lua_table(item_list):
     '''python列表转为lua的table，如:[1,2,3] --> {1,2,3}'''
-    return "{" + ", ".join(item_str) + "}"
+    return "{" + ", ".join([str(item) for item in item_list]) + "}"
 
 # 根据一个字段获取一个其他字段的方法，可以生成形如:get_data(Id) -> [Val];
 # 返回一个字典
@@ -100,6 +105,19 @@ def select_one_field(datas, index_field, index_result):
            ret_list[data[index_field]].append(data[index_result])
        else:
            ret_list[data[index_field]] = [data[index_result]]
+   return ret_list
+
+
+# 类似于select_one_field，不过值是有多个字段的
+# return:{key: [result_val1, result_val2]}
+def select_one_2_n_field(datas, index_field, index_results):
+   ret_list = {}
+   for data in datas:
+       result = [data[i] for i in index_results]
+       if data[index_field] in ret_list:
+           ret_list[data[index_field]].append(result)
+       else:
+           ret_list[data[index_field]] = [result]
    return ret_list
 
 # 根据多个字段获取多个其他字段的方法，可以生成形如:get_data(Id1, Id2) -> [{Val1, Val2}];
@@ -147,6 +165,11 @@ def py_tuple_list_2_erl(tuple_list):
   return "[" + ", ".join(erl_list) + "]"
 
 
+# 将python的tuple_list转为erlang中的tuple_list，如：[(1,a),(2,b)] ---> {{1,a},{2,b}}
+def py_tuple_list_2_lua(tuple_list):
+  lua_list = [list_2_lua_table(t) for t in tuple_list]
+  return "{" + ", ".join(lua_list) + "}"
+
 # 因为用一行显示所有的id的列表这样的数据太长了，所以进行分割换行显示
 def array_2_str(array_datas, n=10, sep_str1=', ', sep_str2=',\n\t'):
   ret = "["
@@ -163,3 +186,21 @@ def array_2_str(array_datas, n=10, sep_str1=', ', sep_str2=',\n\t'):
       count = 1
   ret += "]"
   return ret
+
+# 因为用一行显示所有的id的列表这样的数据太长了，所以进行分割换行显示
+def array_2_lua_str(array_datas, n=10, sep_str1=', ', sep_str2=',\n\t'):
+  ret = "{" + sep_str2[1:]
+  count = 1
+  end_data = array_datas[-1]
+  for data in array_datas:
+    if end_data == data:
+      ret += str(data)
+    elif count < n:
+      ret += str(data) + sep_str1
+      count += 1
+    else:
+      ret += str(data) + sep_str2
+      count = 1
+  ret += "}"
+  return ret
+

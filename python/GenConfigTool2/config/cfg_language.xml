@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<!-- 下面是哪些Excel文件的sheet里的列需要翻译 -->
+<file excle_file='邮件表mail.xlsm' type='lang_src'>
+    <dict sheet='mail' cols='name,test,test2,test4'></dict>
+</file>
+<file excle_file='文字提取.xlsm' type='lang_src'>
+    <dict sheet='text' cols='name'></dict>
+</file>
+
+
+
+<!-- 下面是要生成的翻译配置文件 -->
+
+<file excle_file='翻译-繁体.xlsx' type='translation_src'>
+    <export tpl='data_text_tw.erl.tpl' type='lang'>
+        <dict data_key='all_data' sheet='Sheet1'></dict>
+    </export>
+</file>
+<file excle_file='翻译-英文.xlsm' type='translation_src'>
+    
+</file>
+<file excle_file='翻译-韩文.xlsm' type='translation_src'>
+    
+</file>
+
+</root>
+
+

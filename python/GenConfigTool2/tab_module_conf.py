@@ -166,10 +166,13 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             'datas':[{'data_key':data_key, 'sheet':sheet, 'begin_row':begin_row, 'sort_col':sort_col}]
         }
         """
-        doc = minidom.parse('config/cfg_module.xml')
+        doc = minidom.parse(os.path.join(self.main_window.get_config_path(), 'cfg_module.xml'))
         root = doc.documentElement
         self.export_files = {}  # {'data_xxx.lua.tpl':tpl_dict}
         self.export_items = []  # [ExportItem]
+        for key in ExportTypeDict.values():
+            setattr(self, 'export_files_' + key, {})
+
         for node in get_xmlnode(root, 'file'):
             excle_file = get_attrvalue(node, 'excle_file')
             export_item = ExportItem(excle_file)
@@ -190,10 +193,12 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
                     export_item.add_sheet(d['sheet'], export_type, tpl_dict['tpl'])
                 tpl_dict['datas'] = datas
                 self.export_files[tpl_dict['tpl']] = tpl_dict
+
+                tmp = getattr(self, 'export_files_' + export_type)
+                tmp[tpl_dict['tpl']] = tpl_dict
             self.export_items.append(export_item)
 
     def init_table(self):
-        self.m_table
         header = []
         header.append("Excel文件(点击打开)")
         header.append("Sheet名称")
@@ -284,7 +289,7 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             msg_box.setDetailedText(msg)
             msg_box.exec_()
 
-    def export_one_file_help(self, save_dir, tpl_dict):
+    def export_one_file_help(self, save_dir, tpl_dict, translate_cols = None, translate_words = None):
         excle_file = tpl_dict['excle_file']
 
         dict = {}
@@ -307,7 +312,15 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
                     continue
                 for j in range(col_start - 1, col_end):
                     if table.cell(0, j).ctype == xlrd.XL_CELL_TEXT:
-                        data_dict[table.cell(0, j).value.strip()] = excel_cell_value_format(table.cell(i, j).value)
+                        tran_key = excle_file + "." + data['sheet'] + "." + table.cell(0, j).value
+                        val = excel_cell_value_format(table.cell(i, j).value)
+                        if translate_cols != None and tran_key in translate_cols:
+                            if val in translate_words:
+                                data_dict[table.cell(0, j).value.strip()] = translate_words[val]
+                            else:
+                                data_dict[table.cell(0, j).value.strip()] = val
+                        else:
+                            data_dict[table.cell(0, j).value.strip()] = val
                 dict[key].append(data_dict)
 
             if 'sort_col' in data and len(data['sort_col']) > 0:
@@ -344,8 +357,9 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             begin = time.time()
             export_files = []
 
-            for key in self.export_files:
-                tpl_dict = self.export_files[key]
+            export_files_server = getattr(self, 'export_files_server')
+            for key in export_files_server:
+                tpl_dict = export_files_server[key]
                 if tpl_dict['export_type'] == 'server':
                     ret = self.export_one_file_help(save_dir, tpl_dict)
                     export_files.append(ret)
@@ -361,6 +375,11 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             msg_box.exec_()
 
     def on_export_all_client(self):
+        self.on_export_all_client_help()
+
+    def on_export_all_client_help(self, translate_cols = None, translate_words = None):
+        # print("translate_cols:", translate_cols)
+        # print("translate_words:", translate_words)
         save_dir = settings.get_client_export_dir()
         if not save_dir or not os.path.exists(save_dir):
             QMessageBox.information(self, u"提示", u"请先设置导出目录")
@@ -369,10 +388,11 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             begin = time.time()
             export_files = []
 
-            for key in self.export_files:
-                tpl_dict = self.export_files[key]
+            export_files_client = getattr(self, 'export_files_client')
+            for key in export_files_client:
+                tpl_dict = export_files_client[key]
                 if tpl_dict['export_type'] == 'client':
-                    ret = self.export_one_file_help(save_dir, tpl_dict)
+                    ret = self.export_one_file_help(save_dir, tpl_dict, translate_cols = translate_cols, translate_words = translate_words)
                     export_files.append(ret)
             end = time.time()
             msg = '\n'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))

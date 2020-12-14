@@ -6,6 +6,7 @@ import traceback
 import xlrd
 from base_main_gui import Ui_BaseMainFrame
 from tab_module_conf import TabModuleConfig
+from tab_lang import TabLang
 from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import QTableWidgetItem, QAction, QMenu, QFileDialog, QMessageBox
 from PyQt5.QtCore import Qt, QTimer, QFile, QTextStream
@@ -19,27 +20,7 @@ import json
 import settings
 
 
-def format(value):
-    if isinstance(value, float):
-        if int(value) == value:
-            return int(value)
-        else:
-            return value
-    elif isinstance(value, str):
-        try:
-            return int(value)
-        except Exception:
-            try:
-                return float(value)
-            except Exception:
-                return as_escaped(value)
-    else:
-        try:
-            return int(value)
-        except Exception:
-            return as_escaped(value)
-
-VERSION = u"配置导出工具-v6.2    设计者：dzR    更新日期：2020-09-28    "
+VERSION = u"配置导出工具-v6.4    设计者：dzR    更新日期：2020-12-14    "
 '''
 2020-04-10:
     生成配置文件前，添加可选的先写入common_xxx.ext文件内的内容，如果存在该文件的话
@@ -48,6 +29,10 @@ VERSION = u"配置导出工具-v6.2    设计者：dzR    更新日期：2020-09
     支持excel中可以配置空行，空行的数据将会被跳过
 2020-09-28:
     导出浮点数据时，由之前的保留2位小数改为保留4位小数
+2020-12-05:
+    增加多语言导出功能
+2020-12-14:
+    修复当导出的后端文件名与前端文件名一样时，全部导出功能无法导出的bug
 '''
 
 
@@ -83,6 +68,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_BaseMainFrame):
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/image/tab_conf.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         self.tab_container.addTab(self.m_tab_mod_conf, icon1, u"功能配置")
+
+        self.m_tab_lang = TabLang(self.tab_container, self)
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/image/tab_conf.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        self.tab_container.addTab(self.m_tab_lang, icon1, u"多语言配置")
 
         self.tab_container.setCurrentIndex(0)
 
