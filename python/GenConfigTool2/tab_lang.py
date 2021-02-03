@@ -10,6 +10,7 @@ from tab_lang_ui import Ui_Lang
 from xml.dom import minidom
 from common import *
 import openpyxl
+from collections import defaultdict
 
 
 def make_button(parent, label):
@@ -193,6 +194,13 @@ class TabLang(QtWidgets.QWidget, Ui_Lang):
         self.m_edit_file.setText(filename[0])
 
     def collect_zh_words(self):
+        # 获取每个excel配置文件的sheet从哪一行读取数据的配置
+        sheet_begin_row_dict = defaultdict(int)  # {file-sheet:begin_row}
+        for x in self.main_window.m_tab_mod_conf.export_files.values():
+            for sheet in x['datas']:
+                sheet_begin_row_dict[x['excle_file'] + '-' + sheet['sheet']] = sheet['begin_row']
+
+        # print(sheet_begin_row_dict)
         words = {}
         for data in self.lang_src:
             excle_filename = os.path.join(self.main_window.get_excel_src_path(), data[0])
@@ -213,7 +221,8 @@ class TabLang(QtWidgets.QWidget, Ui_Lang):
                 msg_box.exec_()
                 return False, None
 
-            for i in range(2, table.nrows):
+            begin_row = sheet_begin_row_dict[data[0] + '-' + data[1]]
+            for i in range(begin_row, table.nrows):
                 # 如果第i行的第一列所在的单元格没有数据，则认为是空的，跳过该行
                 if str(table.cell(i, 0).value).strip() == '':
                     continue
