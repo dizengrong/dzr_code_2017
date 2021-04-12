@@ -35,6 +35,8 @@ VERSION = u"配置导出工具-v6.4    设计者：dzR    更新日期：2020-02
     修复当导出的后端文件名与前端文件名一样时，全部导出功能无法导出的bug
 2021-02-03:
     修复多语言提取中文时，固定从源文件的第三行还是读的bug
+2021-04-12:
+    增加导出多个同样内容文件的功能
 '''
 
 
@@ -48,8 +50,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_BaseMainFrame):
         self.excel_src_path = os.path.abspath('..')
         self.config_path = os.path.join(os.getcwd(), 'config')
         # for local test
-        # self.excel_src_path = u'F:/work/yz_project/cehua_doc/数值表格'
-        # self.config_path = u'F:/work/yz_project/cehua_doc/数值表格/config_gen_tool/config'
+        # self.excel_src_path = u'F:/work/slg/slg_design/5_配置表'
+        # self.config_path = u'F:/work/slg/slg_design/5_配置表/config_gen_tool/config'
 
         self.add_tab_widgets()
 

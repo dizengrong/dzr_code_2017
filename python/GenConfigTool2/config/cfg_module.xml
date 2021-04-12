@@ -3,7 +3,7 @@
 <!-- excle配置文件与工具目录在同一个目录 -->
 <!-- 注意dict元素的data_key属性值不能一样 -->
 <!-- 
-<file excle_file=数据来源Excel>
+<file excle_file=数据来源Excel series='配置了就表示从:数据来源Excel_1、数据来源Excel_2、数据来源Excel_3中生成同样的配置，导出的文件名也类似'>
 	<export tpl=服务端配置模板名称 type=s为后端文件c为前端文件>
 		<dict data_key=数据key sheet=数量来源sheet页 begin_row=从哪一行开始读数据(从0开始计数) sort_col=列名，对哪一列进行倒叙排序></dict>
 	</export>

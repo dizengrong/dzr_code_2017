@@ -174,14 +174,17 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             setattr(self, 'export_files_' + key, {})
 
         for node in get_xmlnode(root, 'file'):
-            excle_file = get_attrvalue(node, 'excle_file')
-            export_item = ExportItem(excle_file)
+            excle_file    = get_attrvalue(node, 'excle_file')
+            export_series = get_attrvalue(node, 'series')
+            export_series = int(export_series) if export_series != '' else 0
+            export_item   = ExportItem(excle_file)
             for node2 in get_xmlnode(node, 'export'):
                 export_type = ExportTypeDict[get_attrvalue(node2, 'type')]
                 tpl_dict = {}
                 tpl_dict['tpl'] = get_attrvalue(node2, 'tpl')
                 tpl_dict['export_type'] = export_type
                 tpl_dict['excle_file'] = excle_file
+                tpl_dict['export_series'] = export_series
                 datas = []
                 for node3 in get_xmlnode(node2, 'dict'):
                     d = {}
@@ -281,7 +284,7 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
                 return
             ret = self.export_one_file_help(save_dir, tpl_dict)
             end = time.time()
-            msg = ret + u"\n消耗时间：{0}秒".format(int(end - begin))
+            msg = "\n".join(ret) + u"\n消耗时间：{0}秒".format(int(end - begin))
             QMessageBox.information(self, u"导出成功", msg)
         except Exception:
             msg = traceback.format_exc()
@@ -290,63 +293,76 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
             msg_box.exec_()
 
     def export_one_file_help(self, save_dir, tpl_dict, translate_cols = None, translate_words = None):
+        export_series = tpl_dict['export_series']
         excle_file = tpl_dict['excle_file']
-
-        dict = {}
         tpl = tpl_dict['tpl']
         cfg, _ = os.path.splitext(tpl)
-        for data in tpl_dict['datas']:
-            excle_filename = os.path.join(self.main_window.get_excel_src_path(), excle_file)
-            xml_data = xlrd.open_workbook(excle_filename)
-            table = xml_data.sheet_by_name(data['sheet'])
-            key = data['data_key']
-            col_start = 1
-            col_end = table.ncols
-            begin_row = data['begin_row']
-            dict[key] = []
 
-            for i in range(begin_row, table.nrows):
-                data_dict = {}
-                # 如果第i行的第一列所在的单元格没有数据，则认为是空的，跳过该行
-                if str(table.cell(i, 0).value).strip() == '':
-                    continue
-                for j in range(col_start - 1, col_end):
-                    if table.cell(0, j).ctype == xlrd.XL_CELL_TEXT:
-                        tran_key = excle_file + "." + data['sheet'] + "." + table.cell(0, j).value
-                        val = excel_cell_value_format(table.cell(i, j).value)
-                        if translate_cols != None and tran_key in translate_cols:
-                            if val in translate_words:
-                                data_dict[table.cell(0, j).value.strip()] = translate_words[val]
+        file_list = []
+        if export_series == 0:
+            file_list.append((excle_file, cfg))
+        else:
+            for i in range(1, export_series + 1):
+                n, ext = os.path.splitext(excle_file)
+                cfg_name, cfg_ext = os.path.splitext(cfg)
+                file_list.append((n + "_" + str(i) + ext, cfg_name + "_" + str(i) + cfg_ext))
+
+        ret = []
+        for e_file, t_file in file_list:
+            dict = {}
+            for data in tpl_dict['datas']:
+                excle_filename = os.path.join(self.main_window.get_excel_src_path(), e_file)
+                xml_data = xlrd.open_workbook(excle_filename)
+                table = xml_data.sheet_by_name(data['sheet'])
+                key = data['data_key']
+                col_start = 1
+                col_end = table.ncols
+                begin_row = data['begin_row']
+                dict[key] = []
+
+                for i in range(begin_row, table.nrows):
+                    data_dict = {}
+                    # 如果第i行的第一列所在的单元格没有数据，则认为是空的，跳过该行
+                    if str(table.cell(i, 0).value).strip() == '':
+                        continue
+                    for j in range(col_start - 1, col_end):
+                        if table.cell(0, j).ctype == xlrd.XL_CELL_TEXT:
+                            tran_key = e_file + "." + data['sheet'] + "." + table.cell(0, j).value
+                            val = excel_cell_value_format(table.cell(i, j).value)
+                            if translate_cols != None and tran_key in translate_cols:
+                                if val in translate_words:
+                                    data_dict[table.cell(0, j).value.strip()] = translate_words[val]
+                                else:
+                                    data_dict[table.cell(0, j).value.strip()] = val
                             else:
                                 data_dict[table.cell(0, j).value.strip()] = val
-                        else:
-                            data_dict[table.cell(0, j).value.strip()] = val
-                dict[key].append(data_dict)
+                    dict[key].append(data_dict)
 
-            if 'sort_col' in data and len(data['sort_col']) > 0:
-                dict[key].sort(key=lambda x: x[data['sort_col']], reverse=True)
-        # render template with dict data
-        content = engine.render(os.path.join(self.main_window.get_config_path(), tpl), dict)
-        cfg_file = os.path.join(save_dir, cfg)
-        dest = codecs.open(cfg_file, "w", 'utf-8')
-        # 写入common代码
-        _, ext = os.path.splitext(cfg)
-        if tpl_dict['export_type'] == 'server':
-            common_code_path = "common_server"
-        else:
-            common_code_path = "common_client"
-        common_code_path = os.path.join(self.main_window.get_config_path(), common_code_path + ext)
-        if os.path.exists(common_code_path):
-            common_code = open(common_code_path, "r").read()
-            if "%s" in common_code:
-                dest.write(common_code % cfg)
+                if 'sort_col' in data and len(data['sort_col']) > 0:
+                    dict[key].sort(key=lambda x: x[data['sort_col']], reverse=True)
+            # render template with dict data
+            content = engine.render(os.path.join(self.main_window.get_config_path(), tpl), dict)
+            cfg_file = os.path.join(save_dir, t_file)
+            dest = codecs.open(cfg_file, "w", 'utf-8')
+            # 写入common代码
+            _, ext = os.path.splitext(t_file)
+            if tpl_dict['export_type'] == 'server':
+                common_code_path = "common_server"
             else:
-                dest.write(common_code)
+                common_code_path = "common_client"
+            common_code_path = os.path.join(self.main_window.get_config_path(), common_code_path + ext)
+            if os.path.exists(common_code_path):
+                common_code = open(common_code_path, "r").read()
+                if "%s" in common_code:
+                    dest.write(common_code % t_file)
+                else:
+                    dest.write(common_code)
 
-        content = content.replace(u"\r\n", u"\n")
-        dest.write(content)
-        dest.close()
-        return cfg_file
+            content = content.replace(u"\r\n", u"\n")
+            dest.write(content)
+            dest.close()
+            ret.append(cfg_file)
+        return ret
 
     def on_export_all_server(self):
         save_dir = settings.get_server_export_dir()
@@ -362,7 +378,7 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
                 tpl_dict = export_files_server[key]
                 if tpl_dict['export_type'] == 'server':
                     ret = self.export_one_file_help(save_dir, tpl_dict)
-                    export_files.append(ret)
+                    export_files.extend(ret)
             end = time.time()
             msg = '\n'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))
             msg_box = QMessageBox(QMessageBox.Information, u"导出成功", "导出成功!\t\t\t\t\t\t\t\t", parent=self)
@@ -393,7 +409,7 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
                 tpl_dict = export_files_client[key]
                 if tpl_dict['export_type'] == 'client':
                     ret = self.export_one_file_help(save_dir, tpl_dict, translate_cols = translate_cols, translate_words = translate_words)
-                    export_files.append(ret)
+                    export_files.extend(ret)
             end = time.time()
             msg = '\n'.join(export_files) + u"\n消耗时间：{0}秒".format(int(end - begin))
             msg_box = QMessageBox(QMessageBox.Information, u"导出成功", "导出成功!\t\t\t\t\t\t\t\t", parent=self)
