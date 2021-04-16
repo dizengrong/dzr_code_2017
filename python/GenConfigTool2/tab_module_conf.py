@@ -32,7 +32,12 @@ def excel_cell_value_format(value):
             return round(value, 4)
     elif isinstance(value, str):
         try:
-            return int(value)
+            # 这里有一个坑，int('30_1') = 301，下划线被忽略了
+            temp = int(value)
+            if str(temp) == value:
+                return int(value)
+            else:
+                return value
         except Exception:
             try:
                 return round(value, 4)
