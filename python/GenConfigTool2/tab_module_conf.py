@@ -229,6 +229,7 @@ class TabModuleConfig(QtWidgets.QWidget, Ui_TabConfig):
         self.m_table.setRowCount(total_num + 1)
 
         count = 0
+        export_items.sort(key=lambda e:e.excle_filename())
         for item in export_items:
             addSize = item.get_sheet_size()
             row = count
